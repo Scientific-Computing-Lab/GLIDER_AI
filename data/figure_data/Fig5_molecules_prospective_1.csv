@@ -1,0 +1,13 @@
+molecule_id,glider,mace_polar_l,dataset
+pros_azaaryl_sulfoxide,0.315586790197266,0.487185557513448,prospective_1
+pros_cyano_cyclic_acetal,0.399977137063306,0.485365607948661,prospective_1
+pros_halogen_oxazinanone,0.245079846986049,0.477702097867965,prospective_1
+pros_heteroaryl_amide,0.35455848166902,0.5052291053555,prospective_1
+pros_isoxazole_thioether,0.359812764639974,0.494614720251255,prospective_1
+pros_polyfunctional_oxane,0.238183791433332,0.505250516931866,prospective_1
+pros_sulfonyl_piperidinol,0.3249249880227,0.418913900110122,prospective_1
+prospective_diverse_01,0.261783985331165,0.583299629283766,prospective_1
+prospective_diverse_02,0.744190451967762,0.768643711477781,prospective_1
+prospective_diverse_03,0.218090360911407,0.54138489673838,prospective_1
+prospective_diverse_04,0.239279981232681,0.556678255541227,prospective_1
+prospective_diverse_05,0.160123673818404,0.469444955488161,prospective_1

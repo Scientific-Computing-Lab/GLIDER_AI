@@ -1,0 +1,29 @@
+{
+  "description": "Byte-exact cached inputs used for the published GLIDER response-head training",
+  "encoder_checkpoint_sha256": "fab8b8713c832f31a2a853aaa22fd638be8a369cbf5095e6b3e982a18d10e93a",
+  "files": [
+    {
+      "path": "data/development/frozen_training/mace_polar_m_features.npz",
+      "sha256": "e84ce9fa7c5f9ed143ca9cbec4547e29603aaa28a76055314746a8192511b269"
+    },
+    {
+      "path": "data/development/frozen_training/mace_polar_ml_average.npz",
+      "sha256": "24ace3180e950c45e6fdf4bb1c9d008b1537a5aba786cb02ed42a8b0cfb1deb4"
+    },
+    {
+      "path": "data/development/combined_development.extxyz",
+      "sha256": "16b696174c0dcb35ab01a6a721edc15a1b943ba88e79a191bf5ad90ab428cf6a"
+    },
+    {
+      "path": "data/development/observables/observable_registry.csv",
+      "sha256": "d83e2c613ef6a1be40ee0c2591becf6402d8e15f5587207a6da3baeb6810426b"
+    },
+    {
+      "path": "results/development/original/mace_head_c_sum/summary.json",
+      "sha256": "28179f7e0e91e0e37a9d7138ff81a7cccbf5915ca6158a67714e260ac957ab36"
+    }
+  ],
+  "n_training_chemistries": 14,
+  "n_training_environments": 48,
+  "published_checkpoint_sha256": "a288afa285128e13cb7a05ba9459f1dce07e79b8638c6e272c2509ae68d7a288"
+}

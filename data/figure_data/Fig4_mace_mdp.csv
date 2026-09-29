@@ -1,0 +1,4 @@
+dataset,panel,method,method_label,esp_nrmse,esp_ci95_low,esp_ci95_high,dipole_rmse_D,dipole_ci95_low_D,dipole_ci95_high_D,n_molecules,x,esp_err_minus,esp_err_plus,dip_err_minus,dip_err_plus
+prospective_1,Panel I,mace_mdp,MACE-MDP,,,,0.150877459893439,0.0644443484864061,0.231204380357368,12,0,,,0.0864331114070324,0.0803269204639292
+prospective_2,Panel II,mace_mdp,MACE-MDP,,,,0.84835403686276,0.0577446073564278,1.46423414277358,24,1,,,0.790609429506333,0.61588010591082
+prospective_3_canonical,Panel III,mace_mdp,MACE-MDP,,,,0.246295017046906,0.111932370338571,0.34967959320589,20,2,,,0.134362646708336,0.103384576158984

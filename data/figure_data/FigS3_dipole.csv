@@ -1,0 +1,10 @@
+dipole_rmse_D,y,class
+0.6571101591,0,control
+0.5322974737,1,control
+0.5000597948,2,control
+0.2386886883,3,control
+0.2368038467,4,control
+0.1007441146,5,prior
+0.0971243298,6,prior
+0.0851,7,prior
+0.0654691231,8,glider

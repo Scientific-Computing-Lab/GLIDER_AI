@@ -1,0 +1,10 @@
+{
+  "baseline": "frozen MACE-POLAR complex-minus-fragments q/u response",
+  "checkpoint_sha256": "9f65f8dc6ddaff1d631e299cb531376a7da5e68d1bef04f34a2d5073d5ef114b",
+  "experimental_hydration_targets_accessed": false,
+  "n_configurations": 16,
+  "prediction_sha256": "686e7e8566999b17e28e5095e3ff93f01f2724d7056baa44d04a6ec34043dece",
+  "prospective_labels_accessed": false,
+  "reference_observables_accessed": false,
+  "runtime_seconds_excluding_checkpoint_load": 12.67201486194972
+}

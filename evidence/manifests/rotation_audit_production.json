@@ -1,0 +1,14 @@
+{
+  "max_atomic_dipole_rotation_error_e_bohr": 0.00024036318063735962,
+  "max_charge_rotation_error_e": 6.203714292496443e-05,
+  "max_molecular_dipole_rotation_error_debye": 0.005801943204512439,
+  "n_nontrivial_rotations_per_parent": 3,
+  "n_parent_environments": 4,
+  "pass": true,
+  "reference_labels_accessed": false,
+  "thresholds": {
+    "atomic_dipole_e_bohr": 0.0005,
+    "charge_e": 0.0001,
+    "molecular_dipole_debye": 0.01
+  }
+}

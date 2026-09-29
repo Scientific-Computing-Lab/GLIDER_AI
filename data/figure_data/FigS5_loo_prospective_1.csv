@@ -1,0 +1,13 @@
+dataset,omitted_molecule,loo_mean_difference,y
+prospective_1,pros_azaaryl_sulfoxide,-0.205501993992626,0
+prospective_1,pros_cyano_cyclic_acetal,-0.213339293668155,1
+prospective_1,pros_halogen_oxazinanone,-0.199954404577559,2
+prospective_1,pros_heteroaryl_amide,-0.207404552504417,3
+prospective_1,pros_isoxazole_thioether,-0.208847158693071,4
+prospective_1,pros_polyfunctional_oxane,-0.196823088703321,5
+prospective_1,pros_sulfonyl_piperidinol,-0.212557435377058,6
+prospective_1,prospective_diverse_01,-0.191873187025678,7
+prospective_1,prospective_diverse_02,-0.21887885833864,8
+prospective_1,prospective_diverse_03,-0.191711469582554,9
+prospective_1,prospective_diverse_04,-0.192247493356956,10
+prospective_1,prospective_diverse_05,-0.192981765415028,11

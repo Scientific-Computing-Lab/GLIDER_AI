@@ -1,0 +1,58 @@
+{
+  "architecture": "Family C: frozen local q/u ensemble; MACE-MDP inference prior; geometry-conditioned scalar gate; nonnegative site redistribution enforcing global/local dipole identity",
+  "checkpoint_hashes": {
+    "MACE_MDP": "126f8d1602549e6fa0df775c701a5119ddeb0e3738202af8e7aa736de6c2b692",
+    "MACE_POLAR_1_L": "9f65f8dc6ddaff1d631e299cb531376a7da5e68d1bef04f34a2d5073d5ef114b",
+    "MACE_POLAR_1_M": "fab8b8713c832f31a2a853aaa22fd638be8a369cbf5095e6b3e982a18d10e93a"
+  },
+  "comparators_frozen": [
+    "previous_response_candidate",
+    "MACE-MDP_dipole",
+    "MACE-POLAR-1-S",
+    "MACE-POLAR-1-M",
+    "MACE-POLAR-1-L",
+    "AIMNet2",
+    "GFN2-xTB_dipole"
+  ],
+  "critical_artifact_hashes": {
+    "nextgen_response_campaign/audit/FINAL_CURRENT_COMPARATOR_AUDIT.md": "2e16a7704e5f724b52db1c23d526acbdc5dc67f72cd1664a12cd9e0b5212ebd3",
+    "nextgen_response_campaign/config/prospective_candidate_pool.csv": "acbf6c05495e48504935d6c1d2174e353f658b5e6c6230da75a12e00feb063e0",
+    "nextgen_response_campaign/development_pool/configuration_registry.csv": "1482f183d606161154a19d3836645ea630e547847656b49d24fd4a81ec37bfce",
+    "nextgen_response_campaign/frozen_model/consistency_weights.npz": "d4dfb2b012353cd68a3761360aa631b59108d970cb88f45b5fb54bfa93e65867",
+    "nextgen_response_campaign/frozen_model/global_gate.joblib": "d8de947f7ba619cbd952f2af85c3f5ccacc935c70cfe60ad1416ed35ece346a3",
+    "nextgen_response_campaign/frozen_model/local_response_ensemble.pt": "a91d47bf81ab7559cb86ca51168d8f2fbb941d54e349a51b37b513e7cf4c9b8b",
+    "nextgen_response_campaign/src/audit_dipole_failure.py": "4b93faf4beab503639c23947d70c77047d71f8b5fa7ba691522269a4411395f8",
+    "nextgen_response_campaign/src/build_prospective_panel.py": "4805a4d2f3827d26ee3637be856f7d3c190f1aad5aa46facfa4d98c598d4952c",
+    "nextgen_response_campaign/src/crossfit_local_response.py": "e9f7156fa875f14f19911f05535c00a2386f27cd4c0cd6bd585535d70f211eb7",
+    "nextgen_response_campaign/src/develop_family_c.py": "55e8cc588d902c671389dad6d4ace5c03af839757d573b8f9ad090c545cb1b78",
+    "nextgen_response_campaign/src/develop_global_families.py": "f60b40e7c40221a181bba05ba1f4d569543255d3ef163c829390b42c5345f5de",
+    "nextgen_response_campaign/src/freeze_nextgen_campaign.py": "d3d1036d76a0d3d1807517bfb17de545289ce70201ec4f44603ce71148333345",
+    "nextgen_response_campaign/src/merge_archives.py": "5ce5f94de694f6314af59ee8084853f712aa50b36d18dce8afa80cf235dd0579",
+    "nextgen_response_campaign/src/predict_nextgen.py": "5dda730270accdf339b575c19998007cb0f621a479ddb1f9ffabd038e9871884",
+    "nextgen_response_campaign/src/prepare_development.py": "ad629b0ed7745971a0d47ad53f42007ba203f8fefc1a42247a8d7269f7e0fd0a",
+    "nextgen_response_campaign/src/score_nextgen.py": "fe141ee03e91b21ddf09c8fbcb687ff8f8ec8b3270d4ee1d00c996f6f75d84f8",
+    "nextgen_response_campaign/src/select_prospective_panel.py": "b4c7493ed6df803784e6a18f7b36a9f17bbef03e09fa6fa6f19a59d6938d172a",
+    "nextgen_response_campaign/src/summarize_development.py": "cf4edae5b2a7087a2eb4cd08376a330a7da63f26e2a2553b478a15b608e930b0",
+    "nextgen_response_campaign/src/train_final_model.py": "6314cdbaeda2a30bd86b47075d7bd16f1e18736743bba39a83ff03a1ddb7a5ac"
+  },
+  "experimental_hydration_targets_accessed": false,
+  "historical_result_policy": "The prior prospective campaign remains immutable; its opened labels are development-only here.",
+  "mace_mdp_used_at_inference": true,
+  "metrics": {
+    "bootstrap": "100000 molecule-blocked paired replicates; seed 20260814; descriptive not a ranking threshold",
+    "dipole": "square root of mean molecule-mean component MSE in debye",
+    "esp": "mean over molecules of mean configuration response-ESP NRMSE"
+  },
+  "model_selection_complete": true,
+  "new_prospective_identities_selected": false,
+  "new_prospective_predictions_generated": false,
+  "new_prospective_qm_labels_generated_or_accessed": false,
+  "panel_rule": "24 unseen neutral organic chemistries times four deterministic three-water regimes",
+  "platform": "Linux-5.15.0-186-generic-x86_64-with-glibc2.35",
+  "python": "3.11.15",
+  "ranking_rule": "candidate succeeds iff its molecule-mean ESP NRMSE rank and dipole component-RMSE rank are both 1 among eligible frozen comparators",
+  "selection_rule": "target-free 0.7 Morgan plus 0.3 robust RDKit-descriptor max-min; exactly six per preregistered stratum; mandatory F/Cl/Br/I coverage",
+  "status": "COMPLETE_METHOD_AND_PROTOCOL_FREEZE_BEFORE_NEW_PROSPECTIVE_IDENTITY_SELECTION",
+  "timestamp_utc": "2026-08-14T03:19:21Z",
+  "training_pool": "26 development chemistries / 96 environments; includes OLD_PROSPECTIVE_NOW_DEVELOPMENT"
+}

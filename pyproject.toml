@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "glider-response"
+version = "1.0.0"
+description = "Frozen molecular response model and prospective benchmark companion"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26,<3", "pandas>=2.1,<4"]
+authors = [
+  {name = "Gal Oren", email = "galoren@stanford.edu"},
+  {name = "Boris Fain"},
+  {name = "Michael Levitt", email = "levittm@stanford.edu"},
+]
+license = {file = "LICENSE"}
+
+[project.optional-dependencies]
+figures = ["matplotlib>=3.8"]
+model = ["torch>=2.3", "ase>=3.23"]
+test = ["pytest>=8"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["glider"]

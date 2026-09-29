@@ -1,0 +1,10 @@
+{
+  "experimental_hydration_targets_accessed": false,
+  "method": "omegaB97X-D3BJ/def2-TZVPD grid4 SCF 1e-10",
+  "n_configurations": 48,
+  "observable": "CP complex - solute-in-complex-basis - waters-in-complex-basis ESP/dipole",
+  "prospective_identities_accessed": false,
+  "prospective_labels_accessed": false,
+  "registry_sha256": "d8ed35e2b51c88d8023acf32dabb55410686ba3dde89235ac0b7d51413ffa759",
+  "scope": "already-open development configurations only"
+}

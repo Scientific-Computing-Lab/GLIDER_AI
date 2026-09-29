@@ -1,0 +1,9 @@
+label,y,esp_nrmse,dipole_rmse_D,class
+QM site-basis fit,7,0.0309,,ceiling
+GLIDER (locked LOCO),6,0.2945059088,0.0654691231,glider
+Minimal local head,5,0.5325904762,0.2368038467,control
+Richer local head,4,0.5254846004,0.2386886883,control
+MACE-POLAR prior,3,0.5494,0.0851,prior
+Zero response,2,1,0.5322974737,control
+Symmetry-kernel control,1,1.1566839548,0.5000597948,control
+Ridge / same encoder,0,1.1730459811,0.6571101591,control

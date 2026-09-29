@@ -1,0 +1,10 @@
+method,method_label,esp_nrmse,dipole_rmse_D,esp_rank,dipole_rank,glider_esp_improvement_pct,glider_dipole_improvement_pct,glider_esp_molecule_wins,glider_dipole_molecule_wins,inference_information_required,public_frozen_status
+glider,GLIDER,0.42658060581223267,0.22669745000951386,1.0,1.0,0.0,0.0,0.0,0,geometry + atomic identity,frozen before QM
+mace_polar_l,MACE-POLAR-1-L,0.6297064007236949,0.35597881893401384,2.0,6.0,32.257222521165154,36.317152046190785,19.0,15,geometry + atomic identity,public checkpoint; frozen before QM
+mace_polar_m,MACE-POLAR-1-M,0.7090592231369398,0.30633221938200056,3.0,4.0,39.838508280732476,25.996210758745242,19.0,20,geometry + atomic identity,public checkpoint; frozen before QM
+aimnet2,AIMNet2,0.7703828311829171,0.313961253329962,4.0,5.0,44.627451632427814,27.79444991854999,19.0,19,geometry + atomic identity,public checkpoint; frozen before QM
+mace_polar_s,MACE-POLAR-1-S,0.7856847134659317,0.2568690313354539,5.0,3.0,45.70587940671067,11.745900690744604,19.0,18,geometry + atomic identity,public checkpoint; frozen before QM
+zero_response,Zero response,1.0,0.5241947140810221,6.0,8.0,57.34193941877673,56.75319801594292,19.0,19,none,frozen null control
+static_thole,Static q/u + Thole,27.443011511084983,20.92534695749502,7.0,9.0,98.44557655183024,98.91663707908883,20.0,20,geometry + frozen static response parameters,frozen physical control
+mace_mdp,MACE-MDP,,0.2462950170469064,,2.0,,7.956948245388262,,6,geometry + atomic identity,public checkpoint; frozen before QM
+gfn2_xtb,GFN2-xTB,,0.4408982245350686,,7.0,,48.58281630674097,,19,geometry + atomic identity,fixed public method; frozen before QM

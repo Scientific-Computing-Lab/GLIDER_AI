@@ -1,0 +1,16 @@
+campaign,step,event,time_utc
+Prospective I,0,method freeze,2026-08-13 20:54
+Prospective I,1,identity + geometry freeze,2026-08-13 20:59
+Prospective I,2,prediction hash lock,2026-08-13 21:09
+Prospective I,3,reference QM freeze,2026-08-13 22:32
+Prospective I,4,single scoring,2026-08-13 22:42
+Prospective II,0,method/protocol freeze,2026-08-14 03:19
+Prospective II,1,24 identities + geometries,after method freeze
+Prospective II,2,96 prediction hash lock,2026-08-14 03:33
+Prospective II,3,new reference QM,after prediction freeze
+Prospective II,4,single scoring,after reference freeze
+Canonical III,0,protocol preregistration,2026-08-14 17:50
+Canonical III,1,FreeSolv identities + geometries,2026-08-14 18:10
+Canonical III,2,80 prediction hash lock,2026-08-14 19:02
+Canonical III,3,new reference QM,2026-08-14 21:55
+Canonical III,4,single scoring,2026-08-14 22:02

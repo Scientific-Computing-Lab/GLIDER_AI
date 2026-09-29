@@ -1,0 +1,73 @@
+{
+  "campaign": "GLIDER canonical-source prospective validation III",
+  "created_utc": "2026-08-14T17:50:00Z",
+  "scientific_question": "Does frozen GLIDER retain its response-ESP advantage when identities are selected label-blind from pinned FreeSolv rather than an author-designed pool?",
+  "source": {
+    "allowed_columns": ["FreeSolv_ID", "SMILES"],
+    "commit": "6c7d19b4b565537365ffd22006aa2cd4643200c6",
+    "database_version": "0.52",
+    "forbidden_columns": ["experimental hydration free energy", "calculated hydration free energy", "uncertainty", "compound name", "all other properties"],
+    "raw_file_sha256": "2d13f095713bc39b85f85dd7b4e5483fbb12fc694bf253bb1d92a4c4d484f260",
+    "url": "https://raw.githubusercontent.com/MobleyLab/FreeSolv/6c7d19b4b565537365ffd22006aa2cd4643200c6/database.txt"
+  },
+  "selection": {
+    "allowed_elements": ["H", "C", "N", "O", "F", "P", "S", "Cl", "Br", "I"],
+    "descriptor_distance": "min(euclidean(robust_scaled_descriptors)/sqrt(10), 1)",
+    "descriptors": ["molecular_weight", "heavy_atoms", "hbd", "hba", "tpsa", "logp", "rings", "rotatable_bonds", "aromatic_fraction", "heteroatom_count"],
+    "fingerprint": "Morgan radius 2, 2048 bits",
+    "historical_exact_exclusion_count": 50,
+    "maximum_similarity_exclusive": 0.70,
+    "maxmin_distance": "0.70*(1-Tanimoto)+0.30*descriptor_distance",
+    "n_molecules": 20,
+    "public_seed": "GLIDER_CANONICAL_PANEL_3_FREESOLV_V052_20260814",
+    "round_robin_strata": [1, 2, 3, 4, 5],
+    "stratum_1_aromaticity_by_round": ["aliphatic", "aromatic", "aliphatic", "aromatic"],
+    "tie_break": "lexicographic SHA256(FreeSolv_ID|public_seed)"
+  },
+  "panel": {
+    "configurations_per_molecule": 4,
+    "construction": "same frozen ETKDG/MMFF and structured three-water functions as prospective panels I/II",
+    "n_configurations": 80,
+    "n_waters": 3,
+    "regimes": ["equilibrium", "cooperative", "orientation", "compressed"]
+  },
+  "glider": {
+    "checkpoint": "checkpoints/glider_site_response_ensemble.pt",
+    "checkpoint_sha256": "a288afa285128e13cb7a05ba9459f1dce07e79b8638c6e272c2509ae68d7a288",
+    "definition": "original frozen response-supervised model; Family C excluded",
+    "frozen_encoder": "MACE-POLAR-1-M product-basis features",
+    "frozen_prior": "mean of MACE-POLAR-1-M and MACE-POLAR-1-L q/u response"
+  },
+  "comparators": {
+    "AIMNet2_default_member_0_sha256": "f0f7c054539ad3261bd36f9b11c56d12f87cb723e25bea7521755bbd3ec24e28",
+    "GFN2_xTB": "tblite 0.7.0 fixed method",
+    "MACE_MDP_sha256": "126f8d1602549e6fa0df775c701a5119ddeb0e3738202af8e7aa736de6c2b692",
+    "MACE_POLAR_1_L_sha256": "9f65f8dc6ddaff1d631e299cb531376a7da5e68d1bef04f34a2d5073d5ef114b",
+    "MACE_POLAR_1_M_sha256": "fab8b8713c832f31a2a853aaa22fd638be8a369cbf5095e6b3e982a18d10e93a",
+    "MACE_POLAR_1_S_sha256": "e4495612037b3b3312633182882a38a694ecac9ea0be2b9889ac0b2a84a99510",
+    "selection_rule": "unchanged official checkpoints and decoders from final comparator audit; no Panel-III tuning"
+  },
+  "reference": {
+    "basis": "def2-TZVPD",
+    "counterpoise_components": ["full complex", "ghost-basis solute", "ghost-basis three-water cluster"],
+    "functional": "omegaB97X-D3BJ",
+    "grid_level": 4,
+    "recovery": ["ordinary SCF", "same-Hamiltonian density continuation with extended cycles", "zero-level-shift second-order SCF from fragment densities"],
+    "scf_convergence": 1e-10
+  },
+  "observables": ["mutual environment-induced response ESP", "induced full-complex dipole vector"],
+  "metrics": {
+    "bootstrap_replicates": 100000,
+    "bootstrap_seed": 20260814,
+    "bootstrap_unit": "molecule",
+    "dipole": "vector RMSE in Debye over all configurations",
+    "esp": "configuration response-ESP NRMSE, mean within molecule, equal molecule mean"
+  },
+  "integrity": {
+    "experimental_hydration_targets_accessed": false,
+    "geometry_change_after_freeze_permitted": false,
+    "model_change_permitted": false,
+    "prediction_before_reference_required": true,
+    "prospective_response_labels_exist": false
+  }
+}

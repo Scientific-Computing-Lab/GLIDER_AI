@@ -1,0 +1,352 @@
+[
+  {
+    "path": "figures/Fig1.pdf",
+    "sha256": "5c5e0b5ef786374b7bd5c9f84b12ca8ffb445fcd5498740831b16d1a97922150",
+    "bytes": 614105
+  },
+  {
+    "path": "figures/Fig1.png",
+    "sha256": "a03c62e2faa8cace8ad9e5e8aa5cf2b88071dbb0f751361bfa4f7cfbfb44ce19",
+    "bytes": 1076959
+  },
+  {
+    "path": "figures/Fig1.svg",
+    "sha256": "846a87989f0e51c201a0e242160d497f41b4c8d2189f79e67ad1b67758663f10",
+    "bytes": 946401
+  },
+  {
+    "path": "figures/Fig2.pdf",
+    "sha256": "42a1aeca1a63dd55cf98931b8505ef6daad64dbf42abf6918c2f41955eb12648",
+    "bytes": 33642
+  },
+  {
+    "path": "figures/Fig2.png",
+    "sha256": "bab64e99c8a392bf4d5a7b86e0e863672b886d0aa2e7bb682694b80476ca6519",
+    "bytes": 561895
+  },
+  {
+    "path": "figures/Fig2.svg",
+    "sha256": "05450a10fc56f5072feae0e540684015b3e81096fff4196fb8077e4607c43842",
+    "bytes": 31655
+  },
+  {
+    "path": "figures/Fig3.pdf",
+    "sha256": "e20c3e086b7665116c292052e871b17917a1dc77f397bf769254020759a2365c",
+    "bytes": 24859
+  },
+  {
+    "path": "figures/Fig3.png",
+    "sha256": "24659bc798a569af3cc277a42dc722cf7aa70160f744b9934dfda21efb809c54",
+    "bytes": 470813
+  },
+  {
+    "path": "figures/Fig3.svg",
+    "sha256": "5639f34b23c47057b642281b1ec54b2b8ec7103dfc73060e5aaae307787b6279",
+    "bytes": 22935
+  },
+  {
+    "path": "figures/Fig4.pdf",
+    "sha256": "56da7012d68ced71c7e07b8a5ebc7d83da097d1c88e79fc6d9640582f34c67ec",
+    "bytes": 34274
+  },
+  {
+    "path": "figures/Fig4.png",
+    "sha256": "ed5d2852f1e3a35c4b87d2437ca7cf8da70f2e907054698b6669cb8b89b62e5f",
+    "bytes": 498536
+  },
+  {
+    "path": "figures/Fig4.svg",
+    "sha256": "17f77820a980a7cefa53db89f618830dc19978ba8522f4dcc4f1a19390789817",
+    "bytes": 58294
+  },
+  {
+    "path": "figures/Fig5.pdf",
+    "sha256": "7adee37d34d05020c369a3f7ad721da6612c016ae9b70767b583142d989d4657",
+    "bytes": 32864
+  },
+  {
+    "path": "figures/Fig5.png",
+    "sha256": "2d9d94b9c66d2eb14c0ddcd3b56442579e1a909a4a5192c676b43a0ccc6bbb1f",
+    "bytes": 591305
+  },
+  {
+    "path": "figures/Fig5.svg",
+    "sha256": "2287f5998bb7cad605cf890448c5b830f6a54c97f2c60e20ed07ff4830b679bb",
+    "bytes": 67646
+  },
+  {
+    "path": "figures/Fig6.pdf",
+    "sha256": "f9063f3299c610b794dda1b853c71a98a40c9a2c7c959d00399d5e49fb26b274",
+    "bytes": 176368
+  },
+  {
+    "path": "figures/Fig6.png",
+    "sha256": "f2b69952c21b2ce1280ca2d6b82354d8a873057ba4a8301924ed55a67f15453f",
+    "bytes": 625245
+  },
+  {
+    "path": "figures/Fig6.svg",
+    "sha256": "013c652fc7b29b26f5b402514dfc2342880fedb0dd42abb02e9bf0b5734f5bd1",
+    "bytes": 247323
+  },
+  {
+    "path": "figures/FigS1.pdf",
+    "sha256": "00e462c02747f393d734ab5db0fd23d56c67627d285a388447c89e613849854e",
+    "bytes": 206253
+  },
+  {
+    "path": "figures/FigS1.png",
+    "sha256": "5150d842024c501f85712ff10d02c778019a25affd79d458149f5120238281c7",
+    "bytes": 622411
+  },
+  {
+    "path": "figures/FigS1.svg",
+    "sha256": "a71c8f73228e2b0e0d6a04fef0dde53b0ef2f2badf0e5f9a185eb1a7d35bd36b",
+    "bytes": 327463
+  },
+  {
+    "path": "figures/FigS2.pdf",
+    "sha256": "427df06b8ea7a27af8b8db8cebd9eb54d9ac3cc413c525ba336c3cddcecca906",
+    "bytes": 22711
+  },
+  {
+    "path": "figures/FigS2.png",
+    "sha256": "9af50dbbe39f195780f363c24647855d96d79dbd191770836891665c5f8ec4da",
+    "bytes": 365483
+  },
+  {
+    "path": "figures/FigS2.svg",
+    "sha256": "a512ffdc9d4850f5f652ac0045ec2a6bffcfff8a67bd6c05b41b41707281f86f",
+    "bytes": 25166
+  },
+  {
+    "path": "figures/FigS3.pdf",
+    "sha256": "91892b76c0bd1117707ebecc18b763d1b1b83d79f903b37c3bb0c88fa00b3472",
+    "bytes": 21958
+  },
+  {
+    "path": "figures/FigS3.png",
+    "sha256": "70989178c9d6148a69fdab3fd7fda15a8f262af14ec24c389988115227c34720",
+    "bytes": 376634
+  },
+  {
+    "path": "figures/FigS3.svg",
+    "sha256": "daaca9885a24c2b8f3aa6d9b7b5bc8302fffe33663774768e6aae18881292acd",
+    "bytes": 25156
+  },
+  {
+    "path": "figures/FigS4.pdf",
+    "sha256": "57797125121e034f4393ec3bc61f93fd57900975344fac893574a05f24f1f3cb",
+    "bytes": 43092
+  },
+  {
+    "path": "figures/FigS4.png",
+    "sha256": "01d8b4695dc6654b3c6cc9830eeeafbc6e6744f49957149dee0189dc6d240eb5",
+    "bytes": 766821
+  },
+  {
+    "path": "figures/FigS4.svg",
+    "sha256": "0f5e16d934cb1d2ef405ac12e8a12a2a5e9c6da8691d8f320ff475eab4f7c14a",
+    "bytes": 77756
+  },
+  {
+    "path": "figures/FigS5.pdf",
+    "sha256": "79dee1effc6135e82f4bc792e9b9c09db00e04201059aa8b3c8cdc5f2eb42200",
+    "bytes": 24565
+  },
+  {
+    "path": "figures/FigS5.png",
+    "sha256": "fe88e13c36ba3577dd0ee9c8f6a724f42b504658fbbae5611a09a61a93db0e93",
+    "bytes": 408566
+  },
+  {
+    "path": "figures/FigS5.svg",
+    "sha256": "f54deefc4f6f62295a8727211bd68d5a411669831fb03ac203ecfd4c92101e7c",
+    "bytes": 56877
+  },
+  {
+    "path": "figures/FigS6.pdf",
+    "sha256": "425455bd21ec395620dafff2f6428f27c701f01125923e359ba2d84ba4bf0442",
+    "bytes": 868063
+  },
+  {
+    "path": "figures/FigS6.png",
+    "sha256": "cfe72fc9cb08846382a1901afdf7215847b665172d833cc3eab70732ad86fac9",
+    "bytes": 1402643
+  },
+  {
+    "path": "figures/FigS6.svg",
+    "sha256": "71b742ec0d2dd7460e4581376771844e794d627f7ec9aaec6fb10758c1bef4f8",
+    "bytes": 1567829
+  },
+  {
+    "path": "figures/FigS7.pdf",
+    "sha256": "ede4e38bfedc4592d6f2ceb40ffc7b5543ca3e066b848d048490677deb7a4505",
+    "bytes": 21284
+  },
+  {
+    "path": "figures/FigS7.png",
+    "sha256": "a9ca06e7df8f81ca8b16f7a4759d7c33caffcd9773123d61a65a1335fb0b620b",
+    "bytes": 161666
+  },
+  {
+    "path": "figures/FigS7.svg",
+    "sha256": "593b42c0e38721c2c1b6968e2fb6d1e292bfc66cf06d0a47a68f116ab6ddc402",
+    "bytes": 60745
+  },
+  {
+    "path": "figures/assets/Fig1_full.png",
+    "sha256": "f358cc629ea1fd7dd964f213551562980d3d9e3a47ab0b92fb3edd9ccd9e3cdb",
+    "bytes": 125834
+  },
+  {
+    "path": "figures/assets/Fig1_solute_active.png",
+    "sha256": "91aa091680669e4649ec388afc71d6b86835ab5ba3c8d46aa6f51784d47fe945",
+    "bytes": 120545
+  },
+  {
+    "path": "figures/assets/Fig1_waters_active.png",
+    "sha256": "1cd129e0ace7d77e9ec19f1b0e23ff3968ae3ae14966048bfa81bfbd317ef6a7",
+    "bytes": 106885
+  },
+  {
+    "path": "figures/assets/Fig6_liquid_cluster.png",
+    "sha256": "20966d4c862c6982f695419655f2a7d0a616673e908fd7789b01651e7c312a5d",
+    "bytes": 190188
+  },
+  {
+    "path": "figures/assets/FigS1_full.png",
+    "sha256": "b5c266424e3c8ffb758572b578dff22db05ebba20776deb991166a2e5e5a9c46",
+    "bytes": 153210
+  },
+  {
+    "path": "source_data/FIGURE_SOURCE_MAP.csv",
+    "sha256": "884ed476bd77b3be23be385c6fe398971fa9e37834975c3b1b74d6a431fc545e",
+    "bytes": 1492
+  },
+  {
+    "path": "source_data/Fig1_geometry.csv",
+    "sha256": "e5edbfb5f875c999e3c5f073e66f0dbf0a3d6650124d13e55f0350a54d4dc2e4",
+    "bytes": 2038
+  },
+  {
+    "path": "source_data/Fig1_physical_response.csv",
+    "sha256": "e1f156b9ed6d2aba9b1c85670bd183077bca8d8550ff36800d61c9d6f296ba24",
+    "bytes": 197767
+  },
+  {
+    "path": "source_data/Fig2_development_ablation.csv",
+    "sha256": "03c0b04fc7143f87cc41fd31d24387bdfca32da126401d80e12527a4054d4187",
+    "bytes": 657
+  },
+  {
+    "path": "source_data/Fig3_prospective_chronology.csv",
+    "sha256": "35965f3081f9b61f7dfd75e3d5bfad733eded99ac1e7e772d0ace4ea6c1fd90b",
+    "bytes": 545
+  },
+  {
+    "path": "source_data/Fig4_method_bootstrap.csv",
+    "sha256": "aad7f90a289ae16ae7f8203f0080356a2040ace3c25d907f21912874d8491323",
+    "bytes": 3817
+  },
+  {
+    "path": "source_data/Fig4_paired_esp_effects.csv",
+    "sha256": "72b73633ce8bd380ade27ed647b6a9ac65925dd4866be3893f0a9c215695732e",
+    "bytes": 862
+  },
+  {
+    "path": "source_data/Fig5_chemistry_effects.csv",
+    "sha256": "06239157f75a98b1ae0a8d53761708d068b83577f59b09f336c9ab75fd1a944c",
+    "bytes": 2297
+  },
+  {
+    "path": "source_data/Fig5_molecule_pairs.csv",
+    "sha256": "52227b27a22a9d3f9af345d1bdf8ba7857e164d593439b4a12a3dcd8c7110926",
+    "bytes": 4297
+  },
+  {
+    "path": "source_data/Fig5_nonwater_effects.csv",
+    "sha256": "bdd227c6dba9c46c4ee501c5f4c6ef28799c02dee809511f32c0e6508e3b98ac",
+    "bytes": 534
+  },
+  {
+    "path": "source_data/Fig5_nonwater_molecule_pairs.csv",
+    "sha256": "5a02a53f8fa8c09a904058ec3f27212bae2302fd3559240225aea0e10d5b474b",
+    "bytes": 1009
+  },
+  {
+    "path": "source_data/Fig5_nonwater_per_case_metrics.csv",
+    "sha256": "b239672b131dc1958da4289e335044cc4eadd88c79492c7129e9266a5922eeb2",
+    "bytes": 167866
+  },
+  {
+    "path": "source_data/Fig5_regime_effects.csv",
+    "sha256": "4e9a350131b8d94da59c623f4f151cf4c5aef8ebf39f2f5766f33efcd269560e",
+    "bytes": 1312
+  },
+  {
+    "path": "source_data/Fig6_liquid_geometry.csv",
+    "sha256": "91b914f8aa2468bae3e55af48ce573141114a12d9754ee078ba40f95e94eeb90",
+    "bytes": 2598
+  },
+  {
+    "path": "source_data/Fig6_liquid_method_bootstrap.csv",
+    "sha256": "1bce8d36775c881bc9a4cf848ae669ac053b028fd40df1f323562871b4dc8b4e",
+    "bytes": 1444
+  },
+  {
+    "path": "source_data/Fig6_liquid_molecule_pairs.csv",
+    "sha256": "89bc1ffe15a1e75e11afe134c9a622fa399b69088fc2513afd34abed44ca1c6d",
+    "bytes": 416
+  },
+  {
+    "path": "source_data/FigS1_geometry.csv",
+    "sha256": "8f438ad5b24bc4ff5258ff923fae059c9f43e10f2e5efa4c4a3733223ea96707",
+    "bytes": 2366
+  },
+  {
+    "path": "source_data/FigS1_probe_geometry.csv",
+    "sha256": "be0f576f7f50f60c12e605b84d1d28c90dee98693c6166f8a6ca8b4c282d4d9b",
+    "bytes": 108822
+  },
+  {
+    "path": "source_data/FigS2_representation_ceiling.csv",
+    "sha256": "356e51ccc8fdf2ec4d55ed5e2723003f40ff8f87516840ba8a7c3c299357cfc7",
+    "bytes": 5464
+  },
+  {
+    "path": "source_data/FigS3_complete_development_controls.csv",
+    "sha256": "03c0b04fc7143f87cc41fd31d24387bdfca32da126401d80e12527a4054d4187",
+    "bytes": 657
+  },
+  {
+    "path": "source_data/FigS4_all_molecule_pairs.csv",
+    "sha256": "d7ce8889b17c631f9834364ce570b7e57970c58183432f2c0e2ac7684d81937f",
+    "bytes": 4297
+  },
+  {
+    "path": "source_data/FigS5_bootstrap_histograms.csv",
+    "sha256": "6c4d65726d62ce5d8b478fa4062f0636f19f8aeafc4e2e0ff6620c4dc37e1077",
+    "bytes": 12845
+  },
+  {
+    "path": "source_data/FigS5_leave_one_out.csv",
+    "sha256": "87edc4dfce30f0e814dacb8b56aeb10c1f366953fed8583c1299983bbbc32d35",
+    "bytes": 3345
+  },
+  {
+    "path": "source_data/FigS6_response_fields.csv",
+    "sha256": "5ee38b96563d37103d8a73a47f385d59cde919e6de9e412f19f975249fb6e85f",
+    "bytes": 376020
+  },
+  {
+    "path": "source_data/FigS7_comparator_coverage.csv",
+    "sha256": "e693ca70e8ff4adcb9d45bffbeb1a445675557277e7e20ef741c227978810371",
+    "bytes": 378
+  },
+  {
+    "path": "source_data/SourceData.xlsx",
+    "sha256": "1139c292c4e19c1ee58aa11af862d77a002153cd172eca0cb13de5222b05cbf2",
+    "bytes": 381794
+  }
+]

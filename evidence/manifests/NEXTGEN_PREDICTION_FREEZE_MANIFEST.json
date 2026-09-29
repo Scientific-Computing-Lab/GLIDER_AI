@@ -1,0 +1,31 @@
+{
+  "status": "ALL_CANDIDATE_AND_COMPARATOR_PREDICTIONS_FROZEN_BEFORE_REFERENCE_QM",
+  "timestamp_utc": "2026-08-14T03:33:00Z",
+  "method_freeze_manifest_sha256": "4cad09532d6e87800298fa51aa9f529fe003f3f0eb555d489ffc037e96c5028b",
+  "selected_molecules_sha256": "9f1f6bee7ba39e80fed65ddf945cbd35a9f2cb1dfdc7d46fca84f76a6e58c48c",
+  "configurations_sha256": "a97a89b27b005a39343e15b70c6a32cda99519fe7c6259201d95a46fe4d4b881",
+  "configuration_registry_sha256": "aaa82db645af9222c9729edc02f4c59a3dc599ad67b91587c6bb07954e3f4443",
+  "feature_archive_sha256": "80abe4516185c4fc8f7722617245a7d21e4b61c08acfd9c6350635730bf9a769",
+  "base_ml_prior_sha256": "a7d1fa3a259649e73525896829e2f92f2daf38ce664d79f4a2412c812694c618",
+  "raw_mace_polar_response_hashes": {
+    "S": "785d87d36f182f1cd7c0fb611cc1eef3968fb05a804f1197969f12f3190afa5c",
+    "M": "3eef1142c0927ff5a05e2408e53c8ecd41b2e51336f440e787ee2a9774650a9a",
+    "L": "67caf01db05e4c24ba2ab040bc5d096db12eb02eb0a31d11cdde6f91b04e9e6c"
+  },
+  "prediction_directory_aggregate_hashes": {
+    "candidate": "56cbef222c404e3f64a7156e8f4d71b6cc392436192a1c22d25fde55f2a6172e",
+    "previous_candidate": "14924acf14cc25548bd7a3674b166c4ff40181401416c833b425669f77fe742b",
+    "MACE_MDP": "80bb1ba8514b023a93fa49eba7686afc03fc2a47b2b1f00509140b94d2692ba8",
+    "MACE_POLAR_1_S": "009c9e33e0536973d570a184de79298563736a1fc3c39c7d8dfd647cf7e04ad2",
+    "MACE_POLAR_1_M": "2257050f1585ada66cb225bd19cdf01431de3a1da7eeb55e3da8dc488f574725",
+    "MACE_POLAR_1_L": "f3e66168daadcce0a05bbf62ee38644980c9f37eb47ff2069ad86beb61781833",
+    "AIMNet2": "dfa6166c45e9745cc001394a4854dad5f3b00f9b63a704b268506b74bd29d32f",
+    "GFN2_xTB": "33580205fb803e90d15fc6f4cacf87ac973f2824cea87fbf697884f49b786a93"
+  },
+  "n_molecules": 24,
+  "n_configurations": 96,
+  "all_prediction_programs_report_reference_targets_accessed": false,
+  "reference_qm_generated_or_opened": false,
+  "experimental_hydration_targets_accessed": false,
+  "chronology_note": "Legacy comparator audit templates contain generic after-label wording inherited from the closed old campaign. Their explicit prospective_targets_accessed fields are false here; execution and this manifest precede creation of the new QM reference directory."
+}

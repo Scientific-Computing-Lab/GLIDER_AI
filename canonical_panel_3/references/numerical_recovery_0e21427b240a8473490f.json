@@ -1,0 +1,22 @@
+{
+  "config_id": "canonical_p3__mobley_2727678__cluster_3water__equilibrium",
+  "density_output": "/dev/shm/p3_recovery/converged_solute_026.npy",
+  "density_sha256": "6e7e47571334b01ec757e0a72b594e7c38e20cda54f50d3bba013881d083f419",
+  "excluded_or_replaced": false,
+  "final_protocol": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 conv1e-10 zero shift",
+  "final_scf_converged": [
+    true,
+    true,
+    true
+  ],
+  "hamiltonian_or_reference_change": false,
+  "observable_file": "0e21427b240a8473490f.npz",
+  "observable_sha256": "1e3142b095cc4947346180272f6a4a4f2a1099900bbdf8e1b872aeadf7b242f7",
+  "runtime_seconds": 197.50023422611412,
+  "solver_only_change": true,
+  "solver_routes": [
+    "exact zero-shift second-order SCF",
+    "zero-shift DIIS",
+    "zero-shift DIIS"
+  ]
+}

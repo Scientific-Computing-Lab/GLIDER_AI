@@ -1,0 +1,16 @@
+{
+  "config_id": "prospective__prospective_diverse_02__cluster_3water__compressed",
+  "excluded_or_replaced": false,
+  "final_protocol": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 conv1e-10 zero level shift",
+  "final_scf_converged": [
+    true,
+    true,
+    true
+  ],
+  "hamiltonian_or_reference_change": false,
+  "observable_file": "9e97340e82423809c14e.npz",
+  "observable_sha256": "05690f57b1719d173a34895806d8bd54ab18b2d8a50ba3bf7d1392a374d80936",
+  "recovery": "CPU second-order orbital optimization for iodine solute initial density; final GPU SCFs exact",
+  "runtime_seconds_including_recovery": 1499.153152704239,
+  "solver_only_change": true
+}

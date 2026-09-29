@@ -1,0 +1,8 @@
+{
+  "baseline": "Gasteiger/TIP3P permanent charges + fixed element polarizabilities + Thole-0.39 SCF dipoles",
+  "experimental_hydration_targets_accessed": false,
+  "n_configurations": 80,
+  "per_query_qm_used": false,
+  "prediction_sha256": "6987c5e67f6b23e9d5e50463237c88ec47052ccbc473f07b4ea66b1b405af3ab",
+  "reference_labels_accessed": false
+}

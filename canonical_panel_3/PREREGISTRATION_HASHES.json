@@ -1,0 +1,10 @@
+{
+  "FROZEN_PROTOCOL.json": "5f4b1109c4c51a79f0b2823f76ca5cd0e324c2dce431dce64e857f9e5a896b45",
+  "PREREGISTRATION_ERRATUM.md": "4f0fa8df17bbfab2d85df4334b31c7905cb811c33d76a7a1d037edf3f07ef29a",
+  "PREREGISTRATION.md": "df9c9918a98a74de71a5fbf88015356efd62bacced3e2ee4b7dfac0a1ec50cb5",
+  "created_utc": "2026-08-14T17:51:11Z",
+  "scripts/build_panel.py": "f01765129c834177dbe63312a5c1fe33219d37acda0819a1c5995de32236b8ea",
+  "scripts/extract_freesolv_identities.py": "a393f8cbdfba91058325011704def6af758ba88a7a879b7db12e6d4624427397",
+  "scripts/geometry.py": "7c23635f51272478abf6860cf34e731af820df5cc9d43b75d2d33a96c97d3b78",
+  "scripts/select_identities.py": "88b76f604afa013cafb8541de08786c81d1733b4348cca471c1e119894425871"
+}

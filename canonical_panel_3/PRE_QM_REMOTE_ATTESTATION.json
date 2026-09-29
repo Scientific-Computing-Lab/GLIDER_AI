@@ -1,0 +1,13 @@
+{
+  "all_predictions_manifest_sha256": "3dc5641a289f48118e0e372c341286573d4a381a2cf2ea9b7ae2b2b80ec8c73e",
+  "all_predictions_tree_sha256": "34336a57e69eb8728aa9211313b802a8fadd2be54d5fc62d63f2146362ca70dc",
+  "audit_status": "PASS",
+  "audit_time_utc": "2026-08-14T19:04:00Z",
+  "geometry_sha256": "ec62f08d1e8e2ff7ba1b458ef9cf78c5fda957f96437e7c34c854157528152ee",
+  "glider_checkpoint_sha256": "a288afa285128e13cb7a05ba9459f1dce07e79b8638c6e272c2509ae68d7a288",
+  "prediction_freeze_commit": "f9a87b1d5a91a45f595ccd1891f59ec8d9445fea",
+  "reference_directory_existed_at_audit": false,
+  "reference_response_labels_existed_at_audit": false,
+  "remote_branch": "origin/canonical-panel-3",
+  "remote_prediction_freeze_verified": true
+}

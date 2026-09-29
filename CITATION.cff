@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "Please cite the accepted GLIDER workshop paper when using this repository."
+title: "GLIDER: molecular response, kept spatial"
+type: software
+authors:
+  - family-names: Oren
+    given-names: Gal
+    email: galoren@stanford.edu
+  - family-names: Fain
+    given-names: Boris
+  - family-names: Levitt
+    given-names: Michael
+    email: levittm@stanford.edu
+date-released: 2026-09-29
+repository-code: https://github.com/Scientific-Computing-Lab/GLIDER_AI
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "Sparse Supervision Turns Polar Pretraining into Transferable Molecular Response Fields"
+  authors:
+    - family-names: Oren
+      given-names: Gal
+    - family-names: Fain
+      given-names: Boris
+    - family-names: Levitt
+      given-names: Michael
+  conference:
+    name: 2nd SIMBIOCHEM Workshop at NeurIPS 2026
+  date-published: 2026-09-28

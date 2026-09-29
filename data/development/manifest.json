@@ -1,0 +1,23 @@
+{
+  "candidate_registry_sha256": "2c07d8fed57f00e8c6e858b775cef8a71296c114d40071ad0d528660b70275e6",
+  "combined_configurations_sha256": "16b696174c0dcb35ab01a6a721edc15a1b943ba88e79a191bf5ad90ab428cf6a",
+  "configuration_registry_sha256": "1482f183d606161154a19d3836645ea630e547847656b49d24fd4a81ec37bfce",
+  "experimental_hydration_targets_accessed": false,
+  "n_chemistries": 26,
+  "n_configurations": 96,
+  "n_old_prospective_chemistries": 12,
+  "new_prospective_labels_accessed": false,
+  "observable_registry_sha256": "d83e2c613ef6a1be40ee0c2591becf6402d8e15f5587207a6da3baeb6810426b",
+  "old_prospective_status": "OLD_PROSPECTIVE_NOW_DEVELOPMENT",
+  "source_hashes": {
+    "/dev/shm/a1_response_campaign/cp_response_direct_eight/observable_registry.csv": "2abdc24276677e627a451c7f405524255cd5ea1706aa0e28f21db63443ac163e",
+    "/dev/shm/a1_response_campaign/development_selection/direct_eight_configurations.extxyz": "6fbc2549f3bec7c69ff132cca1aadd427a7c6473e12625adc0ec4d2bae54ef23",
+    "/dev/shm/a1_response_campaign/development_selection/stress_six_configurations.extxyz": "1a9e8399f89fc7969e73705394e03fdb7072c650e1b82c5f53014239c87894b4",
+    "/dev/shm/a1_response_campaign/frozen_candidate/development_predictions_v2/prediction_registry.csv": "8da08c7b22e242342289bf0376483cf5b4943e1bc684f32a80092b2262128b09",
+    "prospective_response_sota/frozen_failure_release/panel/configurations.extxyz": "8e3fcc4799bd02971930184b33b5d28e2980f0b24ff5c367fda7045d219c0c20",
+    "prospective_response_sota/frozen_failure_release/predictions/candidate/prediction_registry.csv": "095a839ea0b0456b99eb1bb2a30d8ce650ad87a04ef819c88583b4955781bd1a",
+    "prospective_response_sota/frozen_failure_release/references/observable_registry.csv": "d8ed35e2b51c88d8023acf32dabb55410686ba3dde89235ac0b7d51413ffa759",
+    "sota_lockin_campaign/data/development_nearfield_response/observable_registry.csv": "97761bd9dbc6c154429573e08233790b5eef167384d3054c6f73b386eecdd92d"
+  },
+  "status": "DEVELOPMENT_ONLY"
+}

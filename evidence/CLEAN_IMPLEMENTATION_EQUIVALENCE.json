@@ -1,0 +1,46 @@
+{
+  "purpose": "Numerical equivalence of the curated cached-feature inference path to the byte-preserved historical GLIDER implementation",
+  "date_utc": "2026-08-14",
+  "clean_entry_point": "scripts/benchmark/predict_from_features.py",
+  "frozen_response_head_source": "evidence/frozen_source/prospective_1/response_learning.py",
+  "checkpoint": "checkpoints/glider_site_response_ensemble.pt",
+  "checkpoint_sha256": "a288afa285128e13cb7a05ba9459f1dce07e79b8638c6e272c2509ae68d7a288",
+  "panels": {
+    "prospective_1": {
+      "n_configurations": 48,
+      "frozen_prediction_tree_sha256": "b3d30548edc412780828ded1ef3b0619cb62082a22d60cb3b73b407146e6fd5e",
+      "feature_sha256": "d6b44f0af012ff9d4af04f8b47b3b37589df5dceda776cf6e4ee4148c6162d39",
+      "base_prediction_sha256": "a95d1cb075ba775dc586273afe405aff7ea213ce209579bba9c6bd4409f98018",
+      "max_absolute_discrepancy": {
+        "probe_coordinates_angstrom": 0.0,
+        "response_esp_hartree_per_e": 7.936359902593892e-17,
+        "response_dipole_debye": 0.0,
+        "induced_charge_e": 0.0,
+        "site_dipole_e_bohr": 0.0
+      }
+    },
+    "prospective_2": {
+      "n_configurations": 96,
+      "frozen_prediction_tree_sha256": "b72f77fb9e739016144d29e01e4e84ddfcbd26acf3f6c771b6c47a0a105a2139",
+      "feature_sha256": "80abe4516185c4fc8f7722617245a7d21e4b61c08acfd9c6350635730bf9a769",
+      "base_prediction_sha256": "a7d1fa3a259649e73525896829e2f92f2daf38ce664d79f4a2412c812694c618",
+      "max_absolute_discrepancy": {
+        "probe_coordinates_angstrom": 0.0,
+        "response_esp_hartree_per_e": 7.505386156320126e-10,
+        "response_dipole_debye": 1.5255122787216635e-7,
+        "induced_charge_e": 6.9849193e-10,
+        "site_dipole_e_bohr": 4.1909516e-9
+      }
+    },
+    "canonical_panel_3": {
+      "n_configurations": 80,
+      "generated_by_clean_entry_point": true,
+      "frozen_prediction_tree_sha256": "1a7c3caa15c99412f5bbcedecef0c7eedad4754337d71e3679e2b73341dd7179",
+      "feature_sha256": "0888b4aada22fbe46055bfada79264898b659f3fbbae53936fbc6d31849a5099",
+      "base_prediction_sha256": "673905978ccebb6cc2076bad645f8cbf24bea1525efd2395e3b712d25f4463c4",
+      "deterministic_repeat_maximum_absolute_discrepancy": 0.0
+    }
+  },
+  "interpretation": "The release implementation reproduces every stored prospective prediction. Panel-I differences are zero or floating-point roundoff; Panel-II differences remain below 1.6e-7 D and 7.6e-10 Eh/e and arise from the stored float precision. Canonical Panel III was generated directly with the release entry point and repeated deterministically with zero stored-output discrepancy.",
+  "reference_labels_used": false
+}

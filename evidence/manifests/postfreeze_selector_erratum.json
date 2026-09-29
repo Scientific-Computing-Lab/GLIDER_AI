@@ -1,0 +1,11 @@
+{
+  "affected_artifact": "src/select_five_prospective.py",
+  "algorithm_changed": false,
+  "change": "Cast Mordred numeric/boolean descriptor frame to float before quartile arithmetic.",
+  "labels_accessed_before_fix": false,
+  "model_or_threshold_changed": false,
+  "new_sha256": "e2745f60e5a1bdc57dcfccc65e6f6c8373a1fefe2ad1c7e037b635466acdbed6",
+  "old_sha256": "5af1cad78cd0fb7f18d5064c4ba2c8ac3ad25b84880d9340fe2bc1e5c56b907d",
+  "selection_output_created_before_fix": false,
+  "status": "MECHANICAL_IMPLEMENTATION_ERRATUM"
+}

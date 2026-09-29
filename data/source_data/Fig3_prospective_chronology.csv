@@ -1,0 +1,19 @@
+panel,identity_source,molecules,configurations,step_1,step_2,step_3,step_4,step_5
+Panel I,Designed stress panel,12,48,"method +
+protocol freeze","identity +
+geometry freeze","prediction
+hash lock","reference
+QM","one-time
+score"
+Panel II,Independent larger panel,24,96,"method +
+protocol freeze","identity +
+geometry freeze","all-model
+prediction lock","reference
+QM","one-time
+score"
+Panel III,FreeSolv identity source,20,80,"protocol
+preregistration","label-blind
+public identities","all-model
+prediction lock","reference
+QM","one-time
+score"

@@ -1,0 +1,17 @@
+{
+  "algorithm": "frozen deterministic ETKDG/MMFF plus three-water physical motif generator",
+  "configuration_sha256": "a97a89b27b005a39343e15b70c6a32cda99519fe7c6259201d95a46fe4d4b881",
+  "counts_by_regime": {
+    "compressed": 24,
+    "cooperative": 24,
+    "equilibrium": 24,
+    "orientation": 24
+  },
+  "experimental_hydration_targets_accessed": false,
+  "freeze_manifest_sha256": "4cad09532d6e87800298fa51aa9f529fe003f3f0eb555d489ffc037e96c5028b",
+  "n_configurations": 96,
+  "n_molecules": 24,
+  "registry_sha256": "aaa82db645af9222c9729edc02f4c59a3dc599ad67b91587c6bb07954e3f4443",
+  "response_labels_generated_or_accessed": false,
+  "selected_molecules_sha256": "9f1f6bee7ba39e80fed65ddf945cbd35a9f2cb1dfdc7d46fca84f76a6e58c48c"
+}

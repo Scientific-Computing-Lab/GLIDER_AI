@@ -1,0 +1,15 @@
+{
+  "chronology_disclosure": "External fixed public method executed after references existed with no target-label adaptation.",
+  "classification": "valid geometry-only induced-dipole comparator; cannot enter ESP ranking",
+  "dipole_definition": "direct converged GFN2-xTB molecular dipole difference in e*bohr, converted to Debye",
+  "esp_exclusion_reason": "tblite exposes total molecular multipoles and Mulliken charges but not the complete atom-resolved anisotropic GFN2 electrostatic density; a point-charge ESP would be an unofficial proxy",
+  "inference_definition": "full complex minus isolated solute minus isolated three-water cluster",
+  "max_abs_net_response_mulliken_charge_e": 8.999745393367675e-14,
+  "method": "GFN2-xTB via official tblite",
+  "n_configurations": 80,
+  "prospective_targets_accessed": false,
+  "response_esp_available": false,
+  "runtime_seconds": 5.9380668009398505,
+  "tblite_version": "0.7.0",
+  "training_or_tuning_performed": false
+}

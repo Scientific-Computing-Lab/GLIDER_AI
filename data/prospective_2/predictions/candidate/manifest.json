@@ -1,0 +1,20 @@
+{
+  "base_prediction_sha256": "a7d1fa3a259649e73525896829e2f92f2daf38ce664d79f4a2412c812694c618",
+  "configuration_sha256": "a97a89b27b005a39343e15b70c6a32cda99519fe7c6259201d95a46fe4d4b881",
+  "experimental_hydration_targets_accessed": false,
+  "feature_sha256": "80abe4516185c4fc8f7722617245a7d21e4b61c08acfd9c6350635730bf9a769",
+  "format": "nextgen-family-c-predictions-v1",
+  "max_abs_net_charge_e": 9.051291272044182e-09,
+  "max_dipole_consistency_error_D": 7.207957693525255e-07,
+  "mdp_registry_sha256": "96d2c275b75cbb5daa165c8ca8cedf93e380e236d75185c32a575c60c375558f",
+  "model_hashes": {
+    "NEXTGEN_FREEZE_MANIFEST.json": "dc8e101ff75cb95cbf00c475df62e3f1fb650170a7b2c71df3cec3438f9801ad",
+    "consistency_weights.npz": "d4dfb2b012353cd68a3761360aa631b59108d970cb88f45b5fb54bfa93e65867",
+    "global_gate.joblib": "d8de947f7ba619cbd952f2af85c3f5ccacc935c70cfe60ad1416ed35ece346a3",
+    "local_response_ensemble.pt": "a91d47bf81ab7559cb86ca51168d8f2fbb941d54e349a51b37b513e7cf4c9b8b"
+  },
+  "n_configurations": 96,
+  "prediction_registry_sha256": "f63246524548aece167174935f644c3d29e128871521a9e435a9243d79ddcf0c",
+  "reference_response_labels_accessed": false,
+  "runtime_seconds_excluding_encoders_and_mdp": 14.72248599503655
+}

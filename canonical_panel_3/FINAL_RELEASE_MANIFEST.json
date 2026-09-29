@@ -1,0 +1,18 @@
+{
+  "terminal_verdict": "A_STRONG_CANONICAL_REPLICATION",
+  "prediction_freeze_commit": "f9a87b1d5a91a45f595ccd1891f59ec8d9445fea",
+  "all_predictions_freeze_manifest_sha256": "3dc5641a289f48118e0e372c341286573d4a381a2cf2ea9b7ae2b2b80ec8c73e",
+  "glider_checkpoint_sha256": "a288afa285128e13cb7a05ba9459f1dce07e79b8638c6e272c2509ae68d7a288",
+  "files": {
+    "FINAL_COMPARATOR_TABLE.csv": "61f7eaba37c45a9bdf7ad19e2b72d980528ae4a90e004d20af6fec36cef3be99",
+    "MOLECULE_LEVEL_METRICS.csv": "f6e6941d63b35a6e3ba7a2ddf72689381e8802b183d4393f85ed9e3b4d9d2e52",
+    "REGIME_LEVEL_METRICS.csv": "b2dce7730b3e11c500aa1086a37dc902b69cdda56cc06839bf0ac95d622940d5",
+    "PAIRWISE_BOOTSTRAP.csv": "c2cc1a3f8ac35a769c699904a0355b768d37b3aec0e97bd295c88650cf0c111d",
+    "CONFIGURATION_LEVEL_METRICS.csv": "d93008e1aae8f01b43b7ad56bf07e3127e84a4c01b2e5b9bf0b536c099e65fdb",
+    "FINAL_STATISTICS.json": "86411c613ae66faf31654827baa99c3285da5dabb3d47e5a067899174939ec78",
+    "FINAL_REPORT.md": "419619ccddc382e2ab4b445c356a1cac78f6b54f879d00a2a72ae3172cc846d6",
+    "CLAIM_MATRIX.md": "706382d046cd0247cbde23f0b7c11073d2dfd69edb207898befb3460c7aca6ea",
+    "references/REFERENCE_MANIFEST.json": "d7d780b9a65a4f661ef6c870f3f7a90efe209ce2ab2e58cba57f7325d5f69340",
+    "references/REFERENCE_AUDIT.md": "7109feae3df940e29ada57d8c48eef9c9e76fe708a9d9c9eedc2c5b258eac38d"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "campaign": "GLIDER canonical-source prospective validation III",
+  "created_utc": "2026-08-14T21:55:48.177826+00:00",
+  "scope": "prospective Panel III reference response labels",
+  "protocol": {
+    "functional": "omegaB97X-D3BJ",
+    "basis": "def2-TZVPD",
+    "grid_level": 4,
+    "scf_convergence": 1e-10,
+    "counterpoise_components": [
+      "full complex",
+      "ghost-basis solute",
+      "ghost-basis three-water cluster"
+    ],
+    "response": "full complex - ghost solute - ghost water cluster",
+    "units": {
+      "esp": "hartree/e",
+      "dipole": "Debye",
+      "coordinates": "angstrom"
+    }
+  },
+  "n_molecules": 20,
+  "n_configurations": 80,
+  "n_complete_references": 80,
+  "n_ordinary_scf": 76,
+  "n_same_hamiltonian_recoveries": 4,
+  "n_excluded": 0,
+  "prediction_freeze_commit": "f9a87b1d5a91a45f595ccd1891f59ec8d9445fea",
+  "pre_qm_integrity_commit": "5347a97c8f01a998e736f9b453138d9e73419a1f",
+  "all_predictions_freeze_manifest_sha256": "3dc5641a289f48118e0e372c341286573d4a381a2cf2ea9b7ae2b2b80ec8c73e",
+  "all_references_postdate_remote_prediction_freeze": true,
+  "experimental_hydration_targets_accessed": false,
+  "reference_tree_sha256": "5fd58ce55ec30ffbec8dcad17f52c71766ecbbb26f6b1b500e7153517a7b4ee3",
+  "observable_registry_sha256": "7beb4ae8a551b1aca6f88a61155e1b3f16f29ec95da76b5c9d74853626a0ff78",
+  "reference_file_audit_sha256": "ea32355f725012d029a470f154110a4b7f371417fb10b2b3bdb85dbac8f4f7bf",
+  "qm_recovery_log_sha256": "6914f742543b09cbfac4675f0743b3473137b28b0fe06e1200b7f5b4d9a7485c",
+  "historical_raw_generator_manifest_note": "references/manifest.json was emitted by a development-era generator and contains stale scope/access flags; it is retained unmodified for provenance and is superseded by this audited manifest.",
+  "reference_audit_pass": true
+}

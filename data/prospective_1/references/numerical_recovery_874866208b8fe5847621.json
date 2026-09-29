@@ -1,0 +1,18 @@
+{
+  "config_id": "prospective__prospective_diverse_02__cluster_3water__orientation",
+  "density_output": "/dev/shm/a1_response_campaign/iodine_solute_dm_35.npy",
+  "density_sha256": "8284f3fb2546aa1b90ef189482d86348537ca041a82aaba53ec5411c884e8b17",
+  "excluded_or_replaced": false,
+  "final_protocol": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 conv1e-10 zero level shift",
+  "final_scf_converged": [
+    true,
+    true,
+    true
+  ],
+  "hamiltonian_or_reference_change": false,
+  "observable_file": "874866208b8fe5847621.npz",
+  "observable_sha256": "cd4313dde8dd2cc8ace193b2802f71dca9e8162f9672046682b521db5333cd35",
+  "recovery": "same-chemistry converged-density continuation",
+  "runtime_seconds": 41.07878554193303,
+  "solver_only_change": true
+}

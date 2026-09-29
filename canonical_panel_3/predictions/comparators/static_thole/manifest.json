@@ -1,0 +1,7 @@
+{
+  "method": "static_thole",
+  "n_configurations": 80,
+  "prediction_registry_sha256": "0a575462d9974a0c6387fa8ff4bf547b55604c9c9fd8651503df1416485d4b6e",
+  "reference_labels_accessed": false,
+  "source_archive_sha256": "6987c5e67f6b23e9d5e50463237c88ec47052ccbc473f07b4ea66b1b405af3ab"
+}

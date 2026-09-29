@@ -1,0 +1,304 @@
+17
+Properties=species:S:1:pos:R:3:fragment_id:I:1 config_id=canonical_p3__mobley_1278715__cluster_3water__equilibrium__rotation_0 molecule_id=mobley_1278715 smiles=ClC(Cl)(Cl)C(Cl)(Cl)Cl split=canonical_prospective_3 chemical_role=stratum_5 category=cluster_3water motif=equilibrium regime=equilibrium conformer_index=0 n_solute_atoms=8 n_waters=3 audit_parent_id=canonical_p3__mobley_1278715__cluster_3water__equilibrium audit_rotation_index=0 pbc="F F F"
+Cl       1.65828827      -1.05104796      -1.06118825        0
+C        0.77403282       0.11416762       0.01110054        0
+Cl       1.47613833      -0.08179165       1.67184468        0
+Cl       1.23379408       1.77712373      -0.54802146        0
+C       -0.77403524      -0.11416478      -0.01109879        0
+Cl      -1.65828620       1.05104186       1.06119809        0
+Cl      -1.23378896      -1.77713074       0.54800808        0
+Cl      -1.47614309       0.08180191      -1.67184289        0
+O        3.57096890       1.80764082       1.14392135        1
+H        2.96290879       2.54625561       1.17462852        1
+H        4.04881090       1.92415186       0.32274899        1
+O        2.57328476       4.48292527      -1.02471228        2
+H        1.91615158       5.00238157      -1.48793252        2
+H        2.06488856       3.90463259      -0.45607997        2
+O       -2.59261342      -3.32560214       1.68804891        3
+H       -2.71176435      -3.89217028       2.45030572        3
+H       -2.10493950      -3.86276231       1.06365725        3
+17
+Properties=species:S:1:pos:R:3:fragment_id:I:1 config_id=canonical_p3__mobley_1278715__cluster_3water__equilibrium__rotation_1 molecule_id=mobley_1278715 smiles=ClC(Cl)(Cl)C(Cl)(Cl)Cl split=canonical_prospective_3 chemical_role=stratum_5 category=cluster_3water motif=equilibrium regime=equilibrium conformer_index=0 n_solute_atoms=8 n_waters=3 audit_parent_id=canonical_p3__mobley_1278715__cluster_3water__equilibrium audit_rotation_index=1 pbc="F F F"
+Cl       2.12840968       1.59121514      -1.06118825        0
+C        0.96319410       0.70695969       0.01110054        0
+Cl       1.15915337       1.40906520       1.67184468        0
+Cl      -0.69976201       1.16672095      -0.54802146        0
+C        1.19152650      -0.84110837      -0.01109879        0
+Cl       0.02631986      -1.72535933       1.06119809        0
+Cl       2.85449246      -1.30086209       0.54800808        0
+Cl       0.99555981      -1.54321622      -1.67184289        0
+O       -0.73027910       3.50389577       1.14392135        1
+H       -1.46889389       2.89583566       1.17462852        1
+H       -0.84679014       3.98173777       0.32274899        1
+O       -3.40556355       2.50621163      -1.02471228        2
+H       -3.92501985       1.84907845      -1.48793252        2
+H       -2.82727087       1.99781543      -0.45607997        2
+O        4.40296386      -2.65968655       1.68804891        3
+H        4.96953200      -2.77883748       2.45030572        3
+H        4.94012403      -2.17201263       1.06365725        3
+17
+Properties=species:S:1:pos:R:3:fragment_id:I:1 config_id=canonical_p3__mobley_1278715__cluster_3water__equilibrium__rotation_2 molecule_id=mobley_1278715 smiles=ClC(Cl)(Cl)C(Cl)(Cl)Cl split=canonical_prospective_3 chemical_role=stratum_5 category=cluster_3water motif=equilibrium regime=equilibrium conformer_index=0 n_solute_atoms=8 n_waters=3 audit_parent_id=canonical_p3__mobley_1278715__cluster_3water__equilibrium audit_rotation_index=2 pbc="F F F"
+Cl       1.65828827       1.85307289      -1.26945190        0
+C        0.77403282       0.78078410      -0.10423632        0
+Cl       1.47613833      -0.87996004      -0.30019559        0
+Cl       1.23379408       1.33990610       1.55871979        0
+C       -0.77403524       0.80298343      -0.33256872        0
+Cl      -1.65828620      -0.26931345       0.83263792        0
+Cl      -1.23378896       0.24387656      -1.99553468        0
+Cl      -1.47614309       2.46372753      -0.13660203        0
+O        3.57096890      -0.35203671       1.58923688        1
+H        2.96290879      -0.38274388       2.32785167        1
+H        4.04881090       0.46913565       1.70574792        1
+O        2.57328476       1.81659692       4.26452133        2
+H        1.91615158       2.27981716       4.78397763        2
+H        2.06488856       1.24796461       3.68622865        2
+O       -2.59261342      -0.89616427      -3.54400608        3
+H       -2.71176435      -1.65842108      -4.11057422        3
+H       -2.10493950      -0.27177261      -4.08116625        3
+17
+Properties=species:S:1:pos:R:3:fragment_id:I:1 config_id=canonical_p3__mobley_1278715__cluster_3water__equilibrium__rotation_3 molecule_id=mobley_1278715 smiles=ClC(Cl)(Cl)C(Cl)(Cl)Cl split=canonical_prospective_3 chemical_role=stratum_5 category=cluster_3water motif=equilibrium regime=equilibrium conformer_index=0 n_solute_atoms=8 n_waters=3 audit_parent_id=canonical_p3__mobley_1278715__cluster_3water__equilibrium audit_rotation_index=3 pbc="F F F"
+Cl      -0.77571118       1.59121514      -1.26945190        0
+C        0.29657761       0.70695969      -0.10423632        0
+Cl       1.95732175       1.40906520      -0.30019559        0
+Cl      -0.26254439       1.16672095       1.55871979        0
+C        0.27437828      -0.84110837      -0.33256872        0
+Cl       1.34667516      -1.72535933       0.83263792        0
+Cl       0.83348515      -1.30086209      -1.99553468        0
+Cl      -1.38636582      -1.54321622      -0.13660203        0
+O        1.42939842       3.50389577       1.58923688        1
+H        1.46010559       2.89583566       2.32785167        1
+H        0.60822606       3.98173777       1.70574792        1
+O       -0.73923521       2.50621163       4.26452133        2
+H       -1.20245545       1.84907845       4.78397763        2
+H       -0.17060290       1.99781543       3.68622865        2
+O        1.97352598      -2.65968655      -3.54400608        3
+H        2.73578279      -2.77883748      -4.11057422        3
+H        1.34913432      -2.17201263      -4.08116625        3
+17
+Properties=species:S:1:pos:R:3:fragment_id:I:1 config_id=canonical_p3__mobley_1278715__cluster_3water__cooperative__rotation_0 molecule_id=mobley_1278715 smiles=ClC(Cl)(Cl)C(Cl)(Cl)Cl split=canonical_prospective_3 chemical_role=stratum_5 category=cluster_3water motif=cooperative regime=cooperative conformer_index=0 n_solute_atoms=8 n_waters=3 audit_parent_id=canonical_p3__mobley_1278715__cluster_3water__cooperative audit_rotation_index=0 pbc="F F F"
+Cl       1.65828827      -1.05104796      -1.06118825        0
+C        0.77403282       0.11416762       0.01110054        0
+Cl       1.47613833      -0.08179165       1.67184468        0
+Cl       1.23379408       1.77712373      -0.54802146        0
+C       -0.77403524      -0.11416478      -0.01109879        0
+Cl      -1.65828620       1.05104186       1.06119809        0
+Cl      -1.23378896      -1.77713074       0.54800808        0
+Cl      -1.47614309       0.08180191      -1.67184289        0
+O        2.65634232      -0.03601156       3.66450389        1
+H        2.37279464       0.70875688       3.13426571        1
+H        2.34287460      -0.80393822       3.18673985        1
+O        4.46304574       0.12757079       5.97299724        2
+H        4.14468989       0.84576893       5.42612171        2
+H        4.06034122      -0.65591351       5.59854663        2
+O        5.95886881       0.08634168       8.48226142        3
+H        5.64821958       0.85125105       7.99786226        3
+H        5.66958368      -0.66203180       7.96026230        3
+17
+Properties=species:S:1:pos:R:3:fragment_id:I:1 config_id=canonical_p3__mobley_1278715__cluster_3water__cooperative__rotation_1 molecule_id=mobley_1278715 smiles=ClC(Cl)(Cl)C(Cl)(Cl)Cl split=canonical_prospective_3 chemical_role=stratum_5 category=cluster_3water motif=cooperative regime=cooperative conformer_index=0 n_solute_atoms=8 n_waters=3 audit_parent_id=canonical_p3__mobley_1278715__cluster_3water__cooperative audit_rotation_index=1 pbc="F F F"
+Cl       3.27331588      -0.50965092      -1.06118825        0
+C        2.10810030      -1.39390637       0.01110054        0
+Cl       2.30405957      -0.69180086       1.67184468        0
+Cl       0.44514419      -0.93414511      -0.54802146        0
+C        2.33643270      -2.94197443      -0.01109879        0
+Cl       1.17122606      -3.82622539       1.06119809        0
+Cl       3.99939866      -3.40172815       0.54800808        0
+Cl       2.14046601      -3.64408228      -1.67184289        0
+O        2.25827948       0.48840313       3.66450389        1
+H        1.51351104       0.20485545       3.13426571        1
+H        3.02620614       0.17493541       3.18673985        1
+O        2.09469713       2.29510655       5.97299724        2
+H        1.37649899       1.97675070       5.42612171        2
+H        2.87818143       1.89240203       5.59854663        2
+O        2.13592624       3.79092962       8.48226142        3
+H        1.37101687       3.48028039       7.99786226        3
+H        2.88429972       3.50164449       7.96026230        3
+17
+Properties=species:S:1:pos:R:3:fragment_id:I:1 config_id=canonical_p3__mobley_1278715__cluster_3water__cooperative__rotation_2 molecule_id=mobley_1278715 smiles=ClC(Cl)(Cl)C(Cl)(Cl)Cl split=canonical_prospective_3 chemical_role=stratum_5 category=cluster_3water motif=cooperative regime=cooperative conformer_index=0 n_solute_atoms=8 n_waters=3 audit_parent_id=canonical_p3__mobley_1278715__cluster_3water__cooperative audit_rotation_index=2 pbc="F F F"
+Cl       1.65828827       4.11326797       1.94670303        0
+C        0.77403282       3.04097918       3.11191861        0
+Cl       1.47613833       1.38023504       2.91595934        0
+Cl       1.23379408       3.60010118       4.77487472        0
+C       -0.77403524       3.06317851       2.88358621        0
+Cl      -1.65828620       1.99088163       4.04879285        0
+Cl      -1.23378896       2.50407164       1.22062025        0
+Cl      -1.47614309       4.72392261       3.07955290        0
+O        2.65634232      -0.61242417       2.96173943        1
+H        2.37279464      -0.08218599       3.70650787        1
+H        2.34287460      -0.13466013       2.19381277        1
+O        4.46304574      -2.92091752       3.12532178        2
+H        4.14468989      -2.37404199       3.84351992        2
+H        4.06034122      -2.54646691       2.34183748        2
+O        5.95886881      -5.43018170       3.08409267        3
+H        5.64821958      -4.94578254       3.84900204        3
+H        5.66958368      -4.90818258       2.33571919        3
+17
+Properties=species:S:1:pos:R:3:fragment_id:I:1 config_id=canonical_p3__mobley_1278715__cluster_3water__cooperative__rotation_3 molecule_id=mobley_1278715 smiles=ClC(Cl)(Cl)C(Cl)(Cl)Cl split=canonical_prospective_3 chemical_role=stratum_5 category=cluster_3water motif=cooperative regime=cooperative conformer_index=0 n_solute_atoms=8 n_waters=3 audit_parent_id=canonical_p3__mobley_1278715__cluster_3water__cooperative audit_rotation_index=3 pbc="F F F"
+Cl      -1.89100005      -0.50965092       1.94670303        0
+C       -0.81871126      -1.39390637       3.11191861        0
+Cl       0.84203288      -0.69180086       2.91595934        0
+Cl      -1.37783326      -0.93414511       4.77487472        0
+C       -0.84091059      -2.94197443       2.88358621        0
+Cl       0.23138629      -3.82622539       4.04879285        0
+Cl      -0.28180372      -3.40172815       1.22062025        0
+Cl      -2.50165469      -3.64408228       3.07955290        0
+O        2.83469209       0.48840313       2.96173943        1
+H        2.30445391       0.20485545       3.70650787        1
+H        2.35692805       0.17493541       2.19381277        1
+O        5.14318544       2.29510655       3.12532178        2
+H        4.59630991       1.97675070       3.84351992        2
+H        4.76873483       1.89240203       2.34183748        2
+O        7.65244962       3.79092962       3.08409267        3
+H        7.16805046       3.48028039       3.84900204        3
+H        7.13045050       3.50164449       2.33571919        3
+17
+Properties=species:S:1:pos:R:3:fragment_id:I:1 config_id=canonical_p3__mobley_1278715__cluster_3water__orientation__rotation_0 molecule_id=mobley_1278715 smiles=ClC(Cl)(Cl)C(Cl)(Cl)Cl split=canonical_prospective_3 chemical_role=stratum_5 category=cluster_3water motif=orientation regime=orientation conformer_index=0 n_solute_atoms=8 n_waters=3 audit_parent_id=canonical_p3__mobley_1278715__cluster_3water__orientation audit_rotation_index=0 pbc="F F F"
+Cl       1.65828827      -1.05104796      -1.06118825        0
+C        0.77403282       0.11416762       0.01110054        0
+Cl       1.47613833      -0.08179165       1.67184468        0
+Cl       1.23379408       1.77712373      -0.54802146        0
+C       -0.77403524      -0.11416478      -0.01109879        0
+Cl      -1.65828620       1.05104186       1.06119809        0
+Cl      -1.23378896      -1.77713074       0.54800808        0
+Cl      -1.47614309       0.08180191      -1.67184289        0
+O        3.57096890       1.80764082       1.14392135        1
+H        2.65877775       1.59847543       1.34489147        1
+H        3.61960471       2.76103838       1.21391769        1
+O        2.57328476       4.48292527      -1.02471228        2
+H        3.07922819       4.59332273      -0.21968714        2
+H        2.43422526       5.37420406      -1.34489412        2
+O       -2.59261342      -3.32560214       1.68804891        3
+H       -2.58759107      -2.37838488       1.82583890        3
+H       -2.08944525      -3.45381197       0.88392462        3
+17
+Properties=species:S:1:pos:R:3:fragment_id:I:1 config_id=canonical_p3__mobley_1278715__cluster_3water__orientation__rotation_1 molecule_id=mobley_1278715 smiles=ClC(Cl)(Cl)C(Cl)(Cl)Cl split=canonical_prospective_3 chemical_role=stratum_5 category=cluster_3water motif=orientation regime=orientation conformer_index=0 n_solute_atoms=8 n_waters=3 audit_parent_id=canonical_p3__mobley_1278715__cluster_3water__orientation audit_rotation_index=1 pbc="F F F"
+Cl       2.35259193       1.70495697      -1.06118825        0
+C        1.18737635       0.82070152       0.01110054        0
+Cl       1.38333562       1.52280703       1.67184468        0
+Cl      -0.47557976       1.28046278      -0.54802146        0
+C        1.41570875      -0.72736654      -0.01109879        0
+Cl       0.25050211      -1.61161750       1.06119809        0
+Cl       3.07867471      -1.18712026       0.54800808        0
+Cl       1.21974206      -1.42947439      -1.67184289        0
+O       -0.50609685       3.61763760       1.14392135        1
+H       -0.29693146       2.70544645       1.34489147        1
+H       -1.45949441       3.66627341       1.21391769        1
+O       -3.18138130       2.61995346      -1.02471228        2
+H       -3.29177876       3.12589689      -0.21968714        2
+H       -4.07266009       2.48089396      -1.34489412        2
+O        4.62714611      -2.54594472       1.68804891        3
+H        3.67992885      -2.54092237       1.82583890        3
+H        4.75535594      -2.04277655       0.88392462        3
+17
+Properties=species:S:1:pos:R:3:fragment_id:I:1 config_id=canonical_p3__mobley_1278715__cluster_3water__orientation__rotation_2 molecule_id=mobley_1278715 smiles=ClC(Cl)(Cl)C(Cl)(Cl)Cl split=canonical_prospective_3 chemical_role=stratum_5 category=cluster_3water motif=orientation regime=orientation conformer_index=0 n_solute_atoms=8 n_waters=3 audit_parent_id=canonical_p3__mobley_1278715__cluster_3water__orientation audit_rotation_index=2 pbc="F F F"
+Cl       1.65828827       2.05948573      -1.40096315        0
+C        0.77403282       0.98719694      -0.23574757        0
+Cl       1.47613833      -0.67354720      -0.43170684        0
+Cl       1.23379408       1.54631894       1.42720854        0
+C       -0.77403524       1.00939627      -0.46407997        0
+Cl      -1.65828620      -0.06290061       0.70112667        0
+Cl      -1.23378896       0.45028940      -2.12704593        0
+Cl      -1.47614309       2.67014037      -0.26811328        0
+O        3.57096890      -0.14562387       1.45772563        1
+H        2.65877775      -0.34659399       1.24856024        1
+H        3.61960471      -0.21562021       2.41112319        1
+O        2.57328476       2.02300976       4.13301008        2
+H        3.07922819       1.21798462       4.24340754        2
+H        2.43422526       2.34319160       5.02428887        2
+O       -2.59261342      -0.68975143      -3.67551733        3
+H       -2.58759107      -0.82754142      -2.72830007        3
+H       -2.08944525       0.11437286      -3.80372716        3
+17
+Properties=species:S:1:pos:R:3:fragment_id:I:1 config_id=canonical_p3__mobley_1278715__cluster_3water__orientation__rotation_3 molecule_id=mobley_1278715 smiles=ClC(Cl)(Cl)C(Cl)(Cl)Cl split=canonical_prospective_3 chemical_role=stratum_5 category=cluster_3water motif=orientation regime=orientation conformer_index=0 n_solute_atoms=8 n_waters=3 audit_parent_id=canonical_p3__mobley_1278715__cluster_3water__orientation audit_rotation_index=3 pbc="F F F"
+Cl      -0.75794175       1.70495697      -1.40096315        0
+C        0.31434704       0.82070152      -0.23574757        0
+Cl       1.97509118       1.52280703      -0.43170684        0
+Cl      -0.24477496       1.28046278       1.42720854        0
+C        0.29214771      -0.72736654      -0.46407997        0
+Cl       1.36444459      -1.61161750       0.70112667        0
+Cl       0.85125458      -1.18712026      -2.12704593        0
+Cl      -1.36859639      -1.42947439      -0.26811328        0
+O        1.44716785       3.61763760       1.45772563        1
+H        1.64813797       2.70544645       1.24856024        1
+H        1.51716419       3.66627341       2.41112319        1
+O       -0.72146578       2.61995346       4.13301008        2
+H        0.08355936       3.12589689       4.24340754        2
+H       -1.04164762       2.48089396       5.02428887        2
+O        1.99129541      -2.54594472      -3.67551733        3
+H        2.12908540      -2.54092237      -2.72830007        3
+H        1.18717112      -2.04277655      -3.80372716        3
+17
+Properties=species:S:1:pos:R:3:fragment_id:I:1 config_id=canonical_p3__mobley_1278715__cluster_3water__compressed__rotation_0 molecule_id=mobley_1278715 smiles=ClC(Cl)(Cl)C(Cl)(Cl)Cl split=canonical_prospective_3 chemical_role=stratum_5 category=cluster_3water motif=compressed regime=compressed conformer_index=0 n_solute_atoms=8 n_waters=3 audit_parent_id=canonical_p3__mobley_1278715__cluster_3water__compressed audit_rotation_index=0 pbc="F F F"
+Cl       1.65828827      -1.05104796      -1.06118825        0
+C        0.77403282       0.11416762       0.01110054        0
+Cl       1.47613833      -0.08179165       1.67184468        0
+Cl       1.23379408       1.77712373      -0.54802146        0
+C       -0.77403524      -0.11416478      -0.01109879        0
+Cl      -1.65828620       1.05104186       1.06119809        0
+Cl      -1.23378896      -1.77713074       0.54800808        0
+Cl      -1.47614309       0.08180191      -1.67184289        0
+O        3.38149548      -1.66572227      -1.97719612        1
+H        2.66065708      -1.16571734      -2.36010461        1
+H        3.11546214      -1.81370644      -1.06969473        1
+O        5.44307824      -3.23225994      -3.04727069        2
+H        4.58871065      -3.04362868      -3.43547954        2
+H        5.43520658      -2.76570030      -2.21151236        2
+O        7.81412874      -4.54046944      -4.15308442        3
+H        7.00067995      -4.32085966      -4.60729191        3
+H        7.67775425      -4.23602127      -3.25589706        3
+17
+Properties=species:S:1:pos:R:3:fragment_id:I:1 config_id=canonical_p3__mobley_1278715__cluster_3water__compressed__rotation_1 molecule_id=mobley_1278715 smiles=ClC(Cl)(Cl)C(Cl)(Cl)Cl split=canonical_prospective_3 chemical_role=stratum_5 category=cluster_3water motif=compressed regime=compressed conformer_index=0 n_solute_atoms=8 n_waters=3 audit_parent_id=canonical_p3__mobley_1278715__cluster_3water__compressed audit_rotation_index=1 pbc="F F F"
+Cl       2.24711195      -2.68884458      -1.06118825        0
+C        1.08189637      -3.57310003       0.01110054        0
+Cl       1.27785564      -2.87099452       1.67184468        0
+Cl      -0.58105974      -3.11333877      -0.54802146        0
+C        1.31022877      -5.12116809      -0.01109879        0
+Cl       0.14502213      -6.00541905       1.06119809        0
+Cl       2.97319473      -5.58092181       0.54800808        0
+Cl       1.11426208      -5.82327594      -1.67184289        0
+O        2.86178626      -0.96563737      -1.97719612        1
+H        2.36178133      -1.68647577      -2.36010461        1
+H        3.00977043      -1.23167071      -1.06969473        1
+O        4.42832393       1.09594539      -3.04727069        2
+H        4.23969267       0.24157780      -3.43547954        2
+H        3.96176429       1.08807373      -2.21151236        2
+O        5.73653343       3.46699589      -4.15308442        3
+H        5.51692365       2.65354710      -4.60729191        3
+H        5.43208526       3.33062140      -3.25589706        3
+17
+Properties=species:S:1:pos:R:3:fragment_id:I:1 config_id=canonical_p3__mobley_1278715__cluster_3water__compressed__rotation_2 molecule_id=mobley_1278715 smiles=ClC(Cl)(Cl)C(Cl)(Cl)Cl split=canonical_prospective_3 chemical_role=stratum_5 category=cluster_3water motif=compressed regime=compressed conformer_index=0 n_solute_atoms=8 n_waters=3 audit_parent_id=canonical_p3__mobley_1278715__cluster_3water__compressed audit_rotation_index=2 pbc="F F F"
+Cl       1.65828827      -2.05067156      -1.01183891        0
+C        0.77403282      -3.12296035       0.15337667        0
+Cl       1.47613833      -4.78370449      -0.04258260        0
+Cl       1.23379408      -2.56383835       1.81633278        0
+C       -0.77403524      -3.10076102      -0.07495573        0
+Cl      -1.65828620      -4.17305790       1.09025091        0
+Cl      -1.23378896      -3.65986789      -1.73792169        0
+Cl      -1.47614309      -1.44001692       0.12101096        0
+O        3.38149548      -1.13466369      -1.62651322        1
+H        2.66065708      -0.75175520      -1.12650829        1
+H        3.11546214      -2.04216508      -1.77449739        1
+O        5.44307824      -0.06458912      -3.19305089        2
+H        4.58871065       0.32361973      -3.00441963        2
+H        5.43520658      -0.90034745      -2.72649125        2
+O        7.81412874       1.04122461      -4.50126039        3
+H        7.00067995       1.49543210      -4.28165061        3
+H        7.67775425       0.14403725      -4.19681222        3
+17
+Properties=species:S:1:pos:R:3:fragment_id:I:1 config_id=canonical_p3__mobley_1278715__cluster_3water__compressed__rotation_3 molecule_id=mobley_1278715 smiles=ClC(Cl)(Cl)C(Cl)(Cl)Cl split=canonical_prospective_3 chemical_role=stratum_5 category=cluster_3water motif=compressed regime=compressed conformer_index=0 n_solute_atoms=8 n_waters=3 audit_parent_id=canonical_p3__mobley_1278715__cluster_3water__compressed audit_rotation_index=3 pbc="F F F"
+Cl       3.24673555      -2.68884458      -1.01183891        0
+C        4.31902434      -3.57310003       0.15337667        0
+Cl       5.97976848      -2.87099452      -0.04258260        0
+Cl       3.75990234      -3.11333877       1.81633278        0
+C        4.29682501      -5.12116809      -0.07495573        0
+Cl       5.36912189      -6.00541905       1.09025091        0
+Cl       4.85593188      -5.58092181      -1.73792169        0
+Cl       2.63608091      -5.82327594       0.12101096        0
+O        2.33072768      -0.96563737      -1.62651322        1
+H        1.94781919      -1.68647577      -1.12650829        1
+H        3.23822907      -1.23167071      -1.77449739        1
+O        1.26065311       1.09594539      -3.19305089        2
+H        0.87244426       0.24157780      -3.00441963        2
+H        2.09641144       1.08807373      -2.72649125        2
+O        0.15483938       3.46699589      -4.50126039        3
+H       -0.29936811       2.65354710      -4.28165061        3
+H        1.05202674       3.33062140      -4.19681222        3

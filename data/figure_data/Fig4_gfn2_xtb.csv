@@ -1,0 +1,4 @@
+dataset,panel,method,method_label,esp_nrmse,esp_ci95_low,esp_ci95_high,dipole_rmse_D,dipole_ci95_low_D,dipole_ci95_high_D,n_molecules,x,esp_err_minus,esp_err_plus,dip_err_minus,dip_err_plus
+prospective_1,Panel I,gfn2_xtb,GFN2-xTB,,,,0.543763867708119,0.20801201293385,0.868198683866691,12,0,,,0.33575185477427,0.324434816158572
+prospective_2,Panel II,gfn2_xtb,GFN2-xTB,,,,0.393888314149484,0.25071859122839,0.524379018816279,24,1,,,0.143169722921094,0.130490704666795
+prospective_3_canonical,Panel III,gfn2_xtb,GFN2-xTB,,,,0.440898224535068,0.223913524252998,0.674562271867782,20,2,,,0.216984700282071,0.233664047332714

@@ -1,0 +1,13 @@
+{
+  "checkpoint_sha256": "a288afa285128e13cb7a05ba9459f1dce07e79b8638c6e272c2509ae68d7a288",
+  "configuration_hashes": {
+    "/dev/shm/a1_response_campaign/prospective_panel/configurations.extxyz": "8e3fcc4799bd02971930184b33b5d28e2980f0b24ff5c367fda7045d219c0c20"
+  },
+  "experimental_hydration_targets_accessed": false,
+  "feature_sha256": "d6b44f0af012ff9d4af04f8b47b3b37589df5dceda776cf6e4ee4148c6162d39",
+  "n_configurations": 48,
+  "prediction_registry_sha256": "095a839ea0b0456b99eb1bb2a30d8ce650ad87a04ef819c88583b4955781bd1a",
+  "reference_labels_accessed": false,
+  "runtime_seconds_per_environment_excluding_encoder": 0.12331229779253287,
+  "runtime_seconds_total_excluding_encoder": 5.918990294041578
+}

@@ -1,0 +1,21 @@
+{
+  "checkpoint_model_type": "mace.modules.extensions.PolarMACE",
+  "checkpoint_sha256": "fab8b8713c832f31a2a853aaa22fd638be8a369cbf5095e6b3e982a18d10e93a",
+  "configuration_sha256": "ec62f08d1e8e2ff7ba1b458ef9cf78c5fda957f96437e7c34c854157528152ee",
+  "covariance_check": {
+    "max_abs_potential_error_hartree_per_e": 1.214306433183765e-17
+  },
+  "decoder": "unchanged analytic open-boundary Coulomb integral of official normalized Gaussian l<=1 density",
+  "density_max_l": 1,
+  "density_smearing_width_angstrom": 1.5,
+  "frozen_decoder_sha256": "a98bc2ae695ac479173a8ee8fdb51b71f69bb8a649a9bc2d12d711fb2ac6b3ad",
+  "grid_registry_sha256": "ded3cffc4f9b881d08af969af721a63b96b64e0232897779fd7618d1e535e239",
+  "kspace_cutoff_inverse_angstrom": 1.8467166423797607,
+  "max_abs_net_response_charge_e": 8.671804607729428e-09,
+  "method": "MACE-POLAR-1-M",
+  "n_configurations": 80,
+  "probe_points_source": "frozen GLIDER label-free prediction files",
+  "reference_values_or_labels_accessed": false,
+  "response_archive_sha256": "400f7cc788c6dab811f969b6857c774bd6eb57a078b94e65cdd615b34e63d8ca",
+  "runtime_seconds": 0.6987784309312701
+}

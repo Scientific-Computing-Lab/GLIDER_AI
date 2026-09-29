@@ -1,0 +1,13 @@
+{
+  "checkpoint_sha256": "126f8d1602549e6fa0df775c701a5119ddeb0e3738202af8e7aa736de6c2b692",
+  "chronology_disclosure": "External frozen public comparator executed after references existed with no target-label adaptation.",
+  "classification": "valid induced-dipole-only comparator; cannot enter the ESP ranking",
+  "dipole_definition": "official MACE-MDP dipole readout difference, converted from e*angstrom to Debye",
+  "inference_definition": "full complex minus isolated solute minus isolated three-water cluster",
+  "method": "MACE-MDP released checkpoint",
+  "n_configurations": 80,
+  "prospective_targets_accessed": false,
+  "response_esp_available": false,
+  "runtime_seconds_excluding_checkpoint_load": 81.49757962708827,
+  "training_or_tuning_performed": false
+}

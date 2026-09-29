@@ -1,0 +1,28 @@
+{
+  "architecture": "mace-polar-m/head-C/mean-5-seeds",
+  "base_response_prediction_sha256": "24ace3180e950c45e6fdf4bb1c9d008b1537a5aba786cb02ed42a8b0cfb1deb4",
+  "checkpoint_sha256": "a288afa285128e13cb7a05ba9459f1dce07e79b8638c6e272c2509ae68d7a288",
+  "development_losses": [
+    0.08568353950977325,
+    0.08426311612129211,
+    0.08441217243671417,
+    0.08847537636756897,
+    0.08530238270759583
+  ],
+  "energy_or_force_supervision_used": false,
+  "epochs": 64,
+  "experimental_hydration_targets_accessed": false,
+  "feature_cache_sha256": "e84ce9fa7c5f9ed143ca9cbec4547e29603aaa28a76055314746a8192511b269",
+  "n_development_chemistries": 14,
+  "n_development_environments": 48,
+  "prospective_identities_accessed": false,
+  "prospective_labels_accessed": false,
+  "seeds": [
+    2026081300,
+    2026081301,
+    2026081302,
+    2026081303,
+    2026081304
+  ],
+  "selection_summary_sha256": "28179f7e0e91e0e37a9d7138ff81a7cccbf5915ca6158a67714e260ac957ab36"
+}

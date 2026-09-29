@@ -1,0 +1,11 @@
+esp_nrmse,y,class
+1.1730459811,0,control
+1.1566839548,1,control
+1,2,control
+0.5967465934,3,prior
+0.5513665665,4,prior
+0.5494,5,prior
+0.5325904762,6,control
+0.5254846004,7,control
+0.2945059088,8,glider
+0.0309,9,ceiling

@@ -1,0 +1,22 @@
+{
+  "config_id": "nextgen_prospective__nextgen_prospective_004__cluster_3water__equilibrium",
+  "density_output": "nextgen_response_campaign/qm_recovery/iodine_solute_014.npy",
+  "density_sha256": "c25eb7d72220845ad90de687d397ae5afef8d891f3e42f30e5f240df3e8c55ea",
+  "excluded_or_replaced": false,
+  "final_protocol": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 conv1e-10 zero shift",
+  "final_scf_converged": [
+    true,
+    true,
+    true
+  ],
+  "hamiltonian_or_reference_change": false,
+  "observable_file": "faf2de3bc4837373403d.npz",
+  "observable_sha256": "587d8cea676089be3d4d5ef0dfa85c4ba8564169f46efc02d50662b1574f2526",
+  "runtime_seconds": 62.43105823500082,
+  "solver_only_change": true,
+  "solver_routes": [
+    "exact zero-shift second-order SCF",
+    "zero-shift DIIS",
+    "zero-shift DIIS"
+  ]
+}

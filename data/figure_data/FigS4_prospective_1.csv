@@ -1,0 +1,13 @@
+molecule_id,glider,mace_polar_l,dataset,y,dx,short_id
+prospective_diverse_02,0.744190451967762,0.768643711477781,prospective_1,0,0.0244532595100183,P1-diverse\_02
+pros_cyano_cyclic_acetal,0.399977137063306,0.485365607948661,prospective_1,1,0.0853884708853552,pros\_cyano\_cyclic\_acetal
+pros_isoxazole_thioether,0.359812764639974,0.494614720251255,prospective_1,2,0.134801955611282,pros\_isoxazole\_thioether
+pros_heteroaryl_amide,0.35455848166902,0.5052291053555,prospective_1,3,0.15067062368648,pros\_heteroaryl\_amide
+pros_sulfonyl_piperidinol,0.3249249880227,0.418913900110122,prospective_1,4,0.0939889120874213,pros\_sulfonyl\_piperidinol
+pros_azaaryl_sulfoxide,0.315586790197266,0.487185557513448,prospective_1,5,0.171598767316182,pros\_azaaryl\_sulfoxide
+prospective_diverse_01,0.261783985331165,0.583299629283766,prospective_1,6,0.3215156439526,P1-diverse\_01
+pros_halogen_oxazinanone,0.245079846986049,0.477702097867965,prospective_1,7,0.232622250881915,pros\_halogen\_oxazinanone
+prospective_diverse_04,0.239279981232681,0.556678255541227,prospective_1,8,0.317398274308546,P1-diverse\_04
+pros_polyfunctional_oxane,0.238183791433332,0.505250516931866,prospective_1,9,0.267066725498534,pros\_polyfunctional\_oxane
+prospective_diverse_03,0.218090360911407,0.54138489673838,prospective_1,10,0.323294535826973,P1-diverse\_03
+prospective_diverse_05,0.160123673818404,0.469444955488161,prospective_1,11,0.309321281669757,P1-diverse\_05

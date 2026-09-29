@@ -1,0 +1,18 @@
+{
+  "config_id": "prospective__prospective_diverse_02__cluster_3water__equilibrium",
+  "density_output": "/dev/shm/a1_response_campaign/iodine_solute_dm_34.npy",
+  "density_sha256": "ed4ba382b90ffe270bd07490d50735d4996a988b6d4ceef9744f07662394a56c",
+  "excluded_or_replaced": false,
+  "final_protocol": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 conv1e-10 zero level shift",
+  "final_scf_converged": [
+    true,
+    true,
+    true
+  ],
+  "hamiltonian_or_reference_change": false,
+  "observable_file": "7d90db954d31a1ad50f7.npz",
+  "observable_sha256": "890824570f2efef8efa9526fc8839112823d5734458e405bf220e59ca9e978e9",
+  "recovery": "same-chemistry converged-density continuation",
+  "runtime_seconds": 57.56451492692577,
+  "solver_only_change": true
+}

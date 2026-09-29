@@ -1,0 +1,6 @@
+pool_id,smiles,stratum,canonical_smiles,selection_order,selection_novelty,molecule_id,split
+d09,NCC(=O)N,donor_acceptor,NCC(N)=O,1,0.8709219400973975,prospective_diverse_01,prospective
+h07,OCCI,halogen,OCCI,2,0.925,prospective_diverse_02,prospective
+p03,O1CCOCC1,polar,C1COCCO1,3,0.8909090909090909,prospective_diverse_03,prospective
+s07,c1nccs1,sulfur,c1cscn1,4,0.94375,prospective_diverse_04,prospective
+s09,O=S1(=O)CCCC1,sulfur,O=S1(=O)CCCC1,5,0.928,prospective_diverse_05,prospective

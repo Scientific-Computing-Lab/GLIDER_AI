@@ -1,0 +1,7 @@
+{
+  "first_sha256": "400f7cc788c6dab811f969b6857c774bd6eb57a078b94e65cdd615b34e63d8ca",
+  "method": "unfitted equal-weight MACE-POLAR-1-M/L q/u average",
+  "output_sha256": "673905978ccebb6cc2076bad645f8cbf24bea1525efd2395e3b712d25f4463c4",
+  "reference_labels_accessed": false,
+  "second_sha256": "7445e07c44e608f61994c7b8a1b8682a7eec428f1216da5895741417bda9a3b7"
+}

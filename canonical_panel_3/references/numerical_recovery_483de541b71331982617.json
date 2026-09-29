@@ -1,0 +1,22 @@
+{
+  "config_id": "canonical_p3__mobley_2727678__cluster_3water__orientation",
+  "density_output": "/dev/shm/p3_recovery/converged_solute_027.npy",
+  "density_sha256": "9a2fd75e88b8cd9303a1e2624fe5ebf20342b2b7b4e723ca583b45e9fbaecb92",
+  "excluded_or_replaced": false,
+  "final_protocol": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 conv1e-10 zero shift",
+  "final_scf_converged": [
+    true,
+    true,
+    true
+  ],
+  "hamiltonian_or_reference_change": false,
+  "observable_file": "483de541b71331982617.npz",
+  "observable_sha256": "25d6243700dc69009aff440a67f791234785131130ce496fca7924f6051dcd31",
+  "runtime_seconds": 343.6262809121981,
+  "solver_only_change": true,
+  "solver_routes": [
+    "exact zero-shift second-order SCF",
+    "zero-shift DIIS",
+    "zero-shift DIIS"
+  ]
+}

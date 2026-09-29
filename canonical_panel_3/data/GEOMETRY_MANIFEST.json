@@ -1,0 +1,17 @@
+{
+  "algorithm": "unchanged deterministic ETKDG/MMFF plus frozen structured three-water regime generator",
+  "configuration_sha256": "ec62f08d1e8e2ff7ba1b458ef9cf78c5fda957f96437e7c34c854157528152ee",
+  "counts_by_regime": {
+    "compressed": 20,
+    "cooperative": 20,
+    "equilibrium": 20,
+    "orientation": 20
+  },
+  "experimental_hydration_targets_accessed": false,
+  "n_configurations": 80,
+  "n_molecules": 20,
+  "protocol_sha256": "5f4b1109c4c51a79f0b2823f76ca5cd0e324c2dce431dce64e857f9e5a896b45",
+  "reference_response_labels_exist": false,
+  "registry_sha256": "c9bb53875c4830718a0132e5a22f46c393cbae56e0cfb58dcea62bb956605d40",
+  "selected_molecules_sha256": "4decb21e8318d5766dc782e2e31ca5c9a8c675ab776bf820e4d35be2bb77dbe7"
+}

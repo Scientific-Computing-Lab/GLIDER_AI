@@ -1,0 +1,35 @@
+{
+  "bootstrap_replicas": 100000,
+  "bootstrap_seed": 20260814,
+  "candidate_dipole_rank": 5,
+  "candidate_esp_rank": 2,
+  "experimental_hydration_targets_accessed": false,
+  "ranking_rule": "lowest frozen molecule-mean error; no minimum improvement threshold",
+  "strongest_dipole_comparator": {
+    "absolute_delta_candidate_minus_comparator": 0.13767492280254062,
+    "candidate": 0.25021615552684345,
+    "candidate_molecule_wins": 22,
+    "comparator": "previous_candidate",
+    "comparator_value": 0.11254123272430283,
+    "n_molecules": 24,
+    "paired_molecule_bootstrap_delta_95pct_ci": [
+      -0.0473814520144241,
+      0.3358164321540732
+    ],
+    "relative_error_reduction": -1.2233287255686003
+  },
+  "strongest_esp_comparator": {
+    "absolute_delta_candidate_minus_comparator": 0.021680674983647175,
+    "candidate": 0.363855548302602,
+    "candidate_molecule_wins": 17,
+    "comparator": "previous_candidate",
+    "comparator_value": 0.34217487331895485,
+    "n_molecules": 24,
+    "paired_molecule_bootstrap_delta_95pct_ci": [
+      -0.0362045964754725,
+      0.11491862045844288
+    ],
+    "relative_error_reduction": -0.06336138820876469
+  },
+  "terminal_state": "C_FAILURE"
+}

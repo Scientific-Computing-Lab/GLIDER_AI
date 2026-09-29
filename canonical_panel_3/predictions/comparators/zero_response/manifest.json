@@ -1,0 +1,7 @@
+{
+  "method": "zero_response",
+  "n_configurations": 80,
+  "prediction_registry_sha256": "5ef682dc41cdcd82a85bf523a398ae3be5ed23725c8326ca3ba77d7e3e613ef7",
+  "reference_labels_accessed": false,
+  "source_archive_sha256": "4a0b48b93f171492dc805b2ff216bde9fff7e9cd9be9f241b4c4db81c72ac9e3"
+}

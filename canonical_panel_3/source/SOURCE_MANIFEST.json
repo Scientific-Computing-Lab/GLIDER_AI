@@ -1,0 +1,14 @@
+{
+  "extraction_script_sha256": "a393f8cbdfba91058325011704def6af758ba88a7a879b7db12e6d4624427397",
+  "fields_accessed": [
+    "semicolon field 0: FreeSolv ID",
+    "semicolon field 1: SMILES"
+  ],
+  "fields_after_index_1_parsed_or_stored": false,
+  "hydration_targets_accessed": false,
+  "identity_only_sha256": "847e45a27e3963cda2ad909b3a381ac7547fd0dd2dbee4cc506ea2f9b5e8abc8",
+  "records": 642,
+  "upstream_commit": "6c7d19b4b565537365ffd22006aa2cd4643200c6",
+  "upstream_sha256": "2d13f095713bc39b85f85dd7b4e5483fbb12fc694bf253bb1d92a4c4d484f260",
+  "upstream_url": "https://raw.githubusercontent.com/MobleyLab/FreeSolv/6c7d19b4b565537365ffd22006aa2cd4643200c6/database.txt"
+}

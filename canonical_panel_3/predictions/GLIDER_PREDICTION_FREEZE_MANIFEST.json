@@ -1,0 +1,438 @@
+{
+  "checkpoint_sha256": "a288afa285128e13cb7a05ba9459f1dce07e79b8638c6e272c2509ae68d7a288",
+  "created_utc": "2026-08-14T19:02:02.211574+00:00",
+  "deterministic_repeat_maximum_absolute_discrepancy": 0.0,
+  "experimental_hydration_targets_accessed": false,
+  "files": [
+    {
+      "path": "predictions/glider/0429dadaef79de8da24c.npz",
+      "sha256": "c79b3a1bca8b18ac15882a79d179529c0f5a0ef04f61b05ab0e43cabfd29e03d",
+      "size_bytes": 26858
+    },
+    {
+      "path": "predictions/glider/0a305041f10ad96304f2.npz",
+      "sha256": "5eef1e86616a9f5c1688f7277a905b11b8c344b15e8428429ab137b9c3678c7d",
+      "size_bytes": 26354
+    },
+    {
+      "path": "predictions/glider/0c31dfd5d57dc31746cf.npz",
+      "sha256": "05129c05ca79171fd5c1a5b7f1ad7efc02b13cbda95200dcd0aeb7f098fe6f73",
+      "size_bytes": 35713
+    },
+    {
+      "path": "predictions/glider/0d1569ec810d8244eb48.npz",
+      "sha256": "ca79bebf52577c0b8fdecf44036502463d60786059ff30c88946dae222d43f9c",
+      "size_bytes": 32225
+    },
+    {
+      "path": "predictions/glider/0e21427b240a8473490f.npz",
+      "sha256": "f482458dcae8be854c78335f0e025ca4dfa7ba63f4c9887cf21de9b76a46fd91",
+      "size_bytes": 22692
+    },
+    {
+      "path": "predictions/glider/113e324bf2b25ae204d7.npz",
+      "sha256": "e93225547c4c9e978e3454a1e351833058c74ba8c9a5d50309cea0ee6995fcc1",
+      "size_bytes": 35490
+    },
+    {
+      "path": "predictions/glider/1266946c09be7fb3c454.npz",
+      "sha256": "95c352ea3323b9f9efda6faa3d0280de1bdc14bc6f3c0d337733af02f3b07510",
+      "size_bytes": 39077
+    },
+    {
+      "path": "predictions/glider/15b634dc91f00bbe9df3.npz",
+      "sha256": "97e191799d2066905535faeb83aafdf1f37e0227740de7891a4474d9a9512814",
+      "size_bytes": 33593
+    },
+    {
+      "path": "predictions/glider/16158ec3995a5a469ff0.npz",
+      "sha256": "0703a69dcf2bd2323e14d0d9cc8857a86873b4b8207edc8ce44a45582a00402f",
+      "size_bytes": 34635
+    },
+    {
+      "path": "predictions/glider/1697be9e8d13dccf829c.npz",
+      "sha256": "4692021e17beb35efeb0cbda86f6dbfa7257eddde19c60677dfcf6bfa15f033f",
+      "size_bytes": 22708
+    },
+    {
+      "path": "predictions/glider/18c13e36b83c4df77536.npz",
+      "sha256": "28a8ecacc0314cd9fefca9e92e1a637ae907cc91f2900b26c2add65aa7fba8d8",
+      "size_bytes": 22824
+    },
+    {
+      "path": "predictions/glider/194223bdd346475ab437.npz",
+      "sha256": "0ff91454eba055ce3277c1a457dea8e065064826c6ff000e0548469e24f41076",
+      "size_bytes": 33221
+    },
+    {
+      "path": "predictions/glider/194c5f5179482f70453f.npz",
+      "sha256": "7f57f97170e58e635a2a22b3885cb59da62e90c2c64950ec3a0cbb2f7fe5ed45",
+      "size_bytes": 39112
+    },
+    {
+      "path": "predictions/glider/1a5ca5112082891d7e42.npz",
+      "sha256": "a53eca0ae75e28b6319d970408185d280455b14f96c264535720728538d472e0",
+      "size_bytes": 41547
+    },
+    {
+      "path": "predictions/glider/1b7d58b703c12d1e37a4.npz",
+      "sha256": "3bf4c02110990b3539b160d838aaaf9ce460c0ebccdc62cedda8681c569cd7d1",
+      "size_bytes": 33998
+    },
+    {
+      "path": "predictions/glider/25601b4869411491bd0f.npz",
+      "sha256": "e75b01ae55aae4478fff213072d864b4123df588f2a0e4dc0c1aca0a6a77a110",
+      "size_bytes": 26806
+    },
+    {
+      "path": "predictions/glider/26cb73e085475fd63ed2.npz",
+      "sha256": "8d928280f0fb3d9061213ac7e623a2505dc1b3b2c5aa94b9e1d8fedd97b99541",
+      "size_bytes": 35807
+    },
+    {
+      "path": "predictions/glider/2835e0c709d6c1bec778.npz",
+      "sha256": "19a55bd510b37379a53c129a14bb5c4b5badc5065f6b6eb9f71be0f80120e6ff",
+      "size_bytes": 17632
+    },
+    {
+      "path": "predictions/glider/29387de4632b6ac3879c.npz",
+      "sha256": "ede222be4cc70b480ae30183335dabae273077254213787e9bf762325e272387",
+      "size_bytes": 30561
+    },
+    {
+      "path": "predictions/glider/2a77871603473f1fae25.npz",
+      "sha256": "47b48d98fc1f41c4334b32c4c7ce31d8581b60ef3e481e776307f854a315db1c",
+      "size_bytes": 33253
+    },
+    {
+      "path": "predictions/glider/3bbed0b357fcdf7321a2.npz",
+      "sha256": "34a90bcdbad4a1f3153178811e5ae505a84ad9983116905d6b46bfe498d653fe",
+      "size_bytes": 35294
+    },
+    {
+      "path": "predictions/glider/40c7cc93829aea28f03d.npz",
+      "sha256": "3dccda9f7d4fa7a56045b8b38110e4355dbe646ad14a6461e550edba156cb577",
+      "size_bytes": 31431
+    },
+    {
+      "path": "predictions/glider/443de577c5cb09865e60.npz",
+      "sha256": "91cd425cc0f1154edb743169c755c368203ebfe65c60bde08e92478a65768304",
+      "size_bytes": 25543
+    },
+    {
+      "path": "predictions/glider/44b3282b650dec703bcd.npz",
+      "sha256": "21559a15b7c03403c5487974a977dbe0db5f7303a57237a4b6f453586a1e2e91",
+      "size_bytes": 39112
+    },
+    {
+      "path": "predictions/glider/451dd296a9653c8e52fb.npz",
+      "sha256": "b8aa7bebf7e5764af894a7402c41e61c130b72567a56d08c46be3d5762bf22c9",
+      "size_bytes": 31734
+    },
+    {
+      "path": "predictions/glider/4686ac39a5c9edfa5c17.npz",
+      "sha256": "66b18e5f9415edd5c896db160f7505356ac9bf419b5dcf2885329e21228d5e52",
+      "size_bytes": 31325
+    },
+    {
+      "path": "predictions/glider/46d30fa961b94eb2f2f8.npz",
+      "sha256": "4e17433aa637ffb749827146819d98856cccced70a4def0e7b7e586f0720eee4",
+      "size_bytes": 33534
+    },
+    {
+      "path": "predictions/glider/483de541b71331982617.npz",
+      "sha256": "e78e64e3bcbdb5458affdc8c281b4299816bdaf87927e2725b5c515bbcd83f5b",
+      "size_bytes": 22924
+    },
+    {
+      "path": "predictions/glider/4e2e58e1b75c19c3db30.npz",
+      "sha256": "2deaf5971f8e01fa0d25413196f64a4d33526b5d4f37362386b2ef03852fabec",
+      "size_bytes": 24093
+    },
+    {
+      "path": "predictions/glider/518a105bbfee998aca42.npz",
+      "sha256": "7d004b08aab4f678a2e7d145b218d6f13082b9f84807be5a5d68ecfcb0a35800",
+      "size_bytes": 29174
+    },
+    {
+      "path": "predictions/glider/52f5c2c38b6e4f4452d1.npz",
+      "sha256": "42d85ce4422de7b53ecfc8ad02c7212da91f16d551bf953c03cea90720e7316a",
+      "size_bytes": 24397
+    },
+    {
+      "path": "predictions/glider/56e3609bfc2ce30fa3ab.npz",
+      "sha256": "d472eeab940c939cb892d4c5d3a867d7b85233095a596b0c4c65edaf5224d8bc",
+      "size_bytes": 25998
+    },
+    {
+      "path": "predictions/glider/5766db1cb95aac4d1826.npz",
+      "sha256": "f31a07ac2ff00910559033491a77b894ba8b64d4963bc48b1d9ef02e0e1e9590",
+      "size_bytes": 39118
+    },
+    {
+      "path": "predictions/glider/5a82268dc6d07c98facd.npz",
+      "sha256": "d223c22f336ddfb31902d6b6360c144501d9ec7cffde83dd9f0b0a3db14e5156",
+      "size_bytes": 25573
+    },
+    {
+      "path": "predictions/glider/66247784c082babf59b0.npz",
+      "sha256": "834f65116d91b1bef0ce3fe0305579819ac842558621479c487050becd62b73e",
+      "size_bytes": 36768
+    },
+    {
+      "path": "predictions/glider/677f492b49a8518855af.npz",
+      "sha256": "7ee2406dad5599102612e1fc72d9b6a1127424272fe130b04176c435d699cdf4",
+      "size_bytes": 35836
+    },
+    {
+      "path": "predictions/glider/69bdf3e032e52ba9e449.npz",
+      "sha256": "121e57db91b7ba38aa72518990988ada2b404026948ba4069583c71bbce68612",
+      "size_bytes": 36598
+    },
+    {
+      "path": "predictions/glider/6e5127b429a51fffcd42.npz",
+      "sha256": "5820399dfde85e14636bacd72b0575ee1b367302a7dc36e076312a94e97e66b0",
+      "size_bytes": 31001
+    },
+    {
+      "path": "predictions/glider/7057dba6488887a2fbef.npz",
+      "sha256": "729e3fb6df64141599efa524bf889da087e3752e78bbd55fa67083511972b69f",
+      "size_bytes": 29549
+    },
+    {
+      "path": "predictions/glider/7bb994fd94b5a2f07563.npz",
+      "sha256": "50bbeec4493a99670b1c5e1839782e929dd3242ea94468fab6e552a1d53d1600",
+      "size_bytes": 35794
+    },
+    {
+      "path": "predictions/glider/7e9ca8ea4c5ed067ac91.npz",
+      "sha256": "8ece8268c552ab588460e21da697104d09c301d4c1826a445bf9c21a64bea45a",
+      "size_bytes": 41018
+    },
+    {
+      "path": "predictions/glider/7f1db0ac3e415f52acf4.npz",
+      "sha256": "df45333457652ef5121e2d7d5a83d0d6567518abf8bc3f091cc9f8f5cf86c32f",
+      "size_bytes": 29827
+    },
+    {
+      "path": "predictions/glider/7f9320e31e6d34599279.npz",
+      "sha256": "2be0669d0e7d08199f653ae2b0cc36a395b35dc68fc22e93938cee028f78b670",
+      "size_bytes": 39958
+    },
+    {
+      "path": "predictions/glider/838e06893626e0b20ad1.npz",
+      "sha256": "03adb954a3def3651d7abdfbe507d1026facfa65f16bf9e2dc1ac4a812e1435f",
+      "size_bytes": 22511
+    },
+    {
+      "path": "predictions/glider/8ccac7912fbd74fd481d.npz",
+      "sha256": "ebb7d5b645c84d2c16c8e58f1ca4f8e1b2a6879cf8258a08d62831f549f31b2a",
+      "size_bytes": 18189
+    },
+    {
+      "path": "predictions/glider/8d090653df26e01120d4.npz",
+      "sha256": "bbbdf2d582117ba88ec2bd0832bed5d4d7598cbdc57933941ec77b838076a004",
+      "size_bytes": 34987
+    },
+    {
+      "path": "predictions/glider/90c2a9e7f959cf4a6252.npz",
+      "sha256": "72f0aaea4f7326ee2986e73cb339a019955b399b1c0bbf17424199fa7c8f95ab",
+      "size_bytes": 38844
+    },
+    {
+      "path": "predictions/glider/971982b9a767d3571bc1.npz",
+      "sha256": "cd27fdb3d426d75f5d8b4f85d1ef4f3eec2e3f868cd96c2e89b09c2c0f9273a3",
+      "size_bytes": 16954
+    },
+    {
+      "path": "predictions/glider/99316b29b96fa60f341c.npz",
+      "sha256": "093cce58c8a16ca6eea511383e01701eb8eac2935976cfdb72acd932b08de0db",
+      "size_bytes": 40198
+    },
+    {
+      "path": "predictions/glider/a134c2c15bfd37ccfed5.npz",
+      "sha256": "fbafa1cb3354779a1f6851837a522acfa43f64cfda9e5d9b0f27111f5f6c8d38",
+      "size_bytes": 30470
+    },
+    {
+      "path": "predictions/glider/a8cb55137c0549e8ab6b.npz",
+      "sha256": "8f9ce248bc6302ce7ac38522fbceee8da6018b7fbdd4b812fbbbd58ad1a6b210",
+      "size_bytes": 15716
+    },
+    {
+      "path": "predictions/glider/abf003d0d17851b773d8.npz",
+      "sha256": "30dd9d1533777af967241ea6d2cc1e1b9232c1e93d9866321de1fed89652a520",
+      "size_bytes": 41495
+    },
+    {
+      "path": "predictions/glider/adf2ce317750f1e4cbf0.npz",
+      "sha256": "c07a18d14d0d2744594f81fcf1bad5c52559043988d147b745bf221287368c23",
+      "size_bytes": 38806
+    },
+    {
+      "path": "predictions/glider/b14b38ebe84c5cf756a0.npz",
+      "sha256": "b70c081cc027b7e32cff298e539e744da7cda980806c5c1ae2ae9d9f04aac8b7",
+      "size_bytes": 36189
+    },
+    {
+      "path": "predictions/glider/b2076ddf2184691db4f2.npz",
+      "sha256": "c4ecb08fa068440d3d80dd35d706fddd3f5e809894e67dade73c21513fa529ad",
+      "size_bytes": 38644
+    },
+    {
+      "path": "predictions/glider/b71f612b7cb21dd1edfc.npz",
+      "sha256": "489dd076a5c63c242b485db2210f1674888b74561b17b11afe4c6921869819b2",
+      "size_bytes": 22557
+    },
+    {
+      "path": "predictions/glider/bf75019913131e1fefd1.npz",
+      "sha256": "894b9ccd82f3c282a35b501552df8b35e47cdcfbe5595d063917dd2f27e580f9",
+      "size_bytes": 33016
+    },
+    {
+      "path": "predictions/glider/c12058cc08715cd7308c.npz",
+      "sha256": "38db5568230f1e2eadd6ef3deac951d9408a3ea378d7d12656ef152a2dfbbd4d",
+      "size_bytes": 36354
+    },
+    {
+      "path": "predictions/glider/c2c505eb2d756e2fbf06.npz",
+      "sha256": "2bfc539d4a47937e865e297899901e12203252008081fb86ddf6f04fd9c4f689",
+      "size_bytes": 35497
+    },
+    {
+      "path": "predictions/glider/c370d443d428de4702da.npz",
+      "sha256": "a41343124d5897b6606ec957fe310bae4f963fa8e96abc25707ce07bd1b5d21b",
+      "size_bytes": 31716
+    },
+    {
+      "path": "predictions/glider/c8a2ba25e40ca93499e5.npz",
+      "sha256": "68a57b481c03d410e0e8347411186a6df68dd6ce11574bb4918f87836bcf4059",
+      "size_bytes": 36208
+    },
+    {
+      "path": "predictions/glider/c9ac95845ecc9e19087f.npz",
+      "sha256": "6482e0c5599bd4c1504e88e35fbdd3b832b2a2260e19a418e7f8bb84d4559568",
+      "size_bytes": 22301
+    },
+    {
+      "path": "predictions/glider/cb05ebb922d3d06fd93b.npz",
+      "sha256": "c8a503b37ff35210d7dd8c4425c6ed6fa1a6837d4c409d49f34edb67e015cbd4",
+      "size_bytes": 40453
+    },
+    {
+      "path": "predictions/glider/cf6da9d37c7700617a6b.npz",
+      "sha256": "f48254ae04cdc8f8c5aa883f82085ba508a3d84e9490fbdad0f41ef384bb52fa",
+      "size_bytes": 32826
+    },
+    {
+      "path": "predictions/glider/d2841267182887ac167d.npz",
+      "sha256": "71a0bcf3edcdd4e3cbe7231352d31c038d087923a622117d275905a5ec76a15d",
+      "size_bytes": 35230
+    },
+    {
+      "path": "predictions/glider/d3033d301bf8c5c98538.npz",
+      "sha256": "781a6c90ee8b197e19ceee6ac0e1f77bb6648cdf064552a03755011629ac61f2",
+      "size_bytes": 31714
+    },
+    {
+      "path": "predictions/glider/d39233a62211d087aa7f.npz",
+      "sha256": "508c17664cb366c2ae88c1165e0a97e8e767624245eebdcf49211ff203e8fac6",
+      "size_bytes": 38067
+    },
+    {
+      "path": "predictions/glider/d74799c2b37c3ee8b4b2.npz",
+      "sha256": "21f5677d853fd545f1defe5b8ecdca994398d6f78883a1470f2e249eb8a5cf3e",
+      "size_bytes": 26212
+    },
+    {
+      "path": "predictions/glider/d7d6a2e406e95a65baca.npz",
+      "sha256": "11cea23aa6b049cc10addd7e33aa3805b7a87ac92cff39b806ea7d5d926596cf",
+      "size_bytes": 16698
+    },
+    {
+      "path": "predictions/glider/d9caaff0296a7c0fc790.npz",
+      "sha256": "ae7a6339ae3f3f6da7c708d26aae2231cbc7db9fd092c29c5a6eea34c346dc2d",
+      "size_bytes": 29199
+    },
+    {
+      "path": "predictions/glider/da3e73533ecc0e0f9162.npz",
+      "sha256": "71cc607c0b5088b7b4d8341149653c5bb3fc9ed77f27fb9463e92e826dbd0716",
+      "size_bytes": 15871
+    },
+    {
+      "path": "predictions/glider/dab69b65debfeee410dd.npz",
+      "sha256": "893c830920b9ebcc599c7bd05b750f30cc720933cbd3db21fe6406a71d06dcb4",
+      "size_bytes": 27502
+    },
+    {
+      "path": "predictions/glider/e33c604a3a8457ede4a1.npz",
+      "sha256": "225b176e8e64ad731b64854bc94991d3373d8241f2ad03ff6f448d12504182d9",
+      "size_bytes": 29784
+    },
+    {
+      "path": "predictions/glider/e717b3e38251180ad2a2.npz",
+      "sha256": "b70ca778bd4e9612e0112a51fa180afecb29dc36b94d09ceca6b1668d6c2f401",
+      "size_bytes": 21348
+    },
+    {
+      "path": "predictions/glider/e947ea722ef7abd413e9.npz",
+      "sha256": "22b5c45028358ab9cb367da3948b7910b59ad42bfba1b3ea036b86000b769691",
+      "size_bytes": 17502
+    },
+    {
+      "path": "predictions/glider/ece44fb48e99e7726bbe.npz",
+      "sha256": "72e7b7efecc7f45b16937eb9bbe9ecc0f0e01dbb9dbf788a625d975cb1dc93d0",
+      "size_bytes": 18078
+    },
+    {
+      "path": "predictions/glider/edb53eb418b1bef4cf89.npz",
+      "sha256": "8ba48900b96274b6a9ddc688789e60f5225b4f0f83b997e9307e6057ffa94b2d",
+      "size_bytes": 40215
+    },
+    {
+      "path": "predictions/glider/f1798f6619f054540c47.npz",
+      "sha256": "bd772a173e88337de33a910edb581c1e8ad78a5bf54c3bb9934f91f822b1db3d",
+      "size_bytes": 21823
+    },
+    {
+      "path": "predictions/glider/f30409eda4869155c3b3.npz",
+      "sha256": "824d46d02b7b210ae2020d343bfa62969cfc021dcfbd4eac99e076bb9787f7b2",
+      "size_bytes": 39493
+    },
+    {
+      "path": "predictions/glider/ff5c8d8b6fe9d6ca88e9.npz",
+      "sha256": "120e804aad530321edaa0b11682f759bb299994f6cc77b512818fad8c1a828d3",
+      "size_bytes": 21282
+    },
+    {
+      "path": "predictions/glider/manifest.json",
+      "sha256": "e61f70a494f0fd74e47ba5f91edb71c388d65eed5860e2b2c233a66443cf25c3",
+      "size_bytes": 596
+    },
+    {
+      "path": "predictions/glider/prediction_registry.csv",
+      "sha256": "ded3cffc4f9b881d08af969af721a63b96b64e0232897779fd7618d1e535e239",
+      "size_bytes": 15711
+    }
+  ],
+  "geometry_sha256": "ec62f08d1e8e2ff7ba1b458ef9cf78c5fda957f96437e7c34c854157528152ee",
+  "maximum_abs_net_response_charge_e": 5.471520125865936e-09,
+  "method": "original frozen GLIDER",
+  "n_configurations": 80,
+  "prediction_tree_sha256": "1a7c3caa15c99412f5bbcedecef0c7eedad4754337d71e3679e2b73341dd7179",
+  "reference_response_labels_exist": false,
+  "rotation_audit": {
+    "max_atomic_dipole_rotation_error_e_bohr": 0.0003566010855138302,
+    "max_charge_rotation_error_e": 6.931618554517627e-05,
+    "max_molecular_dipole_rotation_error_debye": 0.0036144687600500186,
+    "n_nontrivial_rotations_per_parent": 3,
+    "n_parent_environments": 4,
+    "pass": true,
+    "reference_labels_accessed": false,
+    "thresholds": {
+      "atomic_dipole_e_bohr": 0.0005,
+      "charge_e": 0.0001,
+      "molecular_dipole_debye": 0.01
+    }
+  }
+}

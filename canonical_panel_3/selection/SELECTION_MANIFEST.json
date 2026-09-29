@@ -1,0 +1,22 @@
+{
+  "construction_failures": [],
+  "eligible_count": 543,
+  "eligible_pool_sha256": "683b2bb3ba334f4f2b531b0ca3f2b256da1ffb5105973a03a59697bff3368af4",
+  "geometry_preflight_sha256": "7c23635f51272478abf6860cf34e731af820df5cc9d43b75d2d33a96c97d3b78",
+  "hydration_targets_accessed": false,
+  "identity_only_source_sha256": "847e45a27e3963cda2ad909b3a381ac7547fd0dd2dbee4cc506ea2f9b5e8abc8",
+  "model_predictions_accessed": false,
+  "protocol_sha256": "5f4b1109c4c51a79f0b2823f76ca5cd0e324c2dce431dce64e857f9e5a896b45",
+  "rdkit_version": "2025.09.6",
+  "response_labels_accessed": false,
+  "selected_count": 20,
+  "selected_molecules_sha256": "4decb21e8318d5766dc782e2e31ca5c9a8c675ab776bf820e4d35be2bb77dbe7",
+  "selector_sha256": "88b76f604afa013cafb8541de08786c81d1733b4348cca471c1e119894425871",
+  "stratum_counts": {
+    "1": 4,
+    "2": 4,
+    "3": 4,
+    "4": 4,
+    "5": 4
+  }
+}

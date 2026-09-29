@@ -1,0 +1,169 @@
+method,method_label,molecule_id,esp_nrmse,dipole_mse,dipole_vector_rmse_debye
+aimnet2,AIMNet2 official default,pros_azaaryl_sulfoxide,0.7132747692758464,0.10084440007594518,0.31756007317662777
+candidate,Frozen candidate,pros_azaaryl_sulfoxide,0.3155867901972659,0.0020804307430129605,0.04561173909217846
+gfn2_xtb,GFN2-xTB (tblite 0.7.0),pros_azaaryl_sulfoxide,,0.015020119521552192,0.12255659721758022
+linear_mace,Linear / MACE features,pros_azaaryl_sulfoxide,10.458160411883414,20.887546305339228,4.570289520953703
+linear_visnet,Linear / ViSNet features,pros_azaaryl_sulfoxide,2.509727380562392,0.7232499692442119,0.8504410439555536
+mace_mdp,MACE-MDP,pros_azaaryl_sulfoxide,,0.0051545600096168645,0.07179526453476485
+mace_polar_l,MACE-POLAR-1-L (faithful Gaussian),pros_azaaryl_sulfoxide,0.4871855575134478,0.003759703981963583,0.06131642505857287
+mace_polar_m,MACE-POLAR-1-M (faithful Gaussian),pros_azaaryl_sulfoxide,0.6261926997404221,0.013952680869410147,0.11812146659015942
+mace_polar_s,MACE-POLAR-1-S (faithful Gaussian),pros_azaaryl_sulfoxide,0.7388930942135921,0.027888367236155308,0.16699810548672492
+ridge_mace,Ridge / MACE features,pros_azaaryl_sulfoxide,1.4974065026333343,0.19266902798234797,0.43894080236672917
+ridge_visnet,Ridge / ViSNet features,pros_azaaryl_sulfoxide,1.1622812156216722,0.15303919798188487,0.3912022469029094
+salter_style,SALTER-style MACE kernel,pros_azaaryl_sulfoxide,1.2595037453848494,0.0860848184794257,0.2934021446401265
+static_thole,Static q/u + Thole,pros_azaaryl_sulfoxide,49.536404363345426,782.0584698622437,27.96530832768063
+zero,Zero-response control,pros_azaaryl_sulfoxide,1.0,0.12080967993810561,0.34757686910682883
+aimnet2,AIMNet2 official default,pros_cyano_cyclic_acetal,0.9202527642984839,0.14676915000877128,0.3831046201871902
+candidate,Frozen candidate,pros_cyano_cyclic_acetal,0.3999771370633056,0.028500873439378963,0.16882201704570102
+gfn2_xtb,GFN2-xTB (tblite 0.7.0),pros_cyano_cyclic_acetal,,0.07772968423147741,0.27880043800445764
+linear_mace,Linear / MACE features,pros_cyano_cyclic_acetal,14.51578017394258,53.244003355623676,7.296848864792506
+linear_visnet,Linear / ViSNet features,pros_cyano_cyclic_acetal,4.413945101652961,5.247211365946937,2.290679236808798
+mace_mdp,MACE-MDP,pros_cyano_cyclic_acetal,,0.01051668631361683,0.10255089621069545
+mace_polar_l,MACE-POLAR-1-L (faithful Gaussian),pros_cyano_cyclic_acetal,0.4853656079486608,0.03404127508492145,0.18450277798700335
+mace_polar_m,MACE-POLAR-1-M (faithful Gaussian),pros_cyano_cyclic_acetal,0.6136274272877755,0.06666090658226605,0.25818773515073495
+mace_polar_s,MACE-POLAR-1-S (faithful Gaussian),pros_cyano_cyclic_acetal,1.116570360401701,0.2861863124753822,0.5349638422130809
+ridge_mace,Ridge / MACE features,pros_cyano_cyclic_acetal,1.6769556084621597,0.598474923211713,0.773611610054886
+ridge_visnet,Ridge / ViSNet features,pros_cyano_cyclic_acetal,1.2055680436021845,0.14634917095097222,0.3825561017040144
+salter_style,SALTER-style MACE kernel,pros_cyano_cyclic_acetal,1.0942244691038354,0.19722272135214364,0.44409764844248345
+static_thole,Static q/u + Thole,pros_cyano_cyclic_acetal,17.230137947310304,133.84789183567716,11.569264965229086
+zero,Zero-response control,pros_cyano_cyclic_acetal,1.0,0.17348978717490665,0.4165210524990383
+aimnet2,AIMNet2 official default,pros_halogen_oxazinanone,0.8629652911865653,0.4018383832429243,0.6339072355186713
+candidate,Frozen candidate,pros_halogen_oxazinanone,0.24507984698604945,0.01948507570505198,0.13958895266120447
+gfn2_xtb,GFN2-xTB (tblite 0.7.0),pros_halogen_oxazinanone,,0.3317535524343256,0.5759805139363011
+linear_mace,Linear / MACE features,pros_halogen_oxazinanone,5.9226803749878965,17.562021692896383,4.19070658635228
+linear_visnet,Linear / ViSNet features,pros_halogen_oxazinanone,1.2731679244635412,0.7020954112925364,0.8379113385630584
+mace_mdp,MACE-MDP,pros_halogen_oxazinanone,,0.17282485594455235,0.4157220897962392
+mace_polar_l,MACE-POLAR-1-L (faithful Gaussian),pros_halogen_oxazinanone,0.4777020978679647,0.03316411538492826,0.18211017375459357
+mace_polar_m,MACE-POLAR-1-M (faithful Gaussian),pros_halogen_oxazinanone,0.5572198794872881,0.04100175673839819,0.2024889052229731
+mace_polar_s,MACE-POLAR-1-S (faithful Gaussian),pros_halogen_oxazinanone,0.8247668808710139,0.3356383305549243,0.5793430163166933
+ridge_mace,Ridge / MACE features,pros_halogen_oxazinanone,1.134976771606384,0.5392410118043902,0.7343303151881926
+ridge_visnet,Ridge / ViSNet features,pros_halogen_oxazinanone,0.792341626850224,0.1261460389314747,0.35517043645477403
+salter_style,SALTER-style MACE kernel,pros_halogen_oxazinanone,1.06932808255186,0.29000142121226546,0.538517800274295
+static_thole,Static q/u + Thole,pros_halogen_oxazinanone,993.6861335265268,1819636.8280553806,1348.9391491299305
+zero,Zero-response control,pros_halogen_oxazinanone,1.0,0.3441651796857224,0.5866559295581375
+aimnet2,AIMNet2 official default,pros_heteroaryl_amide,0.9874700131786538,0.2334639196167893,0.4831810422779326
+candidate,Frozen candidate,pros_heteroaryl_amide,0.3545584816690196,0.0037742924994799126,0.061435270809852484
+gfn2_xtb,GFN2-xTB (tblite 0.7.0),pros_heteroaryl_amide,,0.07143978242417118,0.26728221494175625
+linear_mace,Linear / MACE features,pros_heteroaryl_amide,25.285376083963968,157.29757352365823,12.541832941147726
+linear_visnet,Linear / ViSNet features,pros_heteroaryl_amide,6.795120025870407,10.676495990838204,3.267490778998191
+mace_mdp,MACE-MDP,pros_heteroaryl_amide,,0.005240220729363227,0.07238936889739561
+mace_polar_l,MACE-POLAR-1-L (faithful Gaussian),pros_heteroaryl_amide,0.5052291053554997,0.0018087540341419446,0.04252944902231799
+mace_polar_m,MACE-POLAR-1-M (faithful Gaussian),pros_heteroaryl_amide,0.6163681472642103,0.011350284376489137,0.10653771339994648
+mace_polar_s,MACE-POLAR-1-S (faithful Gaussian),pros_heteroaryl_amide,0.7319254376738187,0.014428677471923806,0.12011943003496064
+ridge_mace,Ridge / MACE features,pros_heteroaryl_amide,1.2155987375490853,0.16493610458922675,0.4061232628023501
+ridge_visnet,Ridge / ViSNet features,pros_heteroaryl_amide,2.0371565200877906,0.9430377016498622,0.9711012828999157
+salter_style,SALTER-style MACE kernel,pros_heteroaryl_amide,1.3014762638356672,0.10343919443026574,0.32161964248202524
+static_thole,Static q/u + Thole,pros_heteroaryl_amide,495.88155193801146,15614.704284263522,124.95881035070525
+zero,Zero-response control,pros_heteroaryl_amide,1.0,0.32335625458199807,0.5686442249614412
+aimnet2,AIMNet2 official default,pros_isoxazole_thioether,0.8197820900383427,0.15770109887540704,0.3971159766055844
+candidate,Frozen candidate,pros_isoxazole_thioether,0.3598127646399737,0.010490895013879861,0.10242507024102966
+gfn2_xtb,GFN2-xTB (tblite 0.7.0),pros_isoxazole_thioether,,0.0397799375622272,0.19944908513760398
+linear_mace,Linear / MACE features,pros_isoxazole_thioether,16.55455245886832,51.86622487405852,7.201820941543779
+linear_visnet,Linear / ViSNet features,pros_isoxazole_thioether,3.308944089372075,1.020083847594186,1.0099920037278445
+mace_mdp,MACE-MDP,pros_isoxazole_thioether,,0.0027515736507924696,0.052455444434228844
+mace_polar_l,MACE-POLAR-1-L (faithful Gaussian),pros_isoxazole_thioether,0.49461472025125547,0.016219802689325335,0.12735698916559443
+mace_polar_m,MACE-POLAR-1-M (faithful Gaussian),pros_isoxazole_thioether,0.5851881882722576,0.022163752197321272,0.1488749549028354
+mace_polar_s,MACE-POLAR-1-S (faithful Gaussian),pros_isoxazole_thioether,0.7158884372552307,0.027455178708666195,0.16569604312917732
+ridge_mace,Ridge / MACE features,pros_isoxazole_thioether,1.5171502173504983,0.5471029641190618,0.7396640887045023
+ridge_visnet,Ridge / ViSNet features,pros_isoxazole_thioether,1.0532730990906574,0.12983327744859802,0.3603238507906436
+salter_style,SALTER-style MACE kernel,pros_isoxazole_thioether,1.3409903908127119,0.07632353840396644,0.2762671504250305
+static_thole,Static q/u + Thole,pros_isoxazole_thioether,7.321606631866345,23.368845112138214,4.834133336197732
+zero,Zero-response control,pros_isoxazole_thioether,1.0,0.23258675405067453,0.4822724894192852
+aimnet2,AIMNet2 official default,pros_polyfunctional_oxane,0.7010573112500216,0.06236005684432044,0.2497199568402983
+candidate,Frozen candidate,pros_polyfunctional_oxane,0.2381837914333318,0.0060145426235181645,0.0775534823429494
+gfn2_xtb,GFN2-xTB (tblite 0.7.0),pros_polyfunctional_oxane,,0.03217411784994477,0.17937145215988182
+linear_mace,Linear / MACE features,pros_polyfunctional_oxane,5.48257987903393,6.952677813081904,2.636793092580816
+linear_visnet,Linear / ViSNet features,pros_polyfunctional_oxane,3.6329596063995115,2.3678071424287017,1.5387680599845779
+mace_mdp,MACE-MDP,pros_polyfunctional_oxane,,0.0021527813850128683,0.046398075229613436
+mace_polar_l,MACE-POLAR-1-L (faithful Gaussian),pros_polyfunctional_oxane,0.505250516931866,0.014761863952033081,0.1214984113148525
+mace_polar_m,MACE-POLAR-1-M (faithful Gaussian),pros_polyfunctional_oxane,0.632873885409952,0.0073316209677996395,0.08562488521335161
+mace_polar_s,MACE-POLAR-1-S (faithful Gaussian),pros_polyfunctional_oxane,0.7789162207908641,0.03791706603087842,0.19472304956239367
+ridge_mace,Ridge / MACE features,pros_polyfunctional_oxane,1.6130616372252722,0.46611116001970476,0.6827233407608859
+ridge_visnet,Ridge / ViSNet features,pros_polyfunctional_oxane,1.713870335532727,0.24157341472321334,0.49150118486450606
+salter_style,SALTER-style MACE kernel,pros_polyfunctional_oxane,1.0871293146687555,0.11641169269256221,0.3411915776987501
+static_thole,Static q/u + Thole,pros_polyfunctional_oxane,778.369891221657,219559.98278133688,468.5722812772186
+zero,Zero-response control,pros_polyfunctional_oxane,1.0,0.1257685292181736,0.35463858957842365
+aimnet2,AIMNet2 official default,pros_sulfonyl_piperidinol,0.8037661609366862,0.12180703030052649,0.34900863929210474
+candidate,Frozen candidate,pros_sulfonyl_piperidinol,0.3249249880227005,0.007767530843984659,0.08813359656785066
+gfn2_xtb,GFN2-xTB (tblite 0.7.0),pros_sulfonyl_piperidinol,,0.059082094433769425,0.2430680860042499
+linear_mace,Linear / MACE features,pros_sulfonyl_piperidinol,4.7226592509511445,3.262586498644498,1.8062631310649337
+linear_visnet,Linear / ViSNet features,pros_sulfonyl_piperidinol,2.1324811773421066,1.0117923370830335,1.005878887880163
+mace_mdp,MACE-MDP,pros_sulfonyl_piperidinol,,0.004210527405875212,0.06488857685197921
+mace_polar_l,MACE-POLAR-1-L (faithful Gaussian),pros_sulfonyl_piperidinol,0.41891390011012186,0.004162981760183185,0.06452117296037933
+mace_polar_m,MACE-POLAR-1-M (faithful Gaussian),pros_sulfonyl_piperidinol,0.49664745589214365,0.008833411791765361,0.09398623192662509
+mace_polar_s,MACE-POLAR-1-S (faithful Gaussian),pros_sulfonyl_piperidinol,0.614203113795756,0.017511805063726224,0.13233217697796038
+ridge_mace,Ridge / MACE features,pros_sulfonyl_piperidinol,1.1581117736799955,0.23580353359046508,0.485596060105995
+ridge_visnet,Ridge / ViSNet features,pros_sulfonyl_piperidinol,0.9915480730572419,0.19074495252724877,0.4367435775455076
+salter_style,SALTER-style MACE kernel,pros_sulfonyl_piperidinol,1.0165689209012125,0.15446551554522442,0.39302101158236363
+static_thole,Static q/u + Thole,pros_sulfonyl_piperidinol,12.26215929841705,14.591676536375452,3.8199053046345863
+zero,Zero-response control,pros_sulfonyl_piperidinol,1.0,0.25736974731325774,0.5073162202347345
+aimnet2,AIMNet2 official default,prospective_diverse_01,0.6301363944613114,0.015766096638694896,0.1255631181465915
+candidate,Frozen candidate,prospective_diverse_01,0.2617839853311653,0.0013238892467072718,0.03638528887761195
+gfn2_xtb,GFN2-xTB (tblite 0.7.0),prospective_diverse_01,,0.040497680182977114,0.20124035426071263
+linear_mace,Linear / MACE features,prospective_diverse_01,2.805856211986346,0.9574799531642557,0.9785090460308764
+linear_visnet,Linear / ViSNet features,prospective_diverse_01,1.0957933215409126,0.14825608012997676,0.3850403616894945
+mace_mdp,MACE-MDP,prospective_diverse_01,,0.0032662764930682297,0.057151347255058035
+mace_polar_l,MACE-POLAR-1-L (faithful Gaussian),prospective_diverse_01,0.5832996292837658,0.003642138358253594,0.0603501313855537
+mace_polar_m,MACE-POLAR-1-M (faithful Gaussian),prospective_diverse_01,0.7401361098595908,0.006680992593357848,0.08173733904010974
+mace_polar_s,MACE-POLAR-1-S (faithful Gaussian),prospective_diverse_01,0.8287327703485817,0.030478210023085758,0.1745800962970457
+ridge_mace,Ridge / MACE features,prospective_diverse_01,0.8931184503737395,0.08040769983556231,0.2835625148632349
+ridge_visnet,Ridge / ViSNet features,prospective_diverse_01,0.6763139373183782,0.030289412417214896,0.17403853716121293
+salter_style,SALTER-style MACE kernel,prospective_diverse_01,1.1073609681389618,0.042279163323903315,0.20561897607930868
+static_thole,Static q/u + Thole,prospective_diverse_01,18.17288786817414,166.1591115397215,12.890271973070293
+zero,Zero-response control,prospective_diverse_01,1.0,0.049764517145008146,0.22307962064027306
+aimnet2,AIMNet2 official default,prospective_diverse_02,0.6841648739569772,0.18749425418334312,0.4330060671438024
+candidate,Frozen candidate,prospective_diverse_02,0.7441904519677623,0.34391565010612235,0.5864432198483689
+gfn2_xtb,GFN2-xTB (tblite 0.7.0),prospective_diverse_02,,2.734780655686457,1.6537172236166788
+linear_mace,Linear / MACE features,prospective_diverse_02,7.132862465954067,61.281876472512586,7.828274169477752
+linear_visnet,Linear / ViSNet features,prospective_diverse_02,2.9499659256573607,6.528229397318407,2.555039999162128
+mace_mdp,MACE-MDP,prospective_diverse_02,,0.05222697580883972,0.2285322205047676
+mace_polar_l,MACE-POLAR-1-L (faithful Gaussian),prospective_diverse_02,0.7686437114777807,0.43182114351637324,0.6571309941833312
+mace_polar_m,MACE-POLAR-1-M (faithful Gaussian),prospective_diverse_02,0.7217433986021914,0.25048676780697954,0.5004865310944736
+mace_polar_s,MACE-POLAR-1-S (faithful Gaussian),prospective_diverse_02,0.6516129664704227,0.04620800959304934,0.21496048379422983
+ridge_mace,Ridge / MACE features,prospective_diverse_02,1.0813658731463014,1.0983723218179708,1.0480325957802892
+ridge_visnet,Ridge / ViSNet features,prospective_diverse_02,1.1263822015835676,1.0198562174569172,1.0098793083616067
+salter_style,SALTER-style MACE kernel,prospective_diverse_02,0.994122900255997,0.46238776604516757,0.6799910043854753
+static_thole,Static q/u + Thole,prospective_diverse_02,4.4128626102130735,12.549174065256725,3.5424813429652278
+zero,Zero-response control,prospective_diverse_02,1.0,0.6469587543118658,0.8043374629543658
+aimnet2,AIMNet2 official default,prospective_diverse_03,0.6195638983098312,0.01711484394285505,0.1308237132283557
+candidate,Frozen candidate,prospective_diverse_03,0.21809036091140682,0.0007634139980565481,0.027629947485591572
+gfn2_xtb,GFN2-xTB (tblite 0.7.0),prospective_diverse_03,,0.05117488713173799,0.22621867105024288
+linear_mace,Linear / MACE features,prospective_diverse_03,1.505565148874022,0.4473978069918082,0.6688780210111618
+linear_visnet,Linear / ViSNet features,prospective_diverse_03,1.6525011130609857,0.426290554782326,0.6529093005788216
+mace_mdp,MACE-MDP,prospective_diverse_03,,0.00021365936841951521,0.01461709165393428
+mace_polar_l,MACE-POLAR-1-L (faithful Gaussian),prospective_diverse_03,0.5413848967383799,0.0010786953756462638,0.0328434982248582
+mace_polar_m,MACE-POLAR-1-M (faithful Gaussian),prospective_diverse_03,0.6740654078115303,0.001602282601066531,0.040028522344280094
+mace_polar_s,MACE-POLAR-1-S (faithful Gaussian),prospective_diverse_03,0.5582409818798435,0.006479001719937901,0.08049224633427682
+ridge_mace,Ridge / MACE features,prospective_diverse_03,0.4643461277653351,0.02794343231821018,0.16716289157049832
+ridge_visnet,Ridge / ViSNet features,prospective_diverse_03,0.9970412345272125,0.08126674039037629,0.2850732193496546
+salter_style,SALTER-style MACE kernel,prospective_diverse_03,1.0601072752860934,0.11127202501593436,0.333574616863955
+static_thole,Static q/u + Thole,prospective_diverse_03,9.663414855304277,13.128463726305146,3.6233221946585354
+zero,Zero-response control,prospective_diverse_03,1.0,0.14603224671967036,0.38214165792238663
+aimnet2,AIMNet2 official default,prospective_diverse_04,0.7250929990884499,0.032436241358894696,0.18010064230561393
+candidate,Frozen candidate,prospective_diverse_04,0.23927998123268068,0.003897955227075254,0.06243360655188241
+gfn2_xtb,GFN2-xTB (tblite 0.7.0),prospective_diverse_04,,0.01516848491098466,0.12316040317806962
+linear_mace,Linear / MACE features,prospective_diverse_04,8.573708524533362,25.614443702352286,5.061071398661778
+linear_visnet,Linear / ViSNet features,prospective_diverse_04,2.414873367259508,1.9628642388365258,1.4010225689961335
+mace_mdp,MACE-MDP,prospective_diverse_04,,0.005335541648638148,0.07304479207060656
+mace_polar_l,MACE-POLAR-1-L (faithful Gaussian),prospective_diverse_04,0.5566782555412267,0.004141617651137742,0.06435540110307558
+mace_polar_m,MACE-POLAR-1-M (faithful Gaussian),prospective_diverse_04,0.7251171833584619,0.01962787568202922,0.14009952063454473
+mace_polar_s,MACE-POLAR-1-S (faithful Gaussian),prospective_diverse_04,0.8894699830707868,0.030679891494894928,0.17515676262963678
+ridge_mace,Ridge / MACE features,prospective_diverse_04,1.0715938163023113,0.13587672754707605,0.3686146057158832
+ridge_visnet,Ridge / ViSNet features,prospective_diverse_04,1.4311963971011572,0.6741924139648168,0.8210922079552435
+salter_style,SALTER-style MACE kernel,prospective_diverse_04,1.119585484549878,0.11685744350565817,0.34184418015472806
+static_thole,Static q/u + Thole,prospective_diverse_04,16.964388471749743,47.70850310145594,6.9071342177096815
+zero,Zero-response control,prospective_diverse_04,1.0,0.10270041288937351,0.3204690513752826
+aimnet2,AIMNet2 official default,prospective_diverse_05,0.7344081917642278,0.10301843327520727,0.32096484741355596
+candidate,Frozen candidate,prospective_diverse_05,0.16012367381840428,0.0022687557615328293,0.047631457688515365
+gfn2_xtb,GFN2-xTB (tblite 0.7.0),prospective_diverse_05,,0.07954872952909331,0.2820438432745755
+linear_mace,Linear / MACE features,prospective_diverse_05,1.9395483807400336,0.645925030826441,0.8036946129136621
+linear_visnet,Linear / ViSNet features,prospective_diverse_05,1.676956000450946,0.9876792273946888,0.993820520715229
+mace_mdp,MACE-MDP,prospective_diverse_05,,0.009274436088958901,0.09630387369653882
+mace_polar_l,MACE-POLAR-1-L (faithful Gaussian),prospective_diverse_05,0.4694449554881609,0.008994951668341931,0.09484171902882155
+mace_polar_m,MACE-POLAR-1-M (faithful Gaussian),prospective_diverse_05,0.5559281633632184,0.013712538865906001,0.11710055023741776
+mace_polar_s,MACE-POLAR-1-S (faithful Gaussian),prospective_diverse_05,0.6960101638228214,0.047665532256503315,0.21832437394048176
+ridge_mace,Ridge / MACE features,prospective_diverse_05,0.5611953251638805,0.16508603796878657,0.4063078118480945
+ridge_visnet,Ridge / ViSNet features,prospective_diverse_05,0.8946582304171564,0.18963817875673028,0.4354746591441691
+salter_style,SALTER-style MACE kernel,prospective_diverse_05,0.9021751007393934,0.13356219617148982,0.3654616206546042
+static_thole,Static q/u + Thole,prospective_diverse_05,11.255621852022092,35.59641496922675,5.966273122245306
+zero,Zero-response control,prospective_diverse_05,1.0,0.17773987312111972,0.4215920695662096

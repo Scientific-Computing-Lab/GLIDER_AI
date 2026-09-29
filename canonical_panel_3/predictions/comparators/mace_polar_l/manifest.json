@@ -1,0 +1,6 @@
+{
+  "audit_sha256": "1db91b6bea7dd18e4c52489c504868ffaf602075db6228ccda3d2f9e03e23a8c",
+  "method": "MACE-POLAR-1-L",
+  "n_configurations": 80,
+  "prediction_registry_sha256": "d2df98dc5daf12dce52da3290f67e4ae226a3def686a0a499832f52abd799279"
+}

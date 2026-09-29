@@ -1,0 +1,29 @@
+{
+  "aimnet_version": "0.2.0",
+  "checkpoint_selected_using_benchmark_results": false,
+  "checkpoint_sha256": "f0f7c054539ad3261bd36f9b11c56d12f87cb723e25bea7521755bbd3ec24e28",
+  "chronology_disclosure": "External public comparator executed after references existed; no target was read by inference and no model/checkpoint/postprocessing choice used benchmark performance.",
+  "device": "cpu",
+  "dipole_definition": "sum_i(delta_q_i * r_i), converted from e*angstrom to Debye",
+  "esp_definition": "Coulomb potential of official AIMNet2 environment-dependent atomic point charges",
+  "inference_definition": "full complex minus isolated solute minus isolated three-water cluster",
+  "max_abs_component_net_charge_error_e": 4.172325134277344e-07,
+  "max_abs_response_charge_e": 4.819594323635101e-07,
+  "method": "AIMNet2 official aimnet2 alias/member 0",
+  "model_alias": "aimnet2",
+  "n_configurations": 80,
+  "nvalchemi_toolkit_ops_version": "0.4.1",
+  "official_registry_expected_sha256": "f0f7c054539ad3261bd36f9b11c56d12f87cb723e25bea7521755bbd3ec24e28",
+  "prospective_targets_accessed": false,
+  "python": "3.11.15",
+  "resolved_checkpoint": "/home/galoren/.cache/aimnet/aimnet2_wb97m_d3_0.pt",
+  "rotation_translation_check": {
+    "config_id": "canonical_p3__mobley_1278715__cluster_3water__compressed",
+    "dipole_covariance_error_debye": 3.240805335415547e-06,
+    "max_abs_response_charge_change_e": 2.086162567138672e-07
+  },
+  "runtime_seconds_including_first_call_compilation_excluding_model_download": 41.461194931995124,
+  "torch_version": "2.8.0+cpu",
+  "training_or_tuning_performed": false,
+  "warp_lang_version": "1.11.1"
+}

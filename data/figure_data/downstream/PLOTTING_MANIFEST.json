@@ -1,0 +1,33 @@
+{
+  "source_commit": "a774f6a441a8c2055374476b6ee36e71ff49ebaf",
+  "w4_solutes": 10,
+  "range_probes": 90,
+  "selected_origins": {
+    "W4_energy_MAE": "exact_dipole_solute_com",
+    "W4_force_vector_RMSE": "exact_dipole_base_com",
+    "W4_orientation_absolute_profile_RMSE": "exact_dipole_solute_com",
+    "W4_orientation_centered_profile_RMSE": "exact_dipole_solute_com",
+    "W4_torque_vector_RMSE": "exact_dipole_base_com"
+  },
+  "files": {
+    "figure_data/downstream/centered_pairs.csv": "513ed1e7266836d7ccd4a161c1ee99ab7d8d6e129d99d592666e2875be7dfa50",
+    "figure_data/downstream/centered_pairs_links.csv": "e0eb067ba52a1ce0cc452df33b72dc9a03e5ad7fe9ea91f32dc15d892f2cdec0",
+    "figure_data/downstream/cumulative.csv": "8cf80eb9f73b94412a8363255432d80fc4400c4a4f0202116904e191376f6be7",
+    "figure_data/downstream/distance_errors.csv": "2aa0eb0e1ad57ff3e5fa01fb9a703a9bc83f090ac649ed704973c87bb8c69cc1",
+    "figure_data/downstream/energy_pairs.csv": "5dd8c3c0334e268d725dbdf43c59e6b2461fb83c07afea982e109fc70b4512c9",
+    "figure_data/downstream/energy_pairs_links.csv": "22a6fce5498eaada7c2edeb1f7640be35e0f8c9c74d8a52d927adaf72ca27345",
+    "figure_data/downstream/energy_rank.csv": "26c4b853fea32276e1d1877da1bbd79a1bfbdd3153ce248e3854961b7ed850c8",
+    "figure_data/downstream/energy_scatter.csv": "a989fd14d79f2766e28ad645cfad675cbbc45e09f2476a955e18151cdf9cf8cd",
+    "figure_data/downstream/fraction_boxes.csv": "2eb150d22dcc0f8570036dd9feb7ef6b36c0fd9cda37728ac9f321f331bb6378",
+    "figure_data/downstream/fractions.csv": "312ad14dba9c046caf5bca31b1283bcdaf923ab6c1f9473595c06794ae939c00",
+    "figure_data/downstream/multipole_energy.csv": "00cffc8bbb33acc86735cf2692dee5a6b39b311913228a77819f3933c40e8874",
+    "figure_data/downstream/multipole_orientation.csv": "563aceac5c2ce3ddb2fd1324467e35c33b53906553eecb0c782025cfa6848de6",
+    "figure_data/downstream/multipole_rank.csv": "1f8ba18f2a7f3a712da74c5f344b7e45da49c1a3e57a9ef20bcbb7fbae698360",
+    "figure_data/downstream/multipole_torque.csv": "cea4e9d10e863d98717c1acc9e12123b45a9d2b4d35e3df5e111b1fb16adb374",
+    "figure_data/downstream/orientation_pairs.csv": "17b9d01ff7500eced2856b91c6795c1bbed9ba41508ebc6237d68e88cbd53739",
+    "figure_data/downstream/orientation_pairs_links.csv": "53b4c1f9be868447841a7c69e89fd81a92b8b24cce394729771cc20db0ee0243",
+    "figure_data/downstream/torque_pairs.csv": "131055f71e4bb9f7d99708ef1be227af288b67ae54800a7fca5a95ae04b0db76",
+    "figure_data/downstream/torque_pairs_links.csv": "9691d282bf008259d493036aab7f0399471e80d57c0cd40baada27b2e3c3bf2d",
+    "figure_data/downstream/torque_rank.csv": "09029e08f390b42eef02d44a3eee43400c05a2888de6dd31d9d869ac80139381"
+  }
+}
