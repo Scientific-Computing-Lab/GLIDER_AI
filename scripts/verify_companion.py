@@ -112,9 +112,12 @@ def main() -> None:
         assert tree_digest(ROOT / relative) == expected, f"Archive changed: {relative}"
     check_headlines()
     check_links()
+    # GitHub gives .github/README.md precedence over the root README on the
+    # repository landing page. Keep the workflow guide one level deeper.
+    assert not (ROOT / ".github/README.md").exists(), "GitHub would hide the root README"
     directories = [
         p for p in ROOT.rglob("*")
-        if p.is_dir() and not ignored(p)
+        if p.is_dir() and not ignored(p) and p != ROOT / ".github"
     ]
     missing_guides = [str(p.relative_to(ROOT)) for p in directories if not (p / "README.md").is_file()]
     assert not missing_guides, f"Directories without README: {missing_guides}"
