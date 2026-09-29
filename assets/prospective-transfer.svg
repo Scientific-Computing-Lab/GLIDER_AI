@@ -291,13 +291,13 @@ z
    </g>
   </g>
   <g id="text_15">
-   <text style="fill: #14263d; font: 700 17px 'DejaVu Sans'; text-anchor: start" x="54.288" y="25.157344" transform="rotate(-0 54.288 25.157344)">Spatial response transfers to unseen-to-response solutes</text>
+   <text style="fill: #14263d; font: 700 17px 'DejaVu Sans'; text-anchor: start" x="54.288" y="25.157344" transform="rotate(-0 54.288 25.157344)">Spatial response transfers beyond response supervision</text>
   </g>
   <g id="text_16">
    <text style="fill: #617388; font: 10px 'DejaVu Sans'; text-anchor: start" x="54.288" y="41.31" transform="rotate(-0 54.288 41.31)">Equal-solute response-ESP NRMSE; lower is better. Error bars show method-wise 95% intervals.</text>
   </g>
   <g id="text_17">
-   <text style="fill: #617388; font: 8.8px 'DejaVu Sans'; text-anchor: start" x="54.288" y="290.088" transform="rotate(-0 54.288 290.088)">All predictions preceded the QM references. Foundation-pretraining exposure is unknown.</text>
+   <text style="fill: #617388; font: 8.8px 'DejaVu Sans'; text-anchor: start" x="54.288" y="290.088" transform="rotate(-0 54.288 290.088)">GLIDER predictions preceded response QM. Some public baselines were evaluated later.</text>
   </g>
  </g>
  <defs>

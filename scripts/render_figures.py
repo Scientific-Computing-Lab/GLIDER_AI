@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Render the repository gallery from the released numerical tables.
+"""Render the repository's vector reading aids from released numerical tables.
 
-The banner and architecture are explicitly conceptual. Result plots read the
-unaltered CSVs in data/figure_data; no benchmark scores are recomputed here.
+The architecture is conceptual. Result plots read the unaltered CSVs in
+data/figure_data; no benchmark scores are recomputed here.
 """
 
 from __future__ import annotations
@@ -12,7 +12,7 @@ from pathlib import Path
 
 import matplotlib as mpl
 import matplotlib.pyplot as plt
-from matplotlib.patches import Circle, Ellipse, FancyArrowPatch, FancyBboxPatch
+from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -25,7 +25,6 @@ MUTED = "#617388"
 BLUE = "#1678b7"
 ORANGE = "#df843d"
 MAUVE = "#aa5a8e"
-TEAL = "#36a398"
 GREEN = "#6ca389"
 PALE = "#f6f9fb"
 LINE = "#dce6ec"
@@ -67,61 +66,6 @@ def box(ax, x, y, w, h, face, edge="none", radius=0.035, lw=1):
     return shape
 
 
-def banner() -> None:
-    fig, ax = plt.subplots(figsize=(12, 4.35))
-    fig.subplots_adjust(0, 0, 1, 1)
-    ax.set_xlim(0, 12)
-    ax.set_ylim(0, 4.35)
-    ax.axis("off")
-    box(ax, 0.02, 0.02, 11.96, 4.31, NAVY, radius=0.2)
-
-    # Decorative, conceptual spatial field; it is not a measured potential.
-    for x, y, w, h, c, a in [
-        (9.08, 2.08, 4.5, 2.7, BLUE, 0.14),
-        (10.40, 2.03, 3.4, 2.5, MAUVE, 0.13),
-        (9.45, 1.54, 4.3, 2.1, TEAL, 0.13),
-        (10.70, 1.25, 3.2, 1.9, ORANGE, 0.10),
-    ]:
-        ax.add_patch(Ellipse((x, y), w, h, facecolor=c, edgecolor="none", alpha=a))
-    bonds = [(8.10, 2.10, 8.70, 2.62), (8.70, 2.62, 9.34, 2.11),
-             (9.34, 2.11, 10.10, 2.36), (9.34, 2.11, 9.72, 1.43),
-             (10.10, 2.36, 10.80, 2.83), (10.10, 2.36, 10.85, 1.84)]
-    for x1, y1, x2, y2 in bonds:
-        ax.plot([x1, x2], [y1, y2], color="#a3c5d4", alpha=0.55, lw=2.7, zorder=3)
-    for x, y, radius, c in [
-        (8.10, 2.10, .13, "#bed8df"), (8.70, 2.62, .20, "#f6f9fb"),
-        (9.34, 2.11, .24, "#85b8d4"), (10.10, 2.36, .21, "#f6f9fb"),
-        (9.72, 1.43, .13, "#d7e7ea"), (10.80, 2.83, .13, "#d7e7ea"),
-        (10.85, 1.84, .13, "#d7e7ea"),
-    ]:
-        ax.add_patch(Circle((x, y), radius, facecolor=c, edgecolor=NAVY, lw=1.2, zorder=4))
-    for radius in (1.12, 1.62, 2.14):
-        ax.add_patch(Circle((9.59, 2.12), radius, fill=False,
-                            edgecolor="#6caecb", linestyle=(0, (2, 7)),
-                            lw=1, alpha=.32, zorder=2))
-
-    ax.text(.60, 3.68, "GLIDER  /  PAPER COMPANION", color="#8ed3df", fontsize=11,
-            fontweight="bold", va="center")
-    ax.text(.60, 2.73, "Molecular response,", color="white", fontsize=31,
-            fontweight="bold", va="center")
-    ax.text(.60, 2.16, "kept spatial.", color="white", fontsize=31,
-            fontweight="bold", va="center")
-    ax.text(.63, 1.45, "From frozen polar pretraining to a reusable",
-            color="#c3d3df", fontsize=13, va="center")
-    ax.text(.63, 1.12, "interaction-induced electrostatic field.",
-            color="#c3d3df", fontsize=13, va="center")
-    box(ax, .61, .40, 1.67, .39, "#234a69", radius=.16)
-    box(ax, 2.41, .40, 1.95, .39, "#234a69", radius=.16)
-    box(ax, 4.49, .40, 2.09, .39, "#234a69", radius=.16)
-    ax.text(1.45, .595, "48 labelled environments", color="white", fontsize=8.3,
-            ha="center", va="center")
-    ax.text(3.39, .595, "56 response-test solutes", color="white", fontsize=8.3,
-            ha="center", va="center")
-    ax.text(5.54, .595, "3 new neighbour species", color="white", fontsize=8.3,
-            ha="center", va="center")
-    save(fig, "glider-banner.svg")
-
-
 def architecture() -> None:
     fig, ax = plt.subplots(figsize=(12, 4.45))
     fig.subplots_adjust(.02, .03, .98, .97)
@@ -159,7 +103,7 @@ def transfer() -> None:
     paired = rows("Fig4_paired.csv")
     fig, ax = plt.subplots(figsize=(11.6, 4.25))
     fig.subplots_adjust(left=.19, right=.95, top=.79, bottom=.22)
-    fig.suptitle("Spatial response transfers to unseen-to-response solutes", x=.065,
+    fig.suptitle("Spatial response transfers beyond response supervision", x=.065,
                  y=.96, ha="left", fontsize=17, fontweight="bold", color=NAVY)
     fig.text(.065, .865, "Equal-solute response-ESP NRMSE; lower is better. Error bars show method-wise 95% intervals.",
              fontsize=10, color=MUTED)
@@ -189,7 +133,7 @@ def transfer() -> None:
     ax.tick_params(axis="y",length=0,pad=11)
     ax.tick_params(axis="x",length=0,pad=7)
     ax.legend(frameon=False,ncol=2,loc="upper right",bbox_to_anchor=(1.0,1.27),fontsize=9.5)
-    fig.text(.065,.052,"All predictions preceded the QM references. Foundation-pretraining exposure is unknown.",
+    fig.text(.065,.052,"GLIDER predictions preceded response QM. Some public baselines were evaluated later.",
              fontsize=8.8,color=MUTED)
     save(fig,"prospective-transfer.svg")
 
@@ -268,12 +212,11 @@ def distance() -> None:
 
 
 def main() -> None:
-    banner()
     architecture()
     transfer()
     coupling()
     distance()
-    print("Wrote five SVG figures to assets/ from unchanged release data.")
+    print("Wrote four SVG figures to assets/ from unchanged release data.")
 
 
 if __name__ == "__main__":

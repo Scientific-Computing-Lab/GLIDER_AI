@@ -17,7 +17,7 @@ authors = [
 license = {file = "LICENSE"}
 
 [project.optional-dependencies]
-figures = ["matplotlib>=3.8"]
+figures = ["matplotlib>=3.8", "Pillow>=10"]
 model = ["torch>=2.3", "ase>=3.23"]
 test = ["pytest>=8"]
 

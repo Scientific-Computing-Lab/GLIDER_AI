@@ -12,7 +12,6 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "PROVENANCE.json"
 ASSET_NAMES = {
-    "glider-banner.svg",
     "architecture.svg",
     "prospective-transfer.svg",
     "frozen-coupling.svg",
@@ -53,10 +52,12 @@ def table(path: str) -> list[dict[str, str]]:
 def check_links() -> None:
     broken = []
     pattern = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
+    html_images = re.compile(r'<img\s+[^>]*src="([^"]+)"')
     for markdown in ROOT.rglob("*.md"):
         if ignored(markdown):
             continue
-        for target in pattern.findall(markdown.read_text()):
+        content = markdown.read_text()
+        for target in pattern.findall(content) + html_images.findall(content):
             target = target.split("#", 1)[0]
             if not target or ":" in target.split("/", 1)[0] or target.startswith("#"):
                 continue
@@ -99,6 +100,8 @@ def main() -> None:
         "code_and_checkpoint_sha256",
         "camera_ready_scientific_data_sha256",
         "derived_plotting_data_sha256",
+        "readme_figure_source_sha256",
+        "retained_gate_sha256",
     ):
         for relative, expected in provenance[group].items():
             path = ROOT / relative
@@ -122,6 +125,7 @@ def main() -> None:
     ]
     assert not copied_manuscripts, f"Manuscript/build files included: {copied_manuscripts}"
     assert {p.name for p in (ROOT / "assets").glob("*.svg")} == ASSET_NAMES
+    assert (ROOT / "assets/spatial-response.png").is_file()
     assert (ROOT / "examples/one_response_geometry.extxyz").read_text().splitlines()[0] == "28"
     print(f"Companion verified: {count} exact source files, {len(directories)} directory guides, "
           "headline values, links and SVG gallery.")

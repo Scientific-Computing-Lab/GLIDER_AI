@@ -4,7 +4,7 @@ This is the shortest route from a statement in the SIMBIOCHEM paper to its numbe
 
 | Camera-ready location | Question and panels | Numeric source | Repository view |
 |:--|:--|:--|:--|
-| Figure 1a–d | What is the fixed-geometry interaction-induced response, and why is a dipole insufficient? | [`Fig1_geometry.csv`](../data/source_data/Fig1_geometry.csv), [`Fig1_physical_response.csv`](../data/source_data/Fig1_physical_response.csv), [`Fig1_response_map.csv`](../data/source_data/Fig1_response_map.csv) | [Conceptual model diagram](../assets/architecture.svg); use the paper itself for the QM potential maps. |
+| Figure 1a–d | What is the fixed-geometry interaction-induced response, and why is a dipole insufficient? | [`Fig1_geometry.csv`](../data/source_data/Fig1_geometry.csv), [`Fig1_physical_response.csv`](../data/source_data/Fig1_physical_response.csv), [`Fig1_response_map.csv`](../data/source_data/Fig1_response_map.csv) | [Exact Fig. 1c QM layers](../assets/figure1_source/README.md) and [README comparison](../assets/spatial-response.png); the paper carries the full panel and colour scale. |
 | Figure 2a | Frozen features, starting response, learned corrections and constraints. | [Checkpoint manifest](../checkpoints/glider_site_response_ensemble.manifest.json), [frozen source](../evidence/frozen_source/prospective_1/README.md) | [Architecture](../assets/architecture.svg) (conceptual). |
 | Figure 2b,c | Development controls and representation error floor. | [`Fig2_controls.csv`](../data/figure_data/Fig2_controls.csv), [`FigS2_means.csv`](../data/figure_data/FigS2_means.csv) | Data only; this repo does not duplicate the manuscript panel. |
 | Figure 3a | Three prospective response-ESP panels, 56 solutes and 224 configurations. | [`Fig4_glider.csv`](../data/figure_data/Fig4_glider.csv), [`Fig4_mace_polar_l.csv`](../data/figure_data/Fig4_mace_polar_l.csv), other `Fig4_*` comparator tables | [Prospective transfer](../assets/prospective-transfer.svg). |
@@ -30,3 +30,5 @@ Figure 4 holds the solute-plus-W1–W3 base fixed and adds W4 only as an externa
 ## Frozen numerical outputs
 
 [`prospective_1/`](prospective_1/README.md) and [`prospective_2/`](prospective_2/README.md) retain the original configuration, molecule and regime summary tables. Panel III's corresponding metrics sit with its independent-source [freeze record](../canonical_panel_3/README.md). The [integrity script](../scripts/reproduce/verify_release.py) checks archived predictions against their registries and physical constraints; the [statistics script](../scripts/reproduce/recompute_statistics.py) recomputes the aggregate and paired statistics from frozen per-solute tables.
+
+Panel I's separate, broader preregistered joint gate and its failed decision are retained in [`negative_results/`](negative_results/README.md).

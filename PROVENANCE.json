@@ -21,7 +21,9 @@
     "glider/inference/surface.py": "92496d425d2f2f19547394498c0fee2af37251d6fd840db33c019adc56358b2e",
     "glider/metrics/__init__.py": "3950315984faf7424d92db6752060b8e2ed2a0d7b7b3d9daad1c9c3a235afa57",
     "glider/metrics/core.py": "474d0b2cba29df4c6a7d5c6ed96bd930657c29b1f690a63121e91979d1f564ea",
-    "glider/model/__init__.py": "37e1d97c3ed7108610dd58e691f01c88023665b5a1a166b4f2ec317a86bc227f"
+    "glider/model/__init__.py": "37e1d97c3ed7108610dd58e691f01c88023665b5a1a166b4f2ec317a86bc227f",
+    "evidence/frozen_source/prospective_1/score_prospective_response.py": "a630a87679214d6d2770e25dc9dde8b95e5d5266ca25c0881966e9d6d45b4e1f",
+    "scripts/render_readme_field.py": "bc12d948b928acb4030f5fe1c41845b7ac92ddeaea44b16083f396302670a0df"
   },
   "camera_ready_scientific_data_sha256": {
     "data/figure_data/Fig2_controls.csv": "ce27971bd0ce0e9788e0f97f29000032d8cfbc944222a3f4fbe04de6f776d263",
@@ -166,5 +168,15 @@
     "results/prospective_2": "d01cb5ad83b244f3605582655f7c79d8b7f98d053b3909971285b5784cc22ae0",
     "evidence/manifests": "41c3a504e33f3c4162096b0c6b01d188de14ca7f8722d6116be29368909636b9"
   },
-  "benchmark_archive_note": "These paths are byte-preserved from the source commit except for added directory README guides; tree digests exclude files named README.md."
+  "benchmark_archive_note": "These paths are byte-preserved from the source commit except for added directory README guides; tree digests exclude files named README.md.",
+  "readme_figure_source_sha256": {
+    "assets/figure1_source/field_cooperative.png": "51e91ddf6b6ab2fb1f12e11ecc9ccd76d7afb359661ef19d4e6e1f535297027c",
+    "assets/figure1_source/field_equilibrium.png": "ed2b0a2cbb60181a81b150d287ca4af8f57728363865b629450ab9c259e30917",
+    "assets/figure1_source/molecule_cooperative.png": "57a81ea517d9d3e025be444c5455c6094ff5b7fcc76b265853a28741fa083579",
+    "assets/figure1_source/molecule_equilibrium.png": "63a8b025fd5b5db64405309ac279c5e0b91b3fcf562dce27eb9eed753dda6220"
+  },
+  "retained_gate_sha256": {
+    "results/negative_results/PROSPECTIVE_1_PREREGISTERED_GATE_FAILURE.md": "6e54074654434e51d1b73788503bf4cdf610cfacf8319d79c1d2f24b0c8e1db5",
+    "results/negative_results/prospective_1_gate_result.json": "b7eb221caf3ce355016581a2ce796d317f4d51c1a1535d3ced086490c6c7eb50"
+  }
 }

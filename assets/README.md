@@ -1,13 +1,14 @@
 # Visual guide
 
-All assets here are SVG, so the gallery stays crisp on GitHub and in presentations. Run `python scripts/render_figures.py` with the `figures` extra to regenerate them from the [source tables](../data/figure_data/README.md).
+The first visual in the [main README](../README.md) comes from the paper's **actual QM Figure 1c**. Its four [transparent source layers](figure1_source/README.md) are overlaid without changing the scientific map; `python scripts/render_readme_field.py` adds labels and framing to make [`spatial-response.png`](spatial-response.png).
 
-| Asset | Kind | Data or role |
+The remaining gallery is vector artwork. Run `python scripts/render_figures.py` with the `figures` extra to recreate it from the [numeric source tables](../data/figure_data/README.md).
+
+| Asset | Kind | What it shows |
 |:--|:--|:--|
-| [`glider-banner.svg`](glider-banner.svg) | Conceptual | Decorative molecule and field; not a QM or model output. |
-| [`architecture.svg`](architecture.svg) | Conceptual | An explanatory flow from frozen MACE inputs to constrained response. |
-| [`prospective-transfer.svg`](prospective-transfer.svg) | Quantitative | Exact `Fig4_glider.csv`, `Fig4_mace_polar_l.csv` and `Fig4_paired.csv` values. |
-| [`frozen-coupling.svg`](frozen-coupling.svg) | Quantitative | Paper W4 aggregate values and `downstream/energy_rank.csv`. |
-| [`distance-and-moments.svg`](distance-and-moments.svg) | Quantitative | `FigS15_dense_energy.csv` fixed-charge sweep. |
+| [`architecture.svg`](architecture.svg) | Conceptual | Frozen polar inputs, learned response corrections and constrained spatial output. |
+| [`prospective-transfer.svg`](prospective-transfer.svg) | Quantitative | Response-ESP NRMSE in three prospective panels, from `Fig4_glider.csv`, `Fig4_mace_polar_l.csv` and `Fig4_paired.csv`. |
+| [`frozen-coupling.svg`](frozen-coupling.svg) | Quantitative | W4 energy MAE and the W4–W12 rank series from the released downstream CSV. |
+| [`distance-and-moments.svg`](distance-and-moments.svg) | Quantitative | Fixed-charge far-field control from `FigS15_dense_energy.csv`. |
 
-The SVGs are a repository-specific reading aid. They do not replace the paper's full panels, uncertainty analysis or captions; follow the [paper map](../results/README.md) for those.
+The gallery is a reading aid, not a replacement for the paper's complete panels, uncertainty analysis or captions. Use the [paper-to-data map](../results/README.md) for an exact panel-to-source route.

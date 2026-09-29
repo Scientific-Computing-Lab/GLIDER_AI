@@ -1,0 +1,40 @@
+{
+  "candidate": {
+    "dipole_vector_rmse_debye": 0.18935929367382542,
+    "esp_nrmse": 0.32179935443942215
+  },
+  "candidate_runtime_seconds": 24.806233678071294,
+  "dipole_comparator": "mace_polar_m",
+  "dipole_paired_bootstrap_delta_95pct_ci": [
+    -0.060776379506350245,
+    0.02964986517882917
+  ],
+  "dipole_relative_improvement": 0.03639963983948791,
+  "esp_comparator": "mace_polar_l",
+  "esp_paired_bootstrap_delta_95pct_ci": [
+    -0.2636486410342865,
+    -0.16432994831066375
+  ],
+  "esp_relative_improvement": 0.39928087165278914,
+  "experimental_hydration_targets_accessed": false,
+  "freeze_manifest_sha256": "8407beb6760d060a2c96c46f135ef3933febfc27b9a873d875bf052c3892730f",
+  "gates": {
+    "absolute_esp_nrmse_le_30pct": false,
+    "at_least_9_of_12_improve_both": true,
+    "charge_conservation": true,
+    "compressed_no_regression_both": true,
+    "dipole_bootstrap_ci_favors": false,
+    "dipole_improvement_at_least_15pct": false,
+    "esp_bootstrap_ci_favors": true,
+    "esp_improvement_at_least_20pct": true,
+    "lowest_dipole": true,
+    "lowest_esp": true,
+    "orientation_no_regression_both": true,
+    "rotation_stability": true,
+    "speedup_at_least_100x": true
+  },
+  "molecules_improved_on_both": 11,
+  "qm_runtime_seconds": 3883.0313191990717,
+  "sota_gate_passed": false,
+  "speedup": 156.534497319989
+}
