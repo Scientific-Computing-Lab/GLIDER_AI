@@ -15,7 +15,7 @@ This map uses the current camera-ready numbering after the author-review revisio
 | S4 | Bootstrap and leave-one-solute sensitivity | [CSV data](../figures/figure_S04/) | [panel_1](../experiments/panel_1/) |
 | S5 | Predicted and QM spatial fields | See experiment / provenance | [panel_3](../experiments/panel_3/) |
 | S6 | Comparator observable coverage | [CSV data](../figures/figure_S06/) | [panel_1](../experiments/panel_1/) |
-| S7 | Fragment-separation failure | [CSV data](../figures/figure_S07/) | [dissociation](../experiments/dissociation/) |
+| S7 | Response as the inducing fragments separate, 3–100 Å | [CSV data](../figures/figure_S07/) | [3–20 Å](../experiments/dissociation/) and [50–100 Å](../experiments/dissociation_extended/) |
 | S8 | Complementary W4 error and distance diagnostics | [CSV data](../figures/figure_S08/) | [heldout_water](../experiments/heldout_water/) |
 | S9 | Exact multipole hierarchy | [CSV data](../figures/figure_S09/) | [heldout_water](../experiments/heldout_water/) |
 | S10 | Torque across water rank | [CSV data](../figures/figure_S10/) | [heldout_water](../experiments/heldout_water/) |

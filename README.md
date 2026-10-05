@@ -40,7 +40,7 @@ MACE-POLAR-1-M supplies the frozen geometry features. An equal-weight average of
 | Does it extend beyond water? | **27.0% lower response-ESP error** on 12 solutes with three neutral neighbour species. | [Non-water environments](experiments/nonwater/) |
 | Can another molecule use the field? | Held-out-water response-coupling MAE: **0.114 → 0.049 kcal mol⁻¹**. | [Held-out water](experiments/heldout_water/) |
 | What does the global branch add? | A matched ablation finds a **modest average benefit**, with differences across solutes. | [Global-branch control](experiments/global_branch/) |
-| Does the response vanish at separation? | **No.** A residual remains at 20 Å, including in the frozen prior. | [Dissociation diagnostic](experiments/dissociation/) |
+| Does the response vanish when the inducing fragments separate? | **No.** From 20 to 100 Å, GLIDER's predicted amplitude grows while its averaged frozen prior declines. | [Figure S7 data](figures/figure_S07/) · [Separation protocol](experiments/dissociation/) |
 
 <img src="assets/prospective-transfer.svg" alt="Three prospective panels show lower spatial-response error with GLIDER" width="100%">
 
@@ -104,7 +104,7 @@ For prediction on a new geometry, follow the [inference guide](scripts/benchmark
 
 ## What the current model can and cannot do
 
-The released checkpoint supports analysis and frozen local reuse for the compact, neutral systems tested here. It conserves net response charge and matches its predicted global moment. **It does not enforce fragment separability:** moving the inducing water far away leaves a residual response. The [new diagnostic](experiments/dissociation/) records that failure, and an [extension to 50–100 Å](experiments/dissociation_extended/) checks that increasing separation does not resolve it.
+The released checkpoint supports analysis and frozen local reuse for the compact, neutral systems tested here. It conserves net response charge and matches its predicted global moment. **It does not enforce fragment separability.** In a post hoc test, we moved either the sole water in a solute–water pair or an intact water cluster away from the solute. Between 20 and 100 Å, GLIDER's mean predicted response-potential RMS grew from **0.564 to 1.540 mEh/e** for one water and from **0.925 to 2.843 mEh/e** for the full cluster. The averaged frozen prior declined over both intervals. These are predicted amplitudes on fixed solute-centred probes, not errors against new QM labels. A [per-case component diagnostic](experiments/dissociation_extended/posthoc_components.csv) traces most of the long-range growth to global-moment reconciliation. [Inspect Figure S7](figures/figure_S07/) or the [3–20 Å](experiments/dissociation/) and [50–100 Å](experiments/dissociation_extended/) protocols.
 
 A general molecular-simulation component needs a controlled dissociation limit and self-consistent coupling. Total-energy accuracy, ions and arbitrary condensed phases have not been established by these experiments.
 

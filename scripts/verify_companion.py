@@ -65,13 +65,30 @@ def check_headlines() -> None:
     w4 = ranks[0]
     assert abs(float(w4["glider"]) - 0.04868219341822043) < 1e-12
     assert abs(float(w4["mace_polar_l"]) - 0.11401221689887638) < 1e-12
+    separation = table("figures/figure_S07/separation.csv")
+    assert len(separation) == 40
+    for system, glider_20, glider_100, prior_20, prior_100 in (
+        ("single_water", 0.563891174, 1.540125107, 0.195369430, 0.113099723),
+        ("whole_environment", 0.924588953, 2.842730048, 0.300614666, 0.239373936),
+    ):
+        def amplitude(method: str, distance: float) -> float:
+            row = next(r for r in separation if r["system"] == system
+                       and r["method"] == method and float(r["distance_A"]) == distance)
+            return float(row["esp_rms_mEh_per_e"])
+        assert abs(amplitude("glider", 20) - glider_20) < 1e-8
+        assert abs(amplitude("glider", 100) - glider_100) < 1e-8
+        assert abs(amplitude("averaged_prior", 20) - prior_20) < 1e-8
+        assert abs(amplitude("averaged_prior", 100) - prior_100) < 1e-8
+        assert glider_100 > glider_20 and prior_100 < prior_20
+    components = table("experiments/dissociation_extended/posthoc_components.csv")
+    assert len(components) == 280
 
 
 def main():
     check_headlines()
     check_links()
     assert not (ROOT/".github/README.md").exists()
-    for name in ['training','panel_1','panel_2','panel_3','nonwater','liquid','shell_size','heldout_water','heldout_water_pilot','distance_sweep','global_branch','dissociation']:
+    for name in ['training','panel_1','panel_2','panel_3','nonwater','liquid','shell_size','heldout_water','heldout_water_pilot','distance_sweep','global_branch','dissociation','dissociation_extended']:
         assert (ROOT/'experiments'/name/'README.md').is_file(),name
     print('PASS: experiment guides, active local links, headline values and visual gallery')
 if __name__=='__main__':main()

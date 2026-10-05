@@ -223,16 +223,31 @@ def main() -> None:
 
 def separation():
     import pandas as pd
-    data=pd.read_csv(ROOT/'experiments/dissociation/summary.csv')
+    from matplotlib.ticker import ScalarFormatter
+    data=pd.read_csv(DATA/'figure_S07/separation.csv')
     fig,axes=plt.subplots(1,2,figsize=(11,3.8))
-    for ax,system,title in zip(axes,['single_water','whole_environment'],['One separated water','Intact separated environment']):
-        for method,color,label in [('glider',BLUE,'GLIDER'),('averaged_prior',ORANGE,'Frozen averaged prior')]:
+    for ax,system,title,upper in zip(
+        axes,
+        ['single_water','whole_environment'],
+        ['Solute + one water','Solute + intact water cluster'],
+        [3,200],
+    ):
+        for method,color,marker,label in [
+            ('glider',BLUE,'o','GLIDER'),
+            ('averaged_prior',ORANGE,'s','Frozen averaged prior'),
+        ]:
             q=data[(data.system==system)&(data.method==method)].sort_values('distance_A')
-            ax.plot(q.distance_A,q.esp_rms_mEh_per_e,color=color,lw=1.6,marker='o',ms=3.5,label=label)
-        ax.set(yscale='log',xlabel='Minimum fragment distance (Å)',ylabel='Response-potential RMS (mEh/e)',title=title)
-        ax.set_xticks([3,5,10,15,20]);ax.spines[['top','right']].set_visible(False);ax.grid(alpha=.2);ax.legend(frameon=False,fontsize=8)
-    fig.suptitle('A residual response remains when the inducing fragments separate',fontsize=13,fontweight='bold',y=1.01)
-    fig.tight_layout();save(fig,'separation-control.svg')
+            ax.plot(q.distance_A,q.esp_rms_mEh_per_e,color=color,lw=1.7,marker=marker,ms=4,label=label)
+        ax.set(xscale='log',yscale='log',xlim=(2.8,110),ylim=(.09,upper),
+               xlabel='Minimum fragment distance (Å)',
+               ylabel='Predicted response-potential RMS (mEh/e)',title=title)
+        ax.set_xticks([3,5,10,20,50,100])
+        ax.xaxis.set_major_formatter(ScalarFormatter())
+        ax.spines[['top','right']].set_visible(False)
+        ax.grid(alpha=.2)
+        ax.legend(frameon=False,fontsize=8)
+    fig.suptitle('The predicted response grows beyond 20 Å',fontsize=13,fontweight='bold',y=.98)
+    fig.tight_layout(rect=(0,0,1,.91));save(fig,'separation-control.svg')
 
 if __name__ == "__main__":
     separation()
