@@ -1,0 +1,10 @@
+{
+  "implementation": "clean cached-feature predictor using byte-preserved ResponseHead",
+  "checkpoint_sha256": "a288afa285128e13cb7a05ba9459f1dce07e79b8638c6e272c2509ae68d7a288",
+  "feature_sha256": "c4ea001517ff541a8d0d3988ca680bf231f25aba905bee5ed42f79250e2f3efa",
+  "base_predictions_sha256": "0dcefdf845bb7c59451841a07980983db87f0110e7bcfb434f1e987081ae421e",
+  "prediction_registry_sha256": "282f11d32423ba97ba188d9525ce5aa8a6f993756c912483f1574a469ab6c708",
+  "n_configurations": 24,
+  "runtime_seconds_total_excluding_encoder": 2.516336787957698,
+  "reference_labels_accessed": false
+}

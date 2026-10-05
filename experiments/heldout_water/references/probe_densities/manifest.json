@@ -1,0 +1,16 @@
+{
+  "all_converged": true,
+  "cupy_version": "14.1.1",
+  "density_registry_sha256": "d6597633939abb8c170631bcbc816b47fd4fa82ef3631741cde1a6e627f1760e",
+  "geometry_sha256": "1a3edda496cfa3238e8286633fe66750c0b590710446ab563d6efe05efe2f9de",
+  "gpu": "NVIDIA GeForce RTX 3090, 535.309.01, 24576 MiB",
+  "gpu4pyscf_version": "1.8.1",
+  "method": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 SCF 1e-10 GPU4PySCF-1.8.1",
+  "n_probes": 90,
+  "numpy_version": "2.4.6",
+  "prospective_claim": false,
+  "protocol": "results/posthoc_downstream_response_confirmatory/protocol_freeze.json",
+  "pyscf_version": "2.8.0",
+  "python_version": "3.11.15",
+  "stage": "isolated_outer_probe_densities"
+}

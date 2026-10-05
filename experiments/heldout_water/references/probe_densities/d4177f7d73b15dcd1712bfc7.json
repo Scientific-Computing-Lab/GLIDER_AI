@@ -1,0 +1,16 @@
+{
+  "case_id": "confirmatory__ethane__base3",
+  "converged": true,
+  "density_file": "d4177f7d73b15dcd1712bfc7.npz",
+  "density_file_sha256": "c8cda7f29e269ae20bf3d4e3710b64d7443995905567a62fa01039d3169230f3",
+  "method": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 SCF 1e-10 GPU4PySCF-1.8.1",
+  "molecule_id": "ethane",
+  "oxygen_distance_A": 3.0180784011432245,
+  "probe_id": "confirmatory__ethane__base3__W8",
+  "probe_nao": 58,
+  "prospective_claim": false,
+  "runtime_seconds": 0.895338599999377,
+  "scf_cycles": 9,
+  "source_water_index": 138,
+  "water_rank": 8
+}

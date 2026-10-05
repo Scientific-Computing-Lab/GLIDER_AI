@@ -1,0 +1,11 @@
+{
+  "all_origins_retained": true,
+  "selected_origins": {
+    "W4_energy_MAE": "exact_dipole_solute_com",
+    "W4_force_vector_RMSE": "exact_dipole_base_com",
+    "W4_orientation_absolute_profile_RMSE": "exact_dipole_solute_com",
+    "W4_orientation_centered_profile_RMSE": "exact_dipole_solute_com",
+    "W4_torque_vector_RMSE": "exact_dipole_base_com"
+  },
+  "selection_rule": "one panel-wide fixed origin per endpoint, lowest equal-solute aggregate primary error; never casewise"
+}

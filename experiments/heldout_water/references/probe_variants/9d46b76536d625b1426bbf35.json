@@ -1,0 +1,17 @@
+{
+  "angle_discrepancy_degrees": 2.842170943040401e-14,
+  "bond_length_max_discrepancy_angstrom": 8.881784197001252e-16,
+  "case_id": "confirmatory__cdk2-1h1q__base3",
+  "converged": true,
+  "density_file": "9d46b76536d625b1426bbf35.npz",
+  "density_file_sha256": "b1739f300bcdeb5a997898090958b5964a79d4839680e97cbd255d3343f2bd42",
+  "density_source": "independent_isolated_probe_SCF",
+  "molecule_id": "cdk2-1h1q",
+  "probe_id": "confirmatory__cdk2-1h1q__base3__W4",
+  "rotation_id": "O_03",
+  "runtime_seconds": 0.8959577139976318,
+  "scf_cycles": 9,
+  "variant_id": "orientation_O_03",
+  "variant_type": "orientation",
+  "water_rank": 4
+}

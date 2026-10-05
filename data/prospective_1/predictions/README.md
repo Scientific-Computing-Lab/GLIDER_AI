@@ -1,3 +1,0 @@
-# Frozen Panel-I predictions
-
-Each child directory is a method's prediction archive on the **same 48 Panel-I configurations**. Resolve configuration IDs through the parent [`configuration_registry.csv`](../configuration_registry.csv) and the prediction registries/manifests. [`glider/`](glider/README.md) is the frozen response-head candidate used in the paper; `mace_polar_1_l_faithful` is its response-unfitted polar baseline. Other folders retain eligible public comparators, including some that expose only the global dipole. Do not assign a proxy spatial-response score to a model without the required observable.

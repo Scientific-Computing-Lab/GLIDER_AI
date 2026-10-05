@@ -1,0 +1,15 @@
+{
+  "cupy_version": "14.1.1",
+  "experiment": "prospective non-water environment-identity transfer",
+  "geometry_sha256": "c7fab2f66cbbf0a932f61aedb59f9054e8cb7f31ff4740d9532a793ae3d5059b",
+  "gpu": "NVIDIA GeForce RTX 3090, 535.309.01, 24576 MiB",
+  "gpu4pyscf_version": "1.8.1",
+  "method": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 SCF 1e-10",
+  "n_configurations": 72,
+  "n_recovery_cases": 6,
+  "observable": "full complex minus solute with perturbant ghosts minus perturbant with solute ghosts; identical coordinates and complete complex basis",
+  "pyscf_version": "2.8.0",
+  "python_version": "3.11.15",
+  "reference_generated_after_prediction_freeze": true,
+  "registry_sha256": "8b7af5e04f9f32ed068aa4636d87684b6727ae4ee137f1e0871d077d3119f8bf"
+}

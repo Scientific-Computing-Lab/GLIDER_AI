@@ -1,0 +1,6 @@
+{
+  "audit_sha256": "597be4d81e42a5f19d8cae47f13493f9dc73a1ddd0b8b0286751a6b268cd0b6c",
+  "method": "MACE-MDP released checkpoint",
+  "n_configurations": 24,
+  "prediction_registry_sha256": "4576e4f14aa4f4b264a805aabbff43596a49bc0bd221296e08684ac5cad99f59"
+}

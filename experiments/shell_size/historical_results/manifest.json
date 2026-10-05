@@ -1,0 +1,15 @@
+{
+  "configuration_metrics_sha256": "60b7f3721de14c928a1bd9a6f2b5f34510e1c4f61b4a472e50c4b54cdc53118a",
+  "equal_solute_shell_summary_sha256": "7bab579a659006fe24e61f3738b898f8b6ed1bba7124be878d74412e07793029",
+  "experiment": "post hoc nested shell-size diagnostic",
+  "figure_pdf_sha256": "67ecd3c0a5855889a3133bf406be448f1eee49995ecbc7f5f32680529effeaf3",
+  "n_configurations": 36,
+  "n_solutes": 3,
+  "prospective_claim": false,
+  "shells": [
+    1,
+    3,
+    6,
+    12
+  ]
+}

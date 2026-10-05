@@ -1,0 +1,50 @@
+3
+Properties=species:S:1:pos:R:3 probe_id=confirmatory__2OJ9-original__base3__W4 case_id=confirmatory__2OJ9-original__base3 base_config_id=confirmatory__2OJ9-original__base3 molecule_id=2OJ9-original water_rank=4 source_water_index=395 oxygen_distance_A=2.5271553807281957 pbc="F F F"
+O       13.02595973      18.18402529      19.74432468
+H       12.83457041      18.09142709      20.67761421
+H       12.64017463      19.02603507      19.50261831
+3
+Properties=species:S:1:pos:R:3 probe_id=confirmatory__cdk2-1h1q__base3__W4 case_id=confirmatory__cdk2-1h1q__base3 base_config_id=confirmatory__cdk2-1h1q__base3 molecule_id=cdk2-1h1q water_rank=4 source_water_index=929 oxygen_distance_A=2.6793842818198255 pbc="F F F"
+O       15.79794645      15.54814696      19.10178185
+H       15.73536396      16.07666373      18.30617785
+H       15.35909653      16.07130527      19.77256417
+3
+Properties=species:S:1:pos:R:3 probe_id=confirmatory__cdk2-28__base3__W4 case_id=confirmatory__cdk2-28__base3 base_config_id=confirmatory__cdk2-28__base3 molecule_id=cdk2-28 water_rank=4 source_water_index=156 oxygen_distance_A=2.4579664194850217 pbc="F F F"
+O       14.08463359      13.48334074      13.29192519
+H       13.54942679      14.09622431      12.78778315
+H       14.01817679      13.79340172      14.19507384
+3
+Properties=species:S:1:pos:R:3 probe_id=confirmatory__ethane__base3__W4 case_id=confirmatory__ethane__base3 base_config_id=confirmatory__ethane__base3 molecule_id=ethane water_rank=4 source_water_index=207 oxygen_distance_A=2.7999630087437826 pbc="F F F"
+O       16.63670063      10.84663630      15.17111063
+H       17.49979258      11.19683743      14.95051384
+H       16.06683731      11.14996433      14.46437240
+3
+Properties=species:S:1:pos:R:3 probe_id=confirmatory__ethanol__base3__W4 case_id=confirmatory__ethanol__base3 base_config_id=confirmatory__ethanol__base3 molecule_id=ethanol water_rank=4 source_water_index=666 oxygen_distance_A=2.749528868078542 pbc="F F F"
+O       17.61016250      18.24162841      17.17074752
+H       17.29027271      18.52614164      16.31461978
+H       18.22610617      18.92466187      17.43590951
+3
+Properties=species:S:1:pos:R:3 probe_id=confirmatory__jnk1-17124__base3__W4 case_id=confirmatory__jnk1-17124__base3 base_config_id=confirmatory__jnk1-17124__base3 molecule_id=jnk1-17124 water_rank=4 source_water_index=315 oxygen_distance_A=2.5848185519390903 pbc="F F F"
+O       18.26102614      16.51450753      11.39258981
+H       18.74359369      17.32252598      11.56713605
+H       18.93333077      15.83352447      11.37023687
+3
+Properties=species:S:1:pos:R:3 probe_id=confirmatory__jnk1-18631__base3__W4 case_id=confirmatory__jnk1-18631__base3 base_config_id=confirmatory__jnk1-18631__base3 molecule_id=jnk1-18631 water_rank=4 source_water_index=881 oxygen_distance_A=2.686429292875537 pbc="F F F"
+O       10.60827017      16.40041947      13.77464294
+H       11.14619851      16.65771961      14.52341557
+H       11.02676272      15.60737491      13.43971610
+3
+Properties=species:S:1:pos:R:3 probe_id=confirmatory__methane__base3__W4 case_id=confirmatory__methane__base3 base_config_id=confirmatory__methane__base3 molecule_id=methane water_rank=4 source_water_index=390 oxygen_distance_A=2.8270456276094684 pbc="F F F"
+O       13.15407753      14.33845282      18.04181099
+H       12.47291207      14.86469507      17.62310386
+H       12.74105668      13.99909019      18.83583784
+3
+Properties=species:S:1:pos:R:3 probe_id=confirmatory__tyk2-ejm_42__base3__W4 case_id=confirmatory__tyk2-ejm_42__base3 base_config_id=confirmatory__tyk2-ejm_42__base3 molecule_id=tyk2-ejm_42 water_rank=4 source_water_index=595 oxygen_distance_A=2.530687789910701 pbc="F F F"
+O       23.86682510      19.86260533      13.97303820
+H       24.45751190      19.85318422      13.21988940
+H       23.15224409      20.44277906      13.71035099
+3
+Properties=species:S:1:pos:R:3 probe_id=confirmatory__tyk2-ejm_45__base3__W4 case_id=confirmatory__tyk2-ejm_45__base3 base_config_id=confirmatory__tyk2-ejm_45__base3 molecule_id=tyk2-ejm_45 water_rank=4 source_water_index=458 oxygen_distance_A=2.6274840437415676 pbc="F F F"
+O       18.38880062      11.36847258      19.06018972
+H       18.57040286      10.43781757      18.92929435
+H       17.47568727      11.39693737      19.34592605

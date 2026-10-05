@@ -1,0 +1,52 @@
+{
+  "all_components_converged": true,
+  "attempts": [
+    {
+      "component": "full_complex",
+      "converged": true,
+      "cycles": 10,
+      "energy_hartree": -1473.085993042576,
+      "level_shift": 0.0,
+      "runtime_seconds": 15.94412952401035,
+      "solver": "gpu_diis_160"
+    },
+    {
+      "component": "solute_with_perturbant_ghosts",
+      "converged": true,
+      "cycles": 14,
+      "energy_hartree": -1357.2860077347493,
+      "level_shift": 0.0,
+      "runtime_seconds": 18.37071229700814,
+      "solver": "gpu_diis_160"
+    },
+    {
+      "component": "perturbant_with_solute_ghosts",
+      "converged": true,
+      "cycles": 10,
+      "energy_hartree": -115.80907385195918,
+      "level_shift": 0.0,
+      "runtime_seconds": 9.330365955000161,
+      "solver": "gpu_diis_160"
+    }
+  ],
+  "component_order": [
+    "full_complex",
+    "solute_with_perturbant_ghosts",
+    "perturbant_with_solute_ghosts"
+  ],
+  "config_id": "nonwater_environment__pros_isoxazole_thioether__ch3oh__equilibrium_like",
+  "delta_dipole_norm_debye": 0.4515848365719846,
+  "delta_esp_rms_hartree_per_e": 0.002190965280886415,
+  "excluded_or_replaced": false,
+  "hamiltonian_or_reference_changed": false,
+  "method": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 SCF 1e-10",
+  "molecule_id": "pros_isoxazole_thioether",
+  "observable_file": "e415d775b7d9d2a671ac.npz",
+  "observable_sha256": "38cd61f5678f2932fc6c7085185b1a803057bc94882df16e5db231bf295fc66c",
+  "perturbant": "CH3OH",
+  "prediction_probe_file": "prospective_nonwater_environment/predictions/glider/e415d775b7d9d2a671ac.npz",
+  "prediction_probe_sha256": "392e72f2f5c68c836511af0b02598fcec0e7e3d0b8dc01aadd9d3042e4ad91d4",
+  "regime": "equilibrium_like",
+  "runtime_seconds": 43.64520777601865,
+  "used_recovery": false
+}

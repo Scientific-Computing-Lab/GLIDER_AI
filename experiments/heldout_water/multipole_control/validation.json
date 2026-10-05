@@ -1,0 +1,161 @@
+{
+  "accounting": {
+    "all_required_cases_present": true,
+    "n_W4": 10,
+    "n_bases": 10,
+    "n_initial_probes": 90
+  },
+  "comparative_performance_inspected": false,
+  "derivative_convergence": [
+    {
+      "hierarchy": "exact_dipole",
+      "maximum_abs_change_from_primary_kcal_mol": 0.0,
+      "origin": "base_com",
+      "probe_id": "confirmatory__methane__base3__W4"
+    },
+    {
+      "hierarchy": "exact_dipole_quadrupole",
+      "maximum_abs_change_from_primary_kcal_mol": 2.9463086137493377e-09,
+      "origin": "base_com",
+      "probe_id": "confirmatory__methane__base3__W4"
+    },
+    {
+      "hierarchy": "exact_dipole_quadrupole_octupole",
+      "maximum_abs_change_from_primary_kcal_mol": 8.10088875147219e-08,
+      "origin": "base_com",
+      "probe_id": "confirmatory__methane__base3__W4"
+    },
+    {
+      "hierarchy": "exact_dipole",
+      "maximum_abs_change_from_primary_kcal_mol": 0.0,
+      "origin": "solute_com",
+      "probe_id": "confirmatory__methane__base3__W4"
+    },
+    {
+      "hierarchy": "exact_dipole_quadrupole",
+      "maximum_abs_change_from_primary_kcal_mol": 1.01654679465768e-10,
+      "origin": "solute_com",
+      "probe_id": "confirmatory__methane__base3__W4"
+    },
+    {
+      "hierarchy": "exact_dipole_quadrupole_octupole",
+      "maximum_abs_change_from_primary_kcal_mol": 6.853077240132066e-07,
+      "origin": "solute_com",
+      "probe_id": "confirmatory__methane__base3__W4"
+    },
+    {
+      "hierarchy": "exact_dipole",
+      "maximum_abs_change_from_primary_kcal_mol": 0.0,
+      "origin": "nuclear_center",
+      "probe_id": "confirmatory__methane__base3__W4"
+    },
+    {
+      "hierarchy": "exact_dipole_quadrupole",
+      "maximum_abs_change_from_primary_kcal_mol": 8.957997121861183e-10,
+      "origin": "nuclear_center",
+      "probe_id": "confirmatory__methane__base3__W4"
+    },
+    {
+      "hierarchy": "exact_dipole_quadrupole_octupole",
+      "maximum_abs_change_from_primary_kcal_mol": 1.0685871194154872e-06,
+      "origin": "nuclear_center",
+      "probe_id": "confirmatory__methane__base3__W4"
+    },
+    {
+      "hierarchy": "exact_dipole",
+      "maximum_abs_change_from_primary_kcal_mol": 0.0,
+      "origin": "base_com",
+      "probe_id": "confirmatory__2OJ9-original__base3__W4"
+    },
+    {
+      "hierarchy": "exact_dipole_quadrupole",
+      "maximum_abs_change_from_primary_kcal_mol": 2.960436251697729e-08,
+      "origin": "base_com",
+      "probe_id": "confirmatory__2OJ9-original__base3__W4"
+    },
+    {
+      "hierarchy": "exact_dipole_quadrupole_octupole",
+      "maximum_abs_change_from_primary_kcal_mol": 2.524329144368287e-05,
+      "origin": "base_com",
+      "probe_id": "confirmatory__2OJ9-original__base3__W4"
+    },
+    {
+      "hierarchy": "exact_dipole",
+      "maximum_abs_change_from_primary_kcal_mol": 0.0,
+      "origin": "solute_com",
+      "probe_id": "confirmatory__2OJ9-original__base3__W4"
+    },
+    {
+      "hierarchy": "exact_dipole_quadrupole",
+      "maximum_abs_change_from_primary_kcal_mol": 1.1525057741490485e-08,
+      "origin": "solute_com",
+      "probe_id": "confirmatory__2OJ9-original__base3__W4"
+    },
+    {
+      "hierarchy": "exact_dipole_quadrupole_octupole",
+      "maximum_abs_change_from_primary_kcal_mol": 1.8898003156263277e-05,
+      "origin": "solute_com",
+      "probe_id": "confirmatory__2OJ9-original__base3__W4"
+    },
+    {
+      "hierarchy": "exact_dipole",
+      "maximum_abs_change_from_primary_kcal_mol": 0.0,
+      "origin": "nuclear_center",
+      "probe_id": "confirmatory__2OJ9-original__base3__W4"
+    },
+    {
+      "hierarchy": "exact_dipole_quadrupole",
+      "maximum_abs_change_from_primary_kcal_mol": 1.3296964584963433e-08,
+      "origin": "nuclear_center",
+      "probe_id": "confirmatory__2OJ9-original__base3__W4"
+    },
+    {
+      "hierarchy": "exact_dipole_quadrupole_octupole",
+      "maximum_abs_change_from_primary_kcal_mol": 4.0765645787393945e-05,
+      "origin": "nuclear_center",
+      "probe_id": "confirmatory__2OJ9-original__base3__W4"
+    }
+  ],
+  "order1_reproduction": {
+    "maximum_W4_orientation_energy_difference_kcal_mol": 4.440892098500626e-16,
+    "maximum_W4_torque_component_difference_kcal_mol": 4.440892098500626e-16,
+    "maximum_initial_W4_W12_energy_difference_kcal_mol": 4.440892098500626e-16
+  },
+  "physical_charge_and_moments": {
+    "maximum_abs_physical_response_charge_e": 6.66618453146195e-14,
+    "maximum_abs_traceless_octupole_trace_e_bohr3": 1.9895196601282805e-13,
+    "maximum_abs_traceless_quadrupole_trace_e_bohr2": 2.6645352591003757e-15,
+    "maximum_density_vs_stored_dipole_discrepancy_debye": 4.761637839578725e-08,
+    "maximum_origin_translation_abs_errors": {
+      "dipole": 4.489880689462211e-13,
+      "second": 5.1449955407179004e-12,
+      "third": 8.264322559625725e-11
+    }
+  },
+  "rotation_covariance": {
+    "base_com": {
+      "dipole_frobenius_error": 2.2634009299127813e-05,
+      "dipole_relative_error": 0.00013185298700993327,
+      "octupole_frobenius_error": 0.001936753866187134,
+      "octupole_relative_error": 0.00019536980529273764,
+      "quadrupole_frobenius_error": 0.0003010487020003576,
+      "quadrupole_relative_error": 0.000136435471082668
+    },
+    "nuclear_center": {
+      "dipole_frobenius_error": 2.2634009296897908e-05,
+      "dipole_relative_error": 0.00013185298699694396,
+      "octupole_frobenius_error": 0.001951441538082112,
+      "octupole_relative_error": 0.00021520484382946118,
+      "quadrupole_frobenius_error": 0.00030223343161587244,
+      "quadrupole_relative_error": 0.00014281084317804125
+    },
+    "solute_com": {
+      "dipole_frobenius_error": 2.2634009296588917e-05,
+      "dipole_relative_error": 0.0001318529869951675,
+      "octupole_frobenius_error": 0.002896789933566562,
+      "octupole_relative_error": 0.0006215108790983945,
+      "quadrupole_frobenius_error": 0.0004074738845438973,
+      "quadrupole_relative_error": 0.0009507405783938664
+    }
+  }
+}

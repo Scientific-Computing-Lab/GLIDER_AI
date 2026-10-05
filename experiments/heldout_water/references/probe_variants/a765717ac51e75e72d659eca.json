@@ -1,0 +1,19 @@
+{
+  "angle_discrepancy_degrees": 2.842170943040401e-14,
+  "axis": 2,
+  "bond_length_max_discrepancy_angstrom": 3.3306690738754696e-16,
+  "case_id": "confirmatory__cdk2-28__base3",
+  "converged": true,
+  "density_file": "a765717ac51e75e72d659eca.npz",
+  "density_file_sha256": "bd9823a6b2efc01be867b779dcb11abc1cdae19dc5239ad40bc65d54ef673d61",
+  "density_source": "independent_isolated_probe_SCF",
+  "molecule_id": "cdk2-28",
+  "probe_id": "confirmatory__cdk2-28__base3__W4",
+  "runtime_seconds": 0.9167484529971262,
+  "scf_cycles": 9,
+  "sign": -1,
+  "step_degrees": 0.05,
+  "variant_id": "torque_0.05deg_axis2_minus",
+  "variant_type": "torque_convergence",
+  "water_rank": 4
+}

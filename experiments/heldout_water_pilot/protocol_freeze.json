@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "status": "frozen_before_downstream_scoring",
+  "freeze_date_utc": "2026-08-19",
+  "prospective_claim": false,
+  "baseline_repository_commit": "df5e4add75b66347fa4c43b42924d1df63e5e360",
+  "branch": "posthoc/downstream-response-water-probe",
+  "scientific_question": "Does the learned base-cluster spatial electronic-response field give a measurable frozen electrostatic coupling to the held-out fourth-nearest water?",
+  "scope_boundary": "Response-electrostatic coupling only; not a four-water interaction energy, total force, solvation energy, force field, or dynamics result.",
+  "cases": {
+    "registry": "results/posthoc_downstream_response/configurations/configurations.csv",
+    "registry_sha256": "1afebf4e1d4b74b49a323630adb41bc4e7b1e6a95fe8184c43670ad705c2040b",
+    "base_geometries": "results/posthoc_downstream_response/configurations/base_3water.extxyz",
+    "base_geometries_sha256": "2bc12a2a2a017f38e69d9444aa1f0cd2a0a2aa33c470bda9e25916eb111f0c41",
+    "probe_geometries": "results/posthoc_downstream_response/configurations/heldout_w4.extxyz",
+    "probe_geometries_sha256": "12c5b08f3dfc0fe0180c94d0d67a0b7270e5bf8a4090876c5b16dbde3de4c87e",
+    "combined_bookkeeping_geometries": "results/posthoc_downstream_response/configurations/base_plus_probe.extxyz",
+    "combined_bookkeeping_geometries_sha256": "d275b08b41e9aa513b6e274f3d82a20de3ecdb09a61dcfda3657e774085ce591",
+    "n_solutes": 6,
+    "snapshots_per_solute": 4,
+    "n_cases": 24,
+    "base": "solute plus ranked waters W1, W2, W3",
+    "probe": "ranked water W4 from the same parent snapshot, held out from all base inputs and response calculations",
+    "ordering": "minimum-image oxygen distance to nearest solute atom, then source water index",
+    "performance_based_selection": false
+  },
+  "models": {
+    "glider": {
+      "checkpoint": "checkpoints/glider_site_response_ensemble.pt",
+      "checkpoint_sha256": "a288afa285128e13cb7a05ba9459f1dce07e79b8638c6e272c2509ae68d7a288",
+      "prediction_registry": "results/liquid_bridge/predictions/glider/prediction_registry.csv",
+      "prediction_registry_sha256": "282f11d32423ba97ba188d9525ce5aa8a6f993756c912483f1574a469ab6c708",
+      "representation": "atom-centred point monopoles and vector dipoles",
+      "retrained": false
+    },
+    "mace_polar_1_l": {
+      "checkpoint_sha256": "9f65f8dc6ddaff1d631e299cb531376a7da5e68d1bef04f34a2d5073d5ef114b",
+      "prediction_registry": "results/liquid_bridge/predictions/mace_polar_l/prediction_registry.csv",
+      "prediction_registry_sha256": "8f44387963c3ec7de7c60ee94d0a0dda9aa151bb04425ff222b5bfeb23c5038b",
+      "representation": "official normalized Gaussian l<=1 multipole density",
+      "gaussian_sigma_angstrom": 1.5,
+      "retrained": false
+    },
+    "exact_dipole_only": {
+      "dipole_source": "recomputed exact QM response density, checked against frozen liquid-bridge response dipole",
+      "primary_origin": "base_mass_weighted_center_of_mass",
+      "sensitivity_origins": [
+        "solute_mass_weighted_center_of_mass",
+        "base_center_of_nuclear_charge"
+      ]
+    },
+    "zero_response": {
+      "energy_force_torque": 0.0
+    }
+  },
+  "qm": {
+    "method": "restricted DF-RKS omegaB97X-D3(BJ)",
+    "basis": "def2-TZVPD",
+    "grid_level": 4,
+    "scf_tolerance": 1e-10,
+    "max_cycles": 160,
+    "base_components": [
+      "full_base_complex",
+      "solute_with_W1_W2_W3_ghost_basis",
+      "W1_W2_W3_with_solute_ghost_basis"
+    ],
+    "response_density": "D_full - D_solute_ghost - D_waters_ghost",
+    "probe_density": "isolated W4 at the same method/basis/grid/tolerance, no base ghosts",
+    "coupling_evaluator": "density-fitted AO Coulomb integrals, no published-surface interpolation",
+    "stored_reference_manifest": "evidence/liquid_bridge/references/REFERENCE_MANIFEST.json",
+    "stored_reference_manifest_sha256": "4955b54e6150189f1ec715338e389589be195e0beed0ae69764b41332fef3a1c"
+  },
+  "energy": {
+    "definition": "sum_A Z_A DeltaV_base(R_A) - integral rho_e_W4(r) DeltaV_base(r) dr",
+    "glider_site_gradient_step_bohr": 0.0001,
+    "glider_site_gradient_check_steps_bohr": [
+      0.00005,
+      0.0002
+    ],
+    "mace_probe_quadrature_level": 5,
+    "mace_probe_quadrature_check_levels": [
+      4,
+      6
+    ],
+    "quadrature_check_cases": "parent_00 for every solute",
+    "metrics": [
+      "MAE_kcal_mol",
+      "RMSE_kcal_mol",
+      "signed_bias_kcal_mol",
+      "Pearson_r",
+      "Spearman_rho",
+      "per_case_absolute_error_kcal_mol"
+    ],
+    "physical_scale": [
+      "RMS_reference_kcal_mol",
+      "median_absolute_reference_kcal_mol",
+      "reference_range_kcal_mol",
+      "kBT_298.15K_context",
+      "response_to_full_frozen_electrostatic_ratio_secondary"
+    ]
+  },
+  "statistics": {
+    "independent_unit": "solute",
+    "aggregation": "equal weight to six solutes, four paired snapshots retained per sampled solute",
+    "bootstrap_resamples": 100000,
+    "bootstrap_rng": "NumPy PCG64",
+    "bootstrap_seed": 2026081901,
+    "interval": "percentile_95",
+    "leave_one_solute_out": true
+  },
+  "force": {
+    "definition": "negative rigid-translation derivative of response coupling with base fixed",
+    "method": "three-axis central finite difference",
+    "step_angstrom": 0.002,
+    "convergence_steps_angstrom": [
+      0.001,
+      0.004
+    ],
+    "convergence_cases": "parent_00 for every solute",
+    "angular_reference_threshold_kcal_mol_angstrom": 0.05,
+    "metrics": [
+      "vector_RMSE_kcal_mol_angstrom",
+      "magnitude_MAE_kcal_mol_angstrom",
+      "magnitude_RMSE_kcal_mol_angstrom",
+      "cosine_similarity",
+      "angular_error_degrees"
+    ]
+  },
+  "torque": {
+    "origin": "heldout_W4_oxygen",
+    "method": "central rigid rotations about fixed laboratory x/y/z axes",
+    "step_degrees": 0.1,
+    "convergence_steps_degrees": [
+      0.05,
+      0.2
+    ],
+    "convergence_cases": "parent_00 for every solute",
+    "angular_reference_threshold_kcal_mol": 0.01
+  },
+  "orientation": {
+    "case_rule": "parent_00 for every solute",
+    "n_cases": 6,
+    "oxygen_fixed": true,
+    "rotation_grid": "24 proper rotations from scipy.spatial.transform.Rotation.create_group('O'), canonical quaternion lexicographic order",
+    "random_seed": null,
+    "primary_metric": "absolute_profile_RMSE_kcal_mol",
+    "secondary_metrics": [
+      "Pearson_r",
+      "Spearman_rho",
+      "modulation_amplitude_error_kcal_mol",
+      "discrete_extremum_geodesic_error_degrees"
+    ],
+    "extremum_minimum_modulation_kcal_mol": 0.05
+  },
+  "sanity_checks": {
+    "linearity": true,
+    "common_translation_angstrom": [
+      1.234,
+      -0.731,
+      0.419
+    ],
+    "common_rotation_degrees": 37.0,
+    "common_rotation_axis": [
+      1.0,
+      2.0,
+      3.0
+    ],
+    "glider_surface_reconstruction_tolerance_hartree_per_e": 1e-8,
+    "stored_dipole_agreement_tolerance_debye": 1e-5,
+    "rigid_bond_tolerance_angstrom": 1e-10,
+    "rigid_angle_tolerance_degrees": 1e-10,
+    "all_24_cases_required": true,
+    "W4_excluded_from_base_models": true
+  },
+  "units": {
+    "bohr_to_angstrom": 0.529177210903,
+    "hartree_to_kcal_mol": 627.5094740631,
+    "debye_per_e_bohr": 2.541746473,
+    "temperature_kelvin": 298.15,
+    "kBT_kcal_mol": 0.592484949
+  },
+  "planned_outputs": {
+    "tables": [
+      "experiment1_per_case.csv",
+      "energy_aggregate_statistics.csv",
+      "energy_per_solute_statistics.csv",
+      "blocked_bootstrap_intervals.csv",
+      "leave_one_solute_out.csv",
+      "force_per_case.csv",
+      "torque_per_case.csv",
+      "orientation_profiles.csv",
+      "orientation_statistics.csv"
+    ],
+    "figures": [
+      "energy_scatter",
+      "paired_energy_errors",
+      "force_torque_diagnostics",
+      "orientation_profiles"
+    ]
+  },
+  "decision_criteria": {
+    "nontrivial_signal_min_rms_kcal_mol": 0.1,
+    "nontrivial_signal_min_numerical_ratio": 10.0,
+    "main_energy_improvement_fraction": 0.2,
+    "main_min_solute_wins_of_6": 4,
+    "main_derivative_or_orientation_improvement_fraction": 0.15,
+    "si_energy_improvement_fraction": 0.15,
+    "dipole_sufficient_relative_mae_tolerance": 0.1,
+    "recommendations": [
+      "MAIN TEXT",
+      "SI ONLY",
+      "DO NOT USE"
+    ]
+  },
+  "change_control": "Immutable after freeze commit. Any numerical-bug correction requires a dated amendment recording old and new rules, reason, and affected outputs. No fallback probe is permitted without first documenting why the exact QM-density route failed."
+}

@@ -1,0 +1,15 @@
+{
+  "exact_duplicates": [
+    {
+      "previous_path": "data/source_data/FigS3_complete_development_controls.csv",
+      "retained_path": "provenance/previous_release_tables/Fig2_development_ablation.csv",
+      "sha256": "03c0b04fc7143f87cc41fd31d24387bdfca32da126401d80e12527a4054d4187"
+    },
+    {
+      "previous_path": "data/source_data/FigS7_comparator_coverage.csv",
+      "retained_path": "figures/figure_S06/comparator_coverage.csv",
+      "sha256": "e693ca70e8ff4adcb9d45bffbeb1a445675557277e7e20ef741c227978810371"
+    }
+  ],
+  "bytes_removed": 1035
+}

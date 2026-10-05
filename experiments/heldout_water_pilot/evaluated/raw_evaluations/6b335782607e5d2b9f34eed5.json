@@ -1,0 +1,23 @@
+{
+  "case_id": "glider_h__MNSOL-CONN-QKSKPIVNLNLAAV__liquid_00__base3_probe4",
+  "evaluation_id": "torque_0.2deg_axis0_plus",
+  "exact_dipole_base_com_energy_hartree": -0.0006517407836649082,
+  "exact_dipole_base_com_energy_kcal_mol": -0.4089735163830392,
+  "exact_dipole_nuclear_center_energy_hartree": -0.0006505840644228188,
+  "exact_dipole_nuclear_center_energy_kcal_mol": -0.408247664099797,
+  "exact_dipole_solute_com_energy_hartree": -0.0006648755575415565,
+  "exact_dipole_solute_com_energy_kcal_mol": -0.41721571143031255,
+  "full_frozen_electrostatic_hartree": NaN,
+  "full_frozen_electrostatic_kcal_mol": NaN,
+  "glider_energy_hartree": -0.00042875220971650156,
+  "glider_energy_kcal_mol": -0.26904607362259386,
+  "glider_gradient_step_bohr": 0.0001,
+  "linearity_error_hartree": NaN,
+  "mace_grid_level": 5,
+  "mace_polar_l_energy_hartree": -0.000535773549223342,
+  "mace_polar_l_energy_kcal_mol": -0.3362029780900597,
+  "qm_energy_hartree": -0.0004975823649841768,
+  "qm_energy_kcal_mol": -0.3122376481542942,
+  "zero_energy_hartree": 0.0,
+  "zero_energy_kcal_mol": 0.0
+}

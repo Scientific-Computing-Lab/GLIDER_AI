@@ -1,0 +1,27 @@
+{
+  "all_outer_probes_in_base_response": false,
+  "base_nao": 1481,
+  "case_id": "confirmatory__cdk2-28__base3",
+  "component_runtime_seconds": [
+    345.49805894600286,
+    312.13501960899885,
+    66.87765982800192
+  ],
+  "component_scf_cycles": [
+    15,
+    15,
+    10
+  ],
+  "converged": true,
+  "density_file": "c63d060e7209be151bc41603.npz",
+  "density_file_sha256": "c8a7860e846276fe1bdd814b552cf55f9dcd43118c026a0473a9be9c0fa1c39c",
+  "family": "cdk2",
+  "method": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 SCF 1e-10 GPU4PySCF-1.8.1",
+  "molecule_id": "cdk2-28",
+  "n_base_atoms": 62,
+  "n_solute_atoms": 53,
+  "prospective_claim": false,
+  "response_density_dipole_max_abs_discrepancy_debye": 1.3786455199671366e-08,
+  "response_electron_number": -3.137160670130257e-14,
+  "source_frame_index": 0
+}

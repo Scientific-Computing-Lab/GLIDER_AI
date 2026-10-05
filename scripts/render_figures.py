@@ -2,7 +2,7 @@
 """Render the repository's vector reading aids from released numerical tables.
 
 The architecture is conceptual. Result plots read the unaltered CSVs in
-data/figure_data; no benchmark scores are recomputed here.
+figures/; no benchmark scores are recomputed here.
 """
 
 from __future__ import annotations
@@ -17,7 +17,7 @@ from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / "assets"
-DATA = ROOT / "data" / "figure_data"
+DATA = ROOT / "figures"
 
 NAVY = "#14263d"
 INK = "#24364b"
@@ -54,6 +54,8 @@ def rows(path: str) -> list[dict[str, str]]:
 def save(fig: plt.Figure, name: str) -> None:
     ASSETS.mkdir(exist_ok=True)
     fig.savefig(ASSETS / name, format="svg", metadata={"Date": None})
+    path = ASSETS / name
+    path.write_text("\n".join(line.rstrip() for line in path.read_text().splitlines()) + "\n")
     plt.close(fig)
 
 
@@ -92,15 +94,15 @@ def architecture() -> None:
                  ((6.87, 1.92), (8.01, 1.92))]:
         ax.add_patch(FancyArrowPatch(a, b, arrowstyle="-|>", mutation_scale=15,
                                      color="#557c96", linewidth=1.7))
-    ax.text(5.74, .30, "48 three-water environments  ·  14 chemistries  ·  five frozen ensemble members",
+    ax.text(5.74, .30, "48 three-/four-water environments  ·  14 chemistries  ·  five frozen ensemble members",
             ha="center", fontsize=9.3, color=MUTED)
     save(fig, "architecture.svg")
 
 
 def transfer() -> None:
-    glider = rows("Fig4_glider.csv")
-    baseline = rows("Fig4_mace_polar_l.csv")
-    paired = rows("Fig4_paired.csv")
+    glider = rows("figure_03/glider.csv")
+    baseline = rows("figure_03/mace_polar_l.csv")
+    paired = rows("figure_03/paired.csv")
     fig, ax = plt.subplots(figsize=(11.6, 4.25))
     fig.subplots_adjust(left=.19, right=.95, top=.79, bottom=.22)
     fig.suptitle("Spatial response transfers beyond response supervision", x=.065,
@@ -139,7 +141,7 @@ def transfer() -> None:
 
 
 def coupling() -> None:
-    rank=rows("downstream/energy_rank.csv")
+    rank=rows("figure_04/energy_rank.csv")
     fig,(left,right)=plt.subplots(1,2,figsize=(11.6,4.2),gridspec_kw={"width_ratios":[.96,1.25]})
     fig.subplots_adjust(left=.17,right=.97,top=.68,bottom=.23,wspace=.32)
     fig.suptitle("Reuse one frozen response for a held-out water",x=.064,y=.96,
@@ -182,7 +184,7 @@ def coupling() -> None:
 
 
 def distance() -> None:
-    values=rows("FigS15_dense_energy.csv")
+    values=rows("figure_05/dense_energy.csv")
     fig,ax=plt.subplots(figsize=(11.6,4.2))
     fig.subplots_adjust(left=.11,right=.95,top=.74,bottom=.25)
     fig.suptitle("A local advantage, not a universal multipole verdict",x=.065,y=.96,
@@ -216,8 +218,22 @@ def main() -> None:
     transfer()
     coupling()
     distance()
-    print("Wrote four SVG figures to assets/ from unchanged release data.")
+    print("Wrote five SVG figures to assets/ from unchanged release data.")
 
+
+def separation():
+    import pandas as pd
+    data=pd.read_csv(ROOT/'experiments/dissociation/summary.csv')
+    fig,axes=plt.subplots(1,2,figsize=(11,3.8))
+    for ax,system,title in zip(axes,['single_water','whole_environment'],['One separated water','Intact separated environment']):
+        for method,color,label in [('glider',BLUE,'GLIDER'),('averaged_prior',ORANGE,'Frozen averaged prior')]:
+            q=data[(data.system==system)&(data.method==method)].sort_values('distance_A')
+            ax.plot(q.distance_A,q.esp_rms_mEh_per_e,color=color,lw=1.6,marker='o',ms=3.5,label=label)
+        ax.set(yscale='log',xlabel='Minimum fragment distance (Å)',ylabel='Response-potential RMS (mEh/e)',title=title)
+        ax.set_xticks([3,5,10,15,20]);ax.spines[['top','right']].set_visible(False);ax.grid(alpha=.2);ax.legend(frameon=False,fontsize=8)
+    fig.suptitle('A residual response remains when the inducing fragments separate',fontsize=13,fontweight='bold',y=1.01)
+    fig.tight_layout();save(fig,'separation-control.svg')
 
 if __name__ == "__main__":
+    separation()
     main()

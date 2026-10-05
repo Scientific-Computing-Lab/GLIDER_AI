@@ -1,0 +1,9 @@
+{
+  "experimental_hfe_accessed": false,
+  "geometry_sha256": "59b75023bb3ab12be5e616b6e923cd07e8675fbebb38a6c72cc9a2d3536a2be2",
+  "method": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 SCF 1e-10 GPU4PySCF-1.8.1",
+  "n_configurations": 24,
+  "observable": "CP full complex - solute in complex basis - waters in complex basis",
+  "pre_qm_freeze_manifest_sha256": "90e36ad237ed76231176b5d938e6fc2c9d7da026a52f86de8b968237ccf2a9d4",
+  "registry_sha256": "6277002e72238fadc7d380f540f2cc916decad5fef7f1c6ad13d40244eb7919c"
+}

@@ -1,0 +1,33 @@
+{
+  "component_order": [
+    "full",
+    "solute_ghost",
+    "waters_ghost"
+  ],
+  "component_runtime_seconds": [
+    5.568872525007464,
+    5.227075636037625,
+    4.819425738998689
+  ],
+  "component_scf_cycles": [
+    12,
+    12,
+    11
+  ],
+  "config_id": "glider_h__MNSOL-CONN-XSQUKJJJFZCRTK__liquid_03__3w",
+  "converged": true,
+  "delta_dipole_norm_debye": 0.32749159864316535,
+  "delta_esp_rms_hartree_per_e": 0.0023976688517790778,
+  "experimental_hfe_accessed": false,
+  "interaction_energy_hartree": -0.007931043443164754,
+  "interaction_energy_kcal_mol": -4.9768048997919125,
+  "method": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 SCF 1e-10 GPU4PySCF-1.8.1",
+  "molecule_id": "MNSOL-CONN-XSQUKJJJFZCRTK",
+  "n_atoms": 17,
+  "n_solute_atoms": 8,
+  "n_waters": 3,
+  "observable_file": "6e2b779e5f3665814a48.npz",
+  "observable_sha256": "7d6caa04309beb112e84e9589636feb00a54af9bd0b8d7d416027fa748948290",
+  "prediction_probe_file": "glider_h_final/response/glider_predictions/6e2b779e5f3665814a48.npz",
+  "prediction_probe_sha256": "d3b88b389f6a9e4446f557af0559da4c82bd867bc34d2313f9aa92762d52662b"
+}

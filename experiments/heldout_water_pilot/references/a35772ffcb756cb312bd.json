@@ -1,0 +1,31 @@
+{
+  "W4_in_base_response": false,
+  "base_config_id": "glider_h__MNSOL-CONN-BYEAHWXPCBROCE__liquid_00__3w",
+  "base_nao": 583,
+  "case_id": "glider_h__MNSOL-CONN-BYEAHWXPCBROCE__liquid_00__base3_probe4",
+  "component_runtime_seconds": [
+    16.187869982997654,
+    13.013936044997536,
+    9.283582834003028
+  ],
+  "component_scf_cycles": [
+    12,
+    12,
+    11
+  ],
+  "converged": true,
+  "density_file": "a35772ffcb756cb312bd.npz",
+  "density_file_sha256": "2050d342e5bd9208637e4a59a8fbb6b430d3c6a2786a8077e76588dc485124a3",
+  "method": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 SCF 1e-10 GPU4PySCF-1.8.1",
+  "molecule_id": "MNSOL-CONN-BYEAHWXPCBROCE",
+  "n_base_atoms": 21,
+  "n_solute_atoms": 12,
+  "probe_nao": 58,
+  "probe_runtime_seconds": 1.620654767997621,
+  "probe_scf_cycles": 9,
+  "prospective_claim": false,
+  "response_dipole_max_abs_discrepancy_debye": 2.126769871324541e-10,
+  "source_frame_index": 0,
+  "stored_reference": "evidence/liquid_bridge/references/10cb64d390d48beae598.npz",
+  "stored_reference_sha256": "dd7e81bf5539d880217e3df5325900b264624a752f807ca0328f741f0d38ce97"
+}

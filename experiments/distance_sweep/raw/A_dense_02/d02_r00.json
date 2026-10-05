@@ -1,0 +1,23 @@
+{
+  "direction_index": 2,
+  "surface_clearance_angstrom": 0.8,
+  "oxygen_angstrom": [
+    16.404128302208456,
+    12.654183197889111,
+    19.514179371776844
+  ],
+  "accepted": 10,
+  "mode": "dense",
+  "orientation_ids": [
+    "orientation_O_00",
+    "orientation_O_02",
+    "orientation_O_06",
+    "orientation_O_10",
+    "orientation_O_12",
+    "orientation_O_14",
+    "orientation_O_16",
+    "orientation_O_18",
+    "orientation_O_20",
+    "orientation_O_22"
+  ]
+}

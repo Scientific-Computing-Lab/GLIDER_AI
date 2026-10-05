@@ -1,0 +1,16 @@
+{
+  "angle_discrepancy_degrees": 1.4210854715202004e-14,
+  "axis": 1,
+  "bond_length_max_discrepancy_angstrom": 4.440892098500626e-16,
+  "case_id": "glider_h__MNSOL-CONN-WRXCXOUDSPTXNX__liquid_02__base3_probe4",
+  "converged": true,
+  "density_file": "ab86ea6969076df6c52b7a16.npz",
+  "density_file_sha256": "60ffa943db9d72e7fdca031285c40cefbc6ceadb7e5fb36d13ecfb2a043a7317",
+  "density_source": "independent_isolated_W4_SCF",
+  "runtime_seconds": 0.8582917809981154,
+  "scf_cycles": 9,
+  "sign": -1,
+  "step_degrees": 0.1,
+  "variant_id": "torque_0.1deg_axis1_minus",
+  "variant_type": "torque_primary"
+}

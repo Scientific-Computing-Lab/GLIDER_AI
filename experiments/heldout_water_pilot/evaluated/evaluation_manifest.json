@@ -1,0 +1,25 @@
+{
+  "experiment": "post hoc downstream response coupling",
+  "manuscript_modified": false,
+  "methods": [
+    "qm",
+    "glider",
+    "mace_polar_l",
+    "exact_dipole_base_com",
+    "exact_dipole_solute_com",
+    "exact_dipole_nuclear_center",
+    "zero"
+  ],
+  "outputs": {
+    "energy_numerical_convergence.csv": "d5804b9f4705f6f60e91b1f386116a3b68ad49f6374d9d61081e70ead539d221",
+    "experiment1_per_case.csv": "1654fa840d2cdc6f09c3b1ee12801603b50e62bab041021afe4b4ca1619bde43",
+    "force_per_case.csv": "f2cb83b78856b2ae6a6ad0c58a5320f708ad0843ff00b981ddaa52b01ebdf70e",
+    "force_step_convergence.csv": "40bcc2c7d7e4b4d9c93d79f740ba82185525d30e27be56705c80db485483a25f",
+    "glider_direct_field_check.csv": "229ee0ba7e6a14ba45486ffd6dd6139176052cb088e9d7418c8efc7d01126746",
+    "orientation_profiles.csv": "2bdc9afbe820f1d78174c18b15d0dc06efe413dbe0baf145bf159aa95cfcce64",
+    "torque_per_case.csv": "fefec05ef66494b065ab2a4e803ccf43bdbc7e2faa8333d7551b97d498221b61",
+    "torque_step_convergence.csv": "430dcba6a3d4a8ee9e730a186e15eb4f0650bbd63e465addeff44570df377b36"
+  },
+  "prospective_claim": false,
+  "protocol": "results/posthoc_downstream_response/protocol_freeze.json"
+}

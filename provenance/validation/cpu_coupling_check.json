@@ -1,0 +1,21 @@
+{
+  "probe_id": "confirmatory__methane__base3__W4",
+  "comparison": {
+    "qm": {
+      "recomputed": 0.00737535463532647,
+      "archived": 0.0073753546555935,
+      "absolute_difference": 2.0267030241549744e-11
+    },
+    "glider": {
+      "recomputed": -0.007368798739483511,
+      "archived": -0.0073687986983948,
+      "absolute_difference": 4.1088711426329194e-11
+    },
+    "mace_polar_l": {
+      "recomputed": -0.3835835076354878,
+      "archived": -0.38358350763549,
+      "absolute_difference": 2.1649348980190553e-15
+    }
+  },
+  "tolerance_kcal_mol": 0.0001
+}

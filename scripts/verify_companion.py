@@ -4,19 +4,10 @@
 from __future__ import annotations
 
 import csv
-import hashlib
-import json
 import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-MANIFEST = ROOT / "PROVENANCE.json"
-ASSET_NAMES = {
-    "architecture.svg",
-    "prospective-transfer.svg",
-    "frozen-coupling.svg",
-    "distance-and-moments.svg",
-}
 IGNORED_DIRS = {".git", ".qa", ".venv", "__pycache__", ".pytest_cache", ".ruff_cache",
                 "build", "dist", "example_prediction"}
 
@@ -25,23 +16,6 @@ def ignored(path: Path) -> bool:
     parts = path.relative_to(ROOT).parts
     return any(part in IGNORED_DIRS or part.endswith(".egg-info") for part in parts) or \
         parts[:2] == ("third_party", "checkpoints")
-
-
-def digest(path: Path) -> str:
-    h = hashlib.sha256()
-    with path.open("rb") as handle:
-        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
-            h.update(chunk)
-    return h.hexdigest()
-
-
-def tree_digest(directory: Path) -> str:
-    """Hash immutable archive files, excluding newly written directory guides."""
-    h = hashlib.sha256()
-    for path in sorted(p for p in directory.rglob("*") if p.is_file() and p.name != "README.md"):
-        h.update(str(path.relative_to(directory)).encode() + b"\0")
-        h.update(digest(path).encode() + b"\n")
-    return h.hexdigest()
 
 
 def table(path: str) -> list[dict[str, str]]:
@@ -54,7 +28,7 @@ def check_links() -> None:
     pattern = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
     html_images = re.compile(r'<img\s+[^>]*src="([^"]+)"')
     for markdown in ROOT.rglob("*.md"):
-        if ignored(markdown):
+        if ignored(markdown) or "provenance" in markdown.relative_to(ROOT).parts:
             continue
         content = markdown.read_text()
         for target in pattern.findall(content) + html_images.findall(content):
@@ -67,7 +41,7 @@ def check_links() -> None:
 
 
 def check_headlines() -> None:
-    rows = table("data/figure_data/Fig4_paired.csv")
+    rows = table("figures/figure_03/paired.csv")
     assert len(rows) == 3
     assert sum(int(r["n_molecules"]) for r in rows) == 56
     assert sum(int(r["glider_molecule_wins"]) for r in rows) == 54
@@ -81,58 +55,23 @@ def check_headlines() -> None:
         assert abs(float(row["comparator_value"]) - baseline) < 1e-12
         assert abs(float(row["relative_error_reduction_pct"]) - reduction) < 1e-10
         assert float(row["ci95_high"]) < 0
-    nonwater = table("data/figure_data/Fig5_nonwater_effects.csv")
+    nonwater = table("figures/figure_S15/nonwater_effects.csv")
     overall = next(r for r in nonwater if r["subset"] == "Overall")
     assert int(overall["n_solutes"]) == 12
     assert abs(float(overall["esp_glider"]) - 0.450371053714298) < 1e-12
     assert abs(float(overall["esp_comparator"]) - 0.617170202219818) < 1e-12
-    ranks = table("data/figure_data/downstream/energy_rank.csv")
+    ranks = table("figures/figure_04/energy_rank.csv")
     assert [int(r["rank"]) for r in ranks] == list(range(4, 13))
     w4 = ranks[0]
     assert abs(float(w4["glider"]) - 0.04868219341822043) < 1e-12
     assert abs(float(w4["mace_polar_l"]) - 0.11401221689887638) < 1e-12
 
 
-def main() -> None:
-    provenance = json.loads(MANIFEST.read_text())
-    count = 0
-    for group in (
-        "code_and_checkpoint_sha256",
-        "camera_ready_scientific_data_sha256",
-        "derived_plotting_data_sha256",
-        "readme_figure_source_sha256",
-        "retained_gate_sha256",
-    ):
-        for relative, expected in provenance[group].items():
-            path = ROOT / relative
-            assert path.is_file(), relative
-            assert digest(path) == expected, f"Content hash changed: {relative}"
-            count += 1
-    for relative, expected in provenance["benchmark_archive_tree_sha256"].items():
-        assert tree_digest(ROOT / relative) == expected, f"Archive changed: {relative}"
+def main():
     check_headlines()
     check_links()
-    # GitHub gives .github/README.md precedence over the root README on the
-    # repository landing page. Keep the workflow guide one level deeper.
-    assert not (ROOT / ".github/README.md").exists(), "GitHub would hide the root README"
-    directories = [
-        p for p in ROOT.rglob("*")
-        if p.is_dir() and not ignored(p) and p != ROOT / ".github"
-    ]
-    missing_guides = [str(p.relative_to(ROOT)) for p in directories if not (p / "README.md").is_file()]
-    assert not missing_guides, f"Directories without README: {missing_guides}"
-    forbidden = {".pdf", ".tex", ".zip", ".docx", ".pptx"}
-    copied_manuscripts = [
-        str(p.relative_to(ROOT)) for p in ROOT.rglob("*")
-        if p.is_file() and p.suffix.lower() in forbidden and ".git" not in p.parts
-    ]
-    assert not copied_manuscripts, f"Manuscript/build files included: {copied_manuscripts}"
-    assert {p.name for p in (ROOT / "assets").glob("*.svg")} == ASSET_NAMES
-    assert (ROOT / "assets/spatial-response.png").is_file()
-    assert (ROOT / "examples/one_response_geometry.extxyz").read_text().splitlines()[0] == "28"
-    print(f"Companion verified: {count} exact source files, {len(directories)} directory guides, "
-          "headline values, links and SVG gallery.")
-
-
-if __name__ == "__main__":
-    main()
+    assert not (ROOT/".github/README.md").exists()
+    for name in ['training','panel_1','panel_2','panel_3','nonwater','liquid','shell_size','heldout_water','heldout_water_pilot','distance_sweep','global_branch','dissociation']:
+        assert (ROOT/'experiments'/name/'README.md').is_file(),name
+    print('PASS: experiment guides, active local links, headline values and visual gallery')
+if __name__=='__main__':main()

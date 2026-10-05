@@ -1,0 +1,28 @@
+{
+  "experiment": "post hoc confirmatory downstream response breadth/range/directionality",
+  "manuscript_modified": false,
+  "methods": [
+    "qm",
+    "glider",
+    "mace_polar_l",
+    "exact_dipole_base_com",
+    "exact_dipole_solute_com",
+    "exact_dipole_nuclear_center",
+    "zero"
+  ],
+  "outputs": {
+    "breadth_energy_per_solute.csv": "53e52ca09449a3c90eaab6abee9a3a5b2471c8274b80da52f31030b318059db6",
+    "breadth_force_per_solute.csv": "bb053f6dc833f6f2972bcee5fadf5a6dc9645a1226ef0290d9709ff7607d4b8f",
+    "breadth_torque_per_solute.csv": "2e13355b1f64174324348a94d441ec729c1a7c9f2e7dcb814c06305222531af2",
+    "energy_numerical_convergence.csv": "0b3362896c60dc750b17752306cda628547e8e06242fdb31df060306112c8f81",
+    "force_step_convergence.csv": "51f4308acaf1cc026f4c26bbc9434353b456cd3c8752cd7d92c05c2ae34d6b2a",
+    "glider_direct_field_check.csv": "6e5132930720e65d73752669f9776582f5a92856b87ee3ef60dff2ad6ea4f801",
+    "orientation_profiles.csv": "7887d8a3f1dcf7808a97ee9bdf58152d8507e88a33bdcbeadfe384f2f8e574c6",
+    "range_energy_per_probe.csv": "ccec31a3e921cab20bc4f896d7c8144930093f81045656cc604d07b745f7aac9",
+    "range_torque_per_probe.csv": "2d6a7954caf149f40071d90cb04ecb040c416d8cd6e22157e0d0a1ced818a4e4",
+    "torque_step_convergence.csv": "ac018ad3a4863c56bb48ccdd77d345580c995915a122140b7e282023a4c61392"
+  },
+  "prospective_claim": false,
+  "protocol": "results/posthoc_downstream_response_confirmatory/protocol_freeze.json",
+  "reference_coupling_execution": "GPU4PySCF density-fitted AO Coulomb contraction"
+}

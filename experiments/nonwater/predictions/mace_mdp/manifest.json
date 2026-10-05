@@ -1,0 +1,13 @@
+{
+  "checkpoint_sha256": "126f8d1602549e6fa0df775c701a5119ddeb0e3738202af8e7aa736de6c2b692",
+  "classification": "prospectively frozen dipole-only comparator",
+  "inference_definition": "full complex minus isolated solute minus isolated perturbant",
+  "method": "MACE-MDP released checkpoint",
+  "n_configurations": 72,
+  "prediction_registry_sha256": "98f4e55856109601bba82bd498212d79631605eecdae8eed5d27b6a06f3afde8",
+  "prospective_prediction": true,
+  "reference_targets_accessed": false,
+  "response_esp_available": false,
+  "runtime_seconds": 12.696971960001974,
+  "training_tuning_or_calibration": false
+}

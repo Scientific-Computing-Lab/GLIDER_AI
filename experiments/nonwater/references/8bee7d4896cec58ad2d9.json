@@ -1,0 +1,52 @@
+{
+  "all_components_converged": true,
+  "attempts": [
+    {
+      "component": "full_complex",
+      "converged": true,
+      "cycles": 14,
+      "energy_hartree": -1146.0535756928846,
+      "level_shift": 0.0,
+      "runtime_seconds": 21.668715891006286,
+      "solver": "gpu_diis_160"
+    },
+    {
+      "component": "solute_with_perturbant_ghosts",
+      "converged": true,
+      "cycles": 14,
+      "energy_hartree": -1013.3147353903385,
+      "level_shift": 0.0,
+      "runtime_seconds": 18.785103732006974,
+      "solver": "gpu_diis_160"
+    },
+    {
+      "component": "perturbant_with_solute_ghosts",
+      "converged": true,
+      "cycles": 10,
+      "energy_hartree": -132.85525990572702,
+      "level_shift": 0.0,
+      "runtime_seconds": 10.457445524996729,
+      "solver": "gpu_diis_160"
+    }
+  ],
+  "component_order": [
+    "full_complex",
+    "solute_with_perturbant_ghosts",
+    "perturbant_with_solute_ghosts"
+  ],
+  "config_id": "nonwater_environment__pros_halogen_oxazinanone__ch3cn__altered_orientation",
+  "delta_dipole_norm_debye": 0.818238823748683,
+  "delta_esp_rms_hartree_per_e": 0.005230081442969141,
+  "excluded_or_replaced": false,
+  "hamiltonian_or_reference_changed": false,
+  "method": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 SCF 1e-10",
+  "molecule_id": "pros_halogen_oxazinanone",
+  "observable_file": "8bee7d4896cec58ad2d9.npz",
+  "observable_sha256": "4c65e68ef1ce2999437ed2ef890045469c42c522064999be62c46126cd27d7a6",
+  "perturbant": "CH3CN",
+  "prediction_probe_file": "prospective_nonwater_environment/predictions/glider/8bee7d4896cec58ad2d9.npz",
+  "prediction_probe_sha256": "ce4f8940cf410a7f54cc5ee9456e974ca7d1e5e618ee5e19eb7800a6979f91ed",
+  "regime": "altered_orientation",
+  "runtime_seconds": 50.91126514800999,
+  "used_recovery": false
+}

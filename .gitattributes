@@ -1,0 +1,8 @@
+# Scientific archives retain exact bytes, including original line endings.
+experiments/** -text -whitespace
+provenance/** -text -whitespace
+checkpoints/** -text -whitespace
+figures/**/*.csv -text -whitespace
+assets/** -text
+*.py text eol=lf
+*.yml text eol=lf

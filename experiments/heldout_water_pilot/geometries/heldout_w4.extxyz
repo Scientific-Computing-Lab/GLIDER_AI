@@ -1,0 +1,120 @@
+3
+Properties=species:S:1:pos:R:3 case_id=glider_h__MNSOL-CONN-BYEAHWXPCBROCE__liquid_00__base3_probe4 base_config_id=glider_h__MNSOL-CONN-BYEAHWXPCBROCE__liquid_00__3w molecule_id=MNSOL-CONN-BYEAHWXPCBROCE source_frame_index=0 heldout_water_rank=4 heldout_source_water_index=444 heldout_oxygen_distance_A=2.9511510581677682 pbc="F F F"
+O       32.55454302      25.11011124      18.02045822
+H       32.95275211      25.54408073      18.77499819
+H       31.69702768      24.82262611      18.33391428
+3
+Properties=species:S:1:pos:R:3 case_id=glider_h__MNSOL-CONN-BYEAHWXPCBROCE__liquid_01__base3_probe4 base_config_id=glider_h__MNSOL-CONN-BYEAHWXPCBROCE__liquid_01__3w molecule_id=MNSOL-CONN-BYEAHWXPCBROCE source_frame_index=9 heldout_water_rank=4 heldout_source_water_index=899 heldout_oxygen_distance_A=3.188933647371833 pbc="F F F"
+O        5.38391590      11.06475234       0.84110416
+H        5.08446395      11.65962219       1.52862877
+H        4.74751025      10.34979343       0.84840380
+3
+Properties=species:S:1:pos:R:3 case_id=glider_h__MNSOL-CONN-BYEAHWXPCBROCE__liquid_02__base3_probe4 base_config_id=glider_h__MNSOL-CONN-BYEAHWXPCBROCE__liquid_02__3w molecule_id=MNSOL-CONN-BYEAHWXPCBROCE source_frame_index=19 heldout_water_rank=4 heldout_source_water_index=485 heldout_oxygen_distance_A=2.92670615927957 pbc="F F F"
+O        1.02707490      14.53214645      18.43900442
+H        0.09092283      14.36125755      18.33581567
+H        1.17303148      15.35676241      17.97538996
+3
+Properties=species:S:1:pos:R:3 case_id=glider_h__MNSOL-CONN-BYEAHWXPCBROCE__liquid_03__base3_probe4 base_config_id=glider_h__MNSOL-CONN-BYEAHWXPCBROCE__liquid_03__3w molecule_id=MNSOL-CONN-BYEAHWXPCBROCE source_frame_index=29 heldout_water_rank=4 heldout_source_water_index=1038 heldout_oxygen_distance_A=3.1144516345459055 pbc="F F F"
+O        2.51667768       2.10509494       7.48278022
+H        2.77990401       2.71156728       6.79058433
+H        1.99037880       2.63652772       8.08012486
+3
+Properties=species:S:1:pos:R:3 case_id=glider_h__MNSOL-CONN-HSFWRNGVRCDJHI__liquid_00__base3_probe4 base_config_id=glider_h__MNSOL-CONN-HSFWRNGVRCDJHI__liquid_00__3w molecule_id=MNSOL-CONN-HSFWRNGVRCDJHI source_frame_index=0 heldout_water_rank=4 heldout_source_water_index=331 heldout_oxygen_distance_A=3.192221782897736 pbc="F F F"
+O       21.16490364      21.71965837      21.96219683
+H       20.29030561      21.41648054      21.71848774
+H       21.47772551      22.19409704      21.19194746
+3
+Properties=species:S:1:pos:R:3 case_id=glider_h__MNSOL-CONN-HSFWRNGVRCDJHI__liquid_01__base3_probe4 base_config_id=glider_h__MNSOL-CONN-HSFWRNGVRCDJHI__liquid_01__3w molecule_id=MNSOL-CONN-HSFWRNGVRCDJHI source_frame_index=6 heldout_water_rank=4 heldout_source_water_index=331 heldout_oxygen_distance_A=2.993151125282905 pbc="F F F"
+O       20.45076132      23.06603193      21.30177021
+H       20.70047855      22.18600988      21.58360958
+H       20.75215816      23.12218666      20.39499760
+3
+Properties=species:S:1:pos:R:3 case_id=glider_h__MNSOL-CONN-HSFWRNGVRCDJHI__liquid_02__base3_probe4 base_config_id=glider_h__MNSOL-CONN-HSFWRNGVRCDJHI__liquid_02__3w molecule_id=MNSOL-CONN-HSFWRNGVRCDJHI source_frame_index=12 heldout_water_rank=4 heldout_source_water_index=502 heldout_oxygen_distance_A=3.133360329607296 pbc="F F F"
+O       21.73641920      19.20917273      10.21997571
+H       21.90717459      19.13117766       9.28136468
+H       20.80186129      19.40778136      10.27819395
+3
+Properties=species:S:1:pos:R:3 case_id=glider_h__MNSOL-CONN-HSFWRNGVRCDJHI__liquid_03__base3_probe4 base_config_id=glider_h__MNSOL-CONN-HSFWRNGVRCDJHI__liquid_03__3w molecule_id=MNSOL-CONN-HSFWRNGVRCDJHI source_frame_index=19 heldout_water_rank=4 heldout_source_water_index=424 heldout_oxygen_distance_A=3.0177697768852387 pbc="F F F"
+O        0.23280244      36.06746912      13.50842953
+H        0.77473044      35.43247528      13.97675514
+H        0.80979459      36.81823380      13.36820126
+3
+Properties=species:S:1:pos:R:3 case_id=glider_h__MNSOL-CONN-QKSKPIVNLNLAAV__liquid_00__base3_probe4 base_config_id=glider_h__MNSOL-CONN-QKSKPIVNLNLAAV__liquid_00__3w molecule_id=MNSOL-CONN-QKSKPIVNLNLAAV source_frame_index=0 heldout_water_rank=4 heldout_source_water_index=706 heldout_oxygen_distance_A=2.902204153221995 pbc="F F F"
+O        6.75826459       3.48202153       2.44756146
+H        5.89256901       3.16044973       2.19577868
+H        6.63167351       4.41866445       2.59891059
+3
+Properties=species:S:1:pos:R:3 case_id=glider_h__MNSOL-CONN-QKSKPIVNLNLAAV__liquid_01__base3_probe4 base_config_id=glider_h__MNSOL-CONN-QKSKPIVNLNLAAV__liquid_01__3w molecule_id=MNSOL-CONN-QKSKPIVNLNLAAV source_frame_index=1 heldout_water_rank=4 heldout_source_water_index=79 heldout_oxygen_distance_A=3.000403935849217 pbc="F F F"
+O        1.03730065       5.01574622      12.36898623
+H        0.68762919       5.59611298      11.69286780
+H        0.51109571       5.20728285      13.14529409
+3
+Properties=species:S:1:pos:R:3 case_id=glider_h__MNSOL-CONN-QKSKPIVNLNLAAV__liquid_02__base3_probe4 base_config_id=glider_h__MNSOL-CONN-QKSKPIVNLNLAAV__liquid_02__3w molecule_id=MNSOL-CONN-QKSKPIVNLNLAAV source_frame_index=2 heldout_water_rank=4 heldout_source_water_index=912 heldout_oxygen_distance_A=2.9529440126875817 pbc="F F F"
+O        4.23326188       4.08189855      12.51146529
+H        4.46146426       4.47512708      11.66913113
+H        4.26672608       4.80926014      13.13280023
+3
+Properties=species:S:1:pos:R:3 case_id=glider_h__MNSOL-CONN-QKSKPIVNLNLAAV__liquid_03__base3_probe4 base_config_id=glider_h__MNSOL-CONN-QKSKPIVNLNLAAV__liquid_03__3w molecule_id=MNSOL-CONN-QKSKPIVNLNLAAV source_frame_index=3 heldout_water_rank=4 heldout_source_water_index=449 heldout_oxygen_distance_A=2.92801509071371 pbc="F F F"
+O        3.28330185       2.97321973      17.64855279
+H        2.63430590       3.05035978      18.34789927
+H        3.82429653       3.75806829      17.73555458
+3
+Properties=species:S:1:pos:R:3 case_id=glider_h__MNSOL-CONN-WRXCXOUDSPTXNX__liquid_00__base3_probe4 base_config_id=glider_h__MNSOL-CONN-WRXCXOUDSPTXNX__liquid_00__3w molecule_id=MNSOL-CONN-WRXCXOUDSPTXNX source_frame_index=0 heldout_water_rank=4 heldout_source_water_index=949 heldout_oxygen_distance_A=2.5070194698634616 pbc="F F F"
+O        1.83824362      -7.00958933      -4.51258475
+H        2.73595534      -6.70915985      -4.37085397
+H        1.93103392      -7.80192599      -5.04156907
+3
+Properties=species:S:1:pos:R:3 case_id=glider_h__MNSOL-CONN-WRXCXOUDSPTXNX__liquid_01__base3_probe4 base_config_id=glider_h__MNSOL-CONN-WRXCXOUDSPTXNX__liquid_01__3w molecule_id=MNSOL-CONN-WRXCXOUDSPTXNX source_frame_index=1 heldout_water_rank=4 heldout_source_water_index=911 heldout_oxygen_distance_A=2.879303675958037 pbc="F F F"
+O        4.82099682      -4.91131456      -6.35232860
+H        4.30366438      -5.53678162      -6.85966471
+H        5.64700121      -4.83928787      -6.83061798
+3
+Properties=species:S:1:pos:R:3 case_id=glider_h__MNSOL-CONN-WRXCXOUDSPTXNX__liquid_02__base3_probe4 base_config_id=glider_h__MNSOL-CONN-WRXCXOUDSPTXNX__liquid_02__3w molecule_id=MNSOL-CONN-WRXCXOUDSPTXNX source_frame_index=2 heldout_water_rank=4 heldout_source_water_index=597 heldout_oxygen_distance_A=2.7321267032799854 pbc="F F F"
+O       -1.89407001     -14.65736342      -6.24788193
+H       -1.72427259     -14.59561555      -7.18787548
+H       -2.81611627     -14.41796663      -6.15433142
+3
+Properties=species:S:1:pos:R:3 case_id=glider_h__MNSOL-CONN-WRXCXOUDSPTXNX__liquid_03__base3_probe4 base_config_id=glider_h__MNSOL-CONN-WRXCXOUDSPTXNX__liquid_03__3w molecule_id=MNSOL-CONN-WRXCXOUDSPTXNX source_frame_index=3 heldout_water_rank=4 heldout_source_water_index=355 heldout_oxygen_distance_A=2.6275731629530013 pbc="F F F"
+O       -6.86933318     -13.19884415      -5.72585726
+H       -7.10472073     -13.17578415      -6.65337695
+H       -7.01948380     -12.30507300      -5.41786416
+3
+Properties=species:S:1:pos:R:3 case_id=glider_h__MNSOL-CONN-XSQUKJJJFZCRTK__liquid_00__base3_probe4 base_config_id=glider_h__MNSOL-CONN-XSQUKJJJFZCRTK__liquid_00__3w molecule_id=MNSOL-CONN-XSQUKJJJFZCRTK source_frame_index=0 heldout_water_rank=4 heldout_source_water_index=415 heldout_oxygen_distance_A=2.708852483038403 pbc="F F F"
+O       25.26807070      23.66111517      10.93516231
+H       25.41023731      22.75741577      11.21685028
+H       26.01780415      23.85823250      10.37366629
+3
+Properties=species:S:1:pos:R:3 case_id=glider_h__MNSOL-CONN-XSQUKJJJFZCRTK__liquid_01__base3_probe4 base_config_id=glider_h__MNSOL-CONN-XSQUKJJJFZCRTK__liquid_01__3w molecule_id=MNSOL-CONN-XSQUKJJJFZCRTK source_frame_index=6 heldout_water_rank=4 heldout_source_water_index=683 heldout_oxygen_distance_A=2.8446111138687535 pbc="F F F"
+O        1.18976630      14.52420235      10.08780122
+H        0.51228121      14.84108090      10.68515658
+H        1.81587413      15.24595976      10.03046989
+3
+Properties=species:S:1:pos:R:3 case_id=glider_h__MNSOL-CONN-XSQUKJJJFZCRTK__liquid_02__base3_probe4 base_config_id=glider_h__MNSOL-CONN-XSQUKJJJFZCRTK__liquid_02__3w molecule_id=MNSOL-CONN-XSQUKJJJFZCRTK source_frame_index=12 heldout_water_rank=4 heldout_source_water_index=395 heldout_oxygen_distance_A=2.413014156018684 pbc="F F F"
+O       30.04963398       2.16165975       4.66265798
+H       29.83725309       1.92276239       3.76040876
+H       30.45277357       1.37530923       5.03057599
+3
+Properties=species:S:1:pos:R:3 case_id=glider_h__MNSOL-CONN-XSQUKJJJFZCRTK__liquid_03__base3_probe4 base_config_id=glider_h__MNSOL-CONN-XSQUKJJJFZCRTK__liquid_03__3w molecule_id=MNSOL-CONN-XSQUKJJJFZCRTK source_frame_index=19 heldout_water_rank=4 heldout_source_water_index=348 heldout_oxygen_distance_A=2.428779443134564 pbc="F F F"
+O       27.23236322      17.27739334       4.80080724
+H       26.44752264      17.29802847       5.34837723
+H       27.94147253      17.53980041       5.38777888
+3
+Properties=species:S:1:pos:R:3 case_id=glider_h__MNSOL-CONN-ZWEHNKRNPOVVGH__liquid_00__base3_probe4 base_config_id=glider_h__MNSOL-CONN-ZWEHNKRNPOVVGH__liquid_00__3w molecule_id=MNSOL-CONN-ZWEHNKRNPOVVGH source_frame_index=0 heldout_water_rank=4 heldout_source_water_index=292 heldout_oxygen_distance_A=2.805002325563956 pbc="F F F"
+O       18.18570852       8.71530533      22.74221897
+H       17.46137261       9.24363196      23.07754040
+H       17.90697575       8.45571339      21.86406612
+3
+Properties=species:S:1:pos:R:3 case_id=glider_h__MNSOL-CONN-ZWEHNKRNPOVVGH__liquid_01__base3_probe4 base_config_id=glider_h__MNSOL-CONN-ZWEHNKRNPOVVGH__liquid_01__3w molecule_id=MNSOL-CONN-ZWEHNKRNPOVVGH source_frame_index=13 heldout_water_rank=4 heldout_source_water_index=335 heldout_oxygen_distance_A=2.664877473265346 pbc="F F F"
+O       16.32750154      29.98906851      28.57346565
+H       16.27578855      30.93298435      28.42320055
+H       17.21432328      29.75121737      28.30289572
+3
+Properties=species:S:1:pos:R:3 case_id=glider_h__MNSOL-CONN-ZWEHNKRNPOVVGH__liquid_02__base3_probe4 base_config_id=glider_h__MNSOL-CONN-ZWEHNKRNPOVVGH__liquid_02__3w molecule_id=MNSOL-CONN-ZWEHNKRNPOVVGH source_frame_index=26 heldout_water_rank=4 heldout_source_water_index=397 heldout_oxygen_distance_A=2.8958807862215203 pbc="F F F"
+O       24.46001291      14.58974004       8.88767719
+H       25.27542830      14.25379395       9.25979197
+H       24.73337889      15.31527758       8.32634211
+3
+Properties=species:S:1:pos:R:3 case_id=glider_h__MNSOL-CONN-ZWEHNKRNPOVVGH__liquid_03__base3_probe4 base_config_id=glider_h__MNSOL-CONN-ZWEHNKRNPOVVGH__liquid_03__3w molecule_id=MNSOL-CONN-ZWEHNKRNPOVVGH source_frame_index=39 heldout_water_rank=4 heldout_source_water_index=335 heldout_oxygen_distance_A=2.8448034369734314 pbc="F F F"
+O       19.85285044       5.15485704      12.46068478
+H       19.23603415       4.58778411      12.92350173
+H       20.69605589       4.70920056      12.54207253

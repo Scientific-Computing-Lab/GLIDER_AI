@@ -1,0 +1,26 @@
+{
+  "status": "FROZEN_BEFORE_QM_LABEL_ASSEMBLY",
+  "frozen_at_utc": "2026-08-12T18:30:00Z",
+  "panel": "prospective",
+  "n_molecules": 7,
+  "n_configurations": 70,
+  "counts_by_n_waters": {"1": 7, "2": 21, "3": 21, "4": 21},
+  "artifacts": {
+    "config/molecules_prospective.csv": "d382ffbceb25476dd17a26ca2dcebe7a32072292b1d8e7799299ba10a63b2dd9",
+    "data/configurations_prospective/configurations.extxyz": "7cf046630f9518316dda92ca320f58710037f5df0e8c56f010d50bc4906d3c21",
+    "data/configurations_prospective/configuration_registry.csv": "c55e9fa4bcb64cfb8b4aa8bb28a1a2809722405b2657f182ed202c0abd660b74",
+    "data/configurations_prospective/configuration_manifest.json": "329ba517812f38d85a7b2898b278eb4420249a4d9e32c4d9a362777b55f6ec89",
+    "data/baseline/openff_tip3p_parameters_prospective.json": "5f8df436a5402686b845e70f93f980bdc89b47b9875dd66ddcad7608c4c9c10b",
+    "data/baseline/parameter_manifest_prospective.json": "16089bd24814d677d9c8327ce3ae3ce8dea06c2a4f1b159d1ea05a17c770f8bb",
+    "PROTOCOL.md": "8e69812e0907a0b56dac966ca44166d0a133d9ea331183d3d058cb9f3ed12eb9",
+    "src/build_clusters.py": "88f80ccf73bebb7293f63b3cce95ec33bff6704c765d4e0bfa74b55fad079ad6",
+    "audit/spice_v1_overlap.csv": "d51f614f54c25b66ed0de107457151fd91ff9b06c9385efec301677149edf845",
+    "audit/spice_v1_overlap_manifest.json": "a33b27eb4e6d55ac5eaeeaf42a0ab0732ed12efd8c9f142b6605d88867060393"
+  },
+  "pair_checkpoint_sha256": "ae4ee0efc3722040d4abe87cd01e9582a389a0555bc277f56484f774a1741070",
+  "prospective_exact_checkpoint_corpus_overlaps": 0,
+  "prospective_nearest_morgan2_tanimoto_range": [0.23333333333333334, 0.3275862068965517],
+  "qm_labels_present_at_freeze": false,
+  "experimental_hydration_targets_accessed": false,
+  "freesolv_labels_accessed": false
+}

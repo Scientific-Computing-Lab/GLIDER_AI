@@ -1,0 +1,10 @@
+{
+  "configuration_sha256": "bd2c991674b365f11b01eb72e555b1da25a3f6bf5381b2f28f33b4b364e3f01f",
+  "method": "MACE-POLAR-1-L",
+  "n_configurations": 36,
+  "probe_definition": "published deterministic two-shell whole-cluster surface",
+  "prospective_claim": false,
+  "reference_labels_accessed": false,
+  "registry_sha256": "a9fb414b2f5a7431a26084447a840da05f019f4ed2f497b0e1f22eee533ceb6d",
+  "source_prediction_sha256": "c7fac9517341dc04993cb79eb4a025de59e678f8c04d0ee8db3e08ed0611f774"
+}

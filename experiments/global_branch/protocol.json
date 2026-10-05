@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-04",
+  "status": "post hoc author-review diagnostic",
+  "n_training_configurations": 48,
+  "n_training_solutes": 14,
+  "epochs": 64,
+  "seeds": [
+    2026081300,
+    2026081301,
+    2026081302,
+    2026081303,
+    2026081304
+  ],
+  "learning_rate": 0.002,
+  "weight_decay": 2e-05,
+  "dipole_loss_weight": 2.0,
+  "latent_loss_weight": 0.05,
+  "selection": "original fixed training schedule; no test-based model selection",
+  "intervention": "remove global dipole readout and moment reconciliation; retain local mapping and averaged prior",
+  "source_sha256": "9dcf4389343a47b552853d809b90950cedcf3e44c4c5ffc89875945a0c6325ea",
+  "feature_sha256": "e84ce9fa7c5f9ed143ca9cbec4547e29603aaa28a76055314746a8192511b269",
+  "prior_sha256": "24ace3180e950c45e6fdf4bb1c9d008b1537a5aba786cb02ed42a8b0cfb1deb4",
+  "published_checkpoint_sha256": "a288afa285128e13cb7a05ba9459f1dce07e79b8638c6e272c2509ae68d7a288",
+  "torch_version": "2.8.0+cu126",
+  "device": "cuda"
+}

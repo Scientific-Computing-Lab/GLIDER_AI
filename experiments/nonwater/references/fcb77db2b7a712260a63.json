@@ -1,0 +1,52 @@
+{
+  "all_components_converged": true,
+  "attempts": [
+    {
+      "component": "full_complex",
+      "converged": true,
+      "cycles": 9,
+      "energy_hartree": -1168.4226198801696,
+      "level_shift": 0.0,
+      "runtime_seconds": 17.70375062400126,
+      "solver": "gpu_diis_160"
+    },
+    {
+      "component": "solute_with_perturbant_ghosts",
+      "converged": true,
+      "cycles": 15,
+      "energy_hartree": -1052.6133286562238,
+      "level_shift": 0.0,
+      "runtime_seconds": 23.208912033005618,
+      "solver": "gpu_diis_160"
+    },
+    {
+      "component": "perturbant_with_solute_ghosts",
+      "converged": true,
+      "cycles": 10,
+      "energy_hartree": -115.80904965873395,
+      "level_shift": 0.0,
+      "runtime_seconds": 11.210483426999417,
+      "solver": "gpu_diis_160"
+    }
+  ],
+  "component_order": [
+    "full_complex",
+    "solute_with_perturbant_ghosts",
+    "perturbant_with_solute_ghosts"
+  ],
+  "config_id": "nonwater_environment__pros_heteroaryl_amide__ch3oh__equilibrium_like",
+  "delta_dipole_norm_debye": 0.18451121514524124,
+  "delta_esp_rms_hartree_per_e": 0.000998147760190991,
+  "excluded_or_replaced": false,
+  "hamiltonian_or_reference_changed": false,
+  "method": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 SCF 1e-10",
+  "molecule_id": "pros_heteroaryl_amide",
+  "observable_file": "fcb77db2b7a712260a63.npz",
+  "observable_sha256": "96ebc4d007064480c1601cfc626f1ec278b02f2c08922504c68dabdf59a509c6",
+  "perturbant": "CH3OH",
+  "prediction_probe_file": "prospective_nonwater_environment/predictions/glider/fcb77db2b7a712260a63.npz",
+  "prediction_probe_sha256": "0cf02807c6b156e8167e505a0d3e97cab9cd7d1dc92f8432f51c31ee0422f044",
+  "regime": "equilibrium_like",
+  "runtime_seconds": 52.123146084006294,
+  "used_recovery": false
+}

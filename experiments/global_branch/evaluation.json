@@ -1,0 +1,12 @@
+{
+  "n_test_solutes": 56,
+  "n_test_configurations": 224,
+  "max_retrained_full_vs_published_esp_difference_hartree_per_e": 0.0,
+  "esp_delta_without_global_minus_published": 0.011447770334336967,
+  "paired_solute_bootstrap_95ci": [
+    0.0008142521933166728,
+    0.020265751966179836
+  ],
+  "n_solutes_without_global_better": 14,
+  "scope": "post hoc fixed-protocol intervention, no new prospective claim"
+}

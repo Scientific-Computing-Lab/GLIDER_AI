@@ -1,0 +1,11 @@
+{
+  "best_fixed_dipole_origin_for_W4_energy": "exact_dipole_solute_com",
+  "kBT_298.15K_kcal_mol": 0.592484949,
+  "n_confirmatory_solutes": 10,
+  "n_source_families": 5,
+  "response_RMS_over_kBT": 0.20694966913472598,
+  "response_energy_RMS_kcal_mol": 0.122614564162855,
+  "response_energy_max_kcal_mol": 0.2071848077413712,
+  "response_energy_median_absolute_kcal_mol": 0.0524462573206283,
+  "response_energy_min_kcal_mol": -0.2423358794178046
+}

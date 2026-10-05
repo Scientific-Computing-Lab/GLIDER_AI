@@ -1,0 +1,14 @@
+{
+  "all_converged": true,
+  "experiment": "confirmatory outer-water rigid torque and W4 orientation variants",
+  "maximum_angle_discrepancy_degrees": 2.2737367544323206e-13,
+  "maximum_bond_discrepancy_angstrom": 2.220446049250313e-15,
+  "method": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 SCF 1e-10 GPU4PySCF-1.8.1",
+  "n_convergence_torque_variants": 120,
+  "n_orientation_variants": 240,
+  "n_primary_torque_variants": 540,
+  "n_variants": 900,
+  "prospective_claim": false,
+  "protocol": "results/posthoc_downstream_response_confirmatory/protocol_freeze.json",
+  "variant_registry_sha256": "73698bf240d8162a643fbf15b2b80833bcf0e9f888395bcdbc099c3fbb0fb1c4"
+}

@@ -1,0 +1,52 @@
+{
+  "all_components_converged": true,
+  "attempts": [
+    {
+      "component": "full_complex",
+      "converged": true,
+      "cycles": 11,
+      "energy_hartree": -1047.8259913140726,
+      "level_shift": 0.0,
+      "runtime_seconds": 17.812064066005405,
+      "solver": "gpu_diis_160"
+    },
+    {
+      "component": "solute_with_perturbant_ghosts",
+      "converged": true,
+      "cycles": 14,
+      "energy_hartree": -991.2367105472003,
+      "level_shift": 0.0,
+      "runtime_seconds": 20.058717652995256,
+      "solver": "gpu_diis_160"
+    },
+    {
+      "component": "perturbant_with_solute_ghosts",
+      "converged": true,
+      "cycles": 9,
+      "energy_hartree": -56.60498801294027,
+      "level_shift": 0.0,
+      "runtime_seconds": 9.271458600996993,
+      "solver": "gpu_diis_160"
+    }
+  ],
+  "component_order": [
+    "full_complex",
+    "solute_with_perturbant_ghosts",
+    "perturbant_with_solute_ghosts"
+  ],
+  "config_id": "nonwater_environment__pros_azaaryl_sulfoxide__nh3__altered_orientation",
+  "delta_dipole_norm_debye": 0.37281413385923823,
+  "delta_esp_rms_hartree_per_e": 0.00296886054551014,
+  "excluded_or_replaced": false,
+  "hamiltonian_or_reference_changed": false,
+  "method": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 SCF 1e-10",
+  "molecule_id": "pros_azaaryl_sulfoxide",
+  "observable_file": "eac8fc7760bda498c862.npz",
+  "observable_sha256": "ba894407186eb917551d89aa9e570bd3896d137c3bcaa592147e5035a9d88f23",
+  "perturbant": "NH3",
+  "prediction_probe_file": "prospective_nonwater_environment/predictions/glider/eac8fc7760bda498c862.npz",
+  "prediction_probe_sha256": "ccf4656a98387f2d3363bff077524d697164b4643ab016d45fec66f1437321a4",
+  "regime": "altered_orientation",
+  "runtime_seconds": 47.142240319997654,
+  "used_recovery": false
+}

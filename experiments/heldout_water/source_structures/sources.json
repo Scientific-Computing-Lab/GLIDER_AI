@@ -1,0 +1,242 @@
+[
+  {
+    "solute": "2OJ9-original",
+    "path": "experiments/heldout_water/source_structures/2OJ9-original/BMI.sdf",
+    "source_repository": "https://github.com/cbc-univie/transformato",
+    "source_commit": "3c952fa3607e410feb0453e9bb6b7cdff6c45884",
+    "source_path": "data/2OJ9-original/waterbox/bmi/BMI.sdf",
+    "sha256": "da45a23e114d92e8838d4ab659ede93610be16535b56b8e975d78f94fa4d88a3"
+  },
+  {
+    "solute": "2OJ9-original",
+    "path": "experiments/heldout_water/source_structures/2OJ9-original/step3_input.pdb",
+    "source_repository": "https://github.com/cbc-univie/transformato",
+    "source_commit": "3c952fa3607e410feb0453e9bb6b7cdff6c45884",
+    "source_path": "data/2OJ9-original/waterbox/openmm/step3_input.pdb",
+    "sha256": "34cd9bc5dafa3fd848e64ddba0f16168861f39a05f444f849472c03dc8399ec1"
+  },
+  {
+    "solute": "2OJ9-original",
+    "path": "experiments/heldout_water/source_structures/2OJ9-original/step4_equilibration.rst",
+    "source_repository": "https://github.com/cbc-univie/transformato",
+    "source_commit": "3c952fa3607e410feb0453e9bb6b7cdff6c45884",
+    "source_path": "data/2OJ9-original/waterbox/openmm/step4_equilibration.rst",
+    "sha256": "efcfbcfd1e4f38383d1b8a3d8eae2c017ca2983d6ffb48da07bbe37b4a801d0c"
+  },
+  {
+    "solute": "cdk2-1h1q",
+    "path": "experiments/heldout_water/source_structures/cdk2-1h1q/UNK.sdf",
+    "source_repository": "https://github.com/cbc-univie/transformato",
+    "source_commit": "c2c447ebe57226083ccbe4a2b4073ba36adcac95",
+    "source_path": "data/cdk2-1h1q/waterbox/unk/UNK.sdf",
+    "sha256": "9708a88f2320a85531418b7db752cdb45e2b56137894f42781f6b83bf4427abe"
+  },
+  {
+    "solute": "cdk2-1h1q",
+    "path": "experiments/heldout_water/source_structures/cdk2-1h1q/step3_input.pdb",
+    "source_repository": "https://github.com/cbc-univie/transformato",
+    "source_commit": "c2c447ebe57226083ccbe4a2b4073ba36adcac95",
+    "source_path": "data/cdk2-1h1q/waterbox/openmm/step3_input.pdb",
+    "sha256": "4287f7966de7b636d291d40aefe7bd8b421a487e92d24b16123899222f924a3f"
+  },
+  {
+    "solute": "cdk2-1h1q",
+    "path": "experiments/heldout_water/source_structures/cdk2-1h1q/step4_equilibration.rst",
+    "source_repository": "https://github.com/cbc-univie/transformato",
+    "source_commit": "c2c447ebe57226083ccbe4a2b4073ba36adcac95",
+    "source_path": "data/cdk2-1h1q/waterbox/openmm/step4_equilibration.rst",
+    "sha256": "c49f33cf033c6c70bf74a02acbc51d2c149141b982846bfdb6803a9717465a12"
+  },
+  {
+    "solute": "cdk2-28",
+    "path": "experiments/heldout_water/source_structures/cdk2-28/28.sdf",
+    "source_repository": "https://github.com/cbc-univie/transformato",
+    "source_commit": "c2c447ebe57226083ccbe4a2b4073ba36adcac95",
+    "source_path": "data/cdk2-28/28.sdf",
+    "sha256": "829aba90832f7537d62aff3bab3db0bad1ab9f932f420c9a4ec0a4d2e129f91c"
+  },
+  {
+    "solute": "cdk2-28",
+    "path": "experiments/heldout_water/source_structures/cdk2-28/step3_input.pdb",
+    "source_repository": "https://github.com/cbc-univie/transformato",
+    "source_commit": "c2c447ebe57226083ccbe4a2b4073ba36adcac95",
+    "source_path": "data/cdk2-28/waterbox/openmm/step3_input.pdb",
+    "sha256": "3d44007e1b995604f5b01004e303e67992a858c15e6bbdeb627c515365dbc7df"
+  },
+  {
+    "solute": "cdk2-28",
+    "path": "experiments/heldout_water/source_structures/cdk2-28/step4_equilibration.rst",
+    "source_repository": "https://github.com/cbc-univie/transformato",
+    "source_commit": "c2c447ebe57226083ccbe4a2b4073ba36adcac95",
+    "source_path": "data/cdk2-28/waterbox/openmm/step4_equilibration.rst",
+    "sha256": "cfdd75095120b7c7293c92063edd4164a753e81e8ac2cc95039b2b364ea9fa26"
+  },
+  {
+    "solute": "ethane",
+    "path": "experiments/heldout_water/source_structures/ethane/lig.sdf",
+    "source_repository": "https://github.com/cbc-univie/transformato",
+    "source_commit": "9e33a91f55a15bd0d25790d42e91681bfcb66dfb",
+    "source_path": "data/ethane/waterbox/lig/lig.sdf",
+    "sha256": "a69063f893fff3db304603f859e99ce7d973c58edf93f852871e656a090ae0f6"
+  },
+  {
+    "solute": "ethane",
+    "path": "experiments/heldout_water/source_structures/ethane/step3_charmm2omm.pdb",
+    "source_repository": "https://github.com/cbc-univie/transformato",
+    "source_commit": "9e33a91f55a15bd0d25790d42e91681bfcb66dfb",
+    "source_path": "data/ethane/waterbox/openmm/step3_charmm2omm.pdb",
+    "sha256": "ea3053330fdeea0e113014c02d90349995aaa4ac77c585c18159526b0dd5f7b3"
+  },
+  {
+    "solute": "ethane",
+    "path": "experiments/heldout_water/source_structures/ethane/step4_equilibration.rst",
+    "source_repository": "https://github.com/cbc-univie/transformato",
+    "source_commit": "9e33a91f55a15bd0d25790d42e91681bfcb66dfb",
+    "source_path": "data/ethane/waterbox/openmm/step4_equilibration.rst",
+    "sha256": "521fbf57c69616a7fb04f2d21a3855329c06323aa9eb90cf508363e100ff089f"
+  },
+  {
+    "solute": "ethanol",
+    "path": "experiments/heldout_water/source_structures/ethanol/UNL.sdf",
+    "source_repository": "https://github.com/cbc-univie/transformato",
+    "source_commit": "9e33a91f55a15bd0d25790d42e91681bfcb66dfb",
+    "source_path": "data/ethanol/waterbox/unl/UNL.sdf",
+    "sha256": "df8fc85b0534d88cdf53f8285ca3df9e44963ca40c3fb123e534885f43d476d5"
+  },
+  {
+    "solute": "ethanol",
+    "path": "experiments/heldout_water/source_structures/ethanol/step3_charmm2omm.pdb",
+    "source_repository": "https://github.com/cbc-univie/transformato",
+    "source_commit": "9e33a91f55a15bd0d25790d42e91681bfcb66dfb",
+    "source_path": "data/ethanol/waterbox/openmm/step3_charmm2omm.pdb",
+    "sha256": "1a84075b05ff400ab138e9ab3e6fce881b9154a53c702befa453ab57d67624ba"
+  },
+  {
+    "solute": "ethanol",
+    "path": "experiments/heldout_water/source_structures/ethanol/step4_equilibration.rst",
+    "source_repository": "https://github.com/cbc-univie/transformato",
+    "source_commit": "9e33a91f55a15bd0d25790d42e91681bfcb66dfb",
+    "source_path": "data/ethanol/waterbox/openmm/step4_equilibration.rst",
+    "sha256": "dd4efe6fd5b388e817979d4c2e27f709160655f8926c7b297f26aaffe9a9f407"
+  },
+  {
+    "solute": "jnk1-17124",
+    "path": "experiments/heldout_water/source_structures/jnk1-17124/ligand_17124.sdf",
+    "source_repository": "https://github.com/cbc-univie/transformato",
+    "source_commit": "cf83b1ce0d272f37ee42b09ef3e5b3ef987a0a08",
+    "source_path": "data/jnk1-17124/ligand_17124.sdf",
+    "sha256": "6e9afd351115907bfec102da135d0c901008640d60f9d6894d56a7a81d14504d"
+  },
+  {
+    "solute": "jnk1-17124",
+    "path": "experiments/heldout_water/source_structures/jnk1-17124/step3_input.pdb",
+    "source_repository": "https://github.com/cbc-univie/transformato",
+    "source_commit": "cf83b1ce0d272f37ee42b09ef3e5b3ef987a0a08",
+    "source_path": "data/jnk1-17124/waterbox/openmm/step3_input.pdb",
+    "sha256": "ee05593ef27ec0c8dc8eb244cc0a851fb7f0322f9257aaf070e21ac0d58ce80f"
+  },
+  {
+    "solute": "jnk1-17124",
+    "path": "experiments/heldout_water/source_structures/jnk1-17124/step4_equilibration.rst",
+    "source_repository": "https://github.com/cbc-univie/transformato",
+    "source_commit": "cf83b1ce0d272f37ee42b09ef3e5b3ef987a0a08",
+    "source_path": "data/jnk1-17124/waterbox/openmm/step4_equilibration.rst",
+    "sha256": "0502bcb2d6a6542132fe1156a4ce1077459c29733ae1a6e8e2ada2acd9c88a84"
+  },
+  {
+    "solute": "jnk1-18631",
+    "path": "experiments/heldout_water/source_structures/jnk1-18631/ligand_18631.sdf",
+    "source_repository": "https://github.com/cbc-univie/transformato",
+    "source_commit": "cf83b1ce0d272f37ee42b09ef3e5b3ef987a0a08",
+    "source_path": "data/jnk1-18631/ligand_18631.sdf",
+    "sha256": "6781976532fb82aa477ef2457fba3d95dc04c9dda68fa51482b8974c6ff8c350"
+  },
+  {
+    "solute": "jnk1-18631",
+    "path": "experiments/heldout_water/source_structures/jnk1-18631/step3_input.pdb",
+    "source_repository": "https://github.com/cbc-univie/transformato",
+    "source_commit": "cf83b1ce0d272f37ee42b09ef3e5b3ef987a0a08",
+    "source_path": "data/jnk1-18631/waterbox/openmm/step3_input.pdb",
+    "sha256": "acae994acd2615c56f6ed48fb4ca14d2a02dfc5a04eaa152a72437723f156f3c"
+  },
+  {
+    "solute": "jnk1-18631",
+    "path": "experiments/heldout_water/source_structures/jnk1-18631/step4_equilibration.rst",
+    "source_repository": "https://github.com/cbc-univie/transformato",
+    "source_commit": "cf83b1ce0d272f37ee42b09ef3e5b3ef987a0a08",
+    "source_path": "data/jnk1-18631/waterbox/openmm/step4_equilibration.rst",
+    "sha256": "24607500d424e64cdc6d193b140e6d0d205b8e5566ce731409a872257cff3d1a"
+  },
+  {
+    "solute": "methane",
+    "path": "experiments/heldout_water/source_structures/methane/methane.sdf",
+    "source_repository": "https://github.com/cbc-univie/transformato",
+    "source_commit": "34bf648301496897e676e7a285f756e30280d247",
+    "source_path": "data/methane/methane.sdf",
+    "sha256": "69b7040e89f4dd4d79a0e7b2cf1b3ccb69626be4e6733114e9ec113e76fb9df6"
+  },
+  {
+    "solute": "methane",
+    "path": "experiments/heldout_water/source_structures/methane/step3_charmm2omm.pdb",
+    "source_repository": "https://github.com/cbc-univie/transformato",
+    "source_commit": "34bf648301496897e676e7a285f756e30280d247",
+    "source_path": "data/methane/waterbox/openmm/step3_charmm2omm.pdb",
+    "sha256": "c0475b122170a1dbb6fbaa9972fd2a16f7c327016bf9545316ccfe56d34a7a97"
+  },
+  {
+    "solute": "methane",
+    "path": "experiments/heldout_water/source_structures/methane/step4_equilibration.rst",
+    "source_repository": "https://github.com/cbc-univie/transformato",
+    "source_commit": "34bf648301496897e676e7a285f756e30280d247",
+    "source_path": "data/methane/waterbox/openmm/step4_equilibration.rst",
+    "sha256": "fe1a0fc72577912d649b349156f5eb90888b2553d41e1a4079f93042d92168d2"
+  },
+  {
+    "solute": "tyk2-ejm_42",
+    "path": "experiments/heldout_water/source_structures/tyk2-ejm_42/ejm_42.sdf",
+    "source_repository": "https://github.com/cbc-univie/transformato",
+    "source_commit": "2e0666db35b4dec53175ea55fa6a5aacd579bf93",
+    "source_path": "data/tyk2-ejm_42/ejm_42.sdf",
+    "sha256": "2b538fdf827f42d4ae65f3cda189a1bcc489cc4ef8a8c2b297e8e36220154d3a"
+  },
+  {
+    "solute": "tyk2-ejm_42",
+    "path": "experiments/heldout_water/source_structures/tyk2-ejm_42/step3_input.pdb",
+    "source_repository": "https://github.com/cbc-univie/transformato",
+    "source_commit": "2e0666db35b4dec53175ea55fa6a5aacd579bf93",
+    "source_path": "data/tyk2-ejm_42/waterbox/openmm/step3_input.pdb",
+    "sha256": "61d629611de25300add7d0cacf46b5b0114b19732d634702e362b8a3e4cdf5a9"
+  },
+  {
+    "solute": "tyk2-ejm_42",
+    "path": "experiments/heldout_water/source_structures/tyk2-ejm_42/step4_equilibration.rst",
+    "source_repository": "https://github.com/cbc-univie/transformato",
+    "source_commit": "2e0666db35b4dec53175ea55fa6a5aacd579bf93",
+    "source_path": "data/tyk2-ejm_42/waterbox/openmm/step4_equilibration.rst",
+    "sha256": "6d08b396a749d8f3282543c25e6ca15efec8f445b93309fdf3fee2ef7f2dd45e"
+  },
+  {
+    "solute": "tyk2-ejm_45",
+    "path": "experiments/heldout_water/source_structures/tyk2-ejm_45/ejm_45.sdf",
+    "source_repository": "https://github.com/cbc-univie/transformato",
+    "source_commit": "2e0666db35b4dec53175ea55fa6a5aacd579bf93",
+    "source_path": "data/tyk2-ejm_45/ejm_45.sdf",
+    "sha256": "2e620bd1274990234aa7d093f652dfe185363f24a9443492ede61e6f097bd731"
+  },
+  {
+    "solute": "tyk2-ejm_45",
+    "path": "experiments/heldout_water/source_structures/tyk2-ejm_45/step3_input.pdb",
+    "source_repository": "https://github.com/cbc-univie/transformato",
+    "source_commit": "2e0666db35b4dec53175ea55fa6a5aacd579bf93",
+    "source_path": "data/tyk2-ejm_45/waterbox/openmm/step3_input.pdb",
+    "sha256": "e4d66fef856a8437114f38bdf2a1e20dc51956ad57b0dc64ef7db0839c9707ba"
+  },
+  {
+    "solute": "tyk2-ejm_45",
+    "path": "experiments/heldout_water/source_structures/tyk2-ejm_45/step4_equilibration.rst",
+    "source_repository": "https://github.com/cbc-univie/transformato",
+    "source_commit": "2e0666db35b4dec53175ea55fa6a5aacd579bf93",
+    "source_path": "data/tyk2-ejm_45/waterbox/openmm/step4_equilibration.rst",
+    "sha256": "d28353e2e1c29ce0486f42c8c50fed85a5f83e94dbf9064b70e58639440224e4"
+  }
+]

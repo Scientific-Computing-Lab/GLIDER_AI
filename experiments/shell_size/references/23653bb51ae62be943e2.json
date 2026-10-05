@@ -1,0 +1,34 @@
+{
+  "component_order": [
+    "full_complex",
+    "solute_with_water_ghosts",
+    "water_cluster_with_solute_ghosts"
+  ],
+  "component_runtime_seconds": [
+    3.0738681520015234,
+    2.9852083469995705,
+    2.312901763998525
+  ],
+  "component_scf_cycles": [
+    12,
+    12,
+    9
+  ],
+  "config_id": "posthoc_shell__MNSOL-CONN-XSQUKJJJFZCRTK__parent_02__1w",
+  "converged": true,
+  "delta_dipole_norm_debye": 0.638639925565209,
+  "delta_esp_rms_hartree_per_e": 0.002710888885094423,
+  "interaction_energy_hartree": -0.005707265610709555,
+  "interaction_energy_kcal_mol": -3.5813632417147705,
+  "method": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 SCF 1e-10 GPU4PySCF-1.8.1",
+  "molecule_id": "MNSOL-CONN-XSQUKJJJFZCRTK",
+  "n_atoms": 11,
+  "n_solute_atoms": 8,
+  "n_waters": 1,
+  "observable_file": "23653bb51ae62be943e2.npz",
+  "observable_sha256": "9f9a43f71939967ee9a6e9662b2936a544a4bc1ac45e8bfd60922f90fe9120bc",
+  "parent_snapshot_index": 2,
+  "prediction_probe_file": "results/posthoc_shell_size/predictions/glider/23653bb51ae62be943e2.npz",
+  "prediction_probe_sha256": "76cd7bc597e26b6f3a70e6855dc3b2a87f8d594209f34633f7d1cae908e5594f",
+  "prospective_claim": false
+}

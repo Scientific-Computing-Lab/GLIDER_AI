@@ -1,0 +1,15 @@
+molecule_id,best_epoch,selection_loss
+dev_amino_alcohol_halogen,96,0.24335750937461853
+dev_aza_aryl_ether,80,0.11046735942363739
+dev_cyano_ether,28,0.36269646883010864
+dev_cyclic_carbamate,60,0.10020779818296432
+dev_hydroxy_nitrile,52,0.2728971242904663
+dev_oxazolidinone,140,0.13541673123836517
+dev_sulfonyl_amine,24,0.21715115010738373
+dev_thio_amide,68,0.08083175867795944
+stress_acetamidine,20,0.36493247747421265
+stress_dimethyl_sulfone,216,0.11159832030534744
+stress_methanesulfonamide,140,0.0917711853981018
+stress_methyl_sulfoxide,20,0.23674988746643066
+stress_nitroethane,64,0.23066261410713196
+stress_pyridine_n_oxide,24,0.11156035214662552

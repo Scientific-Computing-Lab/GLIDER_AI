@@ -1,74 +1,82 @@
 <div align="center">
 
 # GLIDER
+### Learning the electronic response between molecules
 
-### A spatial view of molecular electronic response
+**Sparse supervision · spatial fields · local physical reuse**
 
-The code, frozen model and evidence behind **Sparse Supervision Turns Polar Pretraining into Transferable Molecular Response Fields**<br>
 Gal Oren · Boris Fain · Michael Levitt<br>
 Accepted at the **2nd SIMBIOCHEM Workshop at NeurIPS 2026**
 
-[The idea](#the-idea) · [The evidence](#the-evidence) · [Explore the data](#explore-the-data) · [Reproduce](#reproduce) · [Citation](#citation)
+[Understand the model](#from-molecular-geometry-to-a-response-field) · [Explore an experiment](#find-the-result-you-want) · [Reproduce a result](#start-with-a-reproducible-result) · [Model limits](#what-the-current-model-can-and-cannot-do)
+
+<img src="assets/spatial-response.png" alt="Two QM response-potential maps: similar dipole magnitudes, different spatial patterns" width="100%">
+
+*Two water arrangements. Almost the same response-dipole magnitude. Different places for a neighbour to interact.*
 
 </div>
 
-<p align="center"><img src="assets/spatial-response.png" alt="Two exact QM response-potential maps have nearly equal response-dipole magnitudes but different spatial distributions" width="100%"></p>
+A molecule changes the electronic environment around it when another molecule approaches. A molecular dipole summarizes part of that change. A **response field** tells us where it occurs.
 
-<p align="center"><sub>Exact QM fields from paper Fig. 1c. Blue marks negative response potential and red positive response potential; the molecular drawings and field layers are preserved from the paper source.</sub></p>
+GLIDER learns the electrostatic potential associated with this rearrangement. It starts from pretrained polar representations and learns from **48 labelled configurations of 14 solutes**: 24 have three water neighbours and 24 have four. The response head is then frozen before the primary transfer tests.
 
-## The idea
+## From molecular geometry to a response field
 
-A neighbouring molecule does not experience a dipole magnitude. Its atoms sample an **electrostatic potential at particular locations**. The two water arrangements above have nearly the same induced-dipole *magnitude* (0.464 and 0.468 D), yet place their negative-potential regions differently. Their full dipole vectors need not be equal.
+<img src="assets/architecture.svg" alt="Frozen MACE features and an averaged M/L response prior feed learned local and global corrections" width="100%">
 
-**GLIDER** (Geometry-Learned Induced Dipole and Electrostatic Response) learns the *interaction-induced change in that potential*. At fixed geometry, the QM target is the potential of the complex minus the potentials of its separately evaluated fragments, all in the same counterpoise-consistent basis:
+The target is a fixed-geometry difference: evaluate the complex and its separated fragments in the same quantum-chemical basis, then subtract.
 
-$$\Delta V_{\mathrm{resp}}(\mathbf r;X)=V_{SE}(\mathbf r;X)-V_S^{E\text{-ghost}}(\mathbf r;X)-V_E^{S\text{-ghost}}(\mathbf r;X).$$
+$$\Delta V_{\mathrm{resp}}(\mathbf r)=V_{SE}(\mathbf r)-V_S^{E\text{-ghost}}(\mathbf r)-V_E^{S\text{-ghost}}(\mathbf r).$$
 
-The model represents this response with atom-centred charges and dipoles. Its output conserves total response charge and reconciles the site moment with a separately predicted molecular response dipole. The negative gradient of the potential gives the electric field. This is the **mutual response of the fragments**, not a unique decomposition into polarization and charge transfer.
+This potential describes the **mutual electronic response** of solute and environment. GLIDER represents it with atom-centred charges and dipoles. The site charges sum to zero, and their combined moment agrees with a separately predicted response dipole.
 
-<p align="center"><img src="assets/architecture.svg" alt="Frozen MACE polar features and predictions feed the response-supervised GLIDER correction, which outputs a constrained spatial response" width="100%"></p>
+MACE-POLAR-1-M supplies the frozen geometry features. An equal-weight average of MACE-POLAR-1-M and -1-L complex-minus-fragments predictions supplies the starting response. In comparisons, independently evaluated MACE-POLAR-1-L is the **polar baseline**. It is one contributor to the prior, rather than an independent physics model. [How training and inference work →](docs/model.md)
 
-The recipe is deliberately small: **48 response-labelled solute-plus-three-water environments**, spanning **14 chemistries**, train only the GLIDER response head. Geometry-dependent features from MACE-POLAR-1-M and a starting response built from frozen MACE-POLAR-1-M/-1-L predictions supply the pretrained inputs. Neither foundation checkpoint is fitted to these response labels. We use independently evaluated, response-unfitted **MACE-POLAR-1-L** as the **polar baseline**.
+## What the experiments show
 
-## The evidence
+| Question | Evidence | Read the data |
+|:--|:--|:--|
+| Does it transfer to new solutes? | **32–40% lower response-ESP error** across 56 solutes and 224 configurations. | [Panels I–III](experiments/README.md#prospective-solute-transfer) |
+| Does it extend beyond water? | **27.0% lower response-ESP error** on 12 solutes with three neutral neighbour species. | [Non-water environments](experiments/nonwater/) |
+| Can another molecule use the field? | Held-out-water response-coupling MAE: **0.114 → 0.049 kcal mol⁻¹**. | [Held-out water](experiments/heldout_water/) |
+| What does the global branch add? | A matched ablation finds a **modest average benefit**, with differences across solutes. | [Global-branch control](experiments/global_branch/) |
+| Does the response vanish at separation? | **No.** A residual remains at 20 Å, including in the frozen prior. | [Dissociation diagnostic](experiments/dissociation/) |
 
-### 1 · Transfer across solutes
+<img src="assets/prospective-transfer.svg" alt="Three prospective panels show lower spatial-response error with GLIDER" width="100%">
 
-The same frozen checkpoint was evaluated prospectively on **56 solutes absent from GLIDER response supervision**, in **224 three-water environments**. Exposure to these identities during broad foundation-model pretraining is unknown. Response-ESP error fell by **32–40%** relative to the polar baseline across three separately acquired panels; **54 of 56 solutes** improved.
+The strongest evidence is for spatial response. Global-dipole gains are less consistent. Panel I missed its broader preregistered joint ESP-and-dipole gate, and all its cases remain available. [Selection, label reuse and retained failures →](docs/data_lineage.md)
 
-<p align="center"><img src="assets/prospective-transfer.svg" alt="Prospective response-ESP NRMSE for GLIDER and the unfitted polar baseline in three panels, with reductions and solute wins" width="100%"></p>
+## Put the field to use
 
-The strongest result is **spatial response transfer**. Global response-dipole gains are less decisive, and Panel I did not pass a broader preregistered gate requiring both ESP and dipole improvements. Those cases and the frozen checkpoint remain in the release. [See the three panels and paired intervals →](results/README.md#how-to-read-the-primary-comparison)
+Compute the response of a solute and its first three waters, then bring in a fourth water. That fourth water enters neither the response-model input nor the base-reference calculation. Its interaction with the frozen field tests whether the spatial prediction is useful beyond its fitting observable.
 
-### 2 · Change the neighbour
+<img src="assets/frozen-coupling.svg" alt="Frozen coupling to held-out water and reuse from W4 through W12" width="100%">
 
-In a **separate 12-solute test** (72 cases), the same model was evaluated with NH₃, CH₃OH and CH₃CN environments. Response-ESP NRMSE was **0.450** for GLIDER versus **0.617** for the polar baseline, a **27.0% reduction**. Both neighbour identity and environment size changed, so this is a transfer test rather than an isolated substitution experiment. [Inspect the per-species data →](data/figure_data/Fig5_nonwater_effects.csv)
+An exact QM response dipole has an exact global moment, but its single-origin field can be inaccurate nearby. Higher multipoles recover with distance and eventually outperform GLIDER. This experiment measures a **frozen response contribution to Coulomb coupling**. It does not rank complete force fields by total interaction energy. [Explore distance and orientation →](experiments/distance_sweep/)
 
-### 3 · Put the field to use
+## Find the result you want
 
-A fourth water probes a response computed for a solute plus W1–W3. **W4 is absent from both the model input and the base-response QM calculation.** At W4, the frozen, one-way response-coupling energy MAE is **0.049 kcal mol⁻¹** for GLIDER versus **0.114 kcal mol⁻¹** for the polar baseline.
+The release is organized around experiments. Each guide points directly to its geometries, references, predictions and results. The [paper map](docs/paper_map.md) connects the current figure and table numbers to these folders.
 
-<p align="center"><img src="assets/frozen-coupling.svg" alt="Held-out W4 response-coupling energy error and independent outer-water results from W4 through W12" width="100%"></p>
+```text
+experiments/
+  training/             Original 48 configurations, labels and frozen features
+  panel_1/              12 solutes · 48 configurations
+  panel_2/              24 solutes · 96 configurations
+  panel_3/              20 solutes · 80 configurations
+  nonwater/             12 solutes · 72 environments
+  liquid/               6 solutes · 24 liquid-derived clusters
+  shell_size/           3 solutes · nested 1/3/6/12-water clusters
+  heldout_water/        10 solutes · densities, probe states and coupling
+  heldout_water_pilot/  Separate original six-solute pilot
+  distance_sweep/       Probe positions, fields, densities and raw evaluations
+  global_branch/       Matched training ablation and predictions
+  dissociation/        Fragment-separation test at 3–20 Å
+```
 
-This is a **Coulomb response component**, not total interaction or solvation energy and not self-consistent polarization. An exact QM *response dipole* at one predefined origin is a useful global-moment control in the near field. Higher exact multipoles recover with distance and eventually outperform GLIDER in the fixed-charge far-field test. [See the distance control →](assets/distance-and-moments.svg)
+[Experiment catalogue](experiments/README.md) · [Array formats and units](docs/data_format.md) · [Current figure data](figures/) · [Frozen checkpoint](checkpoints/) · [Historical provenance](provenance/)
 
-## Explore the data
-
-Every figure and table in the paper has a [paper-to-data map](results/README.md). The underlying CSVs retain their source filenames, which sometimes differ from the final paper's figure numbers; the map resolves them.
-
-| Start here | What you can inspect |
-|:--|:--|
-| [Prospective results](results/README.md) | Figure and panel mapping, 56-solute aggregate and paired comparisons, plus frozen output tables. |
-| [Geometries, predictions and QM references](data/README.md) | The three prospective panels and the camera-ready numeric source tables. |
-| [Frozen checkpoint](checkpoints/README.md) | The five-member response head and its training manifest. |
-| [Chronology and provenance](evidence/README.md) | Prediction-before-reference manifests, byte-preserved source code, hashes and the retained Panel-I gate result. |
-| [Use on a geometry](scripts/benchmark/README.md) | Inference wrapper, example input and third-party checkpoint setup. |
-
-The [Figure 1c image layers](assets/figure1_source/README.md) are exact source assets. The other gallery graphics are reading aids: quantitative charts are rendered from released CSVs, while the architecture diagram is conceptual. No manuscript PDF or LaTeX package is included here.
-
-## Reproduce
-
-The **lightweight path** verifies the released checkpoint and archives and recomputes prospective aggregate statistics; it does not rerun quantum chemistry or change the frozen model. Python 3.11+ is recommended.
+## Start with a reproducible result
 
 ```bash
 git clone https://github.com/Scientific-Computing-Lab/GLIDER_AI.git
@@ -77,14 +85,33 @@ python -m venv .venv
 source .venv/bin/activate
 python -m pip install -e .
 python scripts/reproduce/verify_release.py
-python scripts/reproduce/recompute_statistics.py --root . --output /tmp/glider-statistics
+python scripts/reproduce/score_experiment.py --experiment all
+python scripts/reproduce/recompute_statistics.py --output build/statistics
 python scripts/verify_companion.py
 ```
 
-For a **new geometry**, install the model extra, the paper-matched [MACE source](https://github.com/ACEsuit/mace/tree/91df5a2032b24ff9e23e0dc7b9407dde0da6fb31), and its official MACE-POLAR-1 M/L checkpoints. The [inference guide](scripts/benchmark/README.md) gives the complete command; third-party weights are fetched from their publisher and are not redistributed here. To regenerate the visual gallery, install `.[figures]` and run `python scripts/render_figures.py` and `python scripts/render_readme_field.py`.
+This path needs no GPU or new quantum-chemistry calculation. It verifies file hashes and constraints and computes errors from the released reference and prediction arrays. Results go into `build/`, leaving the archive unchanged.
 
-## Citation
+For a physical calculation from density matrices, install `.[qm]` and run:
 
-Please cite **Gal Oren, Boris Fain and Michael Levitt, “Sparse Supervision Turns Polar Pretraining into Transferable Molecular Response Fields,” 2nd SIMBIOCHEM Workshop at NeurIPS 2026**. Machine-readable details are in [`CITATION.cff`](CITATION.cff). Software is [MIT licensed](LICENSE); third-party models retain their own licences. Correspondence: [galoren@stanford.edu](mailto:galoren@stanford.edu) and [levittm@stanford.edu](mailto:levittm@stanford.edu).
+```bash
+python scripts/reproduce/recompute_coupling.py --solute methane --water-rank 4
+```
 
-**Scope:** the tested systems are neutral, closed-shell organic solutes with the specified molecular neighbours. Ions, arbitrary condensed phases, self-consistent embedding, complete interaction energies and molecular-dynamics performance remain outside the evidence in this release.
+The CPU recomputation agrees with the archived QM, GLIDER and baseline coupling values to better than **5 × 10⁻¹¹ kcal mol⁻¹**. [Reproduction levels and commands →](docs/reproduce.md)
+
+For prediction on a new geometry, follow the [inference guide](scripts/benchmark/README.md). It installs the paper-matched MACE implementation and downloads the official M/L checkpoints from their publisher.
+
+## What the current model can and cannot do
+
+The released checkpoint supports analysis and frozen local reuse for the compact, neutral systems tested here. It conserves net response charge and matches its predicted global moment. **It does not enforce fragment separability:** moving the inducing water far away leaves a residual response. The [new diagnostic](experiments/dissociation/) records that failure, and an [extension to 50–100 Å](experiments/dissociation_extended/) checks that increasing separation does not resolve it.
+
+A general molecular-simulation component needs a controlled dissociation limit and self-consistent coupling. Total-energy accuracy, ions and arbitrary condensed phases have not been established by these experiments.
+
+## Cite and contact
+
+**Gal Oren, Boris Fain and Michael Levitt.** *Sparse Supervision Turns Polar Pretraining into Transferable Molecular Response Fields.* 2nd SIMBIOCHEM Workshop at NeurIPS 2026. [Machine-readable citation](CITATION.cff).
+
+Correspondence: [galoren@stanford.edu](mailto:galoren@stanford.edu) · [levittm@stanford.edu](mailto:levittm@stanford.edu)
+
+Original release code is [MIT licensed](LICENSE). Third-party software, weights and source structures retain their own licences. [Sources and attribution](docs/sources.md). Generative AI assisted writing, code development, data processing and visual presentation. Scientific conclusions are tied to the calculations and archived records linked above.

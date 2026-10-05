@@ -1,0 +1,89 @@
+{
+  "classification": "A. STRONG ENVIRONMENT-IDENTITY TRANSFER",
+  "mean_nonwater_minus_water_nrmse": 0.07301763175962003,
+  "mean_nonwater_nrmse": 0.450371053714298,
+  "mean_water_nrmse": 0.3773534219546779,
+  "per_perturbant_primary_comparisons": [
+    {
+      "bootstrap_replicates": 100000,
+      "bootstrap_seed": 2026082007,
+      "comparator": "mace_polar_l",
+      "dipole_ci_high": -0.008620501835380658,
+      "dipole_ci_low": -0.04049053676054663,
+      "dipole_comparator": 0.20311133570024775,
+      "dipole_difference": -0.02616724216744551,
+      "dipole_glider": 0.17694409353280224,
+      "esp_ci_high": -0.0874159150019488,
+      "esp_ci_low": -0.2222130562796168,
+      "esp_comparator": 0.6154311229015871,
+      "esp_difference": -0.1487133681572377,
+      "esp_glider": 0.46671775474434923,
+      "esp_solute_wins": 11,
+      "n_solutes": 12,
+      "subset": {
+        "perturbant": "NH3"
+      }
+    },
+    {
+      "bootstrap_replicates": 100000,
+      "bootstrap_seed": 2026082007,
+      "comparator": "mace_polar_l",
+      "dipole_ci_high": -0.011627677585044238,
+      "dipole_ci_low": -0.07166342679226992,
+      "dipole_comparator": 0.17714729945190544,
+      "dipole_difference": -0.03827427846925832,
+      "dipole_glider": 0.13887302098264712,
+      "esp_ci_high": -0.116952715359601,
+      "esp_ci_low": -0.2717690331444687,
+      "esp_comparator": 0.5512133663968052,
+      "esp_difference": -0.18436972759525824,
+      "esp_glider": 0.36684363880154697,
+      "esp_solute_wins": 12,
+      "n_solutes": 12,
+      "subset": {
+        "perturbant": "CH3OH"
+      }
+    },
+    {
+      "bootstrap_replicates": 100000,
+      "bootstrap_seed": 2026082007,
+      "comparator": "mace_polar_l",
+      "dipole_ci_high": 0.0317752325087561,
+      "dipole_ci_low": -0.024922632980364172,
+      "dipole_comparator": 0.234358058248609,
+      "dipole_difference": 0.011731222813817554,
+      "dipole_glider": 0.24608928106242656,
+      "esp_ci_high": -0.1266159227288776,
+      "esp_ci_low": -0.20788248029902204,
+      "esp_comparator": 0.6848661173610607,
+      "esp_difference": -0.1673143497640629,
+      "esp_glider": 0.5175517675969976,
+      "esp_solute_wins": 12,
+      "n_solutes": 12,
+      "subset": {
+        "perturbant": "CH3CN"
+      }
+    }
+  ],
+  "primary_comparison": {
+    "bootstrap_replicates": 100000,
+    "bootstrap_seed": 2026082007,
+    "comparator": "mace_polar_l",
+    "dipole_ci_high": 0.002441947070590996,
+    "dipole_ci_low": -0.03395762810769376,
+    "dipole_comparator": 0.20620303898431452,
+    "dipole_difference": -0.01371506321542501,
+    "dipole_glider": 0.1924879757688895,
+    "esp_ci_high": -0.1270552787168766,
+    "esp_ci_low": -0.22090645648962584,
+    "esp_comparator": 0.6171702022198176,
+    "esp_difference": -0.1667991485055196,
+    "esp_glider": 0.450371053714298,
+    "esp_solute_wins": 12,
+    "n_solutes": 12,
+    "subset": {
+      "overall": "all"
+    }
+  },
+  "water_comparison_limitation": "existing matched-solute water cases contain three waters, whereas each new non-water case contains one perturbant; this comparison is descriptive and does not isolate identity from environment count"
+}

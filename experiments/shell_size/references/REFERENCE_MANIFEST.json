@@ -1,0 +1,14 @@
+{
+  "cupy_version": "14.1.1",
+  "experiment": "post hoc nested shell-size diagnostic",
+  "geometry_sha256": "bd2c991674b365f11b01eb72e555b1da25a3f6bf5381b2f28f33b4b364e3f01f",
+  "gpu": "NVIDIA GeForce RTX 3090, 535.309.01, 24576 MiB",
+  "gpu4pyscf_version": "1.8.1",
+  "method": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 SCF 1e-10 GPU4PySCF-1.8.1",
+  "n_configurations": 36,
+  "observable": "full complex - solute with water ghosts - water cluster with solute ghosts, all in the full complex basis",
+  "prospective_claim": false,
+  "pyscf_version": "2.8.0",
+  "python_version": "3.11.15",
+  "registry_sha256": "1322784919c274ee4b161499881527e2d1a7e532815b92528365a9631462f2bd"
+}

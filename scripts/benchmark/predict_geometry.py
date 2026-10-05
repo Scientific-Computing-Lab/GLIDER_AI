@@ -10,7 +10,7 @@ import tempfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-FROZEN = ROOT / "evidence/frozen_source/prospective_1"
+FROZEN = ROOT / "provenance/frozen_source/prospective_1"
 
 
 def run(*arguments: str) -> None:

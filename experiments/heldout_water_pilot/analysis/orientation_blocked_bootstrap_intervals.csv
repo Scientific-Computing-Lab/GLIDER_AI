@@ -1,0 +1,14 @@
+quantity,method,comparator,metric,point_estimate,ci95_low,ci95_high
+method_metric,qm,,mean_profile_RMSE_kcal_mol,0.0,0.0,0.0
+method_metric,glider,,mean_profile_RMSE_kcal_mol,0.06114185109455476,0.031971188540893695,0.09718602403324217
+method_metric,mace_polar_l,,mean_profile_RMSE_kcal_mol,0.17957934998370872,0.08367275967246703,0.31511412429720886
+method_metric,exact_dipole_base_com,,mean_profile_RMSE_kcal_mol,0.18690495959201228,0.08399931815319582,0.2967535861086919
+method_metric,exact_dipole_solute_com,,mean_profile_RMSE_kcal_mol,0.23337862730095146,0.11919051468188309,0.3636523173757626
+method_metric,exact_dipole_nuclear_center,,mean_profile_RMSE_kcal_mol,0.18338838414702618,0.0841417054560149,0.2910024009638118
+method_metric,zero,,mean_profile_RMSE_kcal_mol,0.17780567241998127,0.09582250603232835,0.26363490474696194
+paired_glider_minus_comparator,glider,qm,mean_profile_RMSE_kcal_mol,0.06114185109455476,0.031971188540893695,0.09718602403324217
+paired_glider_minus_comparator,glider,mace_polar_l,mean_profile_RMSE_kcal_mol,-0.11843749888915397,-0.2515859344615398,-0.04479292739512285
+paired_glider_minus_comparator,glider,exact_dipole_base_com,mean_profile_RMSE_kcal_mol,-0.12576310849745753,-0.2373513484630176,-0.025183736098129232
+paired_glider_minus_comparator,glider,exact_dipole_solute_com,mean_profile_RMSE_kcal_mol,-0.1722367762063967,-0.3068633625536379,-0.05348912539937607
+paired_glider_minus_comparator,glider,exact_dipole_nuclear_center,mean_profile_RMSE_kcal_mol,-0.12224653305247143,-0.23172133620644741,-0.02523053715044294
+paired_glider_minus_comparator,glider,zero,mean_profile_RMSE_kcal_mol,-0.11666382132542652,-0.20792041694627156,-0.037115235593533843

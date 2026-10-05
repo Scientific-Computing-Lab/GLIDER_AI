@@ -1,0 +1,262 @@
+{
+  "W4_energy": [
+    {
+      "MAE_kcal_mol": 0.04868219341822043,
+      "Pearson_r": 0.8901520695240793,
+      "RMSE_kcal_mol": 0.06024566362102211,
+      "Spearman_rho": 0.8424242424242423,
+      "method": "glider",
+      "n_solutes": 10,
+      "signed_bias_kcal_mol": 7.495258684013795e-05
+    },
+    {
+      "MAE_kcal_mol": 0.11401221689887638,
+      "Pearson_r": 0.49935645160361986,
+      "RMSE_kcal_mol": 0.16614453090306835,
+      "Spearman_rho": 0.5515151515151515,
+      "method": "mace_polar_l",
+      "n_solutes": 10,
+      "signed_bias_kcal_mol": -0.04405545729378797
+    },
+    {
+      "MAE_kcal_mol": 0.08528997692992679,
+      "Pearson_r": NaN,
+      "RMSE_kcal_mol": 0.122614564162855,
+      "Spearman_rho": NaN,
+      "method": "zero",
+      "n_solutes": 10,
+      "signed_bias_kcal_mol": 0.03591478693598504
+    },
+    {
+      "MAE_kcal_mol": 0.14882501687009764,
+      "Pearson_r": 0.06359766037999147,
+      "RMSE_kcal_mol": 0.20663017426201402,
+      "Spearman_rho": -0.07878787878787878,
+      "method": "exact_dipole",
+      "n_solutes": 10,
+      "signed_bias_kcal_mol": -0.0036482454177940464
+    },
+    {
+      "MAE_kcal_mol": 0.25193259727281936,
+      "Pearson_r": 0.5533505452302044,
+      "RMSE_kcal_mol": 0.44502150072636376,
+      "Spearman_rho": 0.8666666666666665,
+      "method": "exact_dipole_quadrupole",
+      "n_solutes": 10,
+      "signed_bias_kcal_mol": -0.16882743370544145
+    },
+    {
+      "MAE_kcal_mol": 0.5080114022506496,
+      "Pearson_r": 0.09501381421900262,
+      "RMSE_kcal_mol": 1.1928771273620704,
+      "Spearman_rho": 0.5757575757575757,
+      "method": "exact_dipole_quadrupole_octupole",
+      "n_solutes": 10,
+      "signed_bias_kcal_mol": 0.3745783767888634
+    }
+  ],
+  "W4_orientation": [
+    {
+      "mean_absolute_amplitude_error_kcal_mol": 0.08531393119632431,
+      "mean_centered_profile_RMSE_kcal_mol": 0.04637093365738715,
+      "mean_profile_RMSE_kcal_mol": 0.0496077864674596,
+      "median_Pearson_r": 0.9586699843340931,
+      "median_Spearman_rho": 0.9439130434782608,
+      "method": "glider",
+      "n_solutes": 10
+    },
+    {
+      "mean_absolute_amplitude_error_kcal_mol": 0.11884457874562011,
+      "mean_centered_profile_RMSE_kcal_mol": 0.05798211010107118,
+      "mean_profile_RMSE_kcal_mol": 0.12729133339656026,
+      "median_Pearson_r": 0.9553752280511545,
+      "median_Spearman_rho": 0.9378260869565216,
+      "method": "mace_polar_l",
+      "n_solutes": 10
+    },
+    {
+      "mean_absolute_amplitude_error_kcal_mol": 0.4364479818833211,
+      "mean_centered_profile_RMSE_kcal_mol": 0.13018421337232383,
+      "mean_profile_RMSE_kcal_mol": 0.13120696015828054,
+      "median_Pearson_r": NaN,
+      "median_Spearman_rho": NaN,
+      "method": "zero",
+      "n_solutes": 10
+    },
+    {
+      "mean_absolute_amplitude_error_kcal_mol": 0.5197096635812055,
+      "mean_centered_profile_RMSE_kcal_mol": 0.2505076314640108,
+      "mean_profile_RMSE_kcal_mol": 0.2533146827412164,
+      "median_Pearson_r": -0.1793531805346602,
+      "median_Spearman_rho": -0.18999999999999997,
+      "method": "exact_dipole",
+      "n_solutes": 10
+    },
+    {
+      "mean_absolute_amplitude_error_kcal_mol": 0.9536383560630567,
+      "mean_centered_profile_RMSE_kcal_mol": 0.3932275797882993,
+      "mean_profile_RMSE_kcal_mol": 0.394447191713691,
+      "median_Pearson_r": 0.6339632045808381,
+      "median_Spearman_rho": 0.6934782608695652,
+      "method": "exact_dipole_quadrupole",
+      "n_solutes": 10
+    },
+    {
+      "mean_absolute_amplitude_error_kcal_mol": 2.4989020640132464,
+      "mean_centered_profile_RMSE_kcal_mol": 0.8099422913081755,
+      "mean_profile_RMSE_kcal_mol": 0.8120675155783854,
+      "median_Pearson_r": 0.4521615729484708,
+      "median_Spearman_rho": 0.5126086956521738,
+      "method": "exact_dipole_quadrupole_octupole",
+      "n_solutes": 10
+    }
+  ],
+  "W4_source_extent": [
+    {
+      "fraction_oxygen_outside_max_nuclear_radius": 0.2,
+      "fraction_oxygen_outside_r90": 0.3,
+      "fraction_oxygen_outside_r95": 0.2,
+      "fraction_oxygen_outside_r99": 0.1,
+      "maximum_oxygen_over_r99": 1.1149425725839903,
+      "median_oxygen_over_r99": 0.6656753701715559,
+      "minimum_oxygen_over_r99": 0.4267602325990544,
+      "n_probes": 10,
+      "origin": "base_com",
+      "water_rank": 4
+    },
+    {
+      "fraction_oxygen_outside_max_nuclear_radius": 0.2,
+      "fraction_oxygen_outside_r90": 0.3,
+      "fraction_oxygen_outside_r95": 0.2,
+      "fraction_oxygen_outside_r99": 0.1,
+      "maximum_oxygen_over_r99": 1.1013174773798038,
+      "median_oxygen_over_r99": 0.6642267675210778,
+      "minimum_oxygen_over_r99": 0.4203719115805019,
+      "n_probes": 10,
+      "origin": "nuclear_center",
+      "water_rank": 4
+    },
+    {
+      "fraction_oxygen_outside_max_nuclear_radius": 0.0,
+      "fraction_oxygen_outside_r90": 0.4,
+      "fraction_oxygen_outside_r95": 0.1,
+      "fraction_oxygen_outside_r99": 0.0,
+      "maximum_oxygen_over_r99": 0.9037316199430426,
+      "median_oxygen_over_r99": 0.6462876914963849,
+      "minimum_oxygen_over_r99": 0.3847700455974918,
+      "n_probes": 10,
+      "origin": "solute_com",
+      "water_rank": 4
+    }
+  ],
+  "W4_torque": [
+    {
+      "magnitude_MAE_kcal_mol": 0.0264753835448031,
+      "median_angular_error_degrees": 9.381800249660174,
+      "method": "glider",
+      "n_directionally_meaningful": 10,
+      "n_solutes": 10,
+      "vector_RMSE_kcal_mol": 0.06864343069665806
+    },
+    {
+      "magnitude_MAE_kcal_mol": 0.09323778509465508,
+      "median_angular_error_degrees": 21.20800358181036,
+      "method": "mace_polar_l",
+      "n_directionally_meaningful": 10,
+      "n_solutes": 10,
+      "vector_RMSE_kcal_mol": 0.15621494894229837
+    },
+    {
+      "magnitude_MAE_kcal_mol": 0.20603723107718222,
+      "median_angular_error_degrees": NaN,
+      "method": "zero",
+      "n_directionally_meaningful": 0,
+      "n_solutes": 10,
+      "vector_RMSE_kcal_mol": 0.2440385888979518
+    },
+    {
+      "magnitude_MAE_kcal_mol": 0.3953700109751678,
+      "median_angular_error_degrees": 74.95612250585565,
+      "method": "exact_dipole",
+      "n_directionally_meaningful": 10,
+      "n_solutes": 10,
+      "vector_RMSE_kcal_mol": 0.9611506905034457
+    },
+    {
+      "magnitude_MAE_kcal_mol": 0.8936973868991045,
+      "median_angular_error_degrees": 61.60593063003712,
+      "method": "exact_dipole_quadrupole",
+      "n_directionally_meaningful": 10,
+      "n_solutes": 10,
+      "vector_RMSE_kcal_mol": 2.1358628214902726
+    },
+    {
+      "magnitude_MAE_kcal_mol": 2.224284653243107,
+      "median_angular_error_degrees": 78.24748681166022,
+      "method": "exact_dipole_quadrupole_octupole",
+      "n_directionally_meaningful": 10,
+      "n_solutes": 10,
+      "vector_RMSE_kcal_mol": 5.797317508658391
+    }
+  ],
+  "bootstrap": {
+    "resamples": 100000,
+    "seed": 2026081902
+  },
+  "selected_panel_wide_origins": [
+    {
+      "endpoint": "W4_energy_MAE",
+      "hierarchy": "exact_dipole",
+      "selected_origin": "solute_com",
+      "selection_score": 0.1488250168700976
+    },
+    {
+      "endpoint": "W4_torque_vector_RMSE",
+      "hierarchy": "exact_dipole",
+      "selected_origin": "base_com",
+      "selection_score": 0.9611506905034457
+    },
+    {
+      "endpoint": "W4_orientation_absolute_profile_RMSE",
+      "hierarchy": "exact_dipole",
+      "selected_origin": "solute_com",
+      "selection_score": 0.2533146827412164
+    },
+    {
+      "endpoint": "W4_energy_MAE",
+      "hierarchy": "exact_dipole_quadrupole",
+      "selected_origin": "base_com",
+      "selection_score": 0.25193259727281936
+    },
+    {
+      "endpoint": "W4_torque_vector_RMSE",
+      "hierarchy": "exact_dipole_quadrupole",
+      "selected_origin": "base_com",
+      "selection_score": 2.1358628214902726
+    },
+    {
+      "endpoint": "W4_orientation_absolute_profile_RMSE",
+      "hierarchy": "exact_dipole_quadrupole",
+      "selected_origin": "base_com",
+      "selection_score": 0.394447191713691
+    },
+    {
+      "endpoint": "W4_energy_MAE",
+      "hierarchy": "exact_dipole_quadrupole_octupole",
+      "selected_origin": "solute_com",
+      "selection_score": 0.5080114022506496
+    },
+    {
+      "endpoint": "W4_torque_vector_RMSE",
+      "hierarchy": "exact_dipole_quadrupole_octupole",
+      "selected_origin": "base_com",
+      "selection_score": 5.797317508658391
+    },
+    {
+      "endpoint": "W4_orientation_absolute_profile_RMSE",
+      "hierarchy": "exact_dipole_quadrupole_octupole",
+      "selected_origin": "base_com",
+      "selection_score": 0.8120675155783854
+    }
+  ]
+}

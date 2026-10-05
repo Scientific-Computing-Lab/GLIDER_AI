@@ -1,0 +1,17 @@
+{
+  "angle_discrepancy_degrees": 0.0,
+  "bond_length_max_discrepancy_angstrom": 1.1102230246251565e-16,
+  "case_id": "confirmatory__ethanol__base3",
+  "converged": true,
+  "density_file": "44f76a2c791c3814b8cb8a29.npz",
+  "density_file_sha256": "acd173c0fb216bf0eda3107d6eccae0f66a026fb887360712321d73c16a70016",
+  "density_source": "independent_isolated_probe_SCF",
+  "molecule_id": "ethanol",
+  "probe_id": "confirmatory__ethanol__base3__W4",
+  "rotation_id": "O_11",
+  "runtime_seconds": 0.8663295110018225,
+  "scf_cycles": 9,
+  "variant_id": "orientation_O_11",
+  "variant_type": "orientation",
+  "water_rank": 4
+}

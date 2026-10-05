@@ -1,0 +1,8 @@
+source_group,locations_or_git_roots,configurations_found,new_independent_solutes_eligible,disposition,reason
+authoritative_GLIDER_liquid_bridge,"GLIDER; GLIDER_H_FINAL; GLIDER_NEXT_WIN; GLIDER_RC; hamiltonian_lift",24,0,pilot_only,"Exactly the immutable six-solute x four-snapshot pilot; no new identities"
+Transformato_historical_equilibrated_states,foundation/sources/repos/transformato,17,10,include,"Ten distinct neutral solute identities have completed explicit-water step4 equilibration states; repeated 2OJ9 aliases/tests and its alternate tautomer are identity-collapsed"
+Transformato_current_starting_boxes,foundation/sources/repos/transformato_systems,9,0,exclude,"CHARMM-GUI pre-optimized starting boxes without a completed equilibration state for the named solute; available alchemical restart files are methane copies"
+AQUA_constructed_boxes,results/aqua_delta_gp/systems,6,0,exclude,"RDKit solutes inserted into a compact template and cavity-carved; not sampled liquid configurations; three identities also duplicate the pilot"
+downstream_hydration_clusters,downstream_hydration/data/training_geometries,523,0,exclude,"Designed solute-plus-three-water clusters contain no held-out W4-W12 environment"
+designed_manybody_clusters,"complete_interaction_hamiltonian; manybody_completion; confirmatory_v2",multiple,0,exclude,"Designed finite clusters rather than pre-existing explicit-liquid parent configurations"
+other_workspace_git_roots_and_MD_artifacts,"HYDRATION_STAGE1; external_tools; foundation/sources/repos/*; method_agnostic; route_c",multiple,0,exclude,"Search found only biomolecular/test/example systems, water-only data, duplicates, or no usable neutral-solute explicit-liquid configurations"

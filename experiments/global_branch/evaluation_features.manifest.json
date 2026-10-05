@@ -1,0 +1,20 @@
+{
+  "checkpoint_sha256": "fab8b8713c832f31a2a853aaa22fd638be8a369cbf5095e6b3e982a18d10e93a",
+  "encoder": "MACE-POLAR frozen product-basis features",
+  "experimental_hydration_targets_accessed": false,
+  "feature_sha256": "e4d922827c2be520bfc4584f4d91c8098f5b0c1de600240d7304e5a99a6e6d04",
+  "n_atoms": 5624,
+  "n_configurations": 224,
+  "product_shapes": {
+    "product_0": [
+      5624,
+      2048
+    ],
+    "product_1": [
+      5624,
+      2048
+    ]
+  },
+  "prospective_labels_accessed": false,
+  "runtime_seconds_excluding_checkpoint_load": 12.187014572962653
+}

@@ -1,0 +1,16 @@
+{
+  "case_id": "confirmatory__cdk2-28__base3",
+  "converged": true,
+  "density_file": "defa2936445c250cda38f6c6.npz",
+  "density_file_sha256": "a4306843131adc6a6e6240e93673f35590bd8711a7e4873207dfb86e5d310fe4",
+  "method": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 SCF 1e-10 GPU4PySCF-1.8.1",
+  "molecule_id": "cdk2-28",
+  "oxygen_distance_A": 2.735199228133042,
+  "probe_id": "confirmatory__cdk2-28__base3__W12",
+  "probe_nao": 58,
+  "prospective_claim": false,
+  "runtime_seconds": 0.8693919700017432,
+  "scf_cycles": 9,
+  "source_water_index": 117,
+  "water_rank": 12
+}

@@ -1,9 +1,0 @@
-method,class,response_esp,induced_dipole,panel_I,panel_II,panel_III,nonwater_environment,liquid_bridge
-GLIDER,matched,1,1,1,1,1,1,1
-MACE-POLAR-1-L,matched,1,1,1,1,1,1,1
-MACE-POLAR-1-M,matched,1,1,1,1,1,1,1
-MACE-POLAR-1-S,matched,1,1,1,1,1,1,1
-AIMNet2,matched,1,1,1,1,1,1,1
-AIMNet2-2025,matched,1,1,1,1,1,1,1
-MACE-MDP,dipole only,0,1,1,1,1,1,1
-GFN2-xTB,dipole only,0,1,1,1,1,1,1

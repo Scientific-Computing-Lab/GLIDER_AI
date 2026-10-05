@@ -1,0 +1,9 @@
+endpoint,comparator,n_solutes,n_glider_improved,fraction_glider_improved,median_paired_glider_minus_comparator
+W4_energy_absolute_error,mace_polar_l,10,7,0.7,-0.01296838412228225
+W4_energy_absolute_error,exact_dipole_solute_com,10,8,0.8,-0.07460036526766704
+W4_torque_vector_error,mace_polar_l,10,8,0.8,-0.042418721188891846
+W4_torque_vector_error,exact_dipole_base_com,10,10,1.0,-0.15672552726614364
+W4_orientation_absolute_profile_RMSE,mace_polar_l,10,8,0.8,-0.05401510258742989
+W4_orientation_absolute_profile_RMSE,exact_dipole_solute_com,10,8,0.8,-0.09203597331567784
+W4_orientation_centered_profile_RMSE,mace_polar_l,10,4,0.4,0.004661613228723452
+W4_orientation_centered_profile_RMSE,exact_dipole_solute_com,10,8,0.8,-0.09352723259410267

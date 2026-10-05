@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-04",
+  "status": "post hoc dissociation diagnostic, no new QM labels",
+  "parents": "all 14 original training solutes, compact/equilibrium configuration",
+  "systems": [
+    "solute plus first water",
+    "solute plus intact original environment"
+  ],
+  "separation": "minimum interfragment atom distance in angstrom",
+  "observation": "fixed surface anchored to stationary solute",
+  "distances_A": [
+    3.0,
+    4.0,
+    5.0,
+    6.0,
+    8.0,
+    10.0,
+    15.0,
+    20.0
+  ],
+  "n_configurations": 224,
+  "expected_limit": "complex-minus-fragments response approaches zero as the fragments separate",
+  "checkpoints": "unchanged original GLIDER and frozen M/L prior"
+}

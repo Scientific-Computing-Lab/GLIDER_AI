@@ -1,0 +1,14 @@
+{
+  "all_converged": true,
+  "experiment": "held-out-W4 rigid torque and orientation variants",
+  "maximum_angle_discrepancy_degrees": 2.1316282072803006e-13,
+  "maximum_bond_discrepancy_angstrom": 3.219646771412954e-15,
+  "method": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 SCF 1e-10 GPU4PySCF-1.8.1",
+  "n_convergence_torque_variants": 72,
+  "n_orientation_variants": 144,
+  "n_primary_torque_variants": 144,
+  "n_variants": 360,
+  "prospective_claim": false,
+  "protocol": "results/posthoc_downstream_response/protocol_freeze.json",
+  "variant_registry_sha256": "3a5a7a3731a769ced9e1f19862deaba7e97f1507c257c4cc5f60d79583d21df1"
+}

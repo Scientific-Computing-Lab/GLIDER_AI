@@ -1,0 +1,16 @@
+{
+  "case_id": "confirmatory__jnk1-18631__base3",
+  "converged": true,
+  "density_file": "4726f067d626c286155ef8c4.npz",
+  "density_file_sha256": "113f105bdc41bb337fa138141d6e79f0bdeb423cf660c22b422581c8cf2916e2",
+  "method": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 SCF 1e-10 GPU4PySCF-1.8.1",
+  "molecule_id": "jnk1-18631",
+  "oxygen_distance_A": 2.910474249918613,
+  "probe_id": "confirmatory__jnk1-18631__base3__W9",
+  "probe_nao": 58,
+  "prospective_claim": false,
+  "runtime_seconds": 0.8593515659958939,
+  "scf_cycles": 9,
+  "source_water_index": 62,
+  "water_rank": 9
+}

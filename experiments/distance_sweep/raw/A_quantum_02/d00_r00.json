@@ -1,0 +1,52 @@
+{
+  "direction_index": 0,
+  "surface_clearance_angstrom": 0.8,
+  "oxygen_angstrom": [
+    17.168766313245523,
+    17.017533992959503,
+    19.00058350622144
+  ],
+  "accepted": 2,
+  "mode": "quantum",
+  "orientation_ids": [
+    "orientation_O_06",
+    "orientation_O_18"
+  ],
+  "energies": [
+    {
+      "orientation_id": "orientation_O_06",
+      "qm_energy_hartree": -6.507669751990811e-05,
+      "glider_energy_hartree": 7.202563745118793e-05,
+      "mace_polar_l_energy_hartree": -0.00019292905558003157,
+      "exact_dipole_base_com_energy_hartree": 0.0022700389565152757,
+      "exact_dipole_solute_com_energy_hartree": 0.0022493249487983164,
+      "exact_dipole_nuclear_center_energy_hartree": 0.002304405783599834,
+      "zero_energy_hartree": 0.0,
+      "qm_energy_kcal_mol": -0.040836244234480984,
+      "glider_energy_kcal_mol": 0.04519676987605446,
+      "mace_polar_l_energy_kcal_mol": -0.1210648101985162,
+      "exact_dipole_base_com_energy_kcal_mol": 1.424470951705649,
+      "exact_dipole_solute_com_energy_kcal_mol": 1.411472715617441,
+      "exact_dipole_nuclear_center_energy_kcal_mol": 1.4460364612946979,
+      "zero_energy_kcal_mol": 0.0
+    },
+    {
+      "orientation_id": "orientation_O_18",
+      "qm_energy_hartree": -0.000265876419366729,
+      "glider_energy_hartree": -0.00022188814849572128,
+      "mace_polar_l_energy_hartree": -0.00043858086630743295,
+      "exact_dipole_base_com_energy_hartree": 0.001439904585184664,
+      "exact_dipole_solute_com_energy_hartree": 0.0018520583075405204,
+      "exact_dipole_nuclear_center_energy_hartree": 0.001458308735962986,
+      "zero_energy_hartree": 0.0,
+      "qm_energy_kcal_mol": -0.16683997208259635,
+      "glider_energy_kcal_mol": -0.1392369153633851,
+      "mace_polar_l_energy_kcal_mol": -0.275213648750716,
+      "exact_dipole_base_com_energy_kcal_mol": 0.9035537689502747,
+      "exact_dipole_solute_com_energy_kcal_mol": 1.162184134498947,
+      "exact_dipole_nuclear_center_energy_kcal_mol": 0.9151025479257575,
+      "zero_energy_kcal_mol": 0.0
+    }
+  ],
+  "torques": {}
+}

@@ -1,0 +1,19 @@
+{
+  "W4_in_base_response": false,
+  "all_converged": true,
+  "base_geometry_sha256": "2bc12a2a2a017f38e69d9444aa1f0cd2a0a2aa33c470bda9e25916eb111f0c41",
+  "cupy_version": "14.1.1",
+  "density_registry_sha256": "11863d5a2f4492e1afaec27862d7c7b609150ceb79a123db69a9cc695254ac8f",
+  "experiment": "post hoc held-out-W4 downstream response",
+  "gpu": "NVIDIA GeForce RTX 3090, 535.309.01, 24576 MiB",
+  "gpu4pyscf_version": "1.8.1",
+  "maximum_stored_dipole_discrepancy_debye": 9.718984524065277e-06,
+  "method": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 SCF 1e-10 GPU4PySCF-1.8.1",
+  "n_cases": 24,
+  "numpy_version": "2.4.6",
+  "probe_geometry_sha256": "12c5b08f3dfc0fe0180c94d0d67a0b7270e5bf8a4090876c5b16dbde3de4c87e",
+  "prospective_claim": false,
+  "protocol": "results/posthoc_downstream_response/protocol_freeze.json",
+  "pyscf_version": "2.8.0",
+  "python_version": "3.11.15"
+}

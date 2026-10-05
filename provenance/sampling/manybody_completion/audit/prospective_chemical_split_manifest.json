@@ -1,0 +1,11 @@
+{
+  "audit_sha256": "d1e5522f1eadb323a32584dc449a7324cc8b8d03a8b75c487b40fa5d75a591f7",
+  "exact_connectivity_overlaps": 0,
+  "experimental_hydration_targets_accessed": false,
+  "n_prior_molecules": 40,
+  "n_prospective_molecules": 7,
+  "nearest_similarity_range": [
+    0.14285714285714285,
+    0.46875
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "angle_discrepancy_degrees": 0.0,
+  "bond_length_max_discrepancy_angstrom": 0.0,
+  "case_id": "glider_h__MNSOL-CONN-XSQUKJJJFZCRTK__liquid_00__base3_probe4",
+  "converged": true,
+  "density_file": "21d4dfea81fcb46c520b4dc6.npz",
+  "density_file_sha256": "8894eadf5484f3ab9d381dfd26bfbe95d4337643789f033f07ea8822da9b455f",
+  "density_source": "reused_initial_identity_orientation",
+  "rotation_id": "O_00",
+  "runtime_seconds": 0.0,
+  "scf_cycles": 0,
+  "variant_id": "orientation_O_00",
+  "variant_type": "orientation"
+}

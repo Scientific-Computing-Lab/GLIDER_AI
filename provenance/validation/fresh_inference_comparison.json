@@ -1,0 +1,23 @@
+{
+  "predicted_esp_hartree_per_e": {
+    "max_new_vs_archived": 3.1959520362108244e-06,
+    "rms_new_vs_archived": 8.52217843455218e-07,
+    "max_new_vs_control_batch": 2.433371556952342e-06
+  },
+  "predicted_dipole_debye": {
+    "max_new_vs_archived": 0.00015424912375694433,
+    "rms_new_vs_archived": 0.00011230065405065008,
+    "max_new_vs_control_batch": 0.00015188145288064225
+  },
+  "predicted_charges_e": {
+    "max_new_vs_archived": 5.509878974407911e-06,
+    "rms_new_vs_archived": 2.0687161850219127e-06
+  },
+  "predicted_dipoles_e_bohr": {
+    "max_new_vs_archived": 5.2014365792274475e-05,
+    "rms_new_vs_archived": 7.332384484470822e-06
+  },
+  "new_nrmse": 0.31983369785648036,
+  "archived_nrmse": 0.31985775993462773,
+  "control_batch_nrmse": 0.3199152421820466
+}

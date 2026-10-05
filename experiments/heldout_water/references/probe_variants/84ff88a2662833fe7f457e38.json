@@ -1,0 +1,19 @@
+{
+  "angle_discrepancy_degrees": 1.1368683772161603e-13,
+  "axis": 1,
+  "bond_length_max_discrepancy_angstrom": 7.771561172376096e-16,
+  "case_id": "confirmatory__jnk1-17124__base3",
+  "converged": true,
+  "density_file": "84ff88a2662833fe7f457e38.npz",
+  "density_file_sha256": "1e534b19e6d25b53bb78d27209d6b98ec86f38d6e155156c075067d70f3e2edc",
+  "density_source": "independent_isolated_probe_SCF",
+  "molecule_id": "jnk1-17124",
+  "probe_id": "confirmatory__jnk1-17124__base3__W4",
+  "runtime_seconds": 0.869619238001178,
+  "scf_cycles": 9,
+  "sign": -1,
+  "step_degrees": 0.1,
+  "variant_id": "torque_0.1deg_axis1_minus",
+  "variant_type": "torque_primary",
+  "water_rank": 4
+}

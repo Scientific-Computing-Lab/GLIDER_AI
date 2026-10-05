@@ -1,0 +1,35 @@
+{
+  "distance_A": 20,
+  "max_esp_rms_difference_mEh_per_e": 4.6317164245190945e-05,
+  "fresh_results": [
+    {
+      "system": "single_water",
+      "method": "averaged_prior",
+      "distance_A": 20.0,
+      "esp_rms_mEh_per_e": 0.1953859175416281,
+      "dipole_norm_D": 1.3863580761273775
+    },
+    {
+      "system": "single_water",
+      "method": "glider",
+      "distance_A": 20.0,
+      "esp_rms_mEh_per_e": 0.5638950937195337,
+      "dipole_norm_D": 1.4044549827998798
+    },
+    {
+      "system": "whole_environment",
+      "method": "averaged_prior",
+      "distance_A": 20.0,
+      "esp_rms_mEh_per_e": 0.300660982891521,
+      "dipole_norm_D": 1.5312817038260496
+    },
+    {
+      "system": "whole_environment",
+      "method": "glider",
+      "distance_A": 20.0,
+      "esp_rms_mEh_per_e": 0.9246323645034444,
+      "dipole_norm_D": 1.5618591862114712
+    }
+  ],
+  "result": "Nonvanishing response reproduced through public run_controls.py with independently re-extracted features and priors."
+}

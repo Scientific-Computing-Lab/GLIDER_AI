@@ -1,0 +1,52 @@
+{
+  "all_components_converged": true,
+  "attempts": [
+    {
+      "component": "full_complex",
+      "converged": true,
+      "cycles": 11,
+      "energy_hartree": -397.57685468837326,
+      "level_shift": 0.0,
+      "runtime_seconds": 5.4205623239977285,
+      "solver": "gpu_diis_160"
+    },
+    {
+      "component": "solute_with_perturbant_ghosts",
+      "converged": true,
+      "cycles": 12,
+      "energy_hartree": -264.76360958928524,
+      "level_shift": 0.0,
+      "runtime_seconds": 5.235313785000471,
+      "solver": "gpu_diis_160"
+    },
+    {
+      "component": "perturbant_with_solute_ghosts",
+      "converged": true,
+      "cycles": 10,
+      "energy_hartree": -132.85526102351594,
+      "level_shift": 0.0,
+      "runtime_seconds": 4.4431504769891035,
+      "solver": "gpu_diis_160"
+    }
+  ],
+  "component_order": [
+    "full_complex",
+    "solute_with_perturbant_ghosts",
+    "perturbant_with_solute_ghosts"
+  ],
+  "config_id": "nonwater_environment__prospective_diverse_01__ch3cn__altered_orientation",
+  "delta_dipole_norm_debye": 0.5156927467771233,
+  "delta_esp_rms_hartree_per_e": 0.0054309563035919925,
+  "excluded_or_replaced": false,
+  "hamiltonian_or_reference_changed": false,
+  "method": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 SCF 1e-10",
+  "molecule_id": "prospective_diverse_01",
+  "observable_file": "092a16e1d4d753316e24.npz",
+  "observable_sha256": "13309afde6393de5764c4de859bdd56d656d4dd8bb8e29de6c1150749811a486",
+  "perturbant": "CH3CN",
+  "prediction_probe_file": "prospective_nonwater_environment/predictions/glider/092a16e1d4d753316e24.npz",
+  "prediction_probe_sha256": "687761c3ecff08917f931992765481aee0e650cdf7ae7f3985d893c951569999",
+  "regime": "altered_orientation",
+  "runtime_seconds": 15.099026585987303,
+  "used_recovery": false
+}

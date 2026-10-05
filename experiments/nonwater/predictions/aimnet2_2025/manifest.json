@@ -1,0 +1,19 @@
+{
+  "aimnet_version": "0.2.0",
+  "canonical_registry_name": "aimnet2-b973c-2025-d3_0",
+  "checkpoint_file": "aimnet2_2025_b973c_d3_0.pt",
+  "checkpoint_sha256": "043ed5418a104e31f79462f8e5ebeca64a2d24422174f5d29f894d32271981b5",
+  "device": "cuda",
+  "dipole_definition": "sum_i(delta_q_i r_i)",
+  "esp_definition": "Coulomb potential of official environment-dependent atomic point charges",
+  "inference_definition": "full complex minus isolated solute minus isolated perturbant",
+  "max_abs_net_response_charge_e": 1.2852251529693604e-07,
+  "method": "AIMNet2 official aimnet2-2025 alias/member 0",
+  "n_configurations": 72,
+  "prospective_prediction": true,
+  "python_version": "3.11.15",
+  "reference_targets_accessed": false,
+  "runtime_seconds": 40.25865653798974,
+  "torch_version": "2.8.0+cu126",
+  "training_tuning_or_calibration": false
+}

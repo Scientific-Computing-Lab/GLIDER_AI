@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Run the frozen GLIDER head from cached MACE features and response priors.
 
-The byte-preserved historical implementation remains in ``evidence/frozen_source``.
+The byte-preserved historical implementation remains in ``provenance/frozen_source``.
 This release-facing implementation is accepted only because its outputs are
 checked against every stored prospective prediction.
 """
@@ -36,7 +36,7 @@ def sha256(path: Path) -> str:
 
 
 def response_head_class():
-    source = ROOT / "evidence/frozen_source/prospective_1/response_learning.py"
+    source = ROOT / "provenance/frozen_source/prospective_1/response_learning.py"
     spec = importlib.util.spec_from_file_location("glider_frozen_response_learning", source)
     if spec is None or spec.loader is None:
         raise ImportError(source)

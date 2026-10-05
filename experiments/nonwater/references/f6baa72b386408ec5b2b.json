@@ -1,0 +1,70 @@
+{
+  "all_components_converged": true,
+  "attempts": [
+    {
+      "component": "full_complex",
+      "converged": true,
+      "cycles": 32,
+      "energy_hartree": -2912.194991277962,
+      "level_shift": 0.0,
+      "runtime_seconds": 9.049558136000996,
+      "solver": "gpu_diis_160"
+    },
+    {
+      "component": "solute_with_perturbant_ghosts",
+      "converged": false,
+      "cycles": 160,
+      "energy_hartree": -2535.442280230025,
+      "level_shift": 0.0,
+      "runtime_seconds": 36.25115040400124,
+      "solver": "gpu_diis_160"
+    },
+    {
+      "component": "solute_with_perturbant_ghosts",
+      "converged": false,
+      "cycles": 320,
+      "energy_hartree": -2535.43454735034,
+      "level_shift": 0.0,
+      "runtime_seconds": 70.82228004701028,
+      "solver": "gpu_diis_320"
+    },
+    {
+      "component": "solute_with_perturbant_ghosts",
+      "converged": true,
+      "cycles": 0,
+      "energy_hartree": -2855.6200420811156,
+      "level_shift": 0.0,
+      "runtime_seconds": 1112.081475289,
+      "solver": "cpu_second_order_200"
+    },
+    {
+      "component": "perturbant_with_solute_ghosts",
+      "converged": true,
+      "cycles": 9,
+      "energy_hartree": -56.60493683506563,
+      "level_shift": 0.0,
+      "runtime_seconds": 3.253990666999016,
+      "solver": "gpu_diis_160"
+    }
+  ],
+  "component_order": [
+    "full_complex",
+    "solute_with_perturbant_ghosts",
+    "perturbant_with_solute_ghosts"
+  ],
+  "config_id": "nonwater_environment__prospective_diverse_02__nh3__equilibrium_like",
+  "delta_dipole_norm_debye": 0.5120470843833608,
+  "delta_esp_rms_hartree_per_e": 0.005078345315383664,
+  "excluded_or_replaced": false,
+  "hamiltonian_or_reference_changed": false,
+  "method": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 SCF 1e-10",
+  "molecule_id": "prospective_diverse_02",
+  "observable_file": "f6baa72b386408ec5b2b.npz",
+  "observable_sha256": "b271c1c28e00f85c9520c87c42f834fc120aa45d3856f9f681d2f8cc7c63dbf6",
+  "perturbant": "NH3",
+  "prediction_probe_file": "prospective_nonwater_environment/predictions/glider/f6baa72b386408ec5b2b.npz",
+  "prediction_probe_sha256": "ab7f7b8e2c67bfb319bc804fcdf5782f3cb83d273eaae10955d876cada49142e",
+  "regime": "equilibrium_like",
+  "runtime_seconds": 1231.4584545430116,
+  "used_recovery": true
+}

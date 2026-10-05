@@ -1,0 +1,11 @@
+case_id,molecule_id,family,grid_level,n_grid_points,integrated_response_electron_number,integrated_absolute_response_charge_e
+confirmatory__2OJ9-original__base3,2OJ9-original,2OJ9,4,1330248,6.316319676978599e-07,0.3878081672714053
+confirmatory__cdk2-1h1q__base3,cdk2-1h1q,cdk2,4,1191480,2.6777192688176576e-07,0.5133907794503884
+confirmatory__cdk2-28__base3,cdk2-28,cdk2,4,1380304,-1.031635680950882e-06,0.580076152344676
+confirmatory__ethane__base3,ethane,small_aliphatic,4,330496,-7.774811954137928e-08,0.09155420163174507
+confirmatory__ethanol__base3,ethanol,small_aliphatic,4,358752,2.9315204510410586e-07,0.2812721482859152
+confirmatory__jnk1-17124__base3,jnk1-17124,jnk1,4,1247160,7.463689229375917e-08,0.24995806364728357
+confirmatory__jnk1-18631__base3,jnk1-18631,jnk1,4,1144392,4.035475920111803e-07,0.29399905822197414
+confirmatory__methane__base3,methane,small_aliphatic,4,270472,2.4032082655139897e-07,0.1323756296771389
+confirmatory__tyk2-ejm_42__base3,tyk2-ejm_42,tyk2,4,1009880,-5.498706816074034e-07,0.4190567257074983
+confirmatory__tyk2-ejm_45__base3,tyk2-ejm_45,tyk2,4,1098512,-8.018570940744596e-08,0.4255157185908491

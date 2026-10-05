@@ -1,0 +1,8 @@
+molecule_id,smiles,split,chemical_role
+pros_cyano_cyclic_acetal,COC1(C#N)CC(O)C1Cl,test,cyclic ether alcohol nitrile chloride
+pros_sulfonyl_piperidinol,CS(=O)(=O)N1CC(F)C(O)C1,test,sulfonamide cyclic alcohol fluoride
+pros_heteroaryl_amide,O=C(N(C)C(F)Cl)c1nocc1,test,heteroaryl amide mixed halogen
+pros_polyfunctional_oxane,N#CC1(O)COC(CCl)C1F,test,cyclic ether alcohol nitrile mixed halogen
+pros_azaaryl_sulfoxide,COc1nc(S(=O)C)cc(F)n1,test,diaza aryl ether sulfoxide fluoride
+pros_halogen_oxazinanone,O=C1N(CC#N)C(F)(Cl)CO1,test,cyclic carbamate nitrile mixed halogen
+pros_isoxazole_thioether,CSC1=NOC(C(O)F)=C1Cl,test,isoxazole thioether alcohol mixed halogen

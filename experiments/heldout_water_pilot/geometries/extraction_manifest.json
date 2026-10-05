@@ -1,0 +1,22 @@
+{
+  "base_definition": "solute plus nearest waters ranked 1, 2, and 3",
+  "experiment": "post hoc downstream response coupling to held-out fourth water",
+  "maximum_base_reconstruction_discrepancy_A": 4.998619962393036e-09,
+  "n_cases": 24,
+  "n_snapshots_per_solute": 4,
+  "n_solutes": 6,
+  "ordering_rule": "minimum-image oxygen distance to nearest solute atom; source water index tie-break",
+  "outputs": {
+    "base_3water.extxyz": "2bc12a2a2a017f38e69d9444aa1f0cd2a0a2aa33c470bda9e25916eb111f0c41",
+    "base_plus_probe.extxyz": "d275b08b41e9aa513b6e274f3d82a20de3ecdb09a61dcfda3657e774085ce591",
+    "configurations.csv": "1afebf4e1d4b74b49a323630adb41bc4e7b1e6a95fe8184c43670ad705c2040b",
+    "heldout_w4.extxyz": "12c5b08f3dfc0fe0180c94d0d67a0b7270e5bf8a4090876c5b16dbde3de4c87e"
+  },
+  "performance_based_selection": false,
+  "probe_definition": "held-out water ranked 4 from the same parent snapshot",
+  "prospective_claim": false,
+  "source_geometries": "evidence/liquid_bridge/source/liquid_3water.extxyz",
+  "source_geometries_sha256": "59b75023bb3ab12be5e616b6e923cd07e8675fbebb38a6c72cc9a2d3536a2be2",
+  "source_registry": "evidence/liquid_bridge/source/LIQUID_CLUSTER_REGISTRY.csv",
+  "source_registry_sha256": "b3552c395da625b0ffbfe90aae08f293d67b725d686ed0e2317149c98a3ca5c8"
+}

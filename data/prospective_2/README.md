@@ -1,5 +1,0 @@
-# Prospective Panel II · 24 solutes / 96 configurations
-
-[`configurations.extxyz`](configurations.extxyz) and [`configuration_registry.csv`](configuration_registry.csv) identify the fixed solute–three-water configurations. Archived model outputs are in [`predictions/`](predictions/README.md); QM response observables are in [`references/`](references/README.md). The paper's GLIDER output is the `previous_candidate` archive, the same response head subsequently held fixed for Panel III. The `candidate` archive is retained as an alternate development-history artifact and **must not be substituted** for the paper result.
-
-The camera-ready Figure 3 aggregate is response-ESP NRMSE **0.342** versus **0.571** for the MACE-L polar baseline, with **23/24** solutes improved. See [frozen molecule and configuration tables](../../results/prospective_2/README.md) and the [paper map](../../results/README.md). The chemistry was absent from response supervision; foundation-pretraining identity exposure is unknown.

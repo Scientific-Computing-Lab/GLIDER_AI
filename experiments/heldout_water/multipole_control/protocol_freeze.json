@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "status": "frozen_before_multipole_evaluation_or_comparative_scoring",
+  "freeze_date_utc": "2026-08-20",
+  "prospective_claim": false,
+  "scope": "Post hoc exact-QM global-multipole hierarchy reconstructed only from the already-computed ten-solute confirmatory base response densities and coupled only to the already-computed frozen isolated-water probe densities.",
+  "immutable_inputs": {
+    "confirmatory_protocol": "results/posthoc_downstream_response_confirmatory/protocol_freeze.json",
+    "base_density_registry": {
+      "path": "results/posthoc_downstream_response_confirmatory/qm/base_densities/density_registry.csv",
+      "sha256": "96a11cd495f2ded950a7836c962f1afa0a57c13c7692286f18f3577f05040a96"
+    },
+    "probe_density_registry": {
+      "path": "results/posthoc_downstream_response_confirmatory/qm/probe_densities/density_registry.csv",
+      "sha256": "d6597633939abb8c170631bcbc816b47fd4fa82ef3631741cde1a6e627f1760e"
+    },
+    "probe_variant_registry": {
+      "path": "results/posthoc_downstream_response_confirmatory/qm/probe_variants/variant_registry.csv",
+      "sha256": "73698bf240d8162a643fbf15b2b80833bcf0e9f888395bcdbc099c3fbb0fb1c4"
+    },
+    "configuration_registry": {
+      "path": "results/posthoc_downstream_response_confirmatory/configurations/configurations.csv",
+      "sha256": "47a94ea95ce8ba3259a676c47e68643446a756d32fc80f8b2ed770468672f10e"
+    },
+    "outer_probe_registry": {
+      "path": "results/posthoc_downstream_response_confirmatory/configurations/outer_probes.csv",
+      "sha256": "b2b669c2c314f08e653f5eb81ead715f40e330aea6f3e3cef9b30bc077d813b2"
+    },
+    "existing_method_tables": {
+      "W4_energy_sha256": "53e52ca09449a3c90eaab6abee9a3a5b2471c8274b80da52f31030b318059db6",
+      "W4_torque_sha256": "2e13355b1f64174324348a94d441ec729c1a7c9f2e7dcb814c06305222531af2",
+      "orientation_profiles_sha256": "7887d8a3f1dcf7808a97ee9bdf58152d8507e88a33bdcbeadfe384f2f8e574c6",
+      "W4_W12_energy_sha256": "ccec31a3e921cab20bc4f896d7c8144930093f81045656cc604d07b745f7aac9"
+    },
+    "n_solutes": 10,
+    "n_frozen_base_densities": 10,
+    "n_frozen_W4_W12_probe_densities": 90,
+    "solute_ids": [
+      "2OJ9-original",
+      "cdk2-1h1q",
+      "cdk2-28",
+      "ethane",
+      "ethanol",
+      "jnk1-17124",
+      "jnk1-18631",
+      "methane",
+      "tyk2-ejm_42",
+      "tyk2-ejm_45"
+    ],
+    "new_base_QM": false,
+    "new_probe_QM": false,
+    "model_retraining": false,
+    "case_or_water_reselection": false
+  },
+  "physical_charge_convention": {
+    "stored_response_density_matrix": "positive electron-number density matrix D_resp = D_full - D_solute_ghost - D_waters_ghost",
+    "multipole_charge_density": "physical electronic response charge density rho_resp_charge(r) = -rho_resp_electron_number(r); nuclei cancel exactly",
+    "raw_moment": "M^(n)_{i1...in}(O) = integral rho_resp_charge(r) product_k (r_ik-O_ik) dr in atomic units",
+    "net_charge": "q = M^(0), expected numerically zero",
+    "dipole": "p_i = M^(1)_i",
+    "traceless_quadrupole": "Q_ij = 3 M^(2)_ij - delta_ij Tr[M^(2)]",
+    "traceless_octupole": "O_ijk = 5 M^(3)_ijk - delta_ij T_k - delta_ik T_j - delta_jk T_i, where T_i = sum_a M^(3)_iaa",
+    "potential": "V(R)=q/R + p_i R_i/R^3 + Q_ij R_i R_j/(2 R^5) + O_ijk R_i R_j R_k/(2 R^7) + ...",
+    "probe_coupling": "E=q Phi_W(O) + p_i d_i Phi_W(O) + Q_ij d_ij Phi_W(O)/6 + O_ijk d_ijk Phi_W(O)/30, using the complete frozen isolated-water QM electrostatic potential Phi_W",
+    "units": "q in e, p in e bohr, Q in e bohr^2, O in e bohr^3; energies in Hartree then kcal/mol"
+  },
+  "hierarchies": [
+    {"order": 1, "label": "exact_dipole", "terms": ["dipole"]},
+    {"order": 2, "label": "exact_dipole_quadrupole", "terms": ["dipole", "quadrupole"]},
+    {"order": 3, "label": "exact_dipole_quadrupole_octupole", "terms": ["dipole", "quadrupole", "octupole"]}
+  ],
+  "origins": [
+    "base_mass_weighted_center_of_mass",
+    "solute_mass_weighted_center_of_mass",
+    "base_center_of_nuclear_charge"
+  ],
+  "origin_reporting_rule": {
+    "all_origins_retained": true,
+    "casewise_selection": false,
+    "W4_energy": "For each hierarchy order, the displayed conservative control is the single panel-wide origin with the lowest equal-solute W4 energy MAE.",
+    "W4_torque": "For each hierarchy order, the displayed conservative control is the single panel-wide origin with the lowest W4 torque vector RMSE.",
+    "W4_orientation": "For each hierarchy order, the displayed conservative control is the single panel-wide origin with the lowest mean absolute-profile RMSE; the same selected origin is used for the secondary mean-centred profile metric.",
+    "W4_W12_energy": "For each hierarchy order, use the origin selected once by the primary W4 energy endpoint; do not reselect by rank or distance."
+  },
+  "numerics": {
+    "moments": "analytic PySCF AO overlap, r, rr and rrr integrals about each origin; no real-space fitting",
+    "dipole_coupling": "the existing exact-dipole evaluator and its two-point central gradient step of 1e-4 bohr, retained to reproduce the published baseline exactly",
+    "quadrupole_and_octupole_coupling": "second and third derivatives of the complete frozen-water QM ESP at the expansion origin from tensor-product seven-point central finite differences",
+    "primary_derivative_step_bohr": 0.01,
+    "derivative_check_steps_bohr": [0.0075, 0.015],
+    "derivative_stencil_offsets": [-3, -2, -1, 0, 1, 2, 3],
+    "derivative_validation_cases": [
+      "confirmatory__methane__base3__W4",
+      "confirmatory__2OJ9-original__base3__W4"
+    ],
+    "validation_case_rule": "fewest and most base atoms, chosen from numerical cost before hierarchy outcomes",
+    "torque_step_degrees": 0.1,
+    "orientation_grid": "unchanged 24 proper octahedral rotations with W4 oxygen fixed",
+    "force_repeated": false
+  },
+  "validation": {
+    "order1_reproduction": "Maximum absolute difference from every existing exact-dipole energy used here must be <=1e-10 kcal/mol because the same dipole coupling function is called.",
+    "charge_and_dipole_sign": "-Tr[D_resp S] must give physical response charge and -Tr[D_resp r] must reproduce the stored physical response dipole.",
+    "dipole_tolerance_debye": 1e-6,
+    "charge_tolerance_e": 1e-6,
+    "origin_translation": "Direct AO moments at all three origins must agree with exact raw-moment translation formulas through rank 3.",
+    "rotation_covariance": "For the existing independently recomputed rotated methane response density, p'=Rp, Q'=RQR^T and O'_{ijk}=R_ia R_jb R_kc O_abc are checked at the correspondingly rotated origin.",
+    "derivative_convergence": "Report hierarchy energy changes between the primary and both check steps for the two validation cases; no step is changed after comparative outcomes.",
+    "rigid_probe_reuse": "Use the existing converged torque and orientation variant density matrices without recomputation.",
+    "complete_accounting": "All ten W4 cases, all 60 W4 torque variants, all 240 W4 orientations and all 90 initial W4-W12 probes are required."
+  },
+  "source_extent_diagnostic": {
+    "purpose": "Diagnose whether a finite-order global expansion is evaluated outside a practically enclosing source radius; never assume convergence.",
+    "density_grid": "PySCF Becke grid level 4 on the base molecule",
+    "weight": "absolute physical response charge density |rho_resp_charge|",
+    "reported_radii": [0.9, 0.95, 0.99],
+    "additional_geometry": [
+      "maximum base-nuclear radius from each origin",
+      "oxygen and minimum probe-nuclear distance from each origin",
+      "probe distance divided by r90/r95/r99 and by maximum base-nuclear radius"
+    ],
+    "interpretation": "Gaussian basis densities have noncompact tails. A probe inside these practical source extents means the low-order hierarchy is a near-field truncation test, not a convergent exterior multipole expansion test."
+  },
+  "endpoints": {
+    "primary": [
+      "W4 response-coupling energy",
+      "W4 response torque about oxygen",
+      "W4 complete 24-rotation absolute orientation-energy profile"
+    ],
+    "secondary": [
+      "W4 mean-centred orientation profile",
+      "W4-W12 response-coupling energy by rank and distance"
+    ],
+    "methods": [
+      "QM response",
+      "GLIDER",
+      "MACE-POLAR-1-L",
+      "zero response",
+      "exact dipole at three origins",
+      "exact dipole+quadrupole at three origins",
+      "exact dipole+quadrupole+octupole at three origins"
+    ]
+  },
+  "statistics": {
+    "independent_unit": "solute",
+    "n_units": 10,
+    "aggregation": "equal-solute",
+    "bootstrap_resamples": 100000,
+    "bootstrap_rng": "NumPy PCG64",
+    "bootstrap_seed": 2026081902,
+    "interval": "percentile 95%",
+    "comparisons": "GLIDER minus MACE-POLAR-1-L and GLIDER minus each selected hierarchy control",
+    "wins": "fraction of solutes with lower error",
+    "sensitivities": ["equal-family weighting", "leave-one-solute-out"]
+  },
+  "planned_outputs": [
+    "multipole_moments.csv",
+    "source_extent_geometry.csv",
+    "W4_energy_all_origins.csv",
+    "W4_torque_all_origins.csv",
+    "W4_orientation_profiles_all_origins.csv",
+    "W4_W12_energy_all_origins.csv",
+    "selected_panel_origins.json",
+    "aggregate_statistics.csv",
+    "blocked_bootstrap_intervals.csv",
+    "equal_family_sensitivity.csv",
+    "leave_one_solute_out.csv",
+    "validation.json",
+    "multipole_hierarchy.pdf"
+  ],
+  "interpretation_boundary": {
+    "no_editorial_gate": true,
+    "allowed_if_higher_moments_close_gap": "The learned spatial response retains information representable in principle by higher global moments while predicting it directly from geometry without requiring QM multipoles.",
+    "allowed_if_gap_remains": "The tested low-order global multipole truncations do not recover all finite-distance response information in these configurations.",
+    "forbidden_claims": [
+      "multipoles fail in general",
+      "the full spatial field is uniquely necessary",
+      "higher-order or distributed multipoles are ruled out",
+      "this is a complete interaction energy, Hamiltonian, force field, dynamics method or thermodynamic observable"
+    ]
+  },
+  "change_control": "Immutable after the protocol-freeze commit. A numerical bug requires a dated amendment retaining the original rule, corrected rule, reason and affected outputs."
+}

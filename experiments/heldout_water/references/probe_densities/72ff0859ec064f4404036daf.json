@@ -1,0 +1,16 @@
+{
+  "case_id": "confirmatory__ethanol__base3",
+  "converged": true,
+  "density_file": "72ff0859ec064f4404036daf.npz",
+  "density_file_sha256": "7ef0e73ae1a0ca19db82ce917c0c53b12eef7b1b2fe1b690d40a791e7716f34c",
+  "method": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 SCF 1e-10 GPU4PySCF-1.8.1",
+  "molecule_id": "ethanol",
+  "oxygen_distance_A": 3.145479231440871,
+  "probe_id": "confirmatory__ethanol__base3__W11",
+  "probe_nao": 58,
+  "prospective_claim": false,
+  "runtime_seconds": 0.9008409039961407,
+  "scf_cycles": 9,
+  "source_water_index": 150,
+  "water_rank": 11
+}

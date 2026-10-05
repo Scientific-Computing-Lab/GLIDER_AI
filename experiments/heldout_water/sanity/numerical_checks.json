@@ -1,0 +1,46 @@
+{
+  "accounting": {
+    "W4_W12_in_base_response_or_model_input": false,
+    "all_10_bases_accounted": true,
+    "all_90_outer_probes_accounted": true,
+    "n_solutes": 10,
+    "n_source_families": 5,
+    "water_distances_monotone": true,
+    "water_indices_unique_within_case": true,
+    "water_ranks_complete": true
+  },
+  "coupling": {
+    "maximum_density_linearity_error_hartree": 2.692941356019496e-15,
+    "maximum_glider_direct_field_error_hartree_per_e": 1.214306433183765e-17,
+    "maximum_glider_site_gradient_energy_range_kcal_mol": 5.212665854514853e-10,
+    "maximum_mace_quadrature_energy_range_kcal_mol": 7.910806421040917e-08
+  },
+  "covariance": {
+    "case_id": "confirmatory__methane__base3",
+    "maximum_rotation_scalar_error_kcal_mol": 3.492331653566841e-05,
+    "maximum_translation_scalar_error_kcal_mol": 6.90900878175249e-10,
+    "response_dipole_rotation_max_abs_error_debye": 4.275292343924875e-05
+  },
+  "density_and_charge": {
+    "all_base_scf_converged": true,
+    "all_probe_scf_converged": true,
+    "all_variant_scf_converged": true,
+    "maximum_abs_response_electron_number": 6.666184531461951e-14,
+    "maximum_response_dipole_reconstruction_error_debye": 4.761664351704553e-08
+  },
+  "derivatives_and_rigid_geometry": {
+    "maximum_force_vector_change_across_check_steps_kcal_mol_angstrom": 1.309022058008878e-05,
+    "maximum_rigid_angle_error_degrees": 2.273736754432321e-13,
+    "maximum_rigid_bond_error_angstrom": 2.220446049250313e-15,
+    "maximum_torque_vector_change_across_check_steps_kcal_mol": 0.00019208238903081233
+  },
+  "model_inputs": {
+    "maximum_prediction_site_count_error": 0,
+    "outer_probe_atoms_in_model_input": 0
+  },
+  "units": {
+    "force": "kcal mol^-1 Angstrom^-1",
+    "hartree_to_kcal_mol": 627.5094740631,
+    "torque": "kcal mol^-1 (derivative with respect to radians)"
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "direction_index": 0,
+  "surface_clearance_angstrom": 15.0,
+  "oxygen_angstrom": [
+    22.528372263818333,
+    15.646659145488943,
+    32.87934419968386
+  ],
+  "accepted": 4,
+  "mode": "quantum",
+  "orientation_ids": [
+    "orientation_O_00",
+    "orientation_O_06",
+    "orientation_O_12",
+    "orientation_O_18"
+  ],
+  "energies": [
+    {
+      "orientation_id": "orientation_O_00",
+      "qm_energy_hartree": 4.614741757299548e-06,
+      "glider_energy_hartree": 4.437726774190057e-06,
+      "mace_polar_l_energy_hartree": 5.113779036010997e-06,
+      "exact_dipole_base_com_energy_hartree": 3.502799886775404e-06,
+      "exact_dipole_solute_com_energy_hartree": 3.5713511592415067e-06,
+      "exact_dipole_nuclear_center_energy_hartree": 3.5194652406503833e-06,
+      "zero_energy_hartree": 0.0,
+      "qm_energy_kcal_mol": 0.002895794173060065,
+      "glider_energy_kcal_mol": 0.00278471559410774,
+      "mace_polar_l_energy_kcal_mol": 0.0032089447933621672,
+      "exact_dipole_base_com_energy_kcal_mol": 0.00219804011469872,
+      "exact_dipole_solute_com_energy_kcal_mol": 0.0022410566876302804,
+      "exact_dipole_nuclear_center_energy_kcal_mol": 0.0022084977821438838,
+      "zero_energy_kcal_mol": 0.0
+    },
+    {
+      "orientation_id": "orientation_O_06",
+      "qm_energy_hartree": 5.340167703805184e-06,
+      "glider_energy_hartree": 5.309010535255515e-06,
+      "mace_polar_l_energy_hartree": 5.96515036331265e-06,
+      "exact_dipole_base_com_energy_hartree": 3.5789011207659477e-06,
+      "exact_dipole_solute_com_energy_hartree": 3.6260180939566072e-06,
+      "exact_dipole_nuclear_center_energy_hartree": 3.5896218058580195e-06,
+      "zero_energy_hartree": 0.0,
+      "qm_energy_kcal_mol": 0.0033510058272235434,
+      "glider_energy_kcal_mol": 0.0033314544087736453,
+      "mace_polar_l_energy_kcal_mol": 0.003743188367189631,
+      "exact_dipole_base_com_energy_kcal_mol": 0.002245794360015679,
+      "exact_dipole_solute_com_energy_kcal_mol": 0.002275360707081995,
+      "exact_dipole_nuclear_center_energy_kcal_mol": 0.002252521691479401,
+      "zero_energy_kcal_mol": 0.0
+    },
+    {
+      "orientation_id": "orientation_O_12",
+      "qm_energy_hartree": 3.3296045727206924e-06,
+      "glider_energy_hartree": 3.4520052981597903e-06,
+      "mace_polar_l_energy_hartree": 3.7966876762810745e-06,
+      "exact_dipole_base_com_energy_hartree": 1.7964640087920634e-06,
+      "exact_dipole_solute_com_energy_hartree": 1.8025587109877195e-06,
+      "exact_dipole_nuclear_center_energy_hartree": 1.7972241471604689e-06,
+      "zero_energy_hartree": 0.0,
+      "qm_energy_kcal_mol": 0.0020893584142660545,
+      "glider_energy_kcal_mol": 0.0021661660291112847,
+      "mace_polar_l_energy_kcal_mol": 0.0023824574869249905,
+      "exact_dipole_base_com_energy_kcal_mol": 0.001127298185330396,
+      "exact_dipole_solute_com_energy_kcal_mol": 0.0011311226686997633,
+      "exact_dipole_nuclear_center_energy_kcal_mol": 0.0011277751793581693,
+      "zero_energy_kcal_mol": 0.0
+    },
+    {
+      "orientation_id": "orientation_O_18",
+      "qm_energy_hartree": -3.0118170830846744e-06,
+      "glider_energy_hartree": -3.181416927960496e-06,
+      "mace_polar_l_energy_hartree": -3.671373323626149e-06,
+      "exact_dipole_base_com_energy_hartree": -1.863176774471517e-06,
+      "exact_dipole_solute_com_energy_hartree": -1.8814909901954626e-06,
+      "exact_dipole_nuclear_center_energy_hartree": -1.8686877989769119e-06,
+      "zero_energy_hartree": 0.0,
+      "qm_energy_kcal_mol": -0.001889943753780724,
+      "glider_energy_kcal_mol": -0.001996369263239934,
+      "mace_polar_l_energy_kcal_mol": -0.00230382154339794,
+      "exact_dipole_base_com_energy_kcal_mol": -0.0011691610778352048,
+      "exact_dipole_solute_com_energy_kcal_mol": -0.001180653421712016,
+      "exact_dipole_nuclear_center_energy_kcal_mol": -0.001172619297924134,
+      "zero_energy_kcal_mol": 0.0
+    }
+  ],
+  "torques": {
+    "qm_torque_kcal_mol": [
+      0.0010363414610324304,
+      -0.0021415879969642034,
+      -0.0021517828901678865
+    ],
+    "glider_torque_kcal_mol": [
+      0.0007750868488203366,
+      -0.002086044381013508,
+      -0.0021121241809588477
+    ],
+    "mace_polar_l_torque_kcal_mol": [
+      0.000707354866362073,
+      -0.002185393797101857,
+      -0.0022243710795497354
+    ],
+    "exact_dipole_base_com_torque_kcal_mol": [
+      0.0009020509548947613,
+      -0.00116433535800896,
+      -0.001190765488787132
+    ],
+    "exact_dipole_solute_com_torque_kcal_mol": [
+      0.0009205244172005241,
+      -0.0011694233038604313,
+      -0.0011949622272027641
+    ],
+    "exact_dipole_nuclear_center_torque_kcal_mol": [
+      0.0009041286030030803,
+      -0.0011636854002568932,
+      -0.0011900007198691353
+    ],
+    "zero_torque_kcal_mol": [
+      -0.0,
+      -0.0,
+      -0.0
+    ]
+  }
+}

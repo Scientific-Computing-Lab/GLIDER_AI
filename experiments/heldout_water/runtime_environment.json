@@ -1,0 +1,41 @@
+{
+  "date_utc": "2026-08-19",
+  "gpu": {
+    "model": "NVIDIA GeForce RTX 3090",
+    "driver_version": "535.309.01",
+    "memory_total_mib": 24576,
+    "observed_cuda_execution": {
+      "mace_feature_extraction": true,
+      "mace_cp_response_inference": true,
+      "gpu4pyscf_reference_scf": true,
+      "peak_sampled_sm_utilization_percent": 100,
+      "peak_sampled_memory_used_mib": 23412
+    }
+  },
+  "model_environment": {
+    "python_executable": "/home/galoren/freesolv_agent_benchmark/.venv_glider_cuda/bin/python",
+    "python_version": "3.11.15",
+    "torch_version": "2.8.0+cu126",
+    "torch_cuda_version": "12.6",
+    "torch_cuda_is_available": true,
+    "torch_device_name": "NVIDIA GeForce RTX 3090",
+    "mace_torch_version": "0.3.17",
+    "ase_version": "3.29.0",
+    "numpy_version": "2.4.6",
+    "scipy_version": "1.17.1",
+    "mace_compatibility_pythonpath": "/home/galoren/.cache/glider-downstream/mace0316"
+  },
+  "qm_environment": {
+    "python_executable": "/home/galoren/freesolv_agent_benchmark/GLIDER_H_FINAL/.venv_gpuqm/bin/python",
+    "python_version": "3.11.15",
+    "pyscf_version": "2.8.0",
+    "gpu4pyscf_version": "1.8.1",
+    "cupy_version": "14.1.1",
+    "numpy_version": "2.4.6",
+    "scipy_version": "1.17.1",
+    "tensor_contraction_engine": "CuPy"
+  },
+  "feature_batch_size": 2,
+  "scientific_design_changed_for_execution_environment": false,
+  "prospective_claim": false
+}

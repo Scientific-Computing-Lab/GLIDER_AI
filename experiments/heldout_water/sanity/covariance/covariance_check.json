@@ -1,0 +1,71 @@
+{
+  "case_id": "confirmatory__methane__base3",
+  "case_selection": "fewest base atoms, then lexical case ID; numerical-cost criterion only",
+  "methods": {
+    "exact_dipole_base_com": {
+      "original_kcal_mol": 0.07413110489032748,
+      "rotated_kcal_mol": 0.07411608450451032,
+      "rotation_abs_error_kcal_mol": 1.5020385817160475e-05,
+      "translated_kcal_mol": 0.07413110558122836,
+      "translation_abs_error_kcal_mol": 6.90900878175249e-10
+    },
+    "exact_dipole_nuclear_center": {
+      "original_kcal_mol": 0.07646064655406265,
+      "rotated_kcal_mol": 0.07644498966453733,
+      "rotation_abs_error_kcal_mol": 1.5656889525317297e-05,
+      "translated_kcal_mol": 0.07646064624401626,
+      "translation_abs_error_kcal_mol": 3.100463913385809e-10
+    },
+    "exact_dipole_solute_com": {
+      "original_kcal_mol": 0.02924099543022952,
+      "rotated_kcal_mol": 0.029206072113693853,
+      "rotation_abs_error_kcal_mol": 3.492331653566841e-05,
+      "translated_kcal_mol": 0.029240995434753208,
+      "translation_abs_error_kcal_mol": 4.523686980562047e-12
+    },
+    "glider": {
+      "original_kcal_mol": -0.007368798698394852,
+      "rotated_kcal_mol": -0.007368803676655075,
+      "rotation_abs_error_kcal_mol": 4.97826022332476e-09,
+      "translated_kcal_mol": -0.007368798673851637,
+      "translation_abs_error_kcal_mol": 2.4543214682815062e-11
+    },
+    "mace_polar_l": {
+      "original_kcal_mol": -0.38358350763549,
+      "rotated_kcal_mol": -0.3835835093067927,
+      "rotation_abs_error_kcal_mol": 1.671302707340061e-09,
+      "translated_kcal_mol": -0.38358350751585996,
+      "translation_abs_error_kcal_mol": 1.1963002810588819e-10
+    },
+    "qm": {
+      "original_kcal_mol": 0.007375354655593511,
+      "rotated_kcal_mol": 0.007365616237187665,
+      "rotation_abs_error_kcal_mol": 9.738418405846015e-06,
+      "translated_kcal_mol": 0.007375354655775332,
+      "translation_abs_error_kcal_mol": 1.8182157168755708e-13
+    },
+    "zero": {
+      "original_kcal_mol": 0.0,
+      "rotated_kcal_mol": 0.0,
+      "rotation_abs_error_kcal_mol": 0.0,
+      "translated_kcal_mol": 0.0,
+      "translation_abs_error_kcal_mol": 0.0
+    }
+  },
+  "probe_id": "confirmatory__methane__base3__W4",
+  "prospective_claim": false,
+  "response_dipole_rotation_max_abs_error_debye": 4.275292343924875e-05,
+  "rotated_density_file": "rotated_density_matrices.npz",
+  "rotated_density_sha256": "b4fb32a9703fa423aeda8c31b925a9c8d6161f5cccd29d71057acb7c302a3c93",
+  "rotation_axis": [
+    0.2672612419124244,
+    0.5345224838248488,
+    0.8017837257372732
+  ],
+  "rotation_degrees": 37.0,
+  "translation_angstrom": [
+    1.234,
+    -0.731,
+    0.419
+  ]
+}

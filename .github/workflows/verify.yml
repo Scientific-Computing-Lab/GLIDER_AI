@@ -1,9 +1,5 @@
-name: Verify companion
-
-on:
-  push:
-  pull_request:
-
+name: Verify scientific release
+on: [push, pull_request]
 jobs:
   integrity:
     runs-on: ubuntu-latest
@@ -12,11 +8,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Install lightweight verifier dependencies
-        run: python -m pip install -e .
-      - name: Verify source hashes, claims, guides and links
-        run: python scripts/verify_companion.py
-      - name: Verify frozen predictions and constraints
-        run: python scripts/reproduce/verify_release.py
-      - name: Recompute prospective summary statistics
-        run: python scripts/reproduce/recompute_statistics.py --root . --output /tmp/glider-statistics
+      - run: python -m pip install -e .
+      - run: python scripts/reproduce/verify_release.py
+      - run: python scripts/reproduce/score_experiment.py --experiment all
+      - run: python scripts/reproduce/recompute_statistics.py --output build/statistics
+      - run: python scripts/verify_companion.py

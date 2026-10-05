@@ -1,0 +1,52 @@
+{
+  "all_components_converged": true,
+  "attempts": [
+    {
+      "component": "full_complex",
+      "converged": true,
+      "cycles": 11,
+      "energy_hartree": -1055.0321187117065,
+      "level_shift": 0.0,
+      "runtime_seconds": 15.45321746499394,
+      "solver": "gpu_diis_160"
+    },
+    {
+      "component": "solute_with_perturbant_ghosts",
+      "converged": true,
+      "cycles": 13,
+      "energy_hartree": -998.4527525390912,
+      "level_shift": 0.0,
+      "runtime_seconds": 16.201038645012886,
+      "solver": "gpu_diis_160"
+    },
+    {
+      "component": "perturbant_with_solute_ghosts",
+      "converged": true,
+      "cycles": 9,
+      "energy_hartree": -56.60491105980687,
+      "level_shift": 0.0,
+      "runtime_seconds": 8.514817208008026,
+      "solver": "gpu_diis_160"
+    }
+  ],
+  "component_order": [
+    "full_complex",
+    "solute_with_perturbant_ghosts",
+    "perturbant_with_solute_ghosts"
+  ],
+  "config_id": "nonwater_environment__pros_polyfunctional_oxane__nh3__equilibrium_like",
+  "delta_dipole_norm_debye": 0.4083537851749115,
+  "delta_esp_rms_hartree_per_e": 0.003468992979675526,
+  "excluded_or_replaced": false,
+  "hamiltonian_or_reference_changed": false,
+  "method": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 SCF 1e-10",
+  "molecule_id": "pros_polyfunctional_oxane",
+  "observable_file": "67396a8e6c5626bad16c.npz",
+  "observable_sha256": "78c61c299010d4ab6bb01ad8b7203f2727dabbd2896eb4b44526e6cb450dd240",
+  "perturbant": "NH3",
+  "prediction_probe_file": "prospective_nonwater_environment/predictions/glider/67396a8e6c5626bad16c.npz",
+  "prediction_probe_sha256": "b6e268a9f0fc92f28e7ba2a2400f49fffb1837c1de0239cea994e5802cce1ec8",
+  "regime": "equilibrium_like",
+  "runtime_seconds": 40.16907331801485,
+  "used_recovery": false
+}

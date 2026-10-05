@@ -1,0 +1,17 @@
+{
+  "angle_discrepancy_degrees": 8.526512829121202e-14,
+  "bond_length_max_discrepancy_angstrom": 9.992007221626409e-16,
+  "case_id": "confirmatory__ethane__base3",
+  "converged": true,
+  "density_file": "e6092a49ac1d0e406123f348.npz",
+  "density_file_sha256": "05980f11574b0816f6336a56d4ab0dc52c949cf8394d7bfcd88989fee5c7f375",
+  "density_source": "independent_isolated_probe_SCF",
+  "molecule_id": "ethane",
+  "probe_id": "confirmatory__ethane__base3__W4",
+  "rotation_id": "O_15",
+  "runtime_seconds": 0.8956137470013346,
+  "scf_cycles": 9,
+  "variant_id": "orientation_O_15",
+  "variant_type": "orientation",
+  "water_rank": 4
+}

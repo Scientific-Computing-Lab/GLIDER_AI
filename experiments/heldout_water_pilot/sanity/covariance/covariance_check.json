@@ -1,0 +1,69 @@
+{
+  "case_id": "glider_h__MNSOL-CONN-BYEAHWXPCBROCE__liquid_00__base3_probe4",
+  "methods": {
+    "exact_dipole_base_com": {
+      "original_kcal_mol": -0.293971204663018,
+      "rotated_kcal_mol": -0.29398273648830714,
+      "rotation_abs_error_kcal_mol": 1.1531825289123887e-05,
+      "translated_kcal_mol": -0.2939712057918519,
+      "translation_abs_error_kcal_mol": 1.1288338597204017e-09
+    },
+    "exact_dipole_nuclear_center": {
+      "original_kcal_mol": -0.31928338501339504,
+      "rotated_kcal_mol": -0.3192952112133301,
+      "rotation_abs_error_kcal_mol": 1.1826199935061066e-05,
+      "translated_kcal_mol": -0.3192833818553598,
+      "translation_abs_error_kcal_mol": 3.158035222217137e-09
+    },
+    "exact_dipole_solute_com": {
+      "original_kcal_mol": -0.11435016217536796,
+      "rotated_kcal_mol": -0.11436029354510109,
+      "rotation_abs_error_kcal_mol": 1.0131369733129558e-05,
+      "translated_kcal_mol": -0.11435016025336608,
+      "translation_abs_error_kcal_mol": 1.9220018770971237e-09
+    },
+    "glider": {
+      "original_kcal_mol": -0.6412002189008643,
+      "rotated_kcal_mol": -0.6412001940151999,
+      "rotation_abs_error_kcal_mol": 2.4885664418050624e-08,
+      "translated_kcal_mol": -0.6412002194955472,
+      "translation_abs_error_kcal_mol": 5.946828585123853e-10
+    },
+    "mace_polar_l": {
+      "original_kcal_mol": -0.9115865656775161,
+      "rotated_kcal_mol": -0.9115865535878847,
+      "rotation_abs_error_kcal_mol": 1.2089631407086188e-08,
+      "translated_kcal_mol": -0.9115865658236698,
+      "translation_abs_error_kcal_mol": 1.4615375576454426e-10
+    },
+    "qm": {
+      "original_kcal_mol": -0.6101323550715364,
+      "rotated_kcal_mol": -0.6101451145651994,
+      "rotation_abs_error_kcal_mol": 1.2759493662972687e-05,
+      "translated_kcal_mol": -0.6101323550735666,
+      "translation_abs_error_kcal_mol": 2.0301538228295612e-12
+    },
+    "zero": {
+      "original_kcal_mol": 0.0,
+      "rotated_kcal_mol": 0.0,
+      "rotation_abs_error_kcal_mol": 0.0,
+      "translated_kcal_mol": 0.0,
+      "translation_abs_error_kcal_mol": 0.0
+    }
+  },
+  "prospective_claim": false,
+  "response_dipole_rotation_max_abs_error_debye": 2.9916246350875086e-05,
+  "rotated_density_file": "rotated_density_matrices.npz",
+  "rotated_density_sha256": "30aa6d6f92b6d7042f8586b8c497be38c4b4e07c0147fdeaa81dba05ec5ecbb7",
+  "rotation_axis": [
+    0.2672612419124244,
+    0.5345224838248488,
+    0.8017837257372732
+  ],
+  "rotation_degrees": 37.0,
+  "translation_angstrom": [
+    1.234,
+    -0.731,
+    0.419
+  ]
+}

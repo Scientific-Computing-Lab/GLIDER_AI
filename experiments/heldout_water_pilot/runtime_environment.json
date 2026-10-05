@@ -1,0 +1,29 @@
+{
+  "analysis_environment": {
+    "python": "../.venv/bin/python"
+  },
+  "gpu": {
+    "driver_version": "535.309.01",
+    "memory_total_mib": 24576,
+    "model": "NVIDIA GeForce RTX 3090"
+  },
+  "qm_environment": {
+    "ase": "3.23.0",
+    "cupy": "14.1.1",
+    "gpu4pyscf": "1.8.1",
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "path": "../GLIDER_H_FINAL/.venv_gpuqm/bin/python",
+    "pyscf": "2.8.0",
+    "python": "3.11.15",
+    "scipy": "1.17.1"
+  },
+  "recorded_gpu_component_seconds": {
+    "base_component_scfs": 672.8655076440191,
+    "initial_probe_scfs": 21.707632813981036,
+    "probe_variant_scfs": 313.99843978597346,
+    "total": 1008.5715802439736
+  },
+  "runtime_note": "Summed per-component GPU timings, not end-to-end wall time. Evaluation and analysis wall times were not instrumented and are not reconstructed from file timestamps."
+}
+

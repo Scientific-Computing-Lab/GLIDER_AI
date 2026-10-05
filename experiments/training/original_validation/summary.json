@@ -1,0 +1,12 @@
+{
+  "candidate": "mace-polar-m/head-C",
+  "energy_or_force_supervision_used": false,
+  "experimental_hydration_targets_accessed": false,
+  "molecule_mean_esp_nrmse": 0.30899693303504744,
+  "molecule_rms_dipole_vector_rmse_debye": 0.0654691258930649,
+  "n_chemistries": 14,
+  "n_configurations": 48,
+  "prediction_sha256": "1173a6ed89674b9b05c1fded87f38b2ec8e01ca9248dde3624bd14b45282edb6",
+  "prospective_identities_accessed": false,
+  "prospective_labels_accessed": false
+}

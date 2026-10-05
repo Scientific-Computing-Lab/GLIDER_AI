@@ -1,0 +1,266 @@
+{
+  "schema_version": 1,
+  "status": "frozen_before_confirmatory_QM_or_scoring",
+  "freeze_date_utc": "2026-08-19",
+  "prospective_claim": false,
+  "pilot_preservation": {
+    "repository_commit": "e83ec611a03ba7cfb1578ec1dc112713af641ed4",
+    "pilot_protocol_commit": "db534143",
+    "pilot_result_path": "results/posthoc_downstream_response",
+    "modified": false,
+    "included_in_confirmatory_statistics": false
+  },
+  "scientific_questions": [
+    "Does the held-out-water response-coupling advantage reproduce across new solutes?",
+    "Over what W4-W12 distance range is the full spatial response more useful than the exact response dipole?",
+    "Is response disproportionately important for torque and orientation modulation relative to its share of frozen electrostatic energy?"
+  ],
+  "scope_boundary": "Frozen Coulomb coupling of the fixed base electronic response to external quantum water probes; not a total interaction, force field, Hamiltonian, solvation energy, dynamics result, or thermodynamic result.",
+  "data_audit": {
+    "report": "results/posthoc_downstream_response_confirmatory/audit/WORKSPACE_LIQUID_AUDIT.md",
+    "machine_table": "results/posthoc_downstream_response_confirmatory/audit/workspace_liquid_audit.csv",
+    "eligible_new_solutes": 10,
+    "eligible_source_families": 5,
+    "selection_used_model_or_QM_outcomes": false
+  },
+  "cases": {
+    "registry": "results/posthoc_downstream_response_confirmatory/configurations/configurations.csv",
+    "registry_sha256": "47a94ea95ce8ba3259a676c47e68643446a756d32fc80f8b2ed770468672f10e",
+    "base_geometries": "results/posthoc_downstream_response_confirmatory/configurations/base_3water.extxyz",
+    "base_geometries_sha256": "5270abb561484010678c2d480b01c6e7fbb65fefa136f388c85826bc13617ee4",
+    "w4_geometries": "results/posthoc_downstream_response_confirmatory/configurations/heldout_w4.extxyz",
+    "w4_geometries_sha256": "d7f903955d0db90abfae12a4518bb6469f4b1aa792dc38648213e312ba417687",
+    "outer_probe_geometries": "results/posthoc_downstream_response_confirmatory/configurations/outer_w4_w12.extxyz",
+    "outer_probe_geometries_sha256": "1a3edda496cfa3238e8286633fe66750c0b590710446ab563d6efe05efe2f9de",
+    "outer_probe_registry": "results/posthoc_downstream_response_confirmatory/configurations/outer_probes.csv",
+    "outer_probe_registry_sha256": "b2b669c2c314f08e653f5eb81ead715f40e330aea6f3e3cef9b30bc077d813b2",
+    "n_solutes": 10,
+    "n_source_families": 5,
+    "snapshots_per_solute": 1,
+    "n_base_cases": 10,
+    "n_outer_probes": 90,
+    "solute_ids": [
+      "2OJ9-original",
+      "cdk2-1h1q",
+      "cdk2-28",
+      "ethane",
+      "ethanol",
+      "jnk1-17124",
+      "jnk1-18631",
+      "methane",
+      "tyk2-ejm_42",
+      "tyk2-ejm_45"
+    ],
+    "source_rule": "All distinct neutral GLIDER-element-compatible solutes with a completed explicit-water step4 equilibration state found in the full workspace and reachable Git history; one state per identity; repeated aliases/tests and the alternate 2OJ9 tautomer are collapsed, retaining lexicographically canonical non-test 2OJ9-original.",
+    "snapshot_rule": "The sole completed step4_equilibration OpenMM XML state pinned by source commit and SHA-256 for each retained solute.",
+    "base": "solute plus ranked W1, W2, W3",
+    "external_probes": "each of W4 through W12 from the same fixed parent state, excluded from all base response and model inputs",
+    "ordering": "minimum-image oxygen distance to nearest solute atom, then zero-based source-water index",
+    "parent_ions_and_virtual_sites": "Parent POT/CLA spectator ions and CHARMM DU/lone-pair virtual sites are excluded before ranking and enter neither the base nor probe.",
+    "performance_based_selection": false,
+    "response_supervision_identity_matches": 0
+  },
+  "models": {
+    "glider": {
+      "checkpoint": "checkpoints/glider_site_response_ensemble.pt",
+      "checkpoint_sha256": "a288afa285128e13cb7a05ba9459f1dce07e79b8638c6e272c2509ae68d7a288",
+      "encoder": "MACE-POLAR-1-M",
+      "encoder_checkpoint_sha256": "fab8b8713c832f31a2a853aaa22fd638be8a369cbf5095e6b3e982a18d10e93a",
+      "representation": "atom-centred point monopoles and vector dipoles",
+      "retrained": false
+    },
+    "mace_polar_1_l": {
+      "checkpoint": "/home/galoren/.cache/glider-downstream/MACE-POLAR-1-L.model",
+      "checkpoint_sha256": "9f65f8dc6ddaff1d631e299cb531376a7da5e68d1bef04f34a2d5073d5ef114b",
+      "representation": "official normalized Gaussian l<=1 multipole density",
+      "gaussian_sigma_angstrom": 1.5,
+      "retrained": false
+    },
+    "exact_qm_dipole_only": {
+      "dipole_source": "exact confirmatory base response density",
+      "primary_origin": "base_mass_weighted_center_of_mass",
+      "sensitivity_origins": [
+        "solute_mass_weighted_center_of_mass",
+        "base_center_of_nuclear_charge"
+      ],
+      "comparison_rule": "All origins are reported. Primary comparisons use base COM; a conservative best-origin comparison uses the one single origin with lowest equal-solute aggregate error, never a casewise oracle."
+    },
+    "zero_response": {
+      "energy_force_torque": 0
+    }
+  },
+  "qm": {
+    "method": "restricted DF-RKS omegaB97X-D3(BJ)",
+    "basis": "def2-TZVPD",
+    "grid_level": 4,
+    "scf_tolerance": 1e-10,
+    "max_cycles": 160,
+    "initial_guess": "minao",
+    "base_components": [
+      "full_base_complex",
+      "solute_with_W1_W2_W3_ghost_basis",
+      "W1_W2_W3_with_solute_ghost_basis"
+    ],
+    "response_density": "D_full - D_solute_ghost - D_waters_ghost",
+    "probe_density": "isolated external water at frozen geometry and the same method/basis/grid/tolerance, without base ghosts or polarization by the base",
+    "coupling_evaluator": "density-fitted AO Coulomb integrals; no surface interpolation"
+  },
+  "energy": {
+    "definition": "sum_A Z_A DeltaV_base(R_A) - integral rho_e_Wj(r) DeltaV_base(r) dr",
+    "methods": [
+      "QM",
+      "GLIDER",
+      "MACE-POLAR-1-L",
+      "exact-QM-dipole at three fixed origins",
+      "zero response"
+    ],
+    "glider_site_gradient_step_bohr": 0.0001,
+    "glider_site_gradient_check_steps_bohr": [5e-05, 0.0002],
+    "mace_probe_quadrature_level": 5,
+    "mace_probe_quadrature_check_levels": [4, 6]
+  },
+  "experiment_A": {
+    "primary_endpoints": [
+      "W4 response interaction energy",
+      "W4 response torque about oxygen",
+      "W4 24-orientation response-energy profile"
+    ],
+    "secondary_endpoint": "W4 rigid-translation response force",
+    "energy_metrics": [
+      "equal-solute MAE and RMSE",
+      "signed bias",
+      "Pearson r",
+      "Spearman rho",
+      "per-solute absolute error",
+      "fraction of solutes improved versus MACE and the conservative best fixed-origin dipole comparator"
+    ],
+    "torque_metrics": [
+      "vector RMSE",
+      "magnitude MAE and RMSE",
+      "cosine similarity",
+      "angular error when reference magnitude is at least 0.01 kcal/mol"
+    ],
+    "orientation_metrics": [
+      "absolute-profile RMSE",
+      "mean-centred profile RMSE",
+      "Pearson r",
+      "Spearman rho",
+      "modulation-amplitude error",
+      "discrete extremum geodesic error when QM modulation is at least 0.05 kcal/mol"
+    ]
+  },
+  "experiment_B": {
+    "probes": "W4 through W12 independently against the unchanged base response",
+    "primary_endpoints": [
+      "energy error and paired advantage by water rank",
+      "energy error and paired advantage by oxygen-to-nearest-solute distance",
+      "cumulative coupling error for sums W4 through Wk, k=4...12"
+    ],
+    "secondary_endpoint": "response torque by rank and distance when numerically meaningful",
+    "distance_analysis": "Raw distances, fixed 0.5-A bins spanning observed support, and a continuous distance plot; no bin boundary is chosen from outcomes.",
+    "transition_rule": "A distance/rank transition is described only where blocked uncertainty no longer supports a clear GLIDER advantage and the exact-dipole error approaches or improves upon GLIDER; no crossover is extrapolated beyond observed W4-W12 distances."
+  },
+  "experiment_C": {
+    "full_electrostatic_definition": "Frozen Coulomb interaction between the full base QM charge distribution and the frozen isolated-water QM charge distribution.",
+    "primary_quantities": [
+      "absolute W4 response energy divided by absolute W4 full frozen electrostatic energy",
+      "W4 response orientation modulation divided by W4 full-electrostatic orientation modulation",
+      "W4 response torque magnitude divided by W4 full-electrostatic torque magnitude"
+    ],
+    "secondary_quantities": [
+      "energy and torque fractions for W4-W12",
+      "raw numerator and denominator distributions"
+    ],
+    "denominator_rules": {
+      "absolute_energy_kcal_mol": 0.1,
+      "orientation_modulation_kcal_mol": 0.05,
+      "torque_magnitude_kcal_mol": 0.01,
+      "below_threshold": "ratio reported as undefined while raw values are retained"
+    }
+  },
+  "derivatives": {
+    "force": {
+      "definition": "negative rigid-translation derivative of response coupling with base fixed",
+      "method": "three-axis central finite difference",
+      "primary_step_angstrom": 0.002,
+      "convergence_steps_angstrom": [0.001, 0.004],
+      "angular_reference_threshold_kcal_mol_angstrom": 0.05
+    },
+    "torque": {
+      "origin": "external-water oxygen",
+      "method": "central rigid rotations about fixed laboratory x/y/z axes",
+      "primary_step_degrees": 0.1,
+      "convergence_steps_degrees": [0.05, 0.2],
+      "angular_reference_threshold_kcal_mol": 0.01
+    }
+  },
+  "orientation": {
+    "cases": "W4 for all ten confirmatory solutes",
+    "oxygen_fixed": true,
+    "rotation_grid": "24 proper rotations from scipy.spatial.transform.Rotation.create_group('O'), canonical-quaternion lexicographic order identical to the pilot",
+    "random_seed": null
+  },
+  "statistics": {
+    "independent_unit": "solute",
+    "primary_aggregation": "equal weight to ten solutes",
+    "source_family_sensitivity": "secondary five-family equal-weight and leave-one-family-out summaries",
+    "bootstrap_resamples": 100000,
+    "bootstrap_rng": "NumPy PCG64",
+    "bootstrap_seed": 2026081902,
+    "interval": "percentile 95%",
+    "leave_one_solute_out": true,
+    "pilot_pooling": "Pilot is shown separately; any all-data pooling is labelled exploratory"
+  },
+  "sanity_checks": {
+    "density_coupling_linearity": true,
+    "common_translation_angstrom": [1.234, -0.731, 0.419],
+    "common_rotation_degrees": 37,
+    "common_rotation_axis": [1, 2, 3],
+    "response_density_dipole_reconstruction": true,
+    "response_net_charge_tolerance_e": 1e-06,
+    "rigid_bond_tolerance_angstrom": 1e-10,
+    "rigid_angle_tolerance_degrees": 1e-10,
+    "all_10_bases_required": true,
+    "all_90_outer_probes_required": true,
+    "W4_to_W12_excluded_from_base_models_and_response": true,
+    "no_case_removed_for_convergence_or_performance": true
+  },
+  "units": {
+    "bohr_to_angstrom": 0.529177210903,
+    "hartree_to_kcal_mol": 627.5094740631,
+    "debye_per_e_bohr": 2.541746473,
+    "temperature_kelvin": 298.15,
+    "kBT_kcal_mol": 0.592484949
+  },
+  "planned_outputs": {
+    "raw_tables": [
+      "breadth_energy_per_solute.csv",
+      "breadth_force_per_solute.csv",
+      "breadth_torque_per_solute.csv",
+      "orientation_profiles.csv",
+      "range_energy_torque_per_probe.csv",
+      "cumulative_outer_environment.csv",
+      "directionality_fractions.csv"
+    ],
+    "aggregates": [
+      "breadth_statistics.csv",
+      "blocked_bootstrap_intervals.csv",
+      "leave_one_solute_out.csv",
+      "family_sensitivity.csv",
+      "rank_distance_statistics.csv"
+    ],
+    "figures": [
+      "confirmatory_breadth_energy",
+      "confirmatory_torque_orientation",
+      "spatial_range_rank_distance",
+      "cumulative_outer_environment",
+      "directionality_fraction"
+    ]
+  },
+  "interpretation": {
+    "editorial_pass_fail_gate": null,
+    "judgment_basis": "effect size, cross-solute consistency, molecule-blocked uncertainty, family sensitivity, numerical stability, and physical coherence",
+    "outcome_independence": "No endpoint, case, origin, distance bin, figure, or reporting choice may be changed after final outcomes are viewed except through a documented numerical-bug amendment."
+  },
+  "change_control": "Immutable after the protocol-freeze commit. Any numerical-bug correction requires a dated amendment preserving the old rule, new rule, reason, and affected outputs."
+}

@@ -1,0 +1,7 @@
+compound_id,canonical_isomeric_smiles,role,chemistry_reason,trajectory_source,hfe_used_for_selection
+MNSOL-CONN-HSFWRNGVRCDJHI,C#C,development,weakly_polar_nonpolar,prior_H0_target_independent_trajectory,false
+MNSOL-CONN-ZWEHNKRNPOVVGH,CCC(C)=O,development,oxygen_carbonyl,prior_H0_target_independent_trajectory,false
+MNSOL-CONN-XSQUKJJJFZCRTK,NC(N)=O,development,nitrogen_strong_hydrogen_bonding,prior_H0_target_independent_trajectory,false
+MNSOL-CONN-BYEAHWXPCBROCE,OC(C(F)(F)F)C(F)(F)F,development,halogenated_strong_hydrogen_bonding,prior_H0_target_independent_trajectory,false
+MNSOL-CONN-QKSKPIVNLNLAAV,ClCCSCCCl,development,sulfur_and_halogen,new_H0_target_independent_trajectory,false
+MNSOL-CONN-WRXCXOUDSPTXNX,Cn1cnc2c(N)ncnc21,development,nitrogen_rich_heteroaromatic,new_H0_target_independent_trajectory,false

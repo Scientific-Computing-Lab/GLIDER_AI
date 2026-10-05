@@ -1,0 +1,52 @@
+{
+  "all_components_converged": true,
+  "attempts": [
+    {
+      "component": "full_complex",
+      "converged": true,
+      "cycles": 11,
+      "energy_hartree": -1014.9044860327292,
+      "level_shift": 0.0,
+      "runtime_seconds": 17.062315217990545,
+      "solver": "gpu_diis_160"
+    },
+    {
+      "component": "solute_with_perturbant_ghosts",
+      "converged": true,
+      "cycles": 13,
+      "energy_hartree": -899.1357716628844,
+      "level_shift": 0.0,
+      "runtime_seconds": 17.164743760993588,
+      "solver": "gpu_diis_160"
+    },
+    {
+      "component": "perturbant_with_solute_ghosts",
+      "converged": true,
+      "cycles": 10,
+      "energy_hartree": -115.80908321069477,
+      "level_shift": 0.0,
+      "runtime_seconds": 10.43283435999183,
+      "solver": "gpu_diis_160"
+    }
+  ],
+  "component_order": [
+    "full_complex",
+    "solute_with_perturbant_ghosts",
+    "perturbant_with_solute_ghosts"
+  ],
+  "config_id": "nonwater_environment__pros_cyano_cyclic_acetal__ch3oh__equilibrium_like",
+  "delta_dipole_norm_debye": 0.9497263804117159,
+  "delta_esp_rms_hartree_per_e": 0.004642912699465165,
+  "excluded_or_replaced": false,
+  "hamiltonian_or_reference_changed": false,
+  "method": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 SCF 1e-10",
+  "molecule_id": "pros_cyano_cyclic_acetal",
+  "observable_file": "1001d9ea5dfa230209f1.npz",
+  "observable_sha256": "6d24b42297e04b5dbd6a38cc9844837b40b6337e1b8237efeb5977f19f0ec9d2",
+  "perturbant": "CH3OH",
+  "prediction_probe_file": "prospective_nonwater_environment/predictions/glider/1001d9ea5dfa230209f1.npz",
+  "prediction_probe_sha256": "098f10ab662f9f31531195fbcb8ec309c6531ad87894875771ac4256ba8f9dd0",
+  "regime": "equilibrium_like",
+  "runtime_seconds": 44.65989333897596,
+  "used_recovery": false
+}

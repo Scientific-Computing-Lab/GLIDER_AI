@@ -1,0 +1,52 @@
+{
+  "all_components_converged": true,
+  "attempts": [
+    {
+      "component": "full_complex",
+      "converged": true,
+      "cycles": 10,
+      "energy_hartree": -1032.0231795883014,
+      "level_shift": 0.0,
+      "runtime_seconds": 17.30440643998736,
+      "solver": "gpu_diis_160"
+    },
+    {
+      "component": "solute_with_perturbant_ghosts",
+      "converged": true,
+      "cycles": 13,
+      "energy_hartree": -975.4216475139708,
+      "level_shift": 0.0,
+      "runtime_seconds": 19.44287910500134,
+      "solver": "gpu_diis_160"
+    },
+    {
+      "component": "perturbant_with_solute_ghosts",
+      "converged": true,
+      "cycles": 9,
+      "energy_hartree": -56.60497574222232,
+      "level_shift": 0.0,
+      "runtime_seconds": 10.203820675000316,
+      "solver": "gpu_diis_160"
+    }
+  ],
+  "component_order": [
+    "full_complex",
+    "solute_with_perturbant_ghosts",
+    "perturbant_with_solute_ghosts"
+  ],
+  "config_id": "nonwater_environment__pros_sulfonyl_piperidinol__nh3__equilibrium_like",
+  "delta_dipole_norm_debye": 0.3900085842463222,
+  "delta_esp_rms_hartree_per_e": 0.0026860091289761154,
+  "excluded_or_replaced": false,
+  "hamiltonian_or_reference_changed": false,
+  "method": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 SCF 1e-10",
+  "molecule_id": "pros_sulfonyl_piperidinol",
+  "observable_file": "51f8898e775db49bdb7b.npz",
+  "observable_sha256": "900832e419d220f3702b227d2aee51e8bcc34712428baeb2d38d6efc4a4ec03e",
+  "perturbant": "NH3",
+  "prediction_probe_file": "prospective_nonwater_environment/predictions/glider/51f8898e775db49bdb7b.npz",
+  "prediction_probe_sha256": "09b95e2f652b5a1ca9bd9eccd68ede63d3b1c6f007fd37e19a2f5bae0da07af6",
+  "regime": "equilibrium_like",
+  "runtime_seconds": 46.951106219989015,
+  "used_recovery": false
+}

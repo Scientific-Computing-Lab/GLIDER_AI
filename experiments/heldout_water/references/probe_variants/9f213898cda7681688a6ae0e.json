@@ -1,0 +1,19 @@
+{
+  "angle_discrepancy_degrees": 1.4210854715202004e-14,
+  "axis": 2,
+  "bond_length_max_discrepancy_angstrom": 5.551115123125783e-16,
+  "case_id": "confirmatory__methane__base3",
+  "converged": true,
+  "density_file": "9f213898cda7681688a6ae0e.npz",
+  "density_file_sha256": "eaf4d53daa76051e9e086673d1bca46f85a0a7b4adb0459818042bb15ee373d0",
+  "density_source": "independent_isolated_probe_SCF",
+  "molecule_id": "methane",
+  "probe_id": "confirmatory__methane__base3__W9",
+  "runtime_seconds": 0.918980686001305,
+  "scf_cycles": 9,
+  "sign": 1,
+  "step_degrees": 0.1,
+  "variant_id": "torque_0.1deg_axis2_plus",
+  "variant_type": "torque_primary",
+  "water_rank": 9
+}

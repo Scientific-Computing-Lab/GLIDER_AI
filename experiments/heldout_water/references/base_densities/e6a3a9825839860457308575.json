@@ -1,0 +1,27 @@
+{
+  "all_outer_probes_in_base_response": false,
+  "base_nao": 1233,
+  "case_id": "confirmatory__jnk1-18631__base3",
+  "component_runtime_seconds": [
+    203.69379453900183,
+    144.42237616400234,
+    41.47610376300145
+  ],
+  "component_scf_cycles": [
+    16,
+    15,
+    10
+  ],
+  "converged": true,
+  "density_file": "e6a3a9825839860457308575.npz",
+  "density_file_sha256": "3f569443cc0281991a000398937594e65787a59e1060641c50d3494d11e951ad",
+  "family": "jnk1",
+  "method": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 SCF 1e-10 GPU4PySCF-1.8.1",
+  "molecule_id": "jnk1-18631",
+  "n_base_atoms": 51,
+  "n_solute_atoms": 42,
+  "prospective_claim": false,
+  "response_density_dipole_max_abs_discrepancy_debye": 1.4327230069000052e-08,
+  "response_electron_number": 6.66618453146195e-14,
+  "source_frame_index": 0
+}

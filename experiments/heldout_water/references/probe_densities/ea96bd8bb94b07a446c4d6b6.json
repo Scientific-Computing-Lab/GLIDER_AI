@@ -1,0 +1,16 @@
+{
+  "case_id": "confirmatory__methane__base3",
+  "converged": true,
+  "density_file": "ea96bd8bb94b07a446c4d6b6.npz",
+  "density_file_sha256": "ab43078fab313a7c1de72fae0cf8d0044b3b16d1beee56889636522e424b3f67",
+  "method": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 SCF 1e-10 GPU4PySCF-1.8.1",
+  "molecule_id": "methane",
+  "oxygen_distance_A": 3.241503847937843,
+  "probe_id": "confirmatory__methane__base3__W10",
+  "probe_nao": 58,
+  "prospective_claim": false,
+  "runtime_seconds": 0.8867577690034523,
+  "scf_cycles": 9,
+  "source_water_index": 454,
+  "water_rank": 10
+}

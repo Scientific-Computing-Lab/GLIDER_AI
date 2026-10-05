@@ -1,0 +1,12 @@
+{
+  "kBT_298.15K_kcal_mol": 0.592484949,
+  "median_abs_response_to_abs_full_frozen_electrostatic": 0.03928176671199919,
+  "n_cases": 24,
+  "reference_max_absolute_kcal_mol": 0.8615046593342288,
+  "reference_max_kcal_mol": 0.5156863464036741,
+  "reference_median_absolute_kcal_mol": 0.064524572379751,
+  "reference_min_kcal_mol": -0.8615046593342288,
+  "reference_rms_kcal_mol": 0.28712576890705555,
+  "reference_rms_over_kBT": 0.48461276424265004,
+  "response_to_full_ratio_interpretation": "secondary scale only; the denominator is not a total interaction energy"
+}

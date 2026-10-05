@@ -1,0 +1,34 @@
+{
+  "base_definition": "solute plus W1-W3",
+  "experiment": "post hoc held-out-water confirmatory breadth and spatial range",
+  "n_families": 5,
+  "n_outer_probes": 90,
+  "n_solutes": 10,
+  "ordering_rule": "minimum-image oxygen distance to nearest solute atom, then source water index",
+  "outputs": {
+    "base_3water.extxyz": "5270abb561484010678c2d480b01c6e7fbb65fefa136f388c85826bc13617ee4",
+    "base_plus_w4.extxyz": "2392dcdeeda2e37f01a9bec263e368a7908d485ad473f89195aa75c0d418c112",
+    "configurations.csv": "47a94ea95ce8ba3259a676c47e68643446a756d32fc80f8b2ed770468672f10e",
+    "heldout_w4.extxyz": "d7f903955d0db90abfae12a4518bb6469f4b1aa792dc38648213e312ba417687",
+    "outer_probes.csv": "b2b669c2c314f08e653f5eb81ead715f40e330aea6f3e3cef9b30bc077d813b2",
+    "outer_w4_w12.extxyz": "1a3edda496cfa3238e8286633fe66750c0b590710446ab563d6efe05efe2f9de",
+    "source_records.csv": "c1f84ec213f0fa93357e9f6d3b188b4e4809dd39cdf61d5a149f6e3531ce412f"
+  },
+  "performance_based_selection": false,
+  "prospective_claim": false,
+  "reference_or_prediction_values_accessed": false,
+  "snapshots_per_solute": 1,
+  "source_repository": "/home/galoren/freesolv_agent_benchmark/foundation/sources/repos/transformato",
+  "source_rule": "all unique eligible completed explicit-water equilibration states found in the workspace/Git audit; one 2OJ9 identity retained after alias/tautomer collapse",
+  "water_ranks": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "accounting": {
+    "W4_in_base_response": false,
+    "all_24_accounted": true,
+    "n_cases": 24,
+    "n_solutes": 6,
+    "performance_based_selection": false,
+    "snapshots_per_solute": [
+      4
+    ],
+    "water_distances_monotone": true,
+    "water_indices_unique_per_case": true
+  },
+  "coupling": {
+    "maximum_glider_direct_field_error_hartree_per_e": 1.3877787807814457e-17,
+    "maximum_glider_site_gradient_energy_range_kcal_mol": 1.0267592054358232e-09,
+    "maximum_linearity_error_hartree": 1.3049999449121774e-15,
+    "maximum_mace_quadrature_energy_range_kcal_mol": 3.844206897252178e-08,
+    "repeat_case_absolute_difference_kcal_mol": 1.5035191526346914e-05,
+    "repeat_case_original_energy_kcal_mol": -0.8615046593345917,
+    "repeat_case_recomputed_energy_kcal_mol": -0.8614896241430654
+  },
+  "covariance": {
+    "maximum_rotation_scalar_error_kcal_mol": 1.2759493662972687e-05,
+    "maximum_translation_scalar_error_kcal_mol": 3.158035222217137e-09,
+    "qm_rotation_scalar_error_kcal_mol": 1.2759493662972687e-05,
+    "rotation_degrees": 37.0,
+    "translation_vector_angstrom": [
+      1.234,
+      -0.731,
+      0.419
+    ]
+  },
+  "density_and_charge": {
+    "all_scf_converged": true,
+    "maximum_component_electron_count_error_e": 2.0889956431346945e-12,
+    "maximum_probe_electron_count_error_e": 3.907985046680551e-14,
+    "maximum_response_net_electron_count_e": 4.536995779069741e-14,
+    "maximum_stored_response_dipole_discrepancy_debye": 9.718984524065276e-06
+  },
+  "derivatives_and_rigid_geometry": {
+    "maximum_force_vector_change_across_check_steps_kcal_mol_angstrom": 2.74502889751536e-06,
+    "maximum_rigid_angle_error_degrees": 2.1316282072803006e-13,
+    "maximum_rigid_bond_error_angstrom": 3.219646771412954e-15,
+    "maximum_torque_vector_change_across_check_steps_kcal_mol": 8.278115814180399e-06
+  },
+  "files": {
+    "configuration_registry_sha256": "1afebf4e1d4b74b49a323630adb41bc4e7b1e6a95fe8184c43670ad705c2040b",
+    "independent_repeat_density_sha256": "c4e89cfec3dc3a8f2e96f9f7f55599a1d6ecc2d0efcac841d8f850b131b56895",
+    "protocol_sha256": "40f5f30036320af5910eb8c4f4cfe921a7a6a3ef5d69238a213fe5a009ffd6aa",
+    "scored_density_sha256": "225326bd63003c5b92adfeb723a3c1bd958875a5447a07947e0c1319abd3082b"
+  },
+  "model_inputs": {
+    "maximum_frozen_base_coordinate_self_error_angstrom": 0.0,
+    "maximum_site_count_error": 0,
+    "probe_atoms_in_model_input": 0
+  },
+  "units": {
+    "force_from_energy_derivative": "kcal mol^-1 Angstrom^-1",
+    "hartree_to_kcal_mol": 627.5094740631,
+    "torque_from_radian_derivative": "kcal mol^-1"
+  }
+}
