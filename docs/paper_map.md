@@ -17,10 +17,10 @@ This map uses the current camera-ready numbering after the author-review revisio
 | S6 | Comparator observable coverage | [CSV data](../figures/figure_S06/) | [panel_1](../experiments/panel_1/) |
 | S7 | Fragment-separation failure | [CSV data](../figures/figure_S07/) | [dissociation](../experiments/dissociation/) |
 | S8 | Complementary W4 error and distance diagnostics | [CSV data](../figures/figure_S08/) | [heldout_water](../experiments/heldout_water/) |
-| S9 | Torque across water rank | [CSV data](../figures/figure_S09/) | [heldout_water](../experiments/heldout_water/) |
-| S10 | Cumulative frozen coupling | [CSV data](../figures/figure_S10/) | [heldout_water](../experiments/heldout_water/) |
-| S11 | Response fraction of frozen electrostatics | [CSV data](../figures/figure_S11/) | [heldout_water](../experiments/heldout_water/) |
-| S12 | Exact multipole hierarchy | [CSV data](../figures/figure_S12/) | [heldout_water](../experiments/heldout_water/) |
+| S9 | Exact multipole hierarchy | [CSV data](../figures/figure_S09/) | [heldout_water](../experiments/heldout_water/) |
+| S10 | Torque across water rank | [CSV data](../figures/figure_S10/) | [heldout_water](../experiments/heldout_water/) |
+| S11 | Cumulative frozen coupling | [CSV data](../figures/figure_S11/) | [heldout_water](../experiments/heldout_water/) |
+| S12 | Response fraction of frozen electrostatics | [CSV data](../figures/figure_S12/) | [heldout_water](../experiments/heldout_water/) |
 | S13 | Quantum-water sweep and paired uncertainty | [CSV data](../figures/figure_S13/) | [distance_sweep](../experiments/distance_sweep/) |
 | S14 | Prediction chronology | See experiment / provenance | [panel_1](../experiments/panel_1/) |
 | S15 | Chemistry, regime and non-water transfer | [CSV data](../figures/figure_S15/) | [nonwater](../experiments/nonwater/) |
