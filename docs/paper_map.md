@@ -1,6 +1,14 @@
 # Paper → data
 
-This map uses the current camera-ready numbering after the author-review revision. The three prospective panels are [Panel I](../experiments/panel_1/), [Panel II](../experiments/panel_2/) and [Panel III](../experiments/panel_3/).
+This map uses the SIMBIOCHEM camera-ready numbering after the author-review
+revision. The three prospective panels are [Panel I](../experiments/panel_1/),
+[Panel II](../experiments/panel_2/) and [Panel III](../experiments/panel_3/).
+The updated journal manuscript numbers the external-probe sweep as
+**Supplementary Fig. S15, Table S19 and Section 14**. Its Fig. S15 draws
+from [workshop Fig. 5](../figures/figure_05/) and
+[workshop Fig. S13](../figures/figure_S13/), with complete inputs under
+[distance_sweep](../experiments/distance_sweep/). The S15 row below refers
+to the workshop's *different* transfer figure.
 
 | Figure | What it answers | Plot values | Raw experiment |
 |:--|:--|:--|:--|
