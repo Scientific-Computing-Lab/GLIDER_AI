@@ -92,6 +92,8 @@ python scripts/verify_companion.py
 
 This path needs no GPU or new quantum-chemistry calculation. It verifies file hashes and constraints and computes errors from the released reference and prediction arrays. Results go into `build/`, leaving the archive unchanged.
 
+The paired-interval command uses the manuscript's 100,000-resample seed (20260816), reproducing the primary prospective intervals plotted in the article. Earlier frozen-panel provenance records retain their original seed (20260814); they document the historical analysis rather than the article's harmonized intervals.
+
 For a physical calculation from density matrices, install `.[qm]` and run:
 
 ```bash

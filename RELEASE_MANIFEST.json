@@ -11509,7 +11509,7 @@
     "scripts/reproduce/build_figure_s07.py": "cbb9c5ee1f5a11af3c29e6f8bf20ca2e7a0dc62bf59ee5faf824bd7e70f2a7eb",
     "scripts/reproduce/fetch_mace_polar.py": "2b8d245428e0075ae9aafd06d3b8bb39d6a56726316fde13ebcccaf6c5f6fba1",
     "scripts/reproduce/recompute_coupling.py": "f74115b0b8fbd151a504248ccde877a1790cd385bcbc0248cc140cbdfb59a1ed",
-    "scripts/reproduce/recompute_statistics.py": "93336d6cab0308a96e7ea40620359ca0ecc7993cc8d3127d9efb14b1dad0808e",
+    "scripts/reproduce/recompute_statistics.py": "38c8e82d5b9385f325fed077aa11fad85db41027dea029ca6b089c7a0500b2d3",
     "scripts/reproduce/run_distance_sweep.py": "2ce19efd289a0dd64cdadd51e17f1ca947e8d8385ddc09675cce97f0f7b67379",
     "scripts/reproduce/score_experiment.py": "6ca44609882eaee2f9a6e9dd2dcb715327c3d2f709b4553550351d87be756588",
     "scripts/reproduce/verify_release.py": "b30c2f88c1b18d1ea38f3be34fb5e8634c51ac83f2969e3d96e54fa6f1817c20",

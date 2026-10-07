@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Recompute all prospective aggregate and paired statistics from frozen tables."""
+"""Recompute article statistics from frozen tables using the article's CI seed."""
 
 from __future__ import annotations
 
@@ -11,6 +11,10 @@ import numpy as np
 import pandas as pd
 
 from glider.metrics.core import aggregate, leave_one_molecule_out, paired_bootstrap
+
+# The manuscript's primary prospective intervals use this seed. Historical panel freeze
+# records retain their original 20260814 seed and are not rewritten here.
+BOOTSTRAP_SEED = 20260816
 
 
 def value(values: np.ndarray, root: bool) -> float:
@@ -46,6 +50,9 @@ def panel_statistics(
             second = joined[f"{column}_comparator"].to_numpy(dtype=float)
             observed_first, observed_second = value(first, root), value(second, root)
             influence = leave_one_molecule_out(first, second, root_after_mean=root)
+            ci_low, ci_high = paired_bootstrap(
+                first, second, root_after_mean=root, seed=BOOTSTRAP_SEED
+            )
             pairs.append(
                 {
                     "panel": panel,
@@ -58,8 +65,8 @@ def panel_statistics(
                     "delta_glider_minus_comparator": observed_first - observed_second,
                     "relative_error_reduction": 1.0 - observed_first / observed_second,
                     "glider_molecule_wins": int((first < second).sum()),
-                    "bootstrap_ci_low": paired_bootstrap(first, second, root_after_mean=root)[0],
-                    "bootstrap_ci_high": paired_bootstrap(first, second, root_after_mean=root)[1],
+                    "bootstrap_ci_low": ci_low,
+                    "bootstrap_ci_high": ci_high,
                     "median_molecule_glider": float(
                         np.sqrt(np.median(first)) if root else np.median(first)
                     ),
@@ -104,7 +111,7 @@ def main() -> None:
             "esp": "mean molecule-mean configuration response-ESP NRMSE",
             "dipole": "sqrt(mean molecule-mean Cartesian-component MSE)",
         },
-        "bootstrap": {"replicates": 100000, "seed": 20260814, "block": "molecule"},
+        "bootstrap": {"replicates": 100000, "seed": BOOTSTRAP_SEED, "block": "molecule"},
         "panels": summaries,
         "pairwise": pairs.to_dict(orient="records"),
         "leave_one_out_policy": "influence diagnostic only; never substitutes for frozen aggregate",
