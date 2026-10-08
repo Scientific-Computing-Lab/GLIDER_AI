@@ -5,7 +5,7 @@ Install the model dependencies and paper-matched MACE implementation:
 ```bash
 python -m pip install -e '.[model]'
 python -m pip install 'git+https://github.com/ACEsuit/mace.git@91df5a2032b24ff9e23e0dc7b9407dde0da6fb31'
-python scripts/reproduce/fetch_mace_polar.py
+python scripts/reproduce/fetch_mace_polar.py --output-dir third_party/checkpoints
 python scripts/benchmark/predict_geometry.py \
   --configurations examples/one_response_geometry.extxyz \
   --mace-polar-m third_party/checkpoints/MACE-POLAR-1-M.model \

@@ -37,10 +37,12 @@ MACE-POLAR-1-M supplies the frozen geometry features. An equal-weight average of
 | Question | Evidence | Read the data |
 |:--|:--|:--|
 | Does it transfer to new solutes? | **32–40% lower response-ESP error** across 56 solutes and 224 configurations. | [Panels I–III](experiments/README.md#prospective-solute-transfer) |
-| Does it extend beyond water? | **27.0% lower response-ESP error** on 12 solutes with three neutral neighbour species. | [Non-water environments](experiments/nonwater/) |
+| Does it extend beyond water? | The original 72 replacements include **62 repulsive QM contacts**. In a separate, prediction-frozen follow-up on **36 attractive constructed contacts**, GLIDER has **34.9% lower response-ESP error** than the unfitted polar baseline. | [Original audit](experiments/nonwater/) · [Contact follow-up](experiments/nonwater_contact/) |
 | Can another molecule use the field? | Held-out-water response-coupling MAE: **0.114 → 0.049 kcal mol⁻¹**. | [Held-out water](experiments/heldout_water/) |
 | What does the global branch add? | A matched ablation finds a **modest average benefit**, with differences across solutes. | [Global-branch control](experiments/global_branch/) |
 | Does the response vanish when the inducing fragments separate? | **No.** From 20 to 100 Å, GLIDER's predicted amplitude grows while its averaged frozen prior declines. | [Figure S7 data](figures/figure_S07/) · [Separation protocol](experiments/dissociation/) |
+
+The non-water follow-up was designed after the original geometry audit, not as a second preregistered test. Its geometry and predictions were fixed before the new QM references, and every selected case is released.
 
 <img src="assets/prospective-transfer.svg" alt="Three prospective panels show lower spatial-response error with GLIDER" width="100%">
 
@@ -64,7 +66,8 @@ experiments/
   panel_1/              12 solutes · 48 configurations
   panel_2/              24 solutes · 96 configurations
   panel_3/              20 solutes · 80 configurations
-  nonwater/             12 solutes · 72 environments
+  nonwater/             12 solutes · 72 unrelaxed replacement complexes
+  nonwater_contact/     12 solutes · 36 separately selected contacts
   liquid/               6 solutes · 24 liquid-derived clusters
   shell_size/           3 solutes · nested 1/3/6/12-water clusters
   heldout_water/        10 solutes · densities, probe states and coupling

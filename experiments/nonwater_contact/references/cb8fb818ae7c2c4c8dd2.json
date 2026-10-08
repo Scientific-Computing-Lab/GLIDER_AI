@@ -1,0 +1,60 @@
+{
+  "all_components_converged": true,
+  "attempts": [
+    {
+      "component": "full_complex",
+      "converged": true,
+      "cycles": 19,
+      "d3bj_correction_hartree": -0.02140748164103844,
+      "energy_hartree": -2971.827050472458,
+      "runtime_seconds": 24.12973937499919,
+      "solver": "cpu_diis_160"
+    },
+    {
+      "component": "solute_with_neighbour_ghosts",
+      "converged": true,
+      "cycles": 51,
+      "energy_hartree": -2855.518874125478,
+      "role": "initial_density_only; not a reported reference component",
+      "runtime_seconds": 20.008028959000512,
+      "solver": "isolated_atomic_projection_seed"
+    },
+    {
+      "component": "solute_with_neighbour_ghosts",
+      "converged": true,
+      "cycles": 36,
+      "d3bj_correction_hartree": -0.01594282753070351,
+      "energy_hartree": -2856.015527522649,
+      "runtime_seconds": 36.57302075000007,
+      "solver": "cpu_diis_160"
+    },
+    {
+      "component": "neighbour_with_solute_ghosts",
+      "converged": true,
+      "cycles": 10,
+      "d3bj_correction_hartree": -0.0032768854230106224,
+      "energy_hartree": -115.80836373704439,
+      "runtime_seconds": 12.141074167000625,
+      "solver": "cpu_diis_160"
+    }
+  ],
+  "component_energy_hartree": [
+    -2971.827050472458,
+    -2856.015527522649,
+    -115.80836373704439
+  ],
+  "component_order": [
+    "full_complex",
+    "solute_with_neighbour_ghosts",
+    "neighbour_with_solute_ghosts"
+  ],
+  "config_id": "nonwater_contact__prospective_diverse_02__ch3oh",
+  "cp_interaction_energy_kcal_mol": -1.9824359401330252,
+  "molecule_id": "prospective_diverse_02",
+  "observable_file": "cb8fb818ae7c2c4c8dd2.npz",
+  "observable_sha256": "b77059b952df7f4363a6d5125d4b4578544e6d0d92ff61f67fb2059a9e6edb4b",
+  "perturbant": "CH3OH",
+  "prediction_probe_sha256": "ac9ea1990be44ef51e19be6736ff462e6b10248cf4f41b207e89e44ea9139ba4",
+  "response_dipole_norm_debye": 0.41265888848108795,
+  "response_esp_rms_mEh_per_e": 2.087460273651486
+}

@@ -1,0 +1,51 @@
+{
+  "all_components_converged": true,
+  "attempts": [
+    {
+      "component": "full_complex",
+      "converged": true,
+      "cycles": 11,
+      "d3bj_correction_hartree": -0.04719655913463306,
+      "energy_hartree": -1185.4794540428443,
+      "runtime_seconds": 88.44969537500003,
+      "solver": "cpu_diis_160"
+    },
+    {
+      "component": "solute_with_neighbour_ghosts",
+      "converged": true,
+      "cycles": 14,
+      "d3bj_correction_hartree": -0.03732272961021047,
+      "energy_hartree": -1052.6133723593407,
+      "runtime_seconds": 96.80504691599998,
+      "solver": "cpu_diis_160"
+    },
+    {
+      "component": "neighbour_with_solute_ghosts",
+      "converged": true,
+      "cycles": 10,
+      "d3bj_correction_hartree": -0.005477365083698986,
+      "energy_hartree": -132.85675476434182,
+      "runtime_seconds": 75.169592792,
+      "solver": "cpu_diis_160"
+    }
+  ],
+  "component_energy_hartree": [
+    -1185.4794540428443,
+    -1052.6133723593407,
+    -132.85675476434182
+  ],
+  "component_order": [
+    "full_complex",
+    "solute_with_neighbour_ghosts",
+    "neighbour_with_solute_ghosts"
+  ],
+  "config_id": "nonwater_contact__pros_heteroaryl_amide__ch3cn",
+  "cp_interaction_energy_kcal_mol": -5.852730137239733,
+  "molecule_id": "pros_heteroaryl_amide",
+  "observable_file": "5288324d3b141aac79cd.npz",
+  "observable_sha256": "c31e529491c0a09a98d6e4f48feaa9ef3e44b6f9d315780c84ea00cfccfbd93d",
+  "perturbant": "CH3CN",
+  "prediction_probe_sha256": "e956e068a04bcf17b960d451fa112c68c10ed8400e53cdbb51437b6162bd1c9c",
+  "response_dipole_norm_debye": 0.19908090487648114,
+  "response_esp_rms_mEh_per_e": 1.6267553869648936
+}

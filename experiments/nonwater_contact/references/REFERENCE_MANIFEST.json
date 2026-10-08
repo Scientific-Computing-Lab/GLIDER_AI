@@ -1,0 +1,11 @@
+{
+  "ase_version": "3.29.0",
+  "dftd3_version": "1.6.0",
+  "geometry_sha256": "23db4c0e3f4dce30577b285f0fda4d2766d117a51764e6b966d28c814b42a2fc",
+  "method": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 SCF 1e-10",
+  "n_configurations": 36,
+  "prediction_freeze_sha256": "b9ff194fa062fa3ea8dca9dc1b68ca25c2e742e6b0d4cadea77a315af11309f1",
+  "pyscf_version": "2.14.0",
+  "reference_registry_sha256": "931c7cae5d7c6440bac3f6cd65064dc06f0657d96ffb6df226763890bd91bc83",
+  "status": "all 36 new response references computed after prediction freeze"
+}

@@ -21,6 +21,7 @@ figures = ["matplotlib>=3.8", "Pillow>=10"]
 model = ["torch>=2.3", "ase>=3.23"]
 test = ["pytest>=8"]
 qm = ["ase>=3.23", "pyscf>=2.8,<3", "scipy>=1.11"]
+contact = ["ase==3.29.0", "rdkit==2026.03.6", "pyscf>=2.8,<3", "dftd3==1.6.0"]
 
 [tool.hatch.build.targets.wheel]
 packages = ["glider"]

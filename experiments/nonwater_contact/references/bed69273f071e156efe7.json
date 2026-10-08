@@ -1,0 +1,51 @@
+{
+  "all_components_converged": true,
+  "attempts": [
+    {
+      "component": "full_complex",
+      "converged": true,
+      "cycles": 11,
+      "d3bj_correction_hartree": -0.04593232844315393,
+      "energy_hartree": -1490.1519882420994,
+      "runtime_seconds": 84.74454783299984,
+      "solver": "cpu_diis_160"
+    },
+    {
+      "component": "solute_with_neighbour_ghosts",
+      "converged": true,
+      "cycles": 14,
+      "d3bj_correction_hartree": -0.037186986194265394,
+      "energy_hartree": -1357.2860100911143,
+      "runtime_seconds": 97.7156910839999,
+      "solver": "cpu_diis_160"
+    },
+    {
+      "component": "neighbour_with_solute_ghosts",
+      "converged": true,
+      "cycles": 10,
+      "d3bj_correction_hartree": -0.005477436657563002,
+      "energy_hartree": -132.85674414202236,
+      "runtime_seconds": 62.19664020899995,
+      "solver": "cpu_diis_160"
+    }
+  ],
+  "component_energy_hartree": [
+    -1490.1519882420994,
+    -1357.2860100911143,
+    -132.85674414202236
+  ],
+  "component_order": [
+    "full_complex",
+    "solute_with_neighbour_ghosts",
+    "neighbour_with_solute_ghosts"
+  ],
+  "config_id": "nonwater_contact__pros_isoxazole_thioether__ch3cn",
+  "cp_interaction_energy_kcal_mol": -5.794428107072933,
+  "molecule_id": "pros_isoxazole_thioether",
+  "observable_file": "bed69273f071e156efe7.npz",
+  "observable_sha256": "eab64d83a0b2c6693b5a6c13b88a9f20a30f4713a94f289778ce097d063fe796",
+  "perturbant": "CH3CN",
+  "prediction_probe_sha256": "5aa783ef1d16e2710e435715fc888e5336c872a69e87d39de8cccb5af212bb2a",
+  "response_dipole_norm_debye": 1.0308739525865194,
+  "response_esp_rms_mEh_per_e": 2.983740949130064
+}

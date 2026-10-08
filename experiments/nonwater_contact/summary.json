@@ -1,0 +1,74 @@
+{
+  "case_wins_glider_vs_mace_l": 34,
+  "cp_interaction_energy_kcal_mol": {
+    "above_10_count": 0,
+    "maximum": -1.9824359401330252,
+    "median": -4.855506780999174,
+    "minimum": -8.360170756656963,
+    "positive_count": 0
+  },
+  "equal_solute_esp_nrmse_by_neighbour": {
+    "CH3CN": {
+      "glider": 0.592533902965399,
+      "mace_polar_l": 0.9888013718886136
+    },
+    "CH3OH": {
+      "glider": 0.4398534424508364,
+      "mace_polar_l": 0.6975458192680688
+    },
+    "NH3": {
+      "glider": 0.5818995960846232,
+      "mace_polar_l": 0.7934065488744514
+    },
+    "overall": {
+      "glider": 0.5380956471669528,
+      "mace_polar_l": 0.8265845800103778
+    }
+  },
+  "equal_solute_results": {
+    "glider": {
+      "dipole_rmse_D": 0.0743715995277557,
+      "esp_nrmse": 0.5380956471669528,
+      "esp_rmse_mEh_per_e": 1.0363505112709448
+    },
+    "mace_polar_l": {
+      "dipole_rmse_D": 0.07778639925638516,
+      "esp_nrmse": 0.8265845800103778,
+      "esp_rmse_mEh_per_e": 1.6058882859771029
+    }
+  },
+  "figure_effects_sha256": "3fa63465532387a80185fdc845da23b9a47eb7ddb2f040d3b41239fa87753951",
+  "glider_minus_mace_l_esp_nrmse": -0.2884889328434251,
+  "n_bootstrap": 100000,
+  "n_configurations": 36,
+  "n_neighbour_species": 3,
+  "n_solutes": 12,
+  "paired_95pct_solute_bootstrap_interval": [
+    -0.3754079855394197,
+    -0.20475946155043895
+  ],
+  "paired_95pct_solute_bootstrap_interval_by_neighbour": {
+    "CH3CN": [
+      -0.5237027621570364,
+      -0.27311737525539476
+    ],
+    "CH3OH": [
+      -0.3724307194016868,
+      -0.15094629438324472
+    ],
+    "NH3": [
+      -0.2855917770990511,
+      -0.13637297364290643
+    ],
+    "overall": [
+      -0.3754079855394197,
+      -0.20475946155043895
+    ]
+  },
+  "paired_bootstrap_seed": 20261007,
+  "prediction_freeze_sha256": "b9ff194fa062fa3ea8dca9dc1b68ca25c2e742e6b0d4cadea77a315af11309f1",
+  "reference_manifest_sha256": "aee956010b6d135ea2f1d962c406d47f3fc9401da4c7876dad238c9eda89c12a",
+  "result_sha256": "f60fd8a0b7a7e2060adee8b1f00d8065a320f6d204bdbceb22720da49cbe0a7f",
+  "solute_wins_glider_vs_mace_l": 12,
+  "status": "new QM labels scored after geometry and prediction freeze; separate post-critique follow-up"
+}

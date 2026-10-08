@@ -1,0 +1,51 @@
+{
+  "all_components_converged": true,
+  "attempts": [
+    {
+      "component": "full_complex",
+      "converged": true,
+      "cycles": 11,
+      "d3bj_correction_hartree": -0.04520877267787679,
+      "energy_hartree": -1131.3222124370693,
+      "runtime_seconds": 82.81404120800016,
+      "solver": "cpu_diis_160"
+    },
+    {
+      "component": "solute_with_neighbour_ghosts",
+      "converged": true,
+      "cycles": 13,
+      "d3bj_correction_hartree": -0.03592077361685008,
+      "energy_hartree": -998.4527904933794,
+      "runtime_seconds": 83.29260933399996,
+      "solver": "cpu_diis_160"
+    },
+    {
+      "component": "neighbour_with_solute_ghosts",
+      "converged": true,
+      "cycles": 10,
+      "d3bj_correction_hartree": -0.005476244800012503,
+      "energy_hartree": -132.85670540361812,
+      "runtime_seconds": 59.58661695799992,
+      "solver": "cpu_diis_160"
+    }
+  ],
+  "component_energy_hartree": [
+    -1131.3222124370693,
+    -998.4527904933794,
+    -132.85670540361812
+  ],
+  "component_order": [
+    "full_complex",
+    "solute_with_neighbour_ghosts",
+    "neighbour_with_solute_ghosts"
+  ],
+  "config_id": "nonwater_contact__pros_polyfunctional_oxane__ch3cn",
+  "cp_interaction_energy_kcal_mol": -7.979749371523864,
+  "molecule_id": "pros_polyfunctional_oxane",
+  "observable_file": "fbf4525cd4dd17a1d72e.npz",
+  "observable_sha256": "e344fcf5fcfe03e57578104f43109710dcb99432b3fc06a0a683d46ad136ada6",
+  "perturbant": "CH3CN",
+  "prediction_probe_sha256": "2d2f7ba68b935bd62f793ae7221bf4301fe7ef0cdc4f0b0c176c78a1be2061d1",
+  "response_dipole_norm_debye": 0.9127140223137065,
+  "response_esp_rms_mEh_per_e": 2.799617524606145
+}

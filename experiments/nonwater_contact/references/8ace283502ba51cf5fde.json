@@ -1,0 +1,51 @@
+{
+  "all_components_converged": true,
+  "attempts": [
+    {
+      "component": "full_complex",
+      "converged": true,
+      "cycles": 10,
+      "d3bj_correction_hartree": -0.05486606472025811,
+      "energy_hartree": -1108.2896777050596,
+      "runtime_seconds": 75.33028254100009,
+      "solver": "cpu_diis_160"
+    },
+    {
+      "component": "solute_with_neighbour_ghosts",
+      "converged": true,
+      "cycles": 13,
+      "d3bj_correction_hartree": -0.04547745326480445,
+      "energy_hartree": -975.4216714506077,
+      "runtime_seconds": 88.74695204199998,
+      "solver": "cpu_diis_160"
+    },
+    {
+      "component": "neighbour_with_solute_ghosts",
+      "converged": true,
+      "cycles": 10,
+      "d3bj_correction_hartree": -0.0054763419096050285,
+      "energy_hartree": -132.85672608274055,
+      "runtime_seconds": 61.2002117080001,
+      "solver": "cpu_diis_160"
+    }
+  ],
+  "component_energy_hartree": [
+    -1108.2896777050596,
+    -975.4216714506077,
+    -132.85672608274055
+  ],
+  "component_order": [
+    "full_complex",
+    "solute_with_neighbour_ghosts",
+    "neighbour_with_solute_ghosts"
+  ],
+  "config_id": "nonwater_contact__pros_sulfonyl_piperidinol__ch3cn",
+  "cp_interaction_energy_kcal_mol": -7.078414617200098,
+  "molecule_id": "pros_sulfonyl_piperidinol",
+  "observable_file": "8ace283502ba51cf5fde.npz",
+  "observable_sha256": "224498c89c40b72d48a10d7d1dfd8a9c013ee4784c28ac63029c88e671ddf302",
+  "perturbant": "CH3CN",
+  "prediction_probe_sha256": "96cf2a0f5585aa3cca26ac7a16aa820b5afe85b2592682b2dfbef4dd799a676d",
+  "response_dipole_norm_debye": 0.19546293563250863,
+  "response_esp_rms_mEh_per_e": 1.4677650741589408
+}

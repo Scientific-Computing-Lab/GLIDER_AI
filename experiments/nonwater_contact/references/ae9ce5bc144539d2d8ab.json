@@ -1,0 +1,60 @@
+{
+  "all_components_converged": true,
+  "attempts": [
+    {
+      "component": "full_complex",
+      "converged": true,
+      "cycles": 34,
+      "d3bj_correction_hartree": -0.019212517984039106,
+      "energy_hartree": -2912.2167580175173,
+      "runtime_seconds": 26.979767124999853,
+      "solver": "cpu_diis_160"
+    },
+    {
+      "component": "solute_with_neighbour_ghosts",
+      "converged": true,
+      "cycles": 51,
+      "energy_hartree": -2855.518874125478,
+      "role": "initial_density_only; not a reported reference component",
+      "runtime_seconds": 21.918792958000267,
+      "solver": "isolated_atomic_projection_seed"
+    },
+    {
+      "component": "solute_with_neighbour_ghosts",
+      "converged": true,
+      "cycles": 29,
+      "d3bj_correction_hartree": -0.01594282753070351,
+      "energy_hartree": -2855.6075071367786,
+      "runtime_seconds": 23.73015016699992,
+      "solver": "cpu_diis_160"
+    },
+    {
+      "component": "neighbour_with_solute_ghosts",
+      "converged": true,
+      "cycles": 9,
+      "d3bj_correction_hartree": -0.0012144641084772118,
+      "energy_hartree": -56.60452796810626,
+      "runtime_seconds": 8.478669957999955,
+      "solver": "cpu_diis_160"
+    }
+  ],
+  "component_energy_hartree": [
+    -2912.2167580175173,
+    -2855.6075071367786,
+    -56.60452796810626
+  ],
+  "component_order": [
+    "full_complex",
+    "solute_with_neighbour_ghosts",
+    "neighbour_with_solute_ghosts"
+  ],
+  "config_id": "nonwater_contact__prospective_diverse_02__nh3",
+  "cp_interaction_energy_kcal_mol": -2.963672421747073,
+  "molecule_id": "prospective_diverse_02",
+  "observable_file": "ae9ce5bc144539d2d8ab.npz",
+  "observable_sha256": "243cc6669ec24e646555ffd283f6244b5117630f3e358feaf509e7a5d0617f3a",
+  "perturbant": "NH3",
+  "prediction_probe_sha256": "e98e6c900aec3553625ac130e6c99055e0251a50e42bf0f431e3aaa2f7f96479",
+  "response_dipole_norm_debye": 0.5457251767968047,
+  "response_esp_rms_mEh_per_e": 2.8396642656010713
+}

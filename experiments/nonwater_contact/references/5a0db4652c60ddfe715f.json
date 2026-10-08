@@ -1,0 +1,69 @@
+{
+  "all_components_converged": true,
+  "attempts": [
+    {
+      "component": "full_complex",
+      "converged": true,
+      "cycles": 34,
+      "d3bj_correction_hartree": -0.022839554866301435,
+      "energy_hartree": -2988.4488981460013,
+      "runtime_seconds": 42.23103366699979,
+      "solver": "cpu_diis_160"
+    },
+    {
+      "component": "solute_with_neighbour_ghosts",
+      "converged": false,
+      "cycles": 160,
+      "d3bj_correction_hartree": -0.01594282753070351,
+      "energy_hartree": -2535.4931997116855,
+      "runtime_seconds": 184.19401854199987,
+      "solver": "cpu_diis_160"
+    },
+    {
+      "component": "solute_with_neighbour_ghosts",
+      "converged": false,
+      "cycles": 320,
+      "d3bj_correction_hartree": -0.01594282753070351,
+      "energy_hartree": -2534.5951935943667,
+      "runtime_seconds": 363.3532422500002,
+      "solver": "cpu_diis_320"
+    },
+    {
+      "component": "solute_with_neighbour_ghosts",
+      "converged": true,
+      "cycles": 0,
+      "d3bj_correction_hartree": -0.01594282753070351,
+      "energy_hartree": -2855.58748015352,
+      "runtime_seconds": 859.079491083,
+      "solver": "cpu_second_order_200"
+    },
+    {
+      "component": "neighbour_with_solute_ghosts",
+      "converged": true,
+      "cycles": 10,
+      "d3bj_correction_hartree": -0.00547926751699274,
+      "energy_hartree": -132.85674763823442,
+      "runtime_seconds": 15.414108375000069,
+      "solver": "cpu_diis_160"
+    }
+  ],
+  "component_energy_hartree": [
+    -2988.4488981460013,
+    -2855.58748015352,
+    -132.85674763823442
+  ],
+  "component_order": [
+    "full_complex",
+    "solute_with_neighbour_ghosts",
+    "neighbour_with_solute_ghosts"
+  ],
+  "config_id": "nonwater_contact__prospective_diverse_02__ch3cn",
+  "cp_interaction_energy_kcal_mol": -2.9306915367662527,
+  "molecule_id": "prospective_diverse_02",
+  "observable_file": "5a0db4652c60ddfe715f.npz",
+  "observable_sha256": "b3556dffd70c131cafe167a47a0a90837d4070dbf963a529a3a3ea5f43344cc0",
+  "perturbant": "CH3CN",
+  "prediction_probe_sha256": "32957bd31831826d66593d11d515ee5be5aa01ad55e3d09e74769dd805acf9e8",
+  "response_dipole_norm_debye": 0.6956822795947987,
+  "response_esp_rms_mEh_per_e": 1.5841345300796448
+}

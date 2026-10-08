@@ -1,0 +1,51 @@
+{
+  "all_components_converged": true,
+  "attempts": [
+    {
+      "component": "full_complex",
+      "converged": true,
+      "cycles": 9,
+      "d3bj_correction_hartree": -0.026861707755368364,
+      "energy_hartree": -440.75722315808474,
+      "runtime_seconds": 25.794214791999366,
+      "solver": "cpu_diis_160"
+    },
+    {
+      "component": "solute_with_neighbour_ghosts",
+      "converged": true,
+      "cycles": 10,
+      "d3bj_correction_hartree": -0.018739927345316914,
+      "energy_hartree": -307.8948751844534,
+      "runtime_seconds": 26.137796250000065,
+      "solver": "cpu_diis_160"
+    },
+    {
+      "component": "neighbour_with_solute_ghosts",
+      "converged": true,
+      "cycles": 10,
+      "d3bj_correction_hartree": -0.005477378047447411,
+      "energy_hartree": -132.8567338343154,
+      "runtime_seconds": 25.06836949999979,
+      "solver": "cpu_diis_160"
+    }
+  ],
+  "component_energy_hartree": [
+    -440.75722315808474,
+    -307.8948751844534,
+    -132.8567338343154
+  ],
+  "component_order": [
+    "full_complex",
+    "solute_with_neighbour_ghosts",
+    "neighbour_with_solute_ghosts"
+  ],
+  "config_id": "nonwater_contact__prospective_diverse_03__ch3cn",
+  "cp_interaction_energy_kcal_mol": -3.522925609115832,
+  "molecule_id": "prospective_diverse_03",
+  "observable_file": "4ec9d6164e281b976713.npz",
+  "observable_sha256": "03fd9d9d09979ce0840e4061813ee51370a0e807d7ee655b508e8b3e8718dce9",
+  "perturbant": "CH3CN",
+  "prediction_probe_sha256": "f1d559bf97da0f4ea8583e1f929176be70b175053601a5e4979dad313a49bc15",
+  "response_dipole_norm_debye": 0.27836092899905546,
+  "response_esp_rms_mEh_per_e": 1.3491637799103249
+}

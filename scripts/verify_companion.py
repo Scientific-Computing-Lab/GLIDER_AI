@@ -88,7 +88,7 @@ def main():
     check_headlines()
     check_links()
     assert not (ROOT/".github/README.md").exists()
-    for name in ['training','panel_1','panel_2','panel_3','nonwater','liquid','shell_size','heldout_water','heldout_water_pilot','distance_sweep','global_branch','dissociation','dissociation_extended']:
+    for name in ['training','panel_1','panel_2','panel_3','nonwater','nonwater_contact','liquid','shell_size','heldout_water','heldout_water_pilot','distance_sweep','global_branch','dissociation','dissociation_extended']:
         assert (ROOT/'experiments'/name/'README.md').is_file(),name
     print('PASS: experiment guides, active local links, headline values and visual gallery')
 if __name__=='__main__':main()

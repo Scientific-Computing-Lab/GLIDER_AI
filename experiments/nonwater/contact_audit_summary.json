@@ -1,0 +1,77 @@
+{
+  "all": {
+    "case_wins_glider_vs_mace_l": 69,
+    "configurations": 72,
+    "equal_solute_esp_nrmse": {
+      "glider": 0.450371053714298,
+      "mace_polar_l": 0.6171702022198176,
+      "mace_polar_m": 0.6061446003965856
+    },
+    "relative_reduction_vs_mace_l": 0.27026442285382846,
+    "solutes": 12
+  },
+  "cp_energy_kcal_mol": {
+    "above_10_count": 52,
+    "maximum": 166.15548816738604,
+    "median": 23.708597230810057,
+    "minimum": -3.1680948166160054,
+    "positive_count": 62
+  },
+  "descriptive_post_hoc_subsets": {
+    "attractive_cp_energy_below_0": {
+      "case_wins_glider_vs_mace_l": 10,
+      "configurations": 10,
+      "equal_solute_esp_nrmse": {
+        "glider": 0.49290053008224033,
+        "mace_polar_l": 0.6848015866325458,
+        "mace_polar_m": 0.7682670454342007
+      },
+      "relative_reduction_vs_mace_l": 0.2802286973281747,
+      "solutes": 2
+    },
+    "cp_energy_above_10": {
+      "case_wins_glider_vs_mace_l": 51,
+      "configurations": 52,
+      "equal_solute_esp_nrmse": {
+        "glider": 0.43245532796405023,
+        "mace_polar_l": 0.5943339796488413,
+        "mace_polar_m": 0.5729003487170886
+      },
+      "relative_reduction_vs_mace_l": 0.27236984124723285,
+      "solutes": 11
+    },
+    "cp_energy_below_10": {
+      "case_wins_glider_vs_mace_l": 18,
+      "configurations": 20,
+      "equal_solute_esp_nrmse": {
+        "glider": 0.46274756325124605,
+        "mace_polar_l": 0.5863383085055516,
+        "mace_polar_m": 0.6113315037622744
+      },
+      "relative_reduction_vs_mace_l": 0.21078401916005007,
+      "solutes": 5
+    }
+  },
+  "energy_definition": "(E_complex - E_solute+ghosts - E_perturbant+ghosts) * 627.509474",
+  "minimum_interfragment_covalent_ratio": {
+    "median": 1.5771253546768067,
+    "minimum": 0.8895408825568503
+  },
+  "minimum_interfragment_distance_A": {
+    "median": 1.9851575280014928,
+    "minimum": 0.9073317002079871
+  },
+  "minimum_interfragment_vdw_ratio_ase": {
+    "below_0_8_count": 58,
+    "below_1_count": 69,
+    "median": 0.680418016248304,
+    "minimum": 0.32993879971327283
+  },
+  "source_sha256": {
+    "geometry_registry": "b2176641b121ed25c772b947fcb777ba6ff8eed11448648bc8f2bfacada78c55",
+    "reference_registry": "8b7af5e04f9f32ed068aa4636d87684b6727ae4ee137f1e0871d077d3119f8bf",
+    "scores": "4030629a4db55063f5033c4eb324a1397113d5c7263ecac6d9d942becefd9b78"
+  },
+  "status": "post hoc geometry diagnostic; the frozen 72-case panel is unchanged",
+  "vdw_radius_source": "ASE 3.29.0 ase.data.vdw_radii; ratio is shortest interfragment distance divided by the corresponding sum of radii"
+}

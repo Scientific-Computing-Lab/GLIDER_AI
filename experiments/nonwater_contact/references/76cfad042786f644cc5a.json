@@ -1,0 +1,51 @@
+{
+  "all_components_converged": true,
+  "attempts": [
+    {
+      "component": "full_complex",
+      "converged": true,
+      "cycles": 10,
+      "d3bj_correction_hartree": -0.03515809204927575,
+      "energy_hartree": -1069.9274726606423,
+      "runtime_seconds": 54.53927975008264,
+      "solver": "cpu_diis_160"
+    },
+    {
+      "component": "solute_with_neighbour_ghosts",
+      "converged": true,
+      "cycles": 14,
+      "d3bj_correction_hartree": -0.031985013993979246,
+      "energy_hartree": -1013.3146762175962,
+      "runtime_seconds": 60.27887012530118,
+      "solver": "cpu_diis_160"
+    },
+    {
+      "component": "neighbour_with_solute_ghosts",
+      "converged": true,
+      "cycles": 9,
+      "d3bj_correction_hartree": -0.0012145113546029596,
+      "energy_hartree": -56.60463159106576,
+      "runtime_seconds": 39.16927466727793,
+      "solver": "cpu_diis_160"
+    }
+  ],
+  "component_energy_hartree": [
+    -1069.9274726606423,
+    -1013.3146762175962,
+    -56.60463159106576
+  ],
+  "component_order": [
+    "full_complex",
+    "solute_with_neighbour_ghosts",
+    "neighbour_with_solute_ghosts"
+  ],
+  "config_id": "nonwater_contact__pros_halogen_oxazinanone__nh3",
+  "cp_interaction_energy_kcal_mol": -5.12352197142162,
+  "molecule_id": "pros_halogen_oxazinanone",
+  "observable_file": "76cfad042786f644cc5a.npz",
+  "observable_sha256": "2736d5fe0ac823dde0c52c3d0942fb97ae9a2f828f22e0d8937ae37f19a4edea",
+  "perturbant": "NH3",
+  "prediction_probe_sha256": "576dfdfdf023f69ee694c5013cc46d8a36a2aa57987594e14bb117ab1eb48b38",
+  "response_dipole_norm_debye": 0.5608356464507673,
+  "response_esp_rms_mEh_per_e": 2.0675750713747907
+}

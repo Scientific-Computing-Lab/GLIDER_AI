@@ -1,7 +1,7 @@
 # Paper → data
 
-This map uses the SIMBIOCHEM camera-ready numbering after the author-review
-revision. The three prospective panels are [Panel I](../experiments/panel_1/),
+The figure-numbered gallery below uses the SIMBIOCHEM camera-ready numbering
+after the author-review revision. The three prospective panels are [Panel I](../experiments/panel_1/),
 [Panel II](../experiments/panel_2/) and [Panel III](../experiments/panel_3/).
 The updated journal manuscript numbers the external-probe sweep as
 **Supplementary Fig. S15, Table S19 and Section 14**. Its Fig. S15 draws
@@ -9,6 +9,33 @@ from [workshop Fig. 5](../figures/figure_05/) and
 [workshop Fig. S13](../figures/figure_S13/), with complete inputs under
 [distance_sweep](../experiments/distance_sweep/). The S15 row below refers
 to the workshop's *different* transfer figure.
+The journal manuscript's **Supplementary Fig. S16** is the subsequent
+[non-water geometry audit](../experiments/nonwater/contact_audit.svg), sourced
+from stored counterpoise component energies. It does not replace the original
+72-case response score.
+
+## Expanded journal manuscript
+
+| Journal display | Scientific question | Released experiment |
+|:--|:--|:--|
+| Fig. 1 | Why a response field contains more spatial information than a dipole | [Panel II example](../experiments/panel_2/) and [response definition](../docs/model.md) |
+| Fig. 2 | What the constrained model learns from 48 configurations | [Training and development](../experiments/training/) |
+| Fig. 3 | How the three prospective panels were selected and frozen | [Panel I](../experiments/panel_1/) · [II](../experiments/panel_2/) · [III](../experiments/panel_3/) |
+| Fig. 4 | Prospective response-ESP and dipole accuracy | [Panels I–III](../experiments/) |
+| Fig. 5a,c,d | Chemistry, regime and per-solute breadth of the water-panel result | [Panels I–III](../experiments/) |
+| Fig. 5b | Non-water contact follow-up, one geometry per solute and neighbour species | [Frozen 36-case follow-up](../experiments/nonwater_contact/) |
+| Fig. 6 | Liquid-derived local environments | [Liquid bridge](../experiments/liquid/) |
+| Fig. 7 | Frozen coupling to a held-out water | [Held-out water](../experiments/heldout_water/) |
+| Fig. 8 | Nested water size and inducing-fragment separation | [Shell size](../experiments/shell_size/) · [dissociation](../experiments/dissociation/) · [50–100 Å extension](../experiments/dissociation_extended/) |
+| Supplementary Fig. S16 | Why the original 72 replacements were a geometry stress test | [Complete 72-case audit](../experiments/nonwater/) |
+| Supplementary Fig. S17 | Contact energies and all case scores in the corrected follow-up | [Frozen 36-case follow-up](../experiments/nonwater_contact/) |
+
+The original 72-case non-water scores remain in journal Supplementary Tables
+S8–S9 and the [original experiment folder](../experiments/nonwater/). The
+follow-up was designed after that panel's geometry audit and does not replace
+its predeclared result.
+
+## SIMBIOCHEM camera-ready gallery
 
 | Figure | What it answers | Plot values | Raw experiment |
 |:--|:--|:--|:--|
@@ -31,15 +58,15 @@ to the workshop's *different* transfer figure.
 | S12 | Response fraction of frozen electrostatics | [CSV data](../figures/figure_S12/) | [heldout_water](../experiments/heldout_water/) |
 | S13 | Quantum-water sweep and paired uncertainty | [CSV data](../figures/figure_S13/) | [distance_sweep](../experiments/distance_sweep/) |
 | S14 | Prediction chronology | See experiment / provenance | [panel_1](../experiments/panel_1/) |
-| S15 | Chemistry, regime and non-water transfer | [CSV data](../figures/figure_S15/) | [nonwater](../experiments/nonwater/) |
+| S15 | Chemistry, regime and non-water replacement-geometry challenge | [CSV data](../figures/figure_S15/) | [nonwater](../experiments/nonwater/) |
 | S16 | Liquid-derived local environments | [CSV data](../figures/figure_S16/) | [liquid](../experiments/liquid/) |
 | S17 | Size and representation controls | [CSV data](../figures/figure_S17/) | [shell_size](../experiments/shell_size/) |
 
-## Tables
+## SIMBIOCHEM camera-ready tables
 
 | Table | Contents | Data and definitions |
 |:--|:--|:--|
-| 1 | Extension summaries | [nonwater](../experiments/nonwater/) |
+| 1 | Extension summaries, including the frozen non-water challenge | [nonwater](../experiments/nonwater/) |
 | S1 | Absolute response scale | [panel_1](../experiments/panel_1/) |
 | S2 | Original 48 training configurations | [training](../experiments/training/) |
 | S3 | Prospective identities | [panel_3](../experiments/panel_3/) |

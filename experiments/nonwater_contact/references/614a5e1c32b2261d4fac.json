@@ -1,0 +1,51 @@
+{
+  "all_components_converged": true,
+  "attempts": [
+    {
+      "component": "full_complex",
+      "converged": true,
+      "cycles": 11,
+      "d3bj_correction_hartree": -0.04334454613053018,
+      "energy_hartree": -1032.002282032626,
+      "runtime_seconds": 75.93003112496808,
+      "solver": "cpu_diis_160"
+    },
+    {
+      "component": "solute_with_neighbour_ghosts",
+      "converged": true,
+      "cycles": 13,
+      "d3bj_correction_hartree": -0.03417474062207251,
+      "energy_hartree": -899.1357508796896,
+      "runtime_seconds": 86.58883025031537,
+      "solver": "cpu_diis_160"
+    },
+    {
+      "component": "neighbour_with_solute_ghosts",
+      "converged": true,
+      "cycles": 10,
+      "d3bj_correction_hartree": -0.005476231915934911,
+      "energy_hartree": -132.85672477094343,
+      "runtime_seconds": 57.51440916582942,
+      "solver": "cpu_diis_160"
+    }
+  ],
+  "component_energy_hartree": [
+    -1032.002282032626,
+    -899.1357508796896,
+    -132.85672477094343
+  ],
+  "component_order": [
+    "full_complex",
+    "solute_with_neighbour_ghosts",
+    "neighbour_with_solute_ghosts"
+  ],
+  "config_id": "nonwater_contact__pros_cyano_cyclic_acetal__ch3cn",
+  "cp_interaction_energy_kcal_mol": -6.1535976062716795,
+  "molecule_id": "pros_cyano_cyclic_acetal",
+  "observable_file": "614a5e1c32b2261d4fac.npz",
+  "observable_sha256": "6a143365e4b186f3ed003733d62635e1924177b9381a63034882a4f2163edc9d",
+  "perturbant": "CH3CN",
+  "prediction_probe_sha256": "5cf9daf61e2af9593f38ec8e37cab5994fd16d0dfe2d189f023ce5a0886e3445",
+  "response_dipole_norm_debye": 0.31280812242695305,
+  "response_esp_rms_mEh_per_e": 1.7349983910395177
+}

@@ -1,0 +1,51 @@
+{
+  "all_components_converged": true,
+  "attempts": [
+    {
+      "component": "full_complex",
+      "converged": true,
+      "cycles": 11,
+      "d3bj_correction_hartree": -0.045906973288124035,
+      "energy_hartree": -1047.845882131284,
+      "runtime_seconds": 80.72641308326274,
+      "solver": "cpu_diis_160"
+    },
+    {
+      "component": "solute_with_neighbour_ghosts",
+      "converged": true,
+      "cycles": 14,
+      "d3bj_correction_hartree": -0.04198811942562273,
+      "energy_hartree": -991.2366856099594,
+      "runtime_seconds": 113.49640570906922,
+      "solver": "cpu_diis_160"
+    },
+    {
+      "component": "neighbour_with_solute_ghosts",
+      "converged": true,
+      "cycles": 9,
+      "d3bj_correction_hartree": -0.0012144315100055775,
+      "energy_hartree": -56.604695262384375,
+      "runtime_seconds": 55.34923854190856,
+      "solver": "cpu_diis_160"
+    }
+  ],
+  "component_energy_hartree": [
+    -1047.845882131284,
+    -991.2366856099594,
+    -56.604695262384375
+  ],
+  "component_order": [
+    "full_complex",
+    "solute_with_neighbour_ghosts",
+    "neighbour_with_solute_ghosts"
+  ],
+  "config_id": "nonwater_contact__pros_azaaryl_sulfoxide__nh3",
+  "cp_interaction_energy_kcal_mol": -2.824582629939646,
+  "molecule_id": "pros_azaaryl_sulfoxide",
+  "observable_file": "8b8dff48e671d2f4ec59.npz",
+  "observable_sha256": "5973a6529c70bfd9ba884958e23894290e837e15efed967939cccd58173a46dd",
+  "perturbant": "NH3",
+  "prediction_probe_sha256": "c265d2887fdffee9a7e9126ecf0fdb1cb20f1a3e7944f7834fb51a2febc7b4d7",
+  "response_dipole_norm_debye": 0.4940982986621672,
+  "response_esp_rms_mEh_per_e": 1.4979769428748446
+}

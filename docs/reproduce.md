@@ -21,6 +21,33 @@ python scripts/reproduce/recompute_statistics.py --output build/statistics
 
 The first command reconstructs per-configuration and equal-solute response errors for the three panels, non-water, liquid and shell-size tests. The second computes the primary paired solute-bootstrap intervals from the released solute tables. Scoring results can be compared with `experiments/*/results.csv`.
 
+The non-water panel's subsequent fixed-geometry sanity check uses the stored
+counterpoise component energies and geometry registry:
+
+```bash
+uv run --no-project --with 'ase==3.29.0' python scripts/reproduce/audit_nonwater_contacts.py
+python scripts/figures/plot_nonwater_contact_audit.py
+```
+
+It reproduces [the 72-case contact audit](../experiments/nonwater/) without
+discarding or changing any archived prediction or QM reference. The audit is
+post hoc and changes the scope of the transfer claim.
+
+The separate, geometry-corrected follow-up can be rescored directly from
+its released 36 QM references and both frozen prediction sets:
+
+```bash
+python scripts/diagnostics/score_nonwater_contact_panel.py --base experiments/nonwater_contact
+```
+
+This command checks the pre-QM prediction freeze and every case-file hash,
+then recomputes the case, equal-solute and paired-bootstrap summaries. The
+follow-up was designed after the original contact audit. It does not replace
+the 72-case score or retroactively make that test a realistic-contact panel.
+To rerun the geometry construction or expensive reference SCFs, install
+`.[contact]` and follow the chronological recipe in
+[the diagnostic scripts](../scripts/diagnostics/README.md).
+
 ## 3. Recompute a physical coupling from QM densities
 
 ```bash

@@ -1,0 +1,18 @@
+{
+  "ase_version": "3.29.0",
+  "generator_sha256": "10aa8d77a9f5012fa8883233b21591c6f2fb1a709c3fb8a15faeb432fbf7e646",
+  "geometry_sha256": "23db4c0e3f4dce30577b285f0fda4d2766d117a51764e6b966d28c814b42a2fc",
+  "n_neighbour_species": 3,
+  "n_selected": 36,
+  "n_solutes": 12,
+  "n_source_poses": 72,
+  "optimization": "MMFF94s, interfragment interactions enabled, all solute atoms fixed, max 1000 iterations",
+  "rdkit_version": "2026.03.6",
+  "selection": "lower converged MMFF interfragment energy of two archived starting poses per solute \u00d7 species",
+  "selection_requirements": {
+    "minimum_heavy_atom_distance_A_at_least": 2.4,
+    "mmff_interaction_kcal_mol_below": 0
+  },
+  "source_geometry_sha256": "c7fab2f66cbbf0a932f61aedb59f9054e8cb7f31ff4740d9532a793ae3d5059b",
+  "status": "geometry-only candidate panel; no new response labels or scores"
+}
