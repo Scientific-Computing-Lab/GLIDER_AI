@@ -8,6 +8,7 @@ Start from the scientific question, then open the corresponding guide. Raw array
 | [Panel I](panel_1/) | 48 | First prospective solute test and retained joint-gate failure. |
 | [Panel II](panel_2/) | 96 | A separately selected 24-solute test. |
 | [Panel III](panel_3/) | 80 | Twenty FreeSolv identities, without hydration values. |
+| [Water-contact audit](water_contact_audit/) | 224 screened, 9 flagged | Eight short solute–water contacts and one separate water–water contact; original panel scores remain primary. |
 | [Non-water geometry challenge](nonwater/) | 72 | Frozen NH₃, CH₃OH and CH₃CN replacements, with a post hoc QM contact audit. |
 | [Non-water contact follow-up](nonwater_contact/) | 36 | Separately frozen, fixed-solute MMFF94s contact geometries with new QM references. |
 | [Liquid](liquid/) | 24 | Four explicit-water configurations per solute. |

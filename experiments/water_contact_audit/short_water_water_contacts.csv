@@ -1,0 +1,2 @@
+panel,config_id,solute_id,regime,nearest_water_element_a,nearest_water_element_b,water_fragment_a,water_fragment_b,minimum_water_water_distance_A,glider_esp_nrmse,mace_l_esp_nrmse
+I,prospective__prospective_diverse_02__cluster_3water__orientation,prospective_diverse_02,orientation,H,H,2,3,1.2789814330212705,1.0314312948368467,0.8836818902510801

@@ -1,0 +1,25 @@
+{
+  "scope": "Three frozen water panels, post hoc geometry sensitivity",
+  "short_contact_rule": "minimum interfragment atomic distance < 1.5 angstrom",
+  "n_original_configurations": 224,
+  "n_short_solute_water_contacts": 8,
+  "n_short_water_water_contacts": 1,
+  "n_unique_configurations_with_a_short_interfragment_contact": 9,
+  "bootstrap_draws": 100000,
+  "primary_data_changed": false,
+  "interaction_energies_available_in_released_water_references": false,
+  "source_sha256": {
+    "experiments/panel_1/geometries/configuration_registry.csv": "e050c9e22c2b6dbc46cc0b7da3eba4990d96d01e7307aede9bbe0f56317e323d",
+    "experiments/panel_1/geometries/configurations.extxyz": "8e3fcc4799bd02971930184b33b5d28e2980f0b24ff5c367fda7045d219c0c20",
+    "experiments/panel_1/references/observable_registry.csv": "d8ed35e2b51c88d8023acf32dabb55410686ba3dde89235ac0b7d51413ffa759",
+    "experiments/panel_1/historical_results/final_configuration_metrics.csv": "8dfdaf2d1bc13eee82e655ebf74d221ef2743d3e46d4ef580e25af0d3a1115df",
+    "experiments/panel_2/geometries/configuration_registry.csv": "aaa82db645af9222c9729edc02f4c59a3dc599ad67b91587c6bb07954e3f4443",
+    "experiments/panel_2/geometries/configurations.extxyz": "a97a89b27b005a39343e15b70c6a32cda99519fe7c6259201d95a46fe4d4b881",
+    "experiments/panel_2/references/observable_registry.csv": "2cc60e90d6bfc410daa91469549f64ccda7ed8786d496dd9d388628fab15133a",
+    "experiments/panel_2/results.csv": "97edcf511340e7a8cb4a812af3119563edd9473454e9a5ff47766b449a8b3c58",
+    "experiments/panel_3/geometries/configuration_registry.csv": "c9bb53875c4830718a0132e5a22f46c393cbae56e0cfb58dcea62bb956605d40",
+    "experiments/panel_3/geometries/configurations.extxyz": "ec62f08d1e8e2ff7ba1b458ef9cf78c5fda957f96437e7c34c854157528152ee",
+    "experiments/panel_3/references/observable_registry.csv": "7beb4ae8a551b1aca6f88a61155e1b3f16f29ec95da76b5c9d74853626a0ff78",
+    "experiments/panel_3/CONFIGURATION_LEVEL_METRICS.csv": "d93008e1aae8f01b43b7ad56bf07e3127e84a4c01b2e5b9bf0b536c099e65fdb"
+  }
+}

@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import csv
+import json
 import re
 from pathlib import Path
 
@@ -55,11 +56,15 @@ def check_headlines() -> None:
         assert abs(float(row["comparator_value"]) - baseline) < 1e-12
         assert abs(float(row["relative_error_reduction_pct"]) - reduction) < 1e-10
         assert float(row["ci95_high"]) < 0
-    nonwater = table("figures/figure_S15/nonwater_effects.csv")
+    nonwater = table("figures/figure_S15/nonwater_original72_effects.csv")
     overall = next(r for r in nonwater if r["subset"] == "Overall")
     assert int(overall["n_solutes"]) == 12
     assert abs(float(overall["esp_glider"]) - 0.450371053714298) < 1e-12
     assert abs(float(overall["esp_comparator"]) - 0.617170202219818) < 1e-12
+    contact_followup = table("figures/figure_S15/nonwater_effects.csv")
+    contact_overall = next(r for r in contact_followup if r["label"] == "overall")
+    assert int(contact_overall["n_configurations"]) == 36
+    assert abs(float(contact_overall["esp_difference"]) + 0.2884889328434251) < 1e-12
     ranks = table("figures/figure_04/energy_rank.csv")
     assert [int(r["rank"]) for r in ranks] == list(range(4, 13))
     w4 = ranks[0]
@@ -82,13 +87,27 @@ def check_headlines() -> None:
         assert glider_100 > glider_20 and prior_100 < prior_20
     components = table("experiments/dissociation_extended/posthoc_components.csv")
     assert len(components) == 280
+    water_audit = table("experiments/water_contact_audit/panel_sensitivity.csv")
+    screened = {
+        row["panel"]: row for row in water_audit
+        if row["analysis"] == "exclude_solute_water_contacts_below_1.5_A"
+    }
+    assert {panel: int(row["n_configurations"]) for panel, row in screened.items()} == {
+        "I": 45, "II": 94, "III": 77
+    }
+    assert all(float(row["paired_95pct_ci_high"]) < 0 for row in screened.values())
+    short_energies = table("experiments/water_contact_audit/cp_interaction_energies_short.csv")
+    assert len(short_energies) == 8
+    assert sum(float(row["cp_interaction_energy_kcal_mol"]) > 0 for row in short_energies) == 7
+    pair = json.loads((ROOT / "experiments/water_contact_audit/short_water_pair_cp.json").read_text())
+    assert 20.2 < float(pair["cp_pair_energy_kcal_mol"]) < 20.4
 
 
 def main():
     check_headlines()
     check_links()
     assert not (ROOT/".github/README.md").exists()
-    for name in ['training','panel_1','panel_2','panel_3','nonwater','nonwater_contact','liquid','shell_size','heldout_water','heldout_water_pilot','distance_sweep','global_branch','dissociation','dissociation_extended']:
+    for name in ['training','panel_1','panel_2','panel_3','nonwater','nonwater_contact','liquid','shell_size','heldout_water','heldout_water_pilot','distance_sweep','global_branch','dissociation','dissociation_extended','water_contact_audit']:
         assert (ROOT/'experiments'/name/'README.md').is_file(),name
     print('PASS: experiment guides, active local links, headline values and visual gallery')
 if __name__=='__main__':main()

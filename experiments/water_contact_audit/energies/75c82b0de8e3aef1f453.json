@@ -1,0 +1,60 @@
+{
+  "ase_version": "3.29.0",
+  "attempts": {
+    "full_complex": [
+      {
+        "component": "full_complex",
+        "converged": true,
+        "cycles": 49,
+        "d3bj_correction_hartree": -0.023620621017483343,
+        "energy_hartree": -3010.939719440246,
+        "runtime_seconds": 64.30152558299596,
+        "solver": "cpu_diis_160"
+      }
+    ],
+    "neighbour_with_solute_ghosts": [
+      {
+        "component": "neighbour_with_solute_ghosts",
+        "converged": true,
+        "cycles": 10,
+        "d3bj_correction_hartree": -0.001795680391756946,
+        "energy_hartree": -229.4336593600358,
+        "runtime_seconds": 14.9285718750034,
+        "solver": "cpu_diis_160"
+      }
+    ],
+    "solute_with_neighbour_ghosts": [
+      {
+        "component": "solute_with_neighbour_ghosts",
+        "converged": true,
+        "cycles": 40,
+        "energy_hartree": -2780.0920272521284,
+        "role": "initial_density_only; not a reported reference component",
+        "runtime_seconds": 12.54682087499532,
+        "solver": "isolated_atomic_projection_seed"
+      },
+      {
+        "component": "solute_with_neighbour_ghosts",
+        "converged": true,
+        "cycles": 101,
+        "d3bj_correction_hartree": -0.013387309425729752,
+        "energy_hartree": -2781.488329556109,
+        "runtime_seconds": 116.64719770899683,
+        "solver": "cpu_diis_160"
+      }
+    ]
+  },
+  "component_energies_hartree": {
+    "full_complex": -3010.939719440246,
+    "neighbour_with_solute_ghosts": -229.4336593600358,
+    "solute_with_neighbour_ghosts": -2781.488329556109
+  },
+  "config_id": "nextgen_prospective__nextgen_prospective_004__cluster_3water__orientation",
+  "cp_interaction_energy_hartree": -0.01773052410112541,
+  "cp_interaction_energy_kcal_mol": -11.126071853560326,
+  "dftd3_version": "1.6.0",
+  "geometry_sha256": "a97a89b27b005a39343e15b70c6a32cda99519fe7c6259201d95a46fe4d4b881",
+  "method": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 SCF 1e-10",
+  "panel_source": "experiments/panel_2/geometries/configurations.extxyz",
+  "pyscf_version": "2.14.0"
+}

@@ -75,16 +75,17 @@ its predeclared result.
 | S4 | Comparator definitions and provenance | [panel_1](../experiments/panel_1/) |
 | S5 | Complete prospective leaderboards | [panel_1](../experiments/panel_1/) |
 | S6 | Regime-specific prospective and liquid errors | [liquid](../experiments/liquid/) |
-| S7–S8 | Original 72 unrelaxed non-water replacements: aggregate and species comparisons | [nonwater](../experiments/nonwater/) |
-| S9 | Liquid identities | [liquid](../experiments/liquid/) |
-| S10 | Same-supervision AIMNet2 control | [training](../experiments/training/) |
-| S11–S12 | Nested size results | [shell_size](../experiments/shell_size/) |
-| S13 | Controlled global-branch ablation | [global_branch](../experiments/global_branch/) |
-| S14 | Held-out-water identities and structures | [heldout_water](../experiments/heldout_water/) |
-| S15 | W4 coupling | [heldout_water](../experiments/heldout_water/) |
-| S16 | Exact multipole control | [heldout_water](../experiments/heldout_water/) |
-| S17 | Frozen ensemble-member robustness | [panel_1](../experiments/panel_1/) |
-| S18 | Reported artifact hashes | [training](../experiments/training/) |
-| S19 | Distance–orientation sweep | [distance_sweep](../experiments/distance_sweep/) |
+| S7 | Post hoc water-contact sensitivity of the prospective panels | [water_contact_audit](../experiments/water_contact_audit/) |
+| S8–S9 | Original 72 unrelaxed non-water replacements: aggregate and species comparisons | [nonwater](../experiments/nonwater/) |
+| S10 | Liquid identities | [liquid](../experiments/liquid/) |
+| S11 | Same-supervision AIMNet2 control | [training](../experiments/training/) |
+| S12–S13 | Nested size results | [shell_size](../experiments/shell_size/) |
+| S14 | Controlled global-branch ablation | [global_branch](../experiments/global_branch/) |
+| S15 | Held-out-water identities and structures | [heldout_water](../experiments/heldout_water/) |
+| S16 | W4 coupling | [heldout_water](../experiments/heldout_water/) |
+| S17 | Exact multipole control | [heldout_water](../experiments/heldout_water/) |
+| S18 | Frozen ensemble-member robustness | [panel_1](../experiments/panel_1/) |
+| S19 | Reported artifact hashes | [training](../experiments/training/) |
+| S20 | Distance–orientation sweep | [distance_sweep](../experiments/distance_sweep/) |
 
 Unique historical derivation tables, including detailed development-control and ensemble-member analyses, are retained in [provenance](../provenance/previous_release_tables/). They are supporting analysis records rather than a second set of authoritative experiment data. The [filename map](../provenance/figure_filename_map.json) explains old plotting identifiers.

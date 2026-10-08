@@ -8,4 +8,4 @@ The matched full model reproduces the published head exactly on the common newly
 
 The new common feature extraction produces small rounding differences from the old primary-panel tables. Those original tables and predictions are unchanged.
 
-[Reproduction procedure](../../docs/reproduce.md#author-review-controls) · **Paper:** Appendix K.3, Table S13.
+[Reproduction procedure](../../docs/reproduce.md#author-review-controls) · **Paper:** Appendix K.3, Table S14.

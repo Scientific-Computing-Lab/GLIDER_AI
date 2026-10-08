@@ -1,0 +1,51 @@
+{
+  "ase_version": "3.29.0",
+  "attempts": {
+    "full_complex": [
+      {
+        "component": "full_complex",
+        "converged": true,
+        "cycles": 13,
+        "d3bj_correction_hartree": -0.041256102246589516,
+        "energy_hartree": -1128.491895174406,
+        "runtime_seconds": 103.22789579100208,
+        "solver": "cpu_diis_160"
+      }
+    ],
+    "neighbour_with_solute_ghosts": [
+      {
+        "component": "neighbour_with_solute_ghosts",
+        "converged": true,
+        "cycles": 10,
+        "d3bj_correction_hartree": -0.0017301731264518913,
+        "energy_hartree": -229.43322652718135,
+        "runtime_seconds": 100.3017147500068,
+        "solver": "cpu_diis_160"
+      }
+    ],
+    "solute_with_neighbour_ghosts": [
+      {
+        "component": "solute_with_neighbour_ghosts",
+        "converged": true,
+        "cycles": 13,
+        "d3bj_correction_hartree": -0.03417474062207251,
+        "energy_hartree": -899.135848127356,
+        "runtime_seconds": 116.17827170800592,
+        "solver": "cpu_diis_160"
+      }
+    ]
+  },
+  "component_energies_hartree": {
+    "full_complex": -1128.491895174406,
+    "neighbour_with_solute_ghosts": -229.43322652718135,
+    "solute_with_neighbour_ghosts": -899.135848127356
+  },
+  "config_id": "prospective__pros_cyano_cyclic_acetal__cluster_3water__orientation",
+  "cp_interaction_energy_hartree": 0.07717948013137743,
+  "cp_interaction_energy_kcal_mol": 48.43085498570413,
+  "dftd3_version": "1.6.0",
+  "geometry_sha256": "8e3fcc4799bd02971930184b33b5d28e2980f0b24ff5c367fda7045d219c0c20",
+  "method": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 SCF 1e-10",
+  "panel_source": "experiments/panel_1/geometries/configurations.extxyz",
+  "pyscf_version": "2.14.0"
+}

@@ -3,7 +3,7 @@
 The ten held-out-water bases are reused with a probe at different directions, orientations and distances. The fixed-charge calculation evaluates the field at water charge sites. A smaller quantum-water calculation integrates against an isolated frozen water density.
 
 **Where this appears:** In the SIMBIOCHEM workshop paper, Fig. 5a,b,
-Fig. S13a,b, Table S19 and Appendix O. In the updated journal manuscript,
+Fig. S13a,b, Table S20 and Appendix O. In the updated journal manuscript,
 the same sweep is Supplementary Fig. S15, Table S19 and Section 14. The
 journal figure draws its plotted values from
 [workshop Fig. 5](../../figures/figure_05/) and

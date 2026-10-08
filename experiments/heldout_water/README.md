@@ -2,7 +2,7 @@
 
 Ten solutes supply a fixed base consisting of the solute and waters W1–W3. Waters W4–W12 probe that base independently. A probe enters neither the base QM calculation nor the model input. Its frozen charge distribution couples to the response field.
 
-**Paper:** Fig. 4; Figs. S8–S12; Tables S14–S16; Appendix L.
+**Paper:** Fig. 4; Figs. S8–S12; Tables S15–S17; Appendix L.
 
 | Open | Contents |
 |:--|:--|

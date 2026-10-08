@@ -1,0 +1,51 @@
+{
+  "ase_version": "3.29.0",
+  "attempts": {
+    "full_complex": [
+      {
+        "component": "full_complex",
+        "converged": true,
+        "cycles": 13,
+        "d3bj_correction_hartree": -0.04228934437542689,
+        "energy_hartree": -935.4926624596702,
+        "runtime_seconds": 54.76112412499788,
+        "solver": "cpu_diis_160"
+      }
+    ],
+    "neighbour_with_solute_ghosts": [
+      {
+        "component": "neighbour_with_solute_ghosts",
+        "converged": true,
+        "cycles": 10,
+        "d3bj_correction_hartree": -0.0022076671644205505,
+        "energy_hartree": -229.43674710853446,
+        "runtime_seconds": 46.145150958007434,
+        "solver": "cpu_diis_160"
+      }
+    ],
+    "solute_with_neighbour_ghosts": [
+      {
+        "component": "solute_with_neighbour_ghosts",
+        "converged": true,
+        "cycles": 11,
+        "d3bj_correction_hartree": -0.03169505814718336,
+        "energy_hartree": -706.1367581188935,
+        "runtime_seconds": 52.10635737499979,
+        "solver": "cpu_diis_160"
+      }
+    ]
+  },
+  "component_energies_hartree": {
+    "full_complex": -935.4926624596702,
+    "neighbour_with_solute_ghosts": -229.43674710853446,
+    "solute_with_neighbour_ghosts": -706.1367581188935
+  },
+  "config_id": "prospective__prospective_diverse_05__cluster_3water__orientation",
+  "cp_interaction_energy_hartree": 0.0808427677577015,
+  "cp_interaction_energy_kcal_mol": 50.7296026774406,
+  "dftd3_version": "1.6.0",
+  "geometry_sha256": "8e3fcc4799bd02971930184b33b5d28e2980f0b24ff5c367fda7045d219c0c20",
+  "method": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 SCF 1e-10",
+  "panel_source": "experiments/panel_1/geometries/configurations.extxyz",
+  "pyscf_version": "2.14.0"
+}

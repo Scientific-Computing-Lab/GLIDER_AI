@@ -1,0 +1,52 @@
+{
+  "attempts": {
+    "full_complex": [
+      {
+        "component": "full_complex",
+        "converged": true,
+        "cycles": 10,
+        "d3bj_correction_hartree": -0.002582522577640242,
+        "energy_hartree": -152.92342270452903,
+        "runtime_seconds": 1.4789423329930287,
+        "solver": "cpu_diis_160"
+      }
+    ],
+    "neighbour_with_solute_ghosts": [
+      {
+        "component": "neighbour_with_solute_ghosts",
+        "converged": true,
+        "cycles": 9,
+        "d3bj_correction_hartree": -0.0005697862817872504,
+        "energy_hartree": -76.47785204599971,
+        "runtime_seconds": 1.331820958002936,
+        "solver": "cpu_diis_160"
+      }
+    ],
+    "solute_with_neighbour_ghosts": [
+      {
+        "component": "solute_with_neighbour_ghosts",
+        "converged": true,
+        "cycles": 9,
+        "d3bj_correction_hartree": -0.0005697862818112995,
+        "energy_hartree": -76.47788990270368,
+        "runtime_seconds": 1.330990832997486,
+        "solver": "cpu_diis_160"
+      }
+    ]
+  },
+  "component_energies_hartree": {
+    "full_complex": -152.92342270452903,
+    "neighbour_with_solute_ghosts": -76.47785204599971,
+    "solute_with_neighbour_ghosts": -76.47788990270368
+  },
+  "config_id": "prospective__prospective_diverse_02__cluster_3water__orientation",
+  "cp_pair_energy_kcal_mol": 20.280631913969586,
+  "method": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 SCF 1e-10",
+  "minimum_interwater_distance_A": 1.2789814330212705,
+  "scope": "Isolated frozen pair of waters; the third water and solute are absent",
+  "source_sha256": "8e3fcc4799bd02971930184b33b5d28e2980f0b24ff5c367fda7045d219c0c20",
+  "water_fragments": [
+    2,
+    3
+  ]
+}
