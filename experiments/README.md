@@ -19,6 +19,7 @@ Start from the scientific question, then open the corresponding guide. Raw array
 | [Global branch](global_branch/) | 224 evaluation cases | A matched post hoc training intervention. |
 | [Dissociation](dissociation/) | 224 | Move the inducing fragment itself to 3–20 Å. |
 | [Extended dissociation](dissociation_extended/) | 56 | Follow-up at 50 and 100 Å. |
+| [Dissociation QM check](dissociation_qm/) | 20 | Direct complex-minus-fragments QM references for one solute across the same 3–100 Å trajectories. |
 
 ## Prospective solute transfer
 

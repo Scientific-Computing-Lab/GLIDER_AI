@@ -17,3 +17,7 @@ The order matters:
 Install the model dependencies as in the [inference guide](../benchmark/README.md), plus `pip install -e '.[contact]'`. The release contains the generated geometries, frozen predictions, QM references and score tables, so readers can **re-score** without rerunning the expensive SCF calculations. The generation workflow is for an independent replay.
 
 The original panel and its contact audit remain under `experiments/nonwater/`. The completed follow-up is stored separately under `experiments/nonwater_contact/`. A negative QM interaction energy is a fixed-geometry contact check, not a decomposition of the response into polarization, exchange or charge transfer.
+
+## Fragment-separation QM check
+
+`run_cyclic_carbamate_separation_qm.py` calculates complex-minus-ghost-fragments references for the archived `dev_cyclic_carbamate` trajectories at ten separations, with one water or the intact four-water environment moved. `summarize_cyclic_carbamate_separation_qm.py` validates the 20 case records and regenerates the figure and result note. The complete [released package](../../experiments/dissociation_qm/) can be checked without rerunning SCF using `scripts/verify_companion.py`. See [the command recipe](../../docs/reproduce.md#direct-qm-check-of-one-separation-trajectory).

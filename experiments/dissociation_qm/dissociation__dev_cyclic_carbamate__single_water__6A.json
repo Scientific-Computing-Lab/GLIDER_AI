@@ -1,0 +1,64 @@
+{
+  "arrays_file": "dissociation__dev_cyclic_carbamate__single_water__6A.npz",
+  "arrays_sha256": "6df2b8b1dc7c3db20b0fb5b47a42122ec3a886ea6d3c073f5b625d302963708b",
+  "attempts": {
+    "full_complex": [
+      {
+        "component": "full_complex",
+        "converged": true,
+        "cycles": 7,
+        "energy_hartree": -477.9262935604877,
+        "level_shift": 0.0,
+        "runtime_seconds": 6.856914589065127,
+        "solver": "gpu_diis_160"
+      }
+    ],
+    "neighbour_with_solute_ghosts": [
+      {
+        "component": "neighbour_with_solute_ghosts",
+        "converged": true,
+        "cycles": 9,
+        "energy_hartree": -76.47777304560566,
+        "level_shift": 0.0,
+        "runtime_seconds": 6.0922707439167425,
+        "solver": "gpu_diis_160"
+      }
+    ],
+    "solute_with_neighbour_ghosts": [
+      {
+        "component": "solute_with_neighbour_ghosts",
+        "converged": true,
+        "cycles": 13,
+        "energy_hartree": -401.44872095697224,
+        "level_shift": 0.0,
+        "runtime_seconds": 9.808002514997497,
+        "solver": "gpu_diis_160"
+      }
+    ]
+  },
+  "backend": "gpu4pyscf",
+  "component_energy_hartree": [
+    -477.9262935604877,
+    -401.44872095697224,
+    -76.47777304560566
+  ],
+  "config_id": "dissociation__dev_cyclic_carbamate__single_water__6A",
+  "cp_interaction_energy_kcal_mol": 0.12577931060400688,
+  "geometry_source": "experiments/dissociation/configurations.extxyz",
+  "geometry_source_sha256": "e2a88f0d3935d4cabd8a4504deff6e0d819bce5ebeb14c55e31ee2fdc7a2a724",
+  "glider_error_rms_mEh_per_e": 1.7572669175567746,
+  "glider_rms_mEh_per_e": 1.6551138006004498,
+  "gpu4pyscf_version": "1.8.1",
+  "gpu_reference_helper_sha256": "9c21045351e6abd88302e7e235c27771f8a415bf4bc7ac5c590283a32d50b0c0",
+  "method": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 SCF 1e-10",
+  "n_atoms": 20,
+  "n_probe_points": 512,
+  "n_solute_atoms": 17,
+  "prediction_source_sha256": "f7a75c186df481ffa012e23d86c88dfb0c114377e52e3444f2a6f7dc7f22f70f",
+  "prior_error_rms_mEh_per_e": 1.8189412151832443,
+  "prior_rms_mEh_per_e": 1.7070629264426473,
+  "probe_source_sha256": "ff63c23b77df9dbbc274dacaeaf40d7bbf576667d8ce52eee7e5cbf0a3bc9f6b",
+  "pyscf_version": "2.8.0",
+  "qm_response_dipole_norm_debye": 0.04551449405736315,
+  "qm_response_rms_mEh_per_e": 0.19921266575468813
+}

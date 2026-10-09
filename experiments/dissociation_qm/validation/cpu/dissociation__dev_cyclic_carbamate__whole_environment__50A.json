@@ -1,0 +1,61 @@
+{
+  "arrays_file": "dissociation__dev_cyclic_carbamate__whole_environment__50A.npz",
+  "arrays_sha256": "b758379dc8d1edbf1dace876e34bfff7fc68d686703271ef546f7f1d929b8569",
+  "attempts": {
+    "full_complex": [
+      {
+        "component": "full_complex",
+        "converged": true,
+        "cycles": 1,
+        "d3bj_correction_hartree": -0.029471498406060143,
+        "energy_hartree": -707.3625233036827,
+        "runtime_seconds": 55.72951369697694,
+        "solver": "cpu_diis_160"
+      }
+    ],
+    "neighbour_with_solute_ghosts": [
+      {
+        "component": "neighbour_with_solute_ghosts",
+        "converged": true,
+        "cycles": 10,
+        "d3bj_correction_hartree": -0.0027966082690450817,
+        "energy_hartree": -305.91380386136893,
+        "runtime_seconds": 112.09087081195321,
+        "solver": "cpu_diis_160"
+      }
+    ],
+    "solute_with_neighbour_ghosts": [
+      {
+        "component": "solute_with_neighbour_ghosts",
+        "converged": true,
+        "cycles": 13,
+        "d3bj_correction_hartree": -0.02667489013701506,
+        "energy_hartree": -401.4487198893695,
+        "runtime_seconds": 141.5722112370422,
+        "solver": "cpu_diis_160"
+      }
+    ]
+  },
+  "component_energy_hartree": [
+    -707.3625233036827,
+    -401.4487198893695,
+    -305.91380386136893
+  ],
+  "config_id": "dissociation__dev_cyclic_carbamate__whole_environment__50A",
+  "cp_interaction_energy_kcal_mol": 0.0002805317211908899,
+  "geometry_source": "experiments/dissociation_extended/configurations.extxyz",
+  "geometry_source_sha256": "516d5df4db445d3b46587545bb71c778f4832ece042f2a9e62370e458deaeb92",
+  "glider_error_rms_mEh_per_e": 0.9266006242627769,
+  "glider_rms_mEh_per_e": 0.926297437751363,
+  "method": "DF-RKS omegaB97X-D3(BJ)/def2-TZVPD grid4 SCF 1e-10",
+  "n_atoms": 29,
+  "n_probe_points": 512,
+  "n_solute_atoms": 17,
+  "prediction_source_sha256": "410e2ca0e53872dddc46a8be394591b5472a90a2e27c3b0f788f64774d675227",
+  "prior_error_rms_mEh_per_e": 0.30182701845277704,
+  "prior_rms_mEh_per_e": 0.3017982353839273,
+  "probe_source_sha256": "ff63c23b77df9dbbc274dacaeaf40d7bbf576667d8ce52eee7e5cbf0a3bc9f6b",
+  "pyscf_version": "2.14.0",
+  "qm_response_dipole_norm_debye": 0.0002107902722121261,
+  "qm_response_rms_mEh_per_e": 0.0005562052190449177
+}

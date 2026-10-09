@@ -76,6 +76,22 @@ python scripts/diagnostics/run_controls.py dissociation --output build/separatio
 
 The wrapper runs the entire sequence: fixed-schedule training for the ablation, geometry construction, M-feature extraction, M/L prior prediction, averaging and scoring. For the separation test, use `--distances 50 100` with a different output folder to reproduce the extension. Output folders must be new. The [underlying operations](../scripts/diagnostics/review_controls.py) can also be run separately. CPU is supported.
 
+## Direct QM check of one separation trajectory
+
+The [20-case `dev_cyclic_carbamate` package](../experiments/dissociation_qm/) contains the geometries, 512 fixed probes, frozen predictions, complete complex and ghost-fragment potential arrays, component energies and one result row per geometry. The standard `scripts/verify_companion.py` command rederives all response and error RMS values from these arrays and checks the source hashes. It needs no SCF run.
+
+To repeat the expensive reference calculations on CPU, install the QM and figure dependencies and write into `build/`:
+
+```bash
+python -m pip install -e '.[contact,figures]'
+python scripts/diagnostics/run_cyclic_carbamate_separation_qm.py \
+  --output build/separation_qm_dev_cyclic_carbamate
+python scripts/diagnostics/summarize_cyclic_carbamate_separation_qm.py \
+  build/separation_qm_dev_cyclic_carbamate
+```
+
+The script uses the unchanged archived geometry and prediction arrays from `dissociation/` and `dissociation_extended/`. One full calculation has 60 component SCFs and may take substantial CPU time. The published arrays were generated with the same reference Hamiltonian on GPU; independent CPU reruns of 13 cases are compared in the [experiment guide](../experiments/dissociation_qm/).
+
 ## Rebuild the gallery
 
 ```bash

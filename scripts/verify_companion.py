@@ -4,9 +4,12 @@
 from __future__ import annotations
 
 import csv
+import hashlib
 import json
 import re
 from pathlib import Path
+
+import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 IGNORED_DIRS = {".git", ".qa", ".venv", "__pycache__", ".pytest_cache", ".ruff_cache",
@@ -103,11 +106,120 @@ def check_headlines() -> None:
     assert 20.2 < float(pair["cp_pair_energy_kcal_mol"]) < 20.4
 
 
+def check_separation_qm() -> None:
+    base = ROOT / "experiments/dissociation_qm"
+    manifest = json.loads((base / "source_manifest.json").read_text())
+    for name, expected in manifest["released_file_sha256"].items():
+        actual = hashlib.sha256((base / name).read_bytes()).hexdigest()
+        assert actual == expected, name
+    for name, expected in manifest["source_input_sha256"].items():
+        actual = hashlib.sha256((ROOT / name).read_bytes()).hexdigest()
+        assert actual == expected, name
+
+    rows = table("experiments/dissociation_qm/summary.csv")
+    assert len(rows) == len(manifest["configuration_ids"]) == 20
+    with np.load(base / "solute_probe_points.npz", allow_pickle=False) as probes, \
+            np.load(base / "predicted_probe_potentials.npz", allow_pickle=False) as predictions:
+        points = probes["dev_cyclic_carbamate"]
+        assert points.shape == (512, 3)
+        assert len(predictions.files) == 120
+        for row in rows:
+            config = (f"dissociation__dev_cyclic_carbamate__{row['system']}__"
+                      f"{row['distance_A']}A")
+            assert config in manifest["configuration_ids"]
+            record = json.loads((base / f"{config}.json").read_text())
+            arrays_file = base / record["arrays_file"]
+            assert hashlib.sha256(arrays_file.read_bytes()).hexdigest() == record["arrays_sha256"]
+            assert record["n_probe_points"] == 512
+            assert all(attempts[-1]["converged"] for attempts in record["attempts"].values())
+            with np.load(arrays_file, allow_pickle=False) as arrays:
+                np.testing.assert_array_equal(arrays["points_angstrom"], points)
+                components = arrays["component_esp_hartree_per_e"]
+                np.testing.assert_allclose(
+                    arrays["qm_response_esp_hartree_per_e"],
+                    components[0] - components[1] - components[2], atol=1e-12)
+                for method, key in (("glider", "glider_esp_hartree_per_e"),
+                                    ("averaged_prior", "averaged_prior_esp_hartree_per_e")):
+                    np.testing.assert_array_equal(arrays[key], predictions[f"{config}__{method}"])
+                qm = arrays["qm_response_esp_hartree_per_e"]
+                for column, values in (
+                    ("qm_response_rms_mEh_per_e", qm),
+                    ("glider_rms_mEh_per_e", arrays["glider_esp_hartree_per_e"]),
+                    ("prior_rms_mEh_per_e", arrays["averaged_prior_esp_hartree_per_e"]),
+                    ("glider_error_rms_mEh_per_e", arrays["glider_esp_hartree_per_e"] - qm),
+                    ("prior_error_rms_mEh_per_e", arrays["averaged_prior_esp_hartree_per_e"] - qm),
+                ):
+                    value = float(np.sqrt(np.mean(values**2)) * 1000)
+                    assert abs(value - float(row[column])) < 1e-10, (config, column)
+                    assert abs(value - float(record[column])) < 1e-10, (config, column)
+    def geometry_frames(path: Path) -> dict[str, tuple[list[str], np.ndarray]]:
+        lines = iter(path.read_text().splitlines())
+        frames = {}
+        for count_text in lines:
+            count = int(count_text)
+            header = next(lines)
+            match = re.search(r"\bconfig_id=(\S+)", header)
+            assert match is not None
+            symbols, positions = [], []
+            for _ in range(count):
+                fields = next(lines).split()
+                symbols.append(fields[0])
+                positions.append([float(x) for x in fields[1:4]])
+            frames[match.group(1)] = (symbols, np.asarray(positions))
+        return frames
+
+    released_geometry = geometry_frames(base / "configurations.extxyz")
+    assert sorted(released_geometry) == manifest["configuration_ids"]
+    for source_name in ("dissociation", "dissociation_extended"):
+        source = ROOT / "experiments" / source_name
+        original_geometry = geometry_frames(source / "configurations.extxyz")
+        with np.load(source / "solute_probe_points.npz", allow_pickle=False) as source_probes, \
+                np.load(base / "solute_probe_points.npz", allow_pickle=False) as released_probes:
+            np.testing.assert_array_equal(source_probes["dev_cyclic_carbamate"],
+                                          released_probes["dev_cyclic_carbamate"])
+        with np.load(source / "predicted_probe_potentials.npz", allow_pickle=False) as source_predictions, \
+                np.load(base / "predicted_probe_potentials.npz", allow_pickle=False) as released_predictions:
+            for config in manifest["configuration_ids"]:
+                if config not in original_geometry:
+                    continue
+                source_symbols, source_positions = original_geometry[config]
+                released_symbols, released_positions = released_geometry[config]
+                assert source_symbols == released_symbols
+                np.testing.assert_array_equal(source_positions, released_positions)
+                for suffix in ("glider", "glider__charges_e", "glider__site_dipoles_e_bohr",
+                               "averaged_prior", "averaged_prior__charges_e",
+                               "averaged_prior__site_dipoles_e_bohr"):
+                    key = f"{config}__{suffix}"
+                    np.testing.assert_array_equal(source_predictions[key],
+                                                  released_predictions[key])
+
+    cpu_rows = table("experiments/dissociation_qm/validation/cpu_gpu_differences.csv")
+    assert len(cpu_rows) == 12
+    assert len({row["config_id"] for row in cpu_rows}) == 12
+    for row in cpu_rows:
+        config = row["config_id"]
+        assert config in manifest["configuration_ids"]
+        cpu_file = base / "validation/cpu" / f"{config}.npz"
+        cpu_record = json.loads(cpu_file.with_suffix(".json").read_text())
+        actual_hash = hashlib.sha256(cpu_file.read_bytes()).hexdigest()
+        assert actual_hash == row["cpu_arrays_sha256"] == cpu_record["arrays_sha256"]
+        assert all(attempts[-1]["converged"] for attempts in cpu_record["attempts"].values())
+        with np.load(cpu_file, allow_pickle=False) as cpu, \
+                np.load(base / f"{config}.npz", allow_pickle=False) as gpu:
+            diff = (cpu["qm_response_esp_hartree_per_e"] -
+                    gpu["qm_response_esp_hartree_per_e"]) * 1000
+            assert abs(float(np.max(np.abs(diff))) -
+                       float(row["max_pointwise_difference_mEh_per_e"])) < 1e-12
+            assert abs(float(np.sqrt(np.mean(diff**2))) -
+                       float(row["rms_difference_mEh_per_e"])) < 1e-12
+
+
 def main():
     check_headlines()
+    check_separation_qm()
     check_links()
     assert not (ROOT/".github/README.md").exists()
-    for name in ['training','panel_1','panel_2','panel_3','nonwater','nonwater_contact','liquid','shell_size','heldout_water','heldout_water_pilot','distance_sweep','global_branch','dissociation','dissociation_extended','water_contact_audit']:
+    for name in ['training','panel_1','panel_2','panel_3','nonwater','nonwater_contact','liquid','shell_size','heldout_water','heldout_water_pilot','distance_sweep','global_branch','dissociation','dissociation_extended','dissociation_qm','water_contact_audit']:
         assert (ROOT/'experiments'/name/'README.md').is_file(),name
     print('PASS: experiment guides, active local links, headline values and visual gallery')
 if __name__=='__main__':main()

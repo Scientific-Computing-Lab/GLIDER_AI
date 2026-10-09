@@ -13,6 +13,8 @@ The journal manuscript's **Supplementary Figs. S16–S17** show the subsequent
 [non-water geometry audit](../experiments/nonwater/contact_audit.svg) and
 [separate contact follow-up](../experiments/nonwater_contact/contact_followup.svg).
 They preserve the original 72-case response score and add 36 new contacts.
+Its **Supplementary Fig. S18** checks one fragment-separation trajectory
+against [new QM references](../experiments/dissociation_qm/).
 
 ## Expanded journal manuscript
 
@@ -29,6 +31,7 @@ They preserve the original 72-case response score and add 36 new contacts.
 | Fig. 8 | Nested water size and inducing-fragment separation | [Shell size](../experiments/shell_size/) · [dissociation](../experiments/dissociation/) · [50–100 Å extension](../experiments/dissociation_extended/) |
 | Supplementary Fig. S16 | Why the original 72 replacements were a geometry stress test | [Complete 72-case audit](../experiments/nonwater/) |
 | Supplementary Fig. S17 | Contact energies and all case scores in the corrected follow-up | [Frozen 36-case follow-up](../experiments/nonwater_contact/) |
+| Supplementary Fig. S18 | Does the one-solute QM response vanish as the inducing water separates? | [20 QM references and frozen predictions](../experiments/dissociation_qm/) |
 
 The original 72-case non-water scores remain in journal Supplementary Tables
 S8–S9 and the [original experiment folder](../experiments/nonwater/). The

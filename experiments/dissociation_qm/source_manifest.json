@@ -1,0 +1,39 @@
+{
+  "configuration_ids": [
+    "dissociation__dev_cyclic_carbamate__single_water__100A",
+    "dissociation__dev_cyclic_carbamate__single_water__10A",
+    "dissociation__dev_cyclic_carbamate__single_water__15A",
+    "dissociation__dev_cyclic_carbamate__single_water__20A",
+    "dissociation__dev_cyclic_carbamate__single_water__3A",
+    "dissociation__dev_cyclic_carbamate__single_water__4A",
+    "dissociation__dev_cyclic_carbamate__single_water__50A",
+    "dissociation__dev_cyclic_carbamate__single_water__5A",
+    "dissociation__dev_cyclic_carbamate__single_water__6A",
+    "dissociation__dev_cyclic_carbamate__single_water__8A",
+    "dissociation__dev_cyclic_carbamate__whole_environment__100A",
+    "dissociation__dev_cyclic_carbamate__whole_environment__10A",
+    "dissociation__dev_cyclic_carbamate__whole_environment__15A",
+    "dissociation__dev_cyclic_carbamate__whole_environment__20A",
+    "dissociation__dev_cyclic_carbamate__whole_environment__3A",
+    "dissociation__dev_cyclic_carbamate__whole_environment__4A",
+    "dissociation__dev_cyclic_carbamate__whole_environment__50A",
+    "dissociation__dev_cyclic_carbamate__whole_environment__5A",
+    "dissociation__dev_cyclic_carbamate__whole_environment__6A",
+    "dissociation__dev_cyclic_carbamate__whole_environment__8A"
+  ],
+  "experiment": "dev_cyclic_carbamate post hoc QM fragment-separation check",
+  "released_file_sha256": {
+    "configurations.extxyz": "a90510f162c94ad8ba7a13ef7caea337a5dd595862783c8e4b1a777226d1f4ed",
+    "predicted_probe_potentials.npz": "142f6483a8534cb7a6fc42c6693a555f1c6e4d1b28b13365350f59f88b8ed3c1",
+    "solute_probe_points.npz": "a99470c3879fd15c1a3cb2cf12bdb780428001b540bfca6ee5f2205b6e76c2a7",
+    "summary.csv": "ffbd6654f5dff0e247675edf48c65e99ac30691dd49ce055468a264dec4c1f6b"
+  },
+  "source_input_sha256": {
+    "experiments/dissociation/configurations.extxyz": "e2a88f0d3935d4cabd8a4504deff6e0d819bce5ebeb14c55e31ee2fdc7a2a724",
+    "experiments/dissociation/predicted_probe_potentials.npz": "f7a75c186df481ffa012e23d86c88dfb0c114377e52e3444f2a6f7dc7f22f70f",
+    "experiments/dissociation/solute_probe_points.npz": "ff63c23b77df9dbbc274dacaeaf40d7bbf576667d8ce52eee7e5cbf0a3bc9f6b",
+    "experiments/dissociation_extended/configurations.extxyz": "516d5df4db445d3b46587545bb71c778f4832ece042f2a9e62370e458deaeb92",
+    "experiments/dissociation_extended/predicted_probe_potentials.npz": "410e2ca0e53872dddc46a8be394591b5472a90a2e27c3b0f788f64774d675227",
+    "experiments/dissociation_extended/solute_probe_points.npz": "ff63c23b77df9dbbc274dacaeaf40d7bbf576667d8ce52eee7e5cbf0a3bc9f6b"
+  }
+}
