@@ -1,0 +1,12 @@
+{
+  "implementation": "ARROW response dipoles with ARROW smeared electrostatic dipole-cloud ESP",
+  "source_method": "arrow",
+  "response_definition": "unchanged cloud dipole (cloudQ*ClShft) of complex minus solute/environment solves",
+  "esp_operator": "dipole point operator multiplied by Q(rho)=1-exp(-rho)*[c0*(1+rho)+(c1-c2)*rho^2+c2*rho^3], rho=r/wESd",
+  "cloud_nucleus_coefficients": "read per atom type from cw_cn_c0,cw_cn_c1,cw_cn_c2",
+  "width_source": "ARROW 933 parameter database (not included)",
+  "width_units": "angstrom",
+  "n_configurations": 16,
+  "probe_points": "copied from source arrow prediction files",
+  "point_operator_max_abs_reproduction_error": 1.4918621893400541e-15
+}

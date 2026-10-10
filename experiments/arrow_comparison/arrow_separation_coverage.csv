@@ -1,0 +1,15 @@
+molecule_id,status,reason
+dev_amino_alcohol_halogen,not covered,unsupported_atom_type:N2
+dev_aza_aryl_ether,not covered,unsupported_contact:CA-NA=:BondAromatic
+dev_cyano_ether,not covered,unsupported_atom_type:C#
+dev_cyclic_carbamate,covered,
+dev_hydroxy_nitrile,not covered,unsupported_atom_type:N#
+dev_oxazolidinone,not covered,unsupported_contact:OE-CAM=:BondSingle
+dev_sulfonyl_amine,not covered,typify_complex_failed
+dev_thio_amide,not covered,unsupported_contact:CAM=-S:BondSingle
+stress_acetamidine,not covered,unsupported_atom_type:N=
+stress_dimethyl_sulfone,not covered,typify_complex_failed
+stress_methanesulfonamide,not covered,typify_complex_failed
+stress_methyl_sulfoxide,not covered,typify_complex_failed
+stress_nitroethane,not covered,typify_complex_failed
+stress_pyridine_n_oxide,not covered,unsupported_atom_type:OPH-

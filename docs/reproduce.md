@@ -92,6 +92,26 @@ python scripts/diagnostics/summarize_cyclic_carbamate_separation_qm.py \
 
 The script uses the unchanged archived geometry and prediction arrays from `dissociation/` and `dissociation_extended/`. One full calculation has 60 component SCFs and may take substantial CPU time. The published arrays were generated with the same reference Hamiltonian on GPU; independent CPU reruns of 13 cases are compared in the [experiment guide](../experiments/dissociation_qm/).
 
+## Re-score the independent ARROW comparison
+
+The expanded journal manuscript's Fig. 9 and Supplementary Tables S20--S21
+use the 68 configurations on which classic ARROW had atom-type coverage.
+The transferred ARROW predictions, matching QM probe arrays, other model
+predictions and scored subset are in the [ARROW experiment
+guide](../experiments/arrow_comparison/). Recompute each compact-case score,
+the paired intervals and the signed-bias diagnostic; check hashes and
+probe-point alignment:
+
+```bash
+python scripts/reproduce/score_arrow_release.py
+python scripts/figures/plot_arrow_comparison.py
+```
+
+The one-solute ARROW separation values are supplied as a summary only: their
+underlying ARROW probe arrays were not in the transferred package, so this
+command does not independently rescore them. The direct QM and GLIDER values
+in that summary can be checked against the released separation references.
+
 ## Rebuild the gallery
 
 ```bash

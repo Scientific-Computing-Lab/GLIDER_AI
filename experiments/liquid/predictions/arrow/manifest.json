@@ -1,0 +1,11 @@
+{
+ "implementation": "ARROW (Arbalest native SCF cloud solve), classic analytical force field 933, no NN, no response training",
+ "response_definition": "cloud dipole (cloudQ*ClShft) of complex minus solute-alone and environment-alone solves; response charges zero",
+ "esp_operator": "open-boundary point dipoles at atom sites (glider.inference.observables.esp_from_sites)",
+ "arbalest_branch": "freecurvelabs/arbalest bf-openmm-arrow-build-experimental",
+ "arbalest_results_commit": "8faaf8e",
+ "glider_ai_commit": "82b9d332c643d475c8664fbf35f0557ca13bf6a0",
+ "n_configurations": 8,
+ "reference_labels_accessed": false,
+ "probe_points": "identical to the reference points_angstrom"
+}

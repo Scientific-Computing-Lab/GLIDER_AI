@@ -15,6 +15,9 @@ The journal manuscript's **Supplementary Figs. S16–S17** show the subsequent
 They preserve the original 72-case response score and add 36 new contacts.
 Its **Supplementary Fig. S18** checks one fragment-separation trajectory
 against [new QM references](../experiments/dissociation_qm/).
+The new post hoc **Fig. 9** and **Supplementary Section 15, Tables S20--S21**
+compare GLIDER with classic ARROW only on the [shared, atom-type-covered
+cases](../experiments/arrow_comparison/).
 
 ## Expanded journal manuscript
 
@@ -29,6 +32,8 @@ against [new QM references](../experiments/dissociation_qm/).
 | Fig. 6 | Liquid-derived local environments | [Liquid bridge](../experiments/liquid/) |
 | Fig. 7 | Frozen coupling to a held-out water | [Held-out water](../experiments/heldout_water/) |
 | Fig. 8 | Nested water size and inducing-fragment separation | [Shell size](../experiments/shell_size/) · [dissociation](../experiments/dissociation/) · [50–100 Å extension](../experiments/dissociation_extended/) |
+| Fig. 9a | Independent ARROW field-error comparison on 68 shared configurations | [Audited ARROW arrays and scores](../experiments/arrow_comparison/) |
+| Fig. 9b | Signed solute-surface error as nested shells grow | [Six covered parent trajectories at each size](../experiments/arrow_comparison/shell_size_signed_bias_per_config.csv) |
 | Supplementary Fig. S16 | Why the original 72 replacements were a geometry stress test | [Complete 72-case audit](../experiments/nonwater/) |
 | Supplementary Fig. S17 | Contact energies and all case scores in the corrected follow-up | [Frozen 36-case follow-up](../experiments/nonwater_contact/) |
 | Supplementary Fig. S18 | Does the one-solute QM response vanish as the inducing water separates? | [20 QM references and frozen predictions](../experiments/dissociation_qm/) |
@@ -77,8 +82,8 @@ its predeclared result.
 | S3 | Prospective identities | [panel_3](../experiments/panel_3/) |
 | S4 | Comparator definitions and provenance | [panel_1](../experiments/panel_1/) |
 | S5 | Complete prospective leaderboards | [panel_1](../experiments/panel_1/) |
-| S6 | Regime-specific prospective and liquid errors | [liquid](../experiments/liquid/) |
-| S7 | Post hoc water-contact sensitivity of the prospective panels | [water_contact_audit](../experiments/water_contact_audit/) |
+| S6 | Per-solute prospective paired comparisons | [Panels I--III](../experiments/) |
+| S7 | Regime-specific prospective and liquid errors | [liquid](../experiments/liquid/) |
 | S8–S9 | Original 72 unrelaxed non-water replacements: aggregate and species comparisons | [nonwater](../experiments/nonwater/) |
 | S10 | Liquid identities | [liquid](../experiments/liquid/) |
 | S11 | Same-supervision AIMNet2 control | [training](../experiments/training/) |
@@ -87,8 +92,9 @@ its predeclared result.
 | S15 | Held-out-water identities and structures | [heldout_water](../experiments/heldout_water/) |
 | S16 | W4 coupling | [heldout_water](../experiments/heldout_water/) |
 | S17 | Exact multipole control | [heldout_water](../experiments/heldout_water/) |
-| S18 | Frozen ensemble-member robustness | [panel_1](../experiments/panel_1/) |
-| S19 | Reported artifact hashes | [training](../experiments/training/) |
-| S20 | Distance–orientation sweep | [distance_sweep](../experiments/distance_sweep/) |
+| S18 | Reported artifact hashes | [training](../experiments/training/) |
+| S19 | Distance–orientation sweep | [distance_sweep](../experiments/distance_sweep/) |
+| S20 | Per-set and common-subset ARROW comparison | [ARROW comparison](../experiments/arrow_comparison/) |
+| S21 | Signed solute-surface bias in the covered shell-size series | [ARROW comparison](../experiments/arrow_comparison/) |
 
 Unique historical derivation tables, including detailed development-control and ensemble-member analyses, are retained in [provenance](../provenance/previous_release_tables/). They are supporting analysis records rather than a second set of authoritative experiment data. The [filename map](../provenance/figure_filename_map.json) explains old plotting identifiers.

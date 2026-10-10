@@ -13,6 +13,7 @@ Start from the scientific question, then open the corresponding guide. Raw array
 | [Non-water contact follow-up](nonwater_contact/) | 36 | Separately frozen, fixed-solute MMFF94s contact geometries with new QM references. |
 | [Liquid](liquid/) | 24 | Four explicit-water configurations per solute. |
 | [Shell size](shell_size/) | 36 | Nine parents evaluated with 1, 3, 6 and 12 waters. |
+| [ARROW comparison](arrow_comparison/) | 68 shared | Post hoc, atom-type-limited independent polarizable-model comparison on five source sets. |
 | [Held-out water](heldout_water/) | 10 bases, 90 outer waters | Frozen response coupling and directional observables. |
 | [Pilot](heldout_water_pilot/) | 6 bases | Original downstream protocol-development test. |
 | [Distance sweep](distance_sweep/) | 10 bases, many placements | Spatial range of frozen-field reuse. |

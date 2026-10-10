@@ -6,5 +6,14 @@ The paper companion is maintained by Gal Oren, Boris Fain and Michael Levitt. Or
 - FreeSolv supplies molecular identities for Panel III. Its pinned source and original attribution are retained in the [selection archive](../provenance/panel_3/). Hydration values are not part of the selection inputs.
 - The ten held-out-water structure/state sources come from [Transformato](https://github.com/cbc-univie/transformato). The [source records](../experiments/heldout_water/source_structures/sources.json) give exact commits and paths, and its [licence](../experiments/heldout_water/source_structures/LICENSE) accompanies these files.
 - The Figure 1c gallery image uses the original QM response maps and molecular rendering layers. The other diagrams are editable SVG reading aids generated from the archived numerical data or model structure.
+- Boris Fain supplied classic analytical ARROW predictions for the post hoc
+  shared-configuration comparison. The method is described by Pereyaslavets
+  et al., *Nature Communications* **13**, 414 (2022),
+  [doi:10.1038/s41467-022-28041-0](https://doi.org/10.1038/s41467-022-28041-0).
+  This release contains the numerical response-potential predictions and
+  scoring records needed to verify the 68 common-case field scores. It does
+  not redistribute ARROW's force-field parameter database or private raw
+  simulation runs. The collaborator's one-solute separation summary has no
+  underlying ARROW probe arrays in the transferred package.
 
 Historical manifests are preserved for attribution and chronology, including original machine-local path strings. Active code resolves the current release paths.

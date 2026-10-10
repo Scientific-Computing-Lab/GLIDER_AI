@@ -40,6 +40,7 @@ MACE-POLAR-1-M supplies the frozen geometry features. An equal-weight average of
 | Does it extend beyond water? | The original 72 replacements include **62 repulsive QM contacts**. In a separate, prediction-frozen follow-up on **36 attractive constructed contacts**, GLIDER has **34.9% lower response-ESP error** than the unfitted polar baseline. | [Original audit](experiments/nonwater/) · [Contact follow-up](experiments/nonwater_contact/) |
 | Can another molecule use the field? | Held-out-water response-coupling MAE: **0.114 → 0.049 kcal mol⁻¹**. | [Held-out water](experiments/heldout_water/) |
 | What does the global branch add? | A matched ablation finds a **modest average benefit**, with differences across solutes. | [Global-branch control](experiments/global_branch/) |
+| How does an independent polarizable model compare? | On **68 ARROW-typable cases**, GLIDER has lower mean field error, while ARROW shows less signed drift as water shells grow. The paired mean difference is unresolved across 11 solutes. | [ARROW comparison](experiments/arrow_comparison/) |
 | Does the response vanish when the inducing fragments separate? | **No.** The 14-solute prediction sweep reveals a persistent response; a direct QM calculation on one solute confirms the far-separation error. | [Prediction sweep](experiments/dissociation/) · [QM check](experiments/dissociation_qm/) |
 
 The [water-contact audit](experiments/water_contact_audit/) identifies nine unusually short interfragment geometries and shows that the panel-level field advantage persists when they are excluded in a post hoc check.
@@ -73,6 +74,7 @@ experiments/
   nonwater_contact/     12 solutes · 36 separately selected contacts
   liquid/               6 solutes · 24 liquid-derived clusters
   shell_size/           3 solutes · nested 1/3/6/12-water clusters
+  arrow_comparison/     68 shared cases · independent post hoc physics baseline
   heldout_water/        10 solutes · densities, probe states and coupling
   heldout_water_pilot/  Separate original six-solute pilot
   distance_sweep/       Probe positions, fields, densities and raw evaluations
@@ -95,6 +97,7 @@ python -m pip install -e .
 python scripts/reproduce/verify_release.py
 python scripts/reproduce/score_experiment.py --experiment all
 python scripts/reproduce/recompute_statistics.py --output build/statistics
+python scripts/reproduce/score_arrow_release.py
 python scripts/verify_companion.py
 ```
 
