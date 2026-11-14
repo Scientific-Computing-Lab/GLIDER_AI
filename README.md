@@ -103,6 +103,16 @@ python scripts/verify_companion.py
 
 This path needs no GPU or new quantum-chemistry calculation. It verifies file hashes and constraints and computes errors from the released reference and prediction arrays. Results go into `build/`, leaving the archive unchanged.
 
+### Tested environments and expected times
+
+The base reproduction path above was tested on an Apple M1 Pro with 16 GiB RAM, macOS 26.5, Python 3.12.14, NumPy 2.5.4 and pandas 3.1.1. A fresh virtual environment took 2 seconds to create and `pip install --no-cache-dir -e .` took 14 seconds. A shallow clone of this 1.5 GiB repository took 48 seconds on the test connection; download time will depend on network speed. `verify_release.py` took 27 seconds, and the five CPU reproduction commands together took 37 seconds. These are single-run wall times, offered as practical estimates rather than cross-platform guarantees. Base verification and rescoring require no GPU; the internal lightweight check uses less than 2 GiB RAM.
+
+The analysis server ran Ubuntu 22.04.4 LTS on an Intel i7-4930K (6 cores, 12 threads), with 46 GiB RAM and an NVIDIA RTX 3090 (24 GiB VRAM). One retained Python 3.11.15 environment has NumPy 1.26.4, pandas 3.0.5, PyTorch 2.5.1+cu121, ASE 3.23.0, mace-torch 0.3.4 and PySCF 2.8.0. Run-specific manifests remain authoritative for historical package versions. New-geometry prediction requires the official third-party MACE-POLAR M/L checkpoints and benefits from a CUDA GPU; its runtime was not benchmarked here. Regenerating QM references is substantially more expensive and is unnecessary for scoring the released arrays.
+
+The final five-seed, 64-epoch GLIDER response-head fit took 93 seconds when reproduced in memory on the analysis server's RTX 3090; allow about 1.5–2 minutes including checkpoint writing. The separate six-candidate, 84-fold model-selection campaign is estimated at 50–70 minutes on comparable hardware from archived fold records and a reproduced fold. These figures exclude encoder feature extraction and QM reference generation. See the [model card](MODEL_CARD.md) for intended use and limits.
+
+The archived QM references record three counterpoise-component times per environment. Their summed component times were 1.08, 0.78 and 2.04 accelerator-hours for Panels I, II and III respectively, and 5.91 accelerator-hours for the 72 non-water environments. These are compute-time sums, not end-to-end wall time, and do not include queueing or all retry overhead. The reference arrays are released, so reviewers need not repeat these calculations.
+
 The paired-interval command uses the manuscript's 100,000-resample seed (20260816), reproducing the primary prospective intervals plotted in the article. Earlier frozen-panel provenance records retain their original seed (20260814); they document the historical analysis rather than the article's harmonized intervals.
 
 For a physical calculation from density matrices, install `.[qm]` and run:

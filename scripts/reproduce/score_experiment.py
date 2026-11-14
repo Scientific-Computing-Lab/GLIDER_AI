@@ -18,7 +18,8 @@ def score(name, output):
     geometry=pd.read_csv(base/'geometries/configuration_registry.csv').set_index('config_id')
     records=[]
     for directory in sorted((base/'predictions').iterdir()):
-        if not directory.is_dir() or directory.name=='intermediate':continue
+        # ARROW has partial coverage and is rescored by score_arrow_release.py.
+        if not directory.is_dir() or directory.name in ('intermediate','arrow','arrow_smeared'):continue
         pred_registry=directory/'prediction_registry.csv'
         prediction_map={}
         if pred_registry.exists():
